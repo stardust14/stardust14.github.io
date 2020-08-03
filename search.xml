@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Python学习</title>
-    <url>/stardust14.github.io/2020/07/28/Python%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>first blog</title>
     <url>/stardust14.github.io/2020/01/04/first-blog/</url>
     <content><![CDATA[<p>first blog</p>
@@ -19,64 +14,84 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Python学习</title>
+    <url>/stardust14.github.io/2020/07/28/Python%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/stardust14.github.io/2020/08/01/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="Quick-Start"><a class="header-anchor" href="#Quick-Start">¶</a>Quick Start</h2>
+<h3 id="Create-a-new-post"><a class="header-anchor" href="#Create-a-new-post">¶</a>Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
+<h3 id="Run-server"><a class="header-anchor" href="#Run-server">¶</a>Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
+<h3 id="Generate-static-files"><a class="header-anchor" href="#Generate-static-files">¶</a>Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
+<h3 id="Deploy-to-remote-sites"><a class="header-anchor" href="#Deploy-to-remote-sites">¶</a>Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
   <entry>
     <title>hexo出现的问题</title>
     <url>/stardust14.github.io/2020/07/06/hexo%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</url>
-    <content><![CDATA[<h1 id="在进行博客编写过程中，出现了一些问题。"><a href="#在进行博客编写过程中，出现了一些问题。" class="headerlink" title="在进行博客编写过程中，出现了一些问题。"></a>在进行博客编写过程中，出现了一些问题。</h1><h2 id="1、出现hexo无法识别"><a href="#1、出现hexo无法识别" class="headerlink" title="1、出现hexo无法识别"></a>1、出现hexo无法识别</h2><p>  ‘hexo’ 不是内部或外部命令，也不是可运行的程序 或批处理文件。<br>  或着是<code>bash: hexo: command not found</code></p>
-<p>  参考网上的经验贴,修改环境变量</p>
+    <content><![CDATA[<h1>在进行博客编写过程中，出现了一些问题。</h1>
+<h2 id="1、出现hexo无法识别"><a class="header-anchor" href="#1、出现hexo无法识别">¶</a>1、出现hexo无法识别</h2>
+<p>‘hexo’ 不是内部或外部命令，也不是可运行的程序 或批处理文件。<br>
+或着是<code>bash: hexo: command not found</code></p>
+<p>参考网上的经验贴,修改环境变量</p>
 <p><img data-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707174137.png" alt="image-20200707174134036"></p>
-<h2 id="2、出现cnpm不能识别"><a href="#2、出现cnpm不能识别" class="headerlink" title="2、出现cnpm不能识别"></a>2、出现cnpm不能识别</h2><p>  ‘cnpm’ 不是内部或外部命令，也不是可运行的程序 或批处理文件。</p>
-<p>  把C盘的一些文件复制到博客安装的目录中去</p>
+<h2 id="2、出现cnpm不能识别"><a class="header-anchor" href="#2、出现cnpm不能识别">¶</a>2、出现cnpm不能识别</h2>
+<p>‘cnpm’ 不是内部或外部命令，也不是可运行的程序 或批处理文件。</p>
+<p>把C盘的一些文件复制到博客安装的目录中去</p>
 <p><img data-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707174434.png" alt="image-20200707174432439"></p>
-<h2 id="3、图片无法加载"><a href="#3、图片无法加载" class="headerlink" title="3、图片无法加载"></a>3、图片无法加载</h2><p>使用<strong>typora+picgo</strong>插入图片，部署到github上去。</p>
+<h2 id="3、图片无法加载"><a class="header-anchor" href="#3、图片无法加载">¶</a>3、图片无法加载</h2>
+<p>使用<strong>typora+picgo</strong>插入图片，部署到github上去。</p>
 <p>出现了好多错误，直接剪切上传后正常，保存后在上传加载不出，但是下面也有加载出来的。。。</p>
 <p>参考网上的解决方案，修改了hosts文件，配置了一些picgo的设置。</p>
 <p><img data-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707175357.png" alt="image-20200707175355687"></p>
-<h2 id="4、-出现本地4000端口占用问题"><a href="#4、-出现本地4000端口占用问题" class="headerlink" title="4、  出现本地4000端口占用问题"></a>4、  出现本地4000端口占用问题</h2><p>打开cmd输入 <code>netstat -nao | findstr 4000</code>查询4000端口占用的程序</p>
+<h2 id="4、-出现本地4000端口占用问题"><a class="header-anchor" href="#4、-出现本地4000端口占用问题">¶</a>4、  出现本地4000端口占用问题</h2>
+<p>打开cmd输入 <code>netstat -nao | findstr 4000</code>查询4000端口占用的程序</p>
 <p><img data-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707171831.png" alt="Image"></p>
 <p>可以看到 PID为 24016 的进程占用了4000端口，如果进一步你想知道它的进程名称，你可以使用如下命令： <code>tasklist | findstr 24016</code> 执行终止程序</p>
-<h2 id="5、-git-bush中ctrl-c退出不了（bug）"><a href="#5、-git-bush中ctrl-c退出不了（bug）" class="headerlink" title="5、  git bush中ctrl+c退出不了（bug）"></a>5、  git bush中ctrl+c退出不了（bug）</h2><p>打开cmd，输入：<code>taskkill /F /IM node.exe</code> </p>
+<h2 id="5、-git-bush中ctrl-c退出不了（bug）"><a class="header-anchor" href="#5、-git-bush中ctrl-c退出不了（bug）">¶</a>5、  git bush中ctrl+c退出不了（bug）</h2>
+<p>打开cmd，输入：<code>taskkill /F /IM node.exe</code></p>
 <p><img data-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707171737.png" alt="Image"></p>
-<p>搞定<del>~</del></p>
-<h2 id="6、部署到GitHub上电脑无法访问的问题"><a href="#6、部署到GitHub上电脑无法访问的问题" class="headerlink" title="6、部署到GitHub上电脑无法访问的问题"></a>6、部署到GitHub上电脑无法访问的问题</h2><p>   这是由于<code>https：//</code>这个格式  </p>
+<p>搞定~~~~</p>
+<h2 id="6、部署到GitHub上电脑无法访问的问题"><a class="header-anchor" href="#6、部署到GitHub上电脑无法访问的问题">¶</a>6、部署到GitHub上电脑无法访问的问题</h2>
+<p>这是由于<code>https：//</code>这个格式</p>
 ]]></content>
   </entry>
   <entry>
     <title>如何修改blog</title>
     <url>/stardust14.github.io/2020/01/05/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9blog/</url>
-    <content><![CDATA[<h1 id="学习怎么进行主题设置"><a href="#学习怎么进行主题设置" class="headerlink" title="学习怎么进行主题设置"></a>学习怎么进行主题设置</h1><h2 id="参考网上的教程，进行学习"><a href="#参考网上的教程，进行学习" class="headerlink" title="参考网上的教程，进行学习"></a>参考网上的教程，进行学习</h2><p>基本的使用:</p>
-<h1 id="一级标题（-）"><a href="#一级标题（-）" class="headerlink" title="一级标题（# ）"></a>一级标题（# ）</h1><h2 id="二级标题（-）"><a href="#二级标题（-）" class="headerlink" title="二级标题（## ）"></a>二级标题（## ）</h2><h3 id="三级标题（-）"><a href="#三级标题（-）" class="headerlink" title="三级标题（### ）"></a>三级标题（### ）</h3><blockquote>
+    <content><![CDATA[<h1>学习怎么进行主题设置</h1>
+<h2 id="参考网上的教程，进行学习"><a class="header-anchor" href="#参考网上的教程，进行学习">¶</a>参考网上的教程，进行学习</h2>
+<p>基本的使用:</p>
+<h1>一级标题（# ）</h1>
+<h2 id="二级标题（-）"><a class="header-anchor" href="#二级标题（-）">¶</a>二级标题（## ）</h2>
+<h3 id="三级标题（-）"><a class="header-anchor" href="#三级标题（-）">¶</a>三级标题（### ）</h3>
+<blockquote>
 <p>以此类推（引用&gt;）</p>
 </blockquote>
 <p>虚线（—、***）</p>
 <ul>
-<li>列表1<br>  a 字列表<br><a href="https://www.baidu.com/?tn=98012088_5_dg&ch=12">百度</a><blockquote>
+<li>列表1<br>
+a 字列表<br>
+<a href="https://www.baidu.com/?tn=98012088_5_dg&amp;ch=12">百度</a></li>
+</ul>
+<blockquote>
 <p>超链接</p>
 </blockquote>
-</li>
-</ul>
-<p> <em>斜体</em><br> <strong>粗体</strong> </p>
+<p><em>斜体</em><br>
+<strong>粗体</strong></p>
 <p><code>&lt;html&gt;&lt;/html&gt;</code></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;title&gt;代码引用，直接敲&lt;&#x2F;title&gt;</span><br><span class="line">  &lt;&#x2F;head&gt;</span><br><span class="line">  &lt;body&gt;&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
-
-
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">	&lt;title&gt;代码引用，直接敲&lt;&#x2F;title&gt;</span><br><span class="line">  &lt;&#x2F;head&gt;</span><br><span class="line">  &lt;body&gt;&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
 <hr>
 ]]></content>
   </entry>
@@ -753,8 +768,52 @@ split方法的参数其实是一个“<strong>正则表达式</strong>”，今�
 成员方法:编译看左边，运行看右边。</p>
 <h2 id="使用多态的好处"><a class="header-anchor" href="#使用多态的好处">¶</a>使用多态的好处</h2>
 <p><img data-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200802223437.png" alt="image-20200802223149584"></p>
-<h2 id="对象的向上转型"><a class="header-anchor" href="#对象的向上转型">¶</a>对象的向上转型</h2>
-<p><img data-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200802223420.png" alt="image-20200802223419209"></p>
+<h2 id="对象的向上转型和向下转型"><a class="header-anchor" href="#对象的向上转型和向下转型">¶</a>对象的向上转型和向下转型</h2>
+<p><img data-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200803144143.png" alt="image-20200803144141656"></p>
+<h2 id="用instanceof关键字进行判断"><a class="header-anchor" href="#用instanceof关键字进行判断">¶</a>用instanceof关键字进行判断</h2>
+<p>如何才能知道-个父类引用的对象，本来是什么子类?<br>
+<strong>格式:</strong><br>
+对象<code>instanceof</code> 类名称<br>
+这将会得到一个<strong>boolean值</strong>结果， 也就是判断前面的对象能不能当做后面类型的实例。</p>
+<blockquote>
+<p>这样的好处：向下转型防止发生异常</p>
+</blockquote>
+<h2 id="笔记本USB接口案例"><a class="header-anchor" href="#笔记本USB接口案例">¶</a>笔记本USB接口案例</h2>
+<h3 id="笔记本电脑"><a class="header-anchor" href="#笔记本电脑">¶</a>笔记本电脑</h3>
+<p>笔记本电脑(laptop) 通常具备使用USB设备的功能。在生产时，笔记本都预留了可以插入USB设备的USB接口,<br>
+但具体是什么USB设备，笔记本厂商并不关心，只要符合USB规格的设备都可以。</p>
+<p>定义USB接口，具备最基本的开启功能和关闭功能。鼠标和键盘要想能在电脑上使用，那么鼠标和键盘也必须遵守<br>
+USB规范，实现USB接口，否则鼠标和键盘的生产出来也无法使用。</p>
+<h3 id="案例分析"><a class="header-anchor" href="#案例分析">¶</a>案例分析</h3>
+<p>进行描述笔记本类，实现笔记本使用USB鼠标、USB键盘<br>
+●USB接口，包含打开设备功能、关闭设备功能<br>
+●笔记本类，包含开机功能、关机功能、使用USB设备功能<br>
+●鼠标类，要实现USB接口,并具备点击的方法<br>
+●键盘类，要实现USB接口，具备敲击的方法</p>
+<p><img data-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200803232808.png" alt="image-20200803145842708"></p>
+<h3 id="案例实现"><a class="header-anchor" href="#案例实现">¶</a>案例实现</h3>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">USB</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">open</span><span class="params">()</span></span>;<span class="comment">//打开设备</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">close</span><span class="params">()</span></span>;<span class="comment">//关闭设备</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Computer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">poweron</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;笔记本电脑开机&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">poweroff</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;笔记本电脑关机&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">useDevice</span><span class="params">(USB usb)</span></span>&#123;</span><br><span class="line">        usb.open();<span class="comment">//打开设备</span></span><br><span class="line">        <span class="keyword">if</span> (usb <span class="keyword">instanceof</span> Mouse)&#123;<span class="comment">//一定要先进行判断</span></span><br><span class="line">            Mouse mouse = (Mouse) usb;<span class="comment">//向下转型</span></span><br><span class="line">            mouse.click();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (usb <span class="keyword">instanceof</span> Keyboard)&#123;</span><br><span class="line">            Keyboard keyboard =(Keyboard) usb;<span class="comment">//向下转型</span></span><br><span class="line">            keyboard.type();</span><br><span class="line">        &#125;</span><br><span class="line">        usb.close();<span class="comment">//关闭设备</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//鼠标就是一个USB设备</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Mouse</span> <span class="keyword">implements</span> <span class="title">USB</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">open</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;打开鼠标&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">close</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;关闭鼠标&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">click</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;点击鼠标&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//键盘就是一个USB设备</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Keyboard</span> <span class="keyword">implements</span> <span class="title">USB</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">open</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;打开键盘&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">close</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;关闭键盘&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">type</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;键盘输入&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DomeMain</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//首先创建一个笔记本电脑</span></span><br><span class="line">        Computer compuer = <span class="keyword">new</span> Computer();</span><br><span class="line">        compuer.poweron();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//准备一个竖标，供电脑使用</span></span><br><span class="line"><span class="comment">//        Mouse mouse = new Mouse();//这是一种方法</span></span><br><span class="line">        <span class="comment">//首先准备向上转型</span></span><br><span class="line">        USB usbMouse = <span class="keyword">new</span> Mouse();<span class="comment">//这是另一种方法,多态写法</span></span><br><span class="line">        <span class="comment">//参数是USB类型，我正好传递进去的就是USB鼠标</span></span><br><span class="line">        compuer.useDevice(usbMouse);</span><br><span class="line"></span><br><span class="line">        Keyboard keyboard = <span class="keyword">new</span> Keyboard();<span class="comment">//没有使用多态写法</span></span><br><span class="line">        <span class="comment">//方法参数是USB类型，传递进去的是实现类对象</span></span><br><span class="line">        compuer.useDevice(keyboard);<span class="comment">//正确写法!也发生了向上转型</span></span><br><span class="line">        <span class="comment">//</span></span><br><span class="line"><span class="comment">//        compuer.useDevice(new Keyboard());//这也是正确写法</span></span><br><span class="line">        compuer.poweroff();</span><br><span class="line">        System.out.println(<span class="string">&quot;============&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//对于没有使用多态写法的解释</span></span><br><span class="line">        method(<span class="number">10.0</span>);<span class="comment">//正确写法，double --&gt; double</span></span><br><span class="line">        method(<span class="number">20</span>);<span class="comment">//正确写法，int--&gt;double</span></span><br><span class="line">        <span class="keyword">int</span> a = <span class="number">30</span>;</span><br><span class="line">        method(a);<span class="comment">//正确写法，int--&gt;double</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">method</span><span class="params">(<span class="keyword">double</span> num)</span></span>&#123;</span><br><span class="line">        System.out.println(num);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1>final关键字</h1>
+<h2 id="概念及用法"><a class="header-anchor" href="#概念及用法">¶</a>概念及用法</h2>
+<p>final关键字代表最终、不可改变的。<br>
+常见四种用法:<br>
+1.可以用来修饰一个类<br>
+2.可以用来修饰一个方法<br>
+3.可以用来修饰一个局部变量<br>
+4.还可以用来修饰一一个成员变量</p>
+<h2 id="用于修饰类"><a class="header-anchor" href="#用于修饰类">¶</a>用于修饰类</h2>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">当final天键字用来修饰一个类的时候，格式:</span></span><br><span class="line"><span class="comment">public final class类名称&#123;</span></span><br><span class="line"><span class="comment">    //...</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">含义:当前这个类不能有任何的子类。(太监类)</span></span><br><span class="line"><span class="comment">注意:一个类如果是final的，那么其中所有的成员方法都无法进行覆盖重写(因为没儿子。)</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">Myclass</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">method</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;final方法类&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="用于修饰成员方法"><a class="header-anchor" href="#用于修饰成员方法">¶</a>用于修饰成员方法</h2>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">当final关键字用来修饰一一个方法的时候，这个方法就是最终方法，也就是不能被覆盖重写。</span></span><br><span class="line"><span class="comment">格式:</span></span><br><span class="line"><span class="comment">修饰符final 返回值类型方法名称(参数列表) &#123;</span></span><br><span class="line"><span class="comment">    //方法体</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">注意事项:</span></span><br><span class="line"><span class="comment">对于类、方法来说，abstract关键字和final关键字不能同时使用，因为矛盾。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">Fu</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">void</span> <span class="title">method</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;父类方法执行&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">abstract</span> <span class="comment">/*final*/</span> <span class="function"><span class="keyword">void</span> <span class="title">methodAbs</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="用于修饰局部变量"><a class="header-anchor" href="#用于修饰局部变量">¶</a>用于修饰局部变量</h2>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Dome01Final</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> num1 = <span class="number">10</span>;</span><br><span class="line">        System.out.println(num1);<span class="comment">//10</span></span><br><span class="line">        num1 = <span class="number">20</span>;</span><br><span class="line">        System.out.println(num1);<span class="comment">//20</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//一旦使用final用来修饰局部变量，那么这个变量就不能进行更改。</span></span><br><span class="line">        <span class="comment">//“一次赋值，终生不变</span></span><br><span class="line">        <span class="keyword">final</span> <span class="keyword">int</span> num2 = <span class="number">100</span>;</span><br><span class="line">        System.out.println(num2);</span><br><span class="line"></span><br><span class="line"><span class="comment">//        num2 = 250;//错误写法，不能改变</span></span><br><span class="line"><span class="comment">//        num2 = 100;//错误写法！</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//正确写法，只要保证有唯一一次赋值即可</span></span><br><span class="line">        <span class="keyword">final</span> <span class="keyword">int</span> num3;</span><br><span class="line">        num3 = <span class="number">300</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//对于基本类型来说， 不可变说的是变量当中的数据不 可改变</span></span><br><span class="line">        <span class="comment">//对于引用类型来说，不可变说的是变量当中的地址值不可改变</span></span><br><span class="line">        Student stu1 = <span class="keyword">new</span> Student(<span class="string">&quot;Rose&quot;</span>);</span><br><span class="line">        System.out.println(stu1.getName());<span class="comment">//Rose</span></span><br><span class="line">        System.out.println(stu1);</span><br><span class="line">        stu1 = <span class="keyword">new</span> Student(<span class="string">&quot;Rechal&quot;</span>);</span><br><span class="line">        System.out.println(stu1);</span><br><span class="line">        System.out.println(stu1.getName());<span class="comment">//Rechal</span></span><br><span class="line">        System.out.println(<span class="string">&quot;==========&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">final</span> Student stu2 = <span class="keyword">new</span> Student(<span class="string">&quot;Jeoy&quot;</span>);<span class="comment">//Jeoy</span></span><br><span class="line">        <span class="comment">//错误写法！final的引用类型变量，其中的地址不可改变</span></span><br><span class="line"><span class="comment">//        stu2 = new Student(&quot;Pheebs&quot;);</span></span><br><span class="line">        stu2.setName(<span class="string">&quot;Chandler&quot;</span>);<span class="comment">//Chandler</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="用于修饰成员变量"><a class="header-anchor" href="#用于修饰成员变量">¶</a>用于修饰成员变量</h2>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">对于成员变量来说，如果使用final关键字修饰，那么这个变量也照样是不可变。</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">1.由于成员变量具有默认值，所以用了final之后必须手动赋值，不会再给默认值了。</span></span><br><span class="line"><span class="comment">2.对于final的成员变量，要么使用直接赋值，要么通过构造方法赋值。二者选其一</span></span><br><span class="line"><span class="comment">3.必须保证类当中所有重载的构造方法，都最终会对final的成员变量进行赋值。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">final</span> <span class="keyword">private</span> String name<span class="comment">/* = &quot;Mon&quot;*/</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        name =<span class="string">&quot;Chandler&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Person</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">/* public void setName(String name) &#123;</span></span><br><span class="line"><span class="comment">        this.name = name;</span></span><br><span class="line"><span class="comment">    &#125;*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="四种权限修饰符"><a class="header-anchor" href="#四种权限修饰符">¶</a>四种权限修饰符</h2>
 ]]></content>
   </entry>
 </search>
