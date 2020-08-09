@@ -65,6 +65,9 @@
 <h2 id="6、部署到GitHub上电脑无法访问的问题"><a class="header-anchor" href="#6、部署到GitHub上电脑无法访问的问题">¶</a>6、部署到GitHub上电脑无法访问的问题</h2>
 <p>这是由于<code>https：//</code>这个格式</p>
 ]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>如何修改blog</title>
@@ -747,7 +750,10 @@ print(tinydict.values()) # 输出所有值
 </tr>
 </tbody>
 </table>
-]]></content>
+<script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/js/WithoutLine.min.js"></script>]]></content>
+      <tags>
+        <tag>python</tag>
+      </tags>
   </entry>
   <entry>
     <title>java基础知识学习笔记</title>
@@ -4452,5 +4458,8 @@ public class RandomMode implements OpenMode &amp;#123;
 &amp;#125;
 </code></pre>
 ]]></content>
+      <tags>
+        <tag>java</tag>
+      </tags>
   </entry>
 </search>
