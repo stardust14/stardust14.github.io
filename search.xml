@@ -3,7 +3,7 @@
   <entry>
     <title>first blog</title>
     <url>/stardust14.github.io/2020/01/04/first-blog/</url>
-    <content><![CDATA[<p>first blog</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>first blog</p>
 <p>内容：又重新来了一遍！</p>
 <hr>
 <p>second</p>
@@ -16,7 +16,7 @@
   <entry>
     <title>Hello World</title>
     <url>/stardust14.github.io/2020/01/04/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a class="header-anchor" href="#Quick-Start">¶</a>Quick Start</h2>
 <h3 id="Create-a-new-post"><a class="header-anchor" href="#Create-a-new-post">¶</a>Create a new post</h3>
 <pre><code class="language-bash">$ hexo new &quot;My New Post&quot;
@@ -39,28 +39,28 @@
   <entry>
     <title>hexo出现的问题</title>
     <url>/stardust14.github.io/2020/07/06/hexo%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</url>
-    <content><![CDATA[<h1>在进行博客编写过程中，出现了一些问题。</h1>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>在进行博客编写过程中，出现了一些问题。</h1>
 <h2 id="1、出现hexo无法识别"><a class="header-anchor" href="#1、出现hexo无法识别">¶</a>1、出现hexo无法识别</h2>
 <p>‘hexo’ 不是内部或外部命令，也不是可运行的程序 或批处理文件。<br>
 或着是<code>bash: hexo: command not found</code></p>
 <p>参考网上的经验贴,修改环境变量</p>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707174137.png" alt="image-20200707174134036"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707174137.png" alt="image-20200707174134036"></p>
 <h2 id="2、出现cnpm不能识别"><a class="header-anchor" href="#2、出现cnpm不能识别">¶</a>2、出现cnpm不能识别</h2>
 <p>‘cnpm’ 不是内部或外部命令，也不是可运行的程序 或批处理文件。</p>
 <p>把C盘的一些文件复制到博客安装的目录中去</p>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707174434.png" alt="image-20200707174432439"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707174434.png" alt="image-20200707174432439"></p>
 <h2 id="3、图片无法加载"><a class="header-anchor" href="#3、图片无法加载">¶</a>3、图片无法加载</h2>
 <p>使用<strong>typora+picgo</strong>插入图片，部署到github上去。</p>
 <p>出现了好多错误，直接剪切上传后正常，保存后在上传加载不出，但是下面也有加载出来的。。。</p>
 <p>参考网上的解决方案，修改了hosts文件，配置了一些picgo的设置。</p>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707175357.png" alt="image-20200707175355687"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707175357.png" alt="image-20200707175355687"></p>
 <h2 id="4、-出现本地4000端口占用问题"><a class="header-anchor" href="#4、-出现本地4000端口占用问题">¶</a>4、  出现本地4000端口占用问题</h2>
 <p>打开cmd输入 <code>netstat -nao | findstr 4000</code>查询4000端口占用的程序</p>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707171831.png" alt="Image"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707171831.png" alt="Image"></p>
 <p>可以看到 PID为 24016 的进程占用了4000端口，如果进一步你想知道它的进程名称，你可以使用如下命令： <code>tasklist | findstr 24016</code> 执行终止程序</p>
 <h2 id="5、-git-bush中ctrl-c退出不了（bug）"><a class="header-anchor" href="#5、-git-bush中ctrl-c退出不了（bug）">¶</a>5、  git bush中ctrl+c退出不了（bug）</h2>
 <p>打开cmd，输入：<code>taskkill /F /IM node.exe</code></p>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707171737.png" alt="Image"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707171737.png" alt="Image"></p>
 <p>搞定~~~~</p>
 <h2 id="6、部署到GitHub上电脑无法访问的问题"><a class="header-anchor" href="#6、部署到GitHub上电脑无法访问的问题">¶</a>6、部署到GitHub上电脑无法访问的问题</h2>
 <p>这是由于<code>https：//</code>这个格式</p>
@@ -69,7 +69,7 @@
   <entry>
     <title>如何修改blog</title>
     <url>/stardust14.github.io/2020/01/05/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9blog/</url>
-    <content><![CDATA[<h1>学习怎么进行主题设置</h1>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>学习怎么进行主题设置</h1>
 <h2 id="参考网上的教程，进行学习"><a class="header-anchor" href="#参考网上的教程，进行学习">¶</a>参考网上的教程，进行学习</h2>
 <p>基本的使用:</p>
 <h1>一级标题（# ）</h1>
@@ -103,7 +103,7 @@ a 字列表<br>
   <entry>
     <title>Python基础知识</title>
     <url>/stardust14.github.io/2020/07/28/Python%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h1>前言</h1>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>前言</h1>
 <p>Python是一种面向对象、 解释型、弱类型的脚本语言,它也是一种功能强大而完善的通用型语言。</p>
 <p>Python的两大特色是<strong>清晰的语法</strong>和<strong>可扩展性</strong>:</p>
 <pre><code>+    Python的语法非常清晰,它甚至不是一 种格式自由的语言。例如,它要求if语句的下一-行必须向右缩进,否则不能通过编译。
@@ -752,7 +752,7 @@ print(tinydict.values()) # 输出所有值
   <entry>
     <title>java基础知识学习笔记</title>
     <url>/stardust14.github.io/2020/07/08/java%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h1>定义方法</h1>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>定义方法</h1>
 <h3 id="1、定义一个方法（函数）的格式："><a class="header-anchor" href="#1、定义一个方法（函数）的格式：">¶</a>1、定义一个方法（函数）的格式：</h3>
 <pre><code class="language-java">public static void 方法名称()&amp;#123;
 
@@ -868,7 +868,7 @@ while (true) {<br>
 1、与参数的名称无关<br>
 2、与方法的返回值类型无关</p>
 <h3 id="练习题（方法重载）"><a class="header-anchor" href="#练习题（方法重载）">¶</a>练习题（方法重载）</h3>
-<p>1、这题也包括了Boolean的是否判断的方法<img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200711220604.png" alt="image-20200711220601237"></p>
+<p>1、这题也包括了Boolean的是否判断的方法<img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200711220604.png" alt="image-20200711220601237"></p>
 <p>2、判断是否是重载</p>
 <pre><code class="language-java">public static void open()&amp;#123;&amp;#125; //正确重载
 public static void open(int a)&amp;#123;&amp;#125; //正确重载.
@@ -948,11 +948,11 @@ public static void. open(int i,int j)&amp;#123;&amp;#125; //代码错误:和第3
 5.**寄存器(**pc Register) :与CPU相关。</p>
 <h2 id="数组的内存图"><a class="header-anchor" href="#数组的内存图">¶</a>数组的内存图</h2>
 <p><strong>一个数组的内存图：</strong></p>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200712164516.png" alt="image-20200712164514236"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200712164516.png" alt="image-20200712164514236"></p>
 <p><strong>两个数组的内存图：</strong></p>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200712165859.png" alt="image-20200712165123071"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200712165859.png" alt="image-20200712165123071"></p>
 <p><strong>两个引用指向同一个数组的内存图</strong></p>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200712165840.png" alt="image-20200712165838206"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200712165840.png" alt="image-20200712165838206"></p>
 <h2 id="常见的问题"><a class="header-anchor" href="#常见的问题">¶</a>常见的问题</h2>
 <h3 id="1、数组索引越界异常"><a class="header-anchor" href="#1、数组索引越界异常">¶</a><strong>1、数组索引越界异常</strong></h3>
 <p>如果访问数组元素的时候，索引编号并不存在，那么将会发生数组索引越界异常<br>
@@ -972,11 +972,11 @@ public static void. open(int i,int j)&amp;#123;&amp;#125; //代码错误:和第3
 数组名称. length<br>
 这将会得到一个int数字，代表数组的长度。<br>
 数组一旦创建，程序运行期间，<em><strong>长度不可改变</strong></em>。</p>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200712171637.png" alt="image-20200712171219524"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200712171637.png" alt="image-20200712171219524"></p>
 <p><strong>数组的遍历输出：使用for循环</strong></p>
 <p><strong>数组的最值：使用for循环和if判断</strong></p>
 <h2 id="数组元素反转"><a class="header-anchor" href="#数组元素反转">¶</a>数组元素反转</h2>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200713111225.png" alt="image-20200713111223768"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200713111225.png" alt="image-20200713111223768"></p>
 <pre><code class="language-java">pub1ic class Demo07ArrayReverse &amp;#123;
 public static void main(String[] args) &amp;#123;
 int[] array = &amp;#123; 10，20，30，40, 50 &amp;#125;;
@@ -1032,7 +1032,7 @@ System. out. println(array[i]);
 &amp;#125;
 </code></pre>
 <p>得到的结果：</p>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200713112817.png" alt="image-20200713112816224"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200713112817.png" alt="image-20200713112816224"></p>
 <h2 id="数组作为方法返回值"><a class="header-anchor" href="#数组作为方法返回值">¶</a>数组作为方法返回值</h2>
 <pre><code class="language-java">/*
 一个方法可以有0、1、多个参数;但是只能有0或者1个返回值，不能有多个返回值。
@@ -1072,7 +1072,7 @@ public static int[] calculate(int a, int b，int c) &amp;#123;
 &amp;#125;
 </code></pre>
 <p>输出的结果：</p>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200713113840.png" alt="image-20200713113838924"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200713113840.png" alt="image-20200713113838924"></p>
 <h1>面向对象思想</h1>
 <h2 id="概述"><a class="header-anchor" href="#概述">¶</a>概述</h2>
 <pre><code class="language-java">/*
@@ -1241,16 +1241,16 @@ public static void main(String[] args) &amp;#123;
 <p>new的东西全在堆之中</p>
 <p>压栈，先来的在底下，后进先出，先进后出</p>
 <p>黑色的X代表出栈</p>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200715185054.png" alt="image-20200715184735566"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200715185054.png" alt="image-20200715184735566"></p>
 <h2 id="两个对象使用同一个方法的内存图"><a class="header-anchor" href="#两个对象使用同一个方法的内存图">¶</a>两个对象使用同一个方法的内存图</h2>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200715185842.png" alt="image-20200715185840625"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200715185842.png" alt="image-20200715185840625"></p>
 <h2 id="两个引用指向同一个对象的内存图"><a class="header-anchor" href="#两个引用指向同一个对象的内存图">¶</a>两个引用指向同一个对象的内存图</h2>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200715190554.png" alt="image-20200715190552009"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200715190554.png" alt="image-20200715190552009"></p>
 <h2 id="使用对象类型作为方法的参数"><a class="header-anchor" href="#使用对象类型作为方法的参数">¶</a>使用对象类型作为方法的参数</h2>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200716224605.png" alt="image-20200716223939500"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200716224605.png" alt="image-20200716223939500"></p>
 <p><strong>注意：<strong>当一个对象作为参数，传递到方法当中时，实际上传递进去的是对象的</strong>地址值</strong>。</p>
 <h2 id="使用对象类型作为方法的返回值"><a class="header-anchor" href="#使用对象类型作为方法的返回值">¶</a>使用对象类型作为方法的返回值</h2>
-<p><img src="../../../picture/PicGo/copypicture/image-20200717164340634.png" alt="image-20200717164340634"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="../../../picture/PicGo/copypicture/image-20200717164340634.png" alt="image-20200717164340634"></p>
 <h2 id="成员变量和局部变量的区别"><a class="header-anchor" href="#成员变量和局部变量的区别">¶</a>成员变量和局部变量的区别</h2>
 <p>局部变量和成员变量<br>
 1.定义的位置不一样[重点]<br>
@@ -2230,7 +2230,7 @@ public String(byte[] array): 根据字节数组的内容，来创建对应的字
 
 &amp;#125;
 </code></pre>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200726121234.png" alt="image-20200726121231535"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200726121234.png" alt="image-20200726121231535"></p>
 <h3 id="字符串的比较方法"><a class="header-anchor" href="#字符串的比较方法">¶</a>字符串的比较方法</h3>
 <pre><code class="language-java">/*
 ==是进行对象的地址值比较，如果确买需要子符串的内容比较，可以使用两个方法:
@@ -2501,7 +2501,7 @@ public class Dome02StringCount &amp;#123;
 </blockquote>
 <h2 id="静态static关键字"><a class="header-anchor" href="#静态static关键字">¶</a>静态static关键字</h2>
 <h3 id="概述-v4"><a class="header-anchor" href="#概述-v4">¶</a>概述</h3>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200727143324.png" alt="image-20200726215716336"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200727143324.png" alt="image-20200726215716336"></p>
 <h3 id="修饰成员变量"><a class="header-anchor" href="#修饰成员变量">¶</a>修饰成员变量</h3>
 <pre><code class="language-java">/*
 如果一个成员变量使用了static关键字， 那么这个变量不再属于对象自己，而是属于所在的类。多个对象共享同一-份数据。.
@@ -2630,7 +2630,7 @@ public class Dome02StaticMethod &amp;#123;
 &amp;#125;
 </code></pre>
 <h3 id="内存图"><a class="header-anchor" href="#内存图">¶</a>内存图</h3>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200727143255.png" alt="image-20200727143244285"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200727143255.png" alt="image-20200727143244285"></p>
 <h3 id="静态代码块"><a class="header-anchor" href="#静态代码块">¶</a>静态代码块</h3>
 <pre><code class="language-java">/*
 静态代码块的格式是:
@@ -2756,7 +2756,7 @@ public class Dome04Math &amp;#123;
 &amp;#125;
 </code></pre>
 <h4 id="练习题-v7"><a class="header-anchor" href="#练习题-v7">¶</a>练习题</h4>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200727155149.png" alt="image-20200727155147074"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200727155149.png" alt="image-20200727155147074"></p>
 <pre><code class="language-java">/*
 题目:
 计算在-10.8到5.9之间，绝对值大于6或者小于2.1的整数有多少个?
@@ -2789,7 +2789,7 @@ public class Dome04MathPractise &amp;#123;
 </code></pre>
 <h1>继承性</h1>
 <h2 id="概述-v5"><a class="header-anchor" href="#概述-v5">¶</a>概述</h2>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200728102030.png" alt="image-20200728102028290"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200728102030.png" alt="image-20200728102028290"></p>
 <h2 id="格式"><a class="header-anchor" href="#格式">¶</a>格式</h2>
 <pre><code class="language-java">/*
 在继承的关系中，“子类就是一一个父类”。也就是说，子类可以被当做父类看待。
@@ -2958,7 +2958,7 @@ public class Dome03ExtendsField01 &amp;#123;
 */
 </code></pre>
 <h3 id="应用场景"><a class="header-anchor" href="#应用场景">¶</a>应用场景</h3>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200728145141.png" alt="image-20200728143931983"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200728145141.png" alt="image-20200728143931983"></p>
 <pre><code class="language-java">//本来的老款手机
 public class Phone &amp;#123;
     public void call()&amp;#123;
@@ -3090,12 +3090,12 @@ public class Zi03 extends Fu03 &amp;#123;
 &amp;#125;
 </code></pre>
 <h2 id="super和this关键字图解"><a class="header-anchor" href="#super和this关键字图解">¶</a>super和this关键字图解</h2>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200728205348.png" alt="image-20200728205347121"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200728205348.png" alt="image-20200728205347121"></p>
 <h2 id="Java继承的三个特点"><a class="header-anchor" href="#Java继承的三个特点">¶</a>Java继承的三个特点</h2>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200728210954.png" alt="image-20200728210017817"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200728210954.png" alt="image-20200728210017817"></p>
 <h2 id="抽象"><a class="header-anchor" href="#抽象">¶</a>抽象</h2>
 <h3 id="概念"><a class="header-anchor" href="#概念">¶</a>概念</h3>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200728210946.png" alt="image-20200728210458257"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200728210946.png" alt="image-20200728210458257"></p>
 <h3 id="抽象方法和抽象类的格式和使用"><a class="header-anchor" href="#抽象方法和抽象类的格式和使用">¶</a>抽象方法和抽象类的格式和使用</h3>
 <pre><code class="language-java">/*
 抽象方法:就是加上abstract关键字，然后去掉大括号，直接分号结束。
@@ -3158,7 +3158,7 @@ public abstract class Animal &amp;#123;
 1.群主的一笔金额，从群主余额中扣除，平均分成n等份，让成员领取。<br>
 2.成员领取红包后，保存到成员余额中。<br>
 请根据描述,完成案例中所有类的定义以及指定类之间的继承关系，并完成发红包的操作。</p>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200728214035.png" alt="image-20200728214033747"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200728214035.png" alt="image-20200728214033747"></p>
 <h4 id="实现："><a class="header-anchor" href="#实现：">¶</a>实现：</h4>
 <pre><code class="language-java">public class User &amp;#123;
 
@@ -3302,7 +3302,7 @@ public class MainRedPacket &amp;#123;
 </code></pre>
 <h1>接口</h1>
 <h2 id="概述与生活例举"><a class="header-anchor" href="#概述与生活例举">¶</a>概述与生活例举</h2>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200729214057.png" alt="image-20200729214055457"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200729214057.png" alt="image-20200729214055457"></p>
 <h2 id="定义的基本格式"><a class="header-anchor" href="#定义的基本格式">¶</a>定义的基本格式</h2>
 <pre><code class="language-java">/*
 在任何放本的Java中，接口都能正义抽象万法。
@@ -3585,7 +3585,7 @@ public class MyInterfaceImpl impl ements MyInterfaceA, MyInterfaceB &amp;#123;
 2.多个父接口当中的默认方法如果重复，那么子接口必须进行默认方法的覆盖重写， <strong>【而且带着default关键字】</strong>。</p>
 <h1>多态性</h1>
 <h2 id="概述-v6"><a class="header-anchor" href="#概述-v6">¶</a>概述</h2>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200802215932.png" alt="image-20200802215928812"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200802215932.png" alt="image-20200802215928812"></p>
 <h2 id="格式与使用"><a class="header-anchor" href="#格式与使用">¶</a>格式与使用</h2>
 <pre><code class="language-java">/*
 代码当中体现多态性，其实就是一句话: 父类引用指向子类对象。
@@ -3617,9 +3617,9 @@ public class MyInterfaceImpl impl ements MyInterfaceA, MyInterfaceB &amp;#123;
 成员变量:编译看左边，运行还看左边。<br>
 成员方法:编译看左边，运行看右边。</p>
 <h2 id="使用多态的好处"><a class="header-anchor" href="#使用多态的好处">¶</a>使用多态的好处</h2>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200802223437.png" alt="image-20200802223149584"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200802223437.png" alt="image-20200802223149584"></p>
 <h2 id="对象的向上转型和向下转型"><a class="header-anchor" href="#对象的向上转型和向下转型">¶</a>对象的向上转型和向下转型</h2>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200803144143.png" alt="image-20200803144141656"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200803144143.png" alt="image-20200803144141656"></p>
 <h2 id="用instanceof关键字进行判断"><a class="header-anchor" href="#用instanceof关键字进行判断">¶</a>用instanceof关键字进行判断</h2>
 <p>如何才能知道-个父类引用的对象，本来是什么子类?<br>
 <strong>格式:</strong><br>
@@ -3640,7 +3640,7 @@ USB规范，实现USB接口，否则鼠标和键盘的生产出来也无法使�
 ●笔记本类，包含开机功能、关机功能、使用USB设备功能<br>
 ●鼠标类，要实现USB接口,并具备点击的方法<br>
 ●键盘类，要实现USB接口，具备敲击的方法</p>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200803232808.png" alt="image-20200803145842708"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200803232808.png" alt="image-20200803145842708"></p>
 <h3 id="案例实现"><a class="header-anchor" href="#案例实现">¶</a>案例实现</h3>
 <pre><code class="language-java">public interface USB &amp;#123;
 
@@ -4381,9 +4381,9 @@ public class Bootstrap &amp;#123;
 &amp;#125;
 </code></pre>
 <h3 id="普通红包平均分发"><a class="header-anchor" href="#普通红包平均分发">¶</a>普通红包平均分发</h3>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200804215918.png" alt="image-20200804215912112"></p>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200804215944.png" alt="image-20200804215943078"></p>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200804220210.png" alt="image-20200804220009753"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200804215918.png" alt="image-20200804215912112"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200804215944.png" alt="image-20200804215943078"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200804220210.png" alt="image-20200804220009753"></p>
 <pre><code class="language-java">import cn.itcast.day.demo01.red.OpenMode;
 
 import java.util.ArrayList;
@@ -4408,9 +4408,9 @@ public class NormalMode implements OpenMode &amp;#123;
 &amp;#125;
 </code></pre>
 <h3 id="手气红包随机分发"><a class="header-anchor" href="#手气红包随机分发">¶</a>手气红包随机分发</h3>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200804222622.png" alt="image-20200804222621272"></p>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200804222641.png" alt="image-20200804222639346"></p>
-<p><img src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200804222835.png" alt="image-20200804222655186"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200804222622.png" alt="image-20200804222621272"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200804222641.png" alt="image-20200804222639346"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200804222835.png" alt="image-20200804222655186"></p>
 <pre><code class="language-java">import cn.itcast.day.demo01.red.OpenMode;
 
 import java.util.ArrayList;
