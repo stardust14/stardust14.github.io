@@ -198,8 +198,6 @@
     
     
     
-    <category term="hexo" scheme="http://stardust14.com/categories/hexo/"/>
-    
     
     <category term="hexo" scheme="http://stardust14.com/tags/hexo/"/>
     
@@ -235,8 +233,6 @@
     
     
     
-    <category term="python" scheme="http://stardust14.com/categories/python/"/>
-    
     
     <category term="python" scheme="http://stardust14.com/tags/python/"/>
     
@@ -263,8 +259,6 @@
 &lt;p&gt;1、如果条件判断从来没有满足过，那么for循环和while循环将会执行0次，但是do-while循环会执行至少一次。&lt;/p&gt;</summary>
     
     
-    
-    <category term="java" scheme="http://stardust14.com/categories/java/"/>
     
     
     <category term="java" scheme="http://stardust14.com/tags/java/"/>
@@ -293,8 +287,6 @@
 &lt;p&gt;&lt;img src=&quot;/stardust14.github.io/img/loading.gif&quot; data-lazy-src=&quot;https://raw.githubusercontent.com/stardust14/picture/master/img/20200707174434.png&quot; alt=&quot;image-20200707174432439&quot;&gt;&lt;/p&gt;</summary>
     
     
-    
-    <category term="hexo" scheme="http://stardust14.com/categories/hexo/"/>
     
     
     <category term="hexo" scheme="http://stardust14.com/tags/hexo/"/>
@@ -329,8 +321,6 @@ a 字列表&lt;br&gt;
     
     
     
-    <category term="hexo" scheme="http://stardust14.com/categories/hexo/"/>
-    
     
     <category term="hexo" scheme="http://stardust14.com/tags/hexo/"/>
     
@@ -358,6 +348,8 @@ a 字列表&lt;br&gt;
     
     
     
+    
+    <category term="hexo" scheme="http://stardust14.com/tags/hexo/"/>
     
   </entry>
   
