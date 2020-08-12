@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://stardust14.com/Movie/index.html</loc>
+    <loc>http://stardust14.com/movies/index.html</loc>
     
     <lastmod>2020-08-12</lastmod>
     
   </url>
   
   <url>
-    <loc>http://stardust14.com/Photoograph/index.html</loc>
+    <loc>http://stardust14.com/photoograph/index.html</loc>
     
     <lastmod>2020-08-12</lastmod>
     
@@ -72,6 +72,13 @@
   </url>
   
   <url>
+    <loc>http://stardust14.com/2020/07/08/java%E5%AD%A6%E4%B9%A0/</loc>
+    
+    <lastmod>2020-08-03</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://stardust14.com/lib/needsharebutton/README.html</loc>
     
     <lastmod>2020-07-31</lastmod>
@@ -117,13 +124,6 @@
     <loc>http://stardust14.com/about/index.html</loc>
     
     <lastmod>2020-07-31</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://stardust14.com/2020/07/08/java%E5%AD%A6%E4%B9%A0/</loc>
-    
-    <lastmod>2020-07-08</lastmod>
     
   </url>
   
@@ -186,5 +186,26 @@
   </url>
   
 
+  
+  <url>
+    <loc>http://stardust14.com/categories/hexo/</loc>
+    <lastmod>2020-08-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://stardust14.com/categories/python/</loc>
+    <lastmod>2020-08-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://stardust14.com/categories/java/</loc>
+    <lastmod>2020-08-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>
