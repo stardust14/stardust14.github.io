@@ -465,7 +465,6 @@ const tocFn = function () {
   // DOM Hierarchy:
   // ol.toc > (li.toc-item, ...)
   // li.toc-item > (a.toc-link, ol.toc-2child > (li.toc-item, ...))
-  const versionBiggerFive = GLOBAL_CONFIG.hexoversion.split('.')[0] >= 5
   const findHeadPosition = function (top) {
     // assume that we are not in the post page if no TOC link be found,
     // thus no need to update the status
@@ -478,8 +477,7 @@ const tocFn = function () {
     list.each(function () {
       const head = $(this)
       if (top > head.offset().top - 25) {
-        if (versionBiggerFive) currentId = '#' + encodeURI($(this).attr('id'))
-        else currentId = '#' + $(this).attr('id')
+        currentId = '#' + encodeURI($(this).attr('id'))
       }
     })
 
