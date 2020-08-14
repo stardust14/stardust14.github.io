@@ -1,17 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">    
-    <title>这是一个标题</title>
-</head>
-<body>
-<script type="text/javascript">    
-    window.onblur=function(){        
-        document.title="回来qwq";    
-        };    
-        window.onfocus=function () {        
-        document.title="这是一个标题";   
-        }
-        </script>
-</body>
-</html>
+    var title;  // 用于临时存放原来的title内容
+    window.onblur = function(){
+      // onblur时先存下原来的title,再更改title内容
+      title = document.title;
+      document.title = " （╯‵□′）╯︵┴─┴ 快回来";
+    };
+    window.onfocus = function () {
+      // onfocus时原来的title不为空才替换回去
+      // 防止页面还没加载完成且onblur时title=undefined的情况
+      if(title) { 
+        document.title = title;
+      }
+    }
