@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://stardust14.com/photograph/index.html</loc>
+    
+    <lastmod>2020-08-13</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://stardust14.com/2020/08/13/MATLAB%E8%AF%AD%E8%A8%80/</loc>
     
     <lastmod>2020-08-13</lastmod>
@@ -10,13 +17,6 @@
   
   <url>
     <loc>http://stardust14.com/movies/index.html</loc>
-    
-    <lastmod>2020-08-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://stardust14.com/photoograph/index.html</loc>
     
     <lastmod>2020-08-12</lastmod>
     
@@ -165,7 +165,7 @@
 
   <url>
     <loc>http://stardust14.com/</loc>
-    <lastmod>2020-08-13</lastmod>
+    <lastmod>2020-08-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -173,28 +173,28 @@
   
   <url>
     <loc>http://stardust14.com/tags/hexo/</loc>
-    <lastmod>2020-08-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://stardust14.com/tags/matlab/</loc>
-    <lastmod>2020-08-13</lastmod>
+    <lastmod>2020-08-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://stardust14.com/tags/python/</loc>
-    <lastmod>2020-08-13</lastmod>
+    <lastmod>2020-08-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://stardust14.com/tags/matlab/</loc>
+    <lastmod>2020-08-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://stardust14.com/tags/java/</loc>
-    <lastmod>2020-08-13</lastmod>
+    <lastmod>2020-08-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -203,28 +203,28 @@
   
   <url>
     <loc>http://stardust14.com/categories/hexo/</loc>
-    <lastmod>2020-08-13</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://stardust14.com/categories/matlab/</loc>
-    <lastmod>2020-08-13</lastmod>
+    <lastmod>2020-08-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://stardust14.com/categories/python/</loc>
-    <lastmod>2020-08-13</lastmod>
+    <lastmod>2020-08-14</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://stardust14.com/categories/matlab/</loc>
+    <lastmod>2020-08-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://stardust14.com/categories/java/</loc>
-    <lastmod>2020-08-13</lastmod>
+    <lastmod>2020-08-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
