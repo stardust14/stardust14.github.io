@@ -36,6 +36,48 @@
 ]]></content>
   </entry>
   <entry>
+    <title>hexo出现的问题</title>
+    <url>/stardust14.github.io/2020/07/06/hexo%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>在进行博客编写过程中，出现了一些问题。</h1>
+<h2 id="1-出现hexo无法识别"><a class="header-anchor" href="#1-出现hexo无法识别">¶</a>1.出现hexo无法识别</h2>
+<p>‘hexo’ 不是内部或外部命令，也不是可运行的程序 或批处理文件。<br>
+或着是<code>bash: hexo: command not found</code></p>
+<p>参考网上的经验贴,修改环境变量</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707174137.png" alt="image-20200707174134036"></p>
+<h2 id="2-出现cnpm不能识别"><a class="header-anchor" href="#2-出现cnpm不能识别">¶</a>2.出现cnpm不能识别</h2>
+<p>‘cnpm’ 不是内部或外部命令，也不是可运行的程序 或批处理文件。</p>
+<p>把C盘的一些文件复制到博客安装的目录中去</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707174434.png" alt="image-20200707174432439"></p>
+<h2 id="3-图片无法加载"><a class="header-anchor" href="#3-图片无法加载">¶</a>3.图片无法加载</h2>
+<p>使用<strong>typora+picgo</strong>插入图片，部署到github上去。</p>
+<p>出现了好多错误，直接剪切上传后正常，保存后在上传加载不出，但是下面也有加载出来的。。。</p>
+<p>参考网上的解决方案，修改了hosts文件，配置了一些picgo的设置。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707175357.png" alt="image-20200707175355687"></p>
+<h2 id="4-出现本地4000端口占用问题"><a class="header-anchor" href="#4-出现本地4000端口占用问题">¶</a>4. 出现本地4000端口占用问题</h2>
+<p>打开cmd输入 <code>netstat -nao | findstr 4000</code>查询4000端口占用的程序</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707171831.png" alt="Image"></p>
+<p>可以看到 PID为 24016 的进程占用了4000端口，如果进一步你想知道它的进程名称，你可以使用如下命令： <code>tasklist | findstr 24016</code> 执行终止程序</p>
+<h2 id="5-git-bush中ctrl-c退出不了（bug）"><a class="header-anchor" href="#5-git-bush中ctrl-c退出不了（bug）">¶</a>5.git bush中ctrl+c退出不了（bug）</h2>
+<p>打开cmd，输入：<code>taskkill /F /IM node.exe</code></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707171737.png" alt="Image"></p>
+<p>搞定~~~~</p>
+<h2 id="6-部署到GitHub上电脑无法访问的问题"><a class="header-anchor" href="#6-部署到GitHub上电脑无法访问的问题">¶</a>6.部署到GitHub上电脑无法访问的问题</h2>
+<p>这是由于<code>https：//</code>这个格式</p>
+<h1>7.hexo s之后页面不显示，页面出现以下代码：</h1>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">extends includes/layout.pug block content include ./includes/mixins/post-ui.pug #recent-posts.recent-posts +postUI include includes/pagination.pug</span><br></pre></td></tr></table></figure>
+<p>在博客根目录下git bush以下代码：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive</span><br></pre></td></tr></table></figure>
+<h2 id="8-部署到GitHub上出现错误"><a class="header-anchor" href="#8-部署到GitHub上出现错误">¶</a>8.部署到GitHub上出现错误</h2>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo一些配置（不定期更新）</title>
     <url>/stardust14.github.io/2020/08/10/hexo%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>Front-matter</h1>
@@ -234,6 +276,12 @@
 <div class="note danger">
             <p>danger 提示块标籤</p>
           </div>
+<h3 id="渐变note"><a class="header-anchor" href="#渐变note">¶</a>渐变note</h3>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&#x27;tip&#x27;</span> &gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>默认情况<span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&#x27;tip success&#x27;</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>success<span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&#x27;tip error&#x27;</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>error<span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&#x27;tip warning&#x27;</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>warning<span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<div class='tip' ><p>默认情况<p></div>
+<div class='tip success'><p>success<p></div>
+<div class='tip error'><p>error<p></div>
+<div class='tip warning'><p>warning<p></div>
 <h2 id="Gallery-相册图库"><a class="header-anchor" href="#Gallery-相册图库">¶</a>Gallery(相册图库)</h2>
 <p>写法：</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-group-main&quot;</span>&gt;</span></span></span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125;</span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125;</span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125;</span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
@@ -277,6 +325,7 @@
   </figure>
   
 </div>
+### volantis 主题的 note 标签
 <h2 id="Gallery相册"><a class="header-anchor" href="#Gallery相册">¶</a>Gallery相册</h2>
 <p>区别于旧版的 Gallery 相册，新的 Gallery 相册会自动根据图片长度进行排版，书写也更加方便，与 markdown 格式一样。可根据需要插入到相应的 md。</p>
 <p>写法：</p>
@@ -335,48 +384,6 @@ This is my website, click the button <a class="btn-beautify button--animated lar
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span></span></span><br><span class="line"><span class="tag">  <span class="attr">class</span>=<span class="string">&quot;div-border&quot;</span></span></span><br><span class="line"><span class="tag">  <span class="attr">style</span>=<span class="string">&quot;background-color: rgba(82,196,26,.1);border: 1px solid #52c41a;border-radius: 0.4rem;&quot;</span></span></span><br><span class="line"><span class="tag">&gt;</span></span><br><span class="line">  全边框</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">/* 或者如下写法 */</span><br><span class="line"><span class="tag">&lt;<span class="name">p</span></span></span><br><span class="line"><span class="tag">  <span class="attr">style</span>=<span class="string">&quot;background-color: rgba(82,196,26,.1);border: 1px solid #52c41a;border-radius: 0.4rem;display: block;padding: 10px;&quot;</span></span></span><br><span class="line"><span class="tag">&gt;</span></span><br><span class="line">  全边框</span><br><span class="line"><span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">/* 内置样式 */</span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;div-border green&quot;</span>&gt;</span>绿色<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;div-border red&quot;</span>&gt;</span>红色<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;div-border yellow&quot;</span>&gt;</span>黄色<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;div-border grey&quot;</span>&gt;</span>灰色<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">&quot;div-border blue&quot;</span>&gt;</span>蓝色<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h1>音乐</h1>
 <p>由于部署aplayer插件出现好几次错误，也不懂，所以换用明月浩空音乐播放器，直接在主题目录下配置inject。</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo出现的问题</title>
-    <url>/stardust14.github.io/2020/07/06/hexo%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>在进行博客编写过程中，出现了一些问题。</h1>
-<h2 id="1-出现hexo无法识别"><a class="header-anchor" href="#1-出现hexo无法识别">¶</a>1.出现hexo无法识别</h2>
-<p>‘hexo’ 不是内部或外部命令，也不是可运行的程序 或批处理文件。<br>
-或着是<code>bash: hexo: command not found</code></p>
-<p>参考网上的经验贴,修改环境变量</p>
-<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707174137.png" alt="image-20200707174134036"></p>
-<h2 id="2-出现cnpm不能识别"><a class="header-anchor" href="#2-出现cnpm不能识别">¶</a>2.出现cnpm不能识别</h2>
-<p>‘cnpm’ 不是内部或外部命令，也不是可运行的程序 或批处理文件。</p>
-<p>把C盘的一些文件复制到博客安装的目录中去</p>
-<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707174434.png" alt="image-20200707174432439"></p>
-<h2 id="3-图片无法加载"><a class="header-anchor" href="#3-图片无法加载">¶</a>3.图片无法加载</h2>
-<p>使用<strong>typora+picgo</strong>插入图片，部署到github上去。</p>
-<p>出现了好多错误，直接剪切上传后正常，保存后在上传加载不出，但是下面也有加载出来的。。。</p>
-<p>参考网上的解决方案，修改了hosts文件，配置了一些picgo的设置。</p>
-<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707175357.png" alt="image-20200707175355687"></p>
-<h2 id="4-出现本地4000端口占用问题"><a class="header-anchor" href="#4-出现本地4000端口占用问题">¶</a>4. 出现本地4000端口占用问题</h2>
-<p>打开cmd输入 <code>netstat -nao | findstr 4000</code>查询4000端口占用的程序</p>
-<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707171831.png" alt="Image"></p>
-<p>可以看到 PID为 24016 的进程占用了4000端口，如果进一步你想知道它的进程名称，你可以使用如下命令： <code>tasklist | findstr 24016</code> 执行终止程序</p>
-<h2 id="5-git-bush中ctrl-c退出不了（bug）"><a class="header-anchor" href="#5-git-bush中ctrl-c退出不了（bug）">¶</a>5.git bush中ctrl+c退出不了（bug）</h2>
-<p>打开cmd，输入：<code>taskkill /F /IM node.exe</code></p>
-<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200707171737.png" alt="Image"></p>
-<p>搞定~~~~</p>
-<h2 id="6-部署到GitHub上电脑无法访问的问题"><a class="header-anchor" href="#6-部署到GitHub上电脑无法访问的问题">¶</a>6.部署到GitHub上电脑无法访问的问题</h2>
-<p>这是由于<code>https：//</code>这个格式</p>
-<h1>7.hexo s之后页面不显示，页面出现以下代码：</h1>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">extends includes/layout.pug block content include ./includes/mixins/post-ui.pug #recent-posts.recent-posts +postUI include includes/pagination.pug</span><br></pre></td></tr></table></figure>
-<p>在博客根目录下git bush以下代码：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive</span><br></pre></td></tr></table></figure>
-<h2 id="8-部署到GitHub上出现错误"><a class="header-anchor" href="#8-部署到GitHub上出现错误">¶</a>8.部署到GitHub上出现错误</h2>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>hexo</category>
