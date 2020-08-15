@@ -651,10 +651,7 @@ div.snote.blue {
 div.snote.blue::before {
   color: #2196f3;
 }
-/* 博主昵称颜色 */
-.author-info__name {
-    color: #ff7242;
-}
+
 /* 评论框  */
 
 .vwrap {
