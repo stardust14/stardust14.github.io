@@ -1729,6 +1729,75 @@ B=spconvert(A)</p>
 <p>求下列三对角线性方程组的解。</p>
 <p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200814174155.png" alt="image-20200814173453009"></p>
 <figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; kf1=[<span class="number">1</span>;<span class="number">1</span>;<span class="number">2</span>;<span class="number">1</span>;<span class="number">0</span>];</span><br><span class="line">&gt;&gt; k0=[<span class="number">2</span>;<span class="number">4</span>;<span class="number">6</span>;<span class="number">6</span>;<span class="number">1</span>];</span><br><span class="line">&gt;&gt; k1=[<span class="number">0</span>;<span class="number">3</span>;<span class="number">1</span>;<span class="number">4</span>;<span class="number">2</span>];</span><br><span class="line">&gt;&gt; B=[kf1,k0,k1];</span><br><span class="line">&gt;&gt; d=[<span class="number">-1</span>;<span class="number">0</span>;<span class="number">1</span>];</span><br><span class="line">&gt;&gt; A=spdiags(B,d,<span class="number">5</span>,<span class="number">5</span>);</span><br><span class="line">&gt;&gt; f=[<span class="number">0</span>;<span class="number">3</span>;<span class="number">2</span>;<span class="number">1</span>;<span class="number">5</span>];</span><br><span class="line">&gt;&gt; x=A\f</span><br><span class="line"></span><br><span class="line">x =</span><br><span class="line"></span><br><span class="line">  <span class="number">-0.166666666666667</span></span><br><span class="line">   <span class="number">0.111111111111111</span></span><br><span class="line">   <span class="number">2.722222222222222</span></span><br><span class="line">  <span class="number">-3.611111111111111</span></span><br><span class="line">   <span class="number">8.611111111111111</span></span><br></pre></td></tr></table></figure>
+<h1>MATLAB程序流程控制</h1>
+<h2 id="顺序结构程序"><a class="header-anchor" href="#顺序结构程序">¶</a>顺序结构程序</h2>
+<h3 id="程序和程序设计"><a class="header-anchor" href="#程序和程序设计">¶</a>程序和程序设计</h3>
+<p>什么叫程序?<br>
+程序是用某种计算机能够理解并且能够执行的语言来描述的解决问题的方法和步骤。</p>
+<p>程序设计的基本步骤：</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200815210426.png" alt="image-20200815210418505"></p>
+<h3 id="程序的三种基本结构"><a class="header-anchor" href="#程序的三种基本结构">¶</a>程序的三种基本结构</h3>
+<ul>
+<li>顺序结构</li>
+<li>选择结构</li>
+<li>循环结构</li>
+</ul>
+<h3 id="脚本文件和函数文件"><a class="header-anchor" href="#脚本文件和函数文件">¶</a>脚本文件和函数文件</h3>
+<ul>
+<li>脚本文件是可以在命令行窗口直接执行的文件，也叫命令文件。</li>
+<li>函数文件是定义一个函数，不能直接执行，而必须以函数调用的方式来调用它。</li>
+</ul>
+<h3 id="文件的建立"><a class="header-anchor" href="#文件的建立">¶</a>文件的建立</h3>
+<ul>
+<li>
+<p>用命令按钮创建文件。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200815232458.png" alt="image-20200815232456459"></p>
+</li>
+<li>
+<p>用edit命令创建文件。</p>
+</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; edit test</span><br></pre></td></tr></table></figure>
+<p>ex:分别建立脚本文件和函数文件,求两个矩阵的乘积。</p>
+<ul>
+<li>建立脚本文件f1.m。</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">A=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>;<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>];</span><br><span class="line">B=[<span class="number">1</span>,<span class="number">2</span>;<span class="number">3</span>,<span class="number">4</span>;<span class="number">5</span>,<span class="number">6</span>];</span><br><span class="line">C=A*B</span><br></pre></td></tr></table></figure>
+<ul>
+<li>在命令行窗口运行脚本文件。</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt;f1</span><br><span class="line">C = </span><br><span class="line">   <span class="number">22</span>   <span class="number">28</span></span><br><span class="line">   <span class="number">49</span>   <span class="number">64</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>建立函数文件f2.m。</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">C</span>=<span class="title">f2</span><span class="params">(A,B)</span></span></span><br><span class="line">C=A*B;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>在命令行窗C ]调用函数文件。</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; A=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>;<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>];</span><br><span class="line">&gt;&gt; B=[<span class="number">1</span>,<span class="number">2</span>;<span class="number">3</span>,<span class="number">4</span>;<span class="number">5</span>,<span class="number">6</span>];</span><br><span class="line"></span><br><span class="line">C=</span><br><span class="line">   <span class="number">22</span>   <span class="number">28</span></span><br><span class="line">   <span class="number">49</span>   <span class="number">64</span></span><br></pre></td></tr></table></figure>
+<h3 id="顺序结构"><a class="header-anchor" href="#顺序结构">¶</a>顺序结构</h3>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200815233530.png" alt="image-20200815233529301"></p>
+<h4 id="1-数据的输入"><a class="header-anchor" href="#1-数据的输入">¶</a>(1)数据的输入</h4>
+<p>A=input(提示信息，选项);</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt; A=input(<span class="string">&#x27;请输入变量A的值:&#x27;</span>);</span><br><span class="line">请输入变量A的值: <span class="number">100</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-数据的输出"><a class="header-anchor" href="#2-数据的输出">¶</a>(2)数据的输出</h4>
+<p>disp(输出项);</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; s=<span class="string">&#x27;Hello,World&#x27;</span>;</span><br><span class="line">&gt;&gt; <span class="built_in">disp</span>(s)</span><br><span class="line">Hello,World</span><br><span class="line">&gt;&gt; a=[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>;<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>];</span><br><span class="line">&gt;&gt; <span class="built_in">disp</span>(a)</span><br><span class="line">   <span class="number">1</span>  <span class="number">2</span>  <span class="number">3</span></span><br><span class="line">   <span class="number">4</span>  <span class="number">5</span>  <span class="number">6</span></span><br></pre></td></tr></table></figure>
+<h4 id="3-程序的暂停"><a class="header-anchor" href="#3-程序的暂停">¶</a>(3 )程序的暂停</h4>
+<p>pause(延迟秒数)<br>
+若要强行中止程序的运行可使用Ctrl+C命令。</p>
+<blockquote>
+<p>若是省略秒数，直到用户按任意键才会继续执行程序</p>
+</blockquote>
+<ul>
+<li>输入原始数据</li>
+<li>对原始数据进行处理</li>
+<li>输出处理结果</li>
+</ul>
+<p>ex:有一-线段AB，A的坐标为(1，1)， B的坐标为(4.5，4.5)， 求AB的长度，以及黄金分割点C的坐标。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200815234529.png" alt="image-20200815234527741"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200815234737.png" alt="image-20200815234735398"></p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">a=input(<span class="string">&#x27;a=);</span></span><br><span class="line"><span class="string">b=input(&quot;b=&#x27;</span>);</span><br><span class="line">c=a+<span class="number">0.618</span>*(b-a);</span><br><span class="line">s=<span class="built_in">abs</span>(a-b);</span><br><span class="line"><span class="built_in">disp</span>(s)</span><br><span class="line"><span class="built_in">disp</span>(c)</span><br><span class="line"></span><br><span class="line">输出结果为:</span><br><span class="line">a=<span class="number">1</span> +<span class="built_in">i</span></span><br><span class="line">b=<span class="number">4.5</span>+<span class="number">4.5</span><span class="built_in">i</span></span><br><span class="line">  <span class="number">4.9497</span></span><br><span class="line">  <span class="number">3.1630</span> + <span class="number">3.1630</span><span class="built_in">i</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>matlab</category>
