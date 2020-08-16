@@ -1077,7 +1077,7 @@ a 字列表<br>
 <p>④函数应用举例。</p>
 <ul>
 <li>
-<p>分别求一一个三位正整数的个位数字、十位数字和百位数字。</p>
+<p>分别求一个三位正整数的个位数字、十位数字和百位数字。</p>
 <p>​	一个三位正整数除以10的余数就是该数的个位数字。<br>
 一个三位正整数除以10取整后就去掉了这个数的个位数字，将新得  到的数再除以10取余数，余数就是新得到的数的个位数字，也就是原数的十位数字。<br>
 ​    一个三位正整数除以100取整后就去掉了这个数的个位数字和十位  数字，得到百位数字。</p>
@@ -1088,9 +1088,9 @@ a 字列表<br>
 <p>rem函数和mod函数分别是取余和取模函数</p>
 </blockquote>
 <ul>
-<li>求[，100]区间的所有素数。</li>
+<li>求[1,100]区间的所有素数。</li>
 </ul>
-<p>​            MATLAB提供了一个 判断n是否素数的函数isprime(n),当n是素数时返回1，否则返回0。</p>
+<p>​            MATLAB提供了一个判断n是否素数的函数isprime(n),当n是素数时返回1，否则返回0。</p>
 <figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; x=<span class="number">1</span>:<span class="number">100</span>;</span><br><span class="line">&gt;&gt; k = <span class="built_in">isprime</span>(x);</span><br><span class="line">&gt;&gt; k1 = <span class="built_in">find</span>(k);</span><br><span class="line">&gt;&gt; p = x(k1)</span><br><span class="line"></span><br><span class="line">p =</span><br><span class="line"></span><br><span class="line">  <span class="number">1</span> 至 <span class="number">10</span> 列</span><br><span class="line"></span><br><span class="line">     <span class="number">2</span>     <span class="number">3</span>     <span class="number">5</span>     <span class="number">7</span>    <span class="number">11</span>    <span class="number">13</span>    <span class="number">17</span>    <span class="number">19</span>    <span class="number">23</span>    <span class="number">29</span></span><br><span class="line"></span><br><span class="line">  <span class="number">11</span> 至 <span class="number">20</span> 列</span><br><span class="line"></span><br><span class="line">    <span class="number">31</span>    <span class="number">37</span>    <span class="number">41</span>    <span class="number">43</span>    <span class="number">47</span>    <span class="number">53</span>    <span class="number">59</span>    <span class="number">61</span>    <span class="number">67</span>    <span class="number">71</span></span><br><span class="line"></span><br><span class="line">  <span class="number">21</span> 至 <span class="number">25</span> 列</span><br><span class="line"></span><br><span class="line">    <span class="number">73</span>    <span class="number">79</span>    <span class="number">83</span>    <span class="number">89</span>    <span class="number">97</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>调用isprime函数，查找元素是否为素数，是为1，否为0（逻辑0，1）</p>
@@ -1798,6 +1798,264 @@ B=spconvert(A)</p>
 <p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200815234529.png" alt="image-20200815234527741"></p>
 <p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200815234737.png" alt="image-20200815234735398"></p>
 <figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">a=input(<span class="string">&#x27;a=);</span></span><br><span class="line"><span class="string">b=input(&quot;b=&#x27;</span>);</span><br><span class="line">c=a+<span class="number">0.618</span>*(b-a);</span><br><span class="line">s=<span class="built_in">abs</span>(a-b);</span><br><span class="line"><span class="built_in">disp</span>(s)</span><br><span class="line"><span class="built_in">disp</span>(c)</span><br><span class="line"></span><br><span class="line">输出结果为:</span><br><span class="line">a=<span class="number">1</span> +<span class="built_in">i</span></span><br><span class="line">b=<span class="number">4.5</span>+<span class="number">4.5</span><span class="built_in">i</span></span><br><span class="line">  <span class="number">4.9497</span></span><br><span class="line">  <span class="number">3.1630</span> + <span class="number">3.1630</span><span class="built_in">i</span></span><br></pre></td></tr></table></figure>
+<h2 id="选择结构程序"><a class="header-anchor" href="#选择结构程序">¶</a>选择结构程序</h2>
+<h3 id="用if语句实现选择结构"><a class="header-anchor" href="#用if语句实现选择结构">¶</a>用if语句实现选择结构</h3>
+<h4 id="什么是选择结构"><a class="header-anchor" href="#什么是选择结构">¶</a>什么是选择结构?</h4>
+<p>选择结构又称为分支结构，是根据给定的条件是否成立来决定程序的执行流程。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200816100723.png" alt="image-20200816100721041"></p>
+<ul>
+<li>用if语句实现选择结构</li>
+<li>用switch语句实现选择结构</li>
+</ul>
+<h4 id="单分支if语句"><a class="header-anchor" href="#单分支if语句">¶</a>单分支if语句</h4>
+<p>语句格式:</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">if 条件</span><br><span class="line"><span class="code">    语句组</span></span><br><span class="line"><span class="code">end</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>条件：关系运算或逻辑运算<br>
+语句组：可以是一条语句,也可以是多条语句</p>
+</blockquote>
+<p>流程图：</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200816101231.png" alt="image-20200816101230060"></p>
+<ul>
+<li>
+<p>当条件结果为标量时，<strong>非零</strong>表示条件成立，<strong>零</strong>表示条件不成立。</p>
+</li>
+<li>
+<p>当条件结果为矩阵时，如果矩阵为非空，且不包含零元素，则条件成立，否则不成立。</p>
+</li>
+</ul>
+<blockquote>
+<p>例如，[1,2;0,4]表示条件时，条件不成立; [1,2;3,4]表示条件时,条件成立。</p>
+</blockquote>
+<h4 id="双分支if语句"><a class="header-anchor" href="#双分支if语句">¶</a>双分支if语句</h4>
+<p>语句格式:</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">if条件</span><br><span class="line"><span class="code">    语句组1</span></span><br><span class="line"><span class="code">else</span></span><br><span class="line"><span class="code">    语句组2</span></span><br><span class="line"><span class="code">end</span></span><br></pre></td></tr></table></figure>
+<p>流程图：</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200816102148.png" alt="image-20200816102145334"></p>
+<p>ex:输入一个整数，若为奇数则输出其平方根，否则输出其立方根。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x=input(<span class="string">&#x27;请输入x的值:&#x27;</span>);</span><br><span class="line"><span class="keyword">if</span> <span class="built_in">rem</span>(x,<span class="number">2</span>)== <span class="number">1</span></span><br><span class="line">   y=<span class="built_in">sqrt</span>(x);</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">   y=x^(<span class="number">1</span>/<span class="number">3</span>); .</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">y</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>rem(x,2)==1可等价写成rem(x,2)<br>
+x(1/3)可等价写成power(x,1/3)</p>
+</blockquote>
+<h4 id="多分支if语句"><a class="header-anchor" href="#多分支if语句">¶</a>多分支if语句</h4>
+<p>语句格式:</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">if 条件1</span><br><span class="line"><span class="code">     语句组1</span></span><br><span class="line"><span class="code">elseif 条件2</span></span><br><span class="line"><span class="code">     语句组2</span></span><br><span class="line"><span class="code">     ···</span></span><br><span class="line"><span class="code">elseif 条件m</span></span><br><span class="line"><span class="code">     语句组m</span></span><br><span class="line"><span class="code">else</span></span><br><span class="line"><span class="code">    语句组n</span></span><br><span class="line"><span class="code">end</span></span><br></pre></td></tr></table></figure>
+<p>流程图：</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200816102644.png" alt="image-20200816102641792"></p>
+<blockquote>
+<p>在多分支if语句中不管有几个分支，程序执行完一个分支后，其余分支将不会再执行，这时整个if语句结束。</p>
+</blockquote>
+<p>ex:  输入一个字符，若为大写字母，则输出其对应的小写字母;若为小写字母，则输出其对应的大写字母;若为数字字符则输出其对应数的平方，若为其他字符则原样输出。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">c=input(<span class="string">&#x27;请输入一个字符: &#x27;</span>,<span class="string">&#x27;s&#x27;</span>);</span><br><span class="line"><span class="keyword">if</span> c&gt;=<span class="string">&#x27;A&#x27;</span> &amp;&amp; c&lt;=<span class="string">&#x27;Z&#x27;</span></span><br><span class="line"><span class="built_in">disp</span>(lower(c))</span><br><span class="line"><span class="keyword">elseif</span> c&gt;=<span class="string">&#x27;a&#x27;</span> &amp;&amp; c&lt;=<span class="string">&#x27;z&#x27;</span></span><br><span class="line"><span class="built_in">disp</span>(upper(c))</span><br><span class="line"><span class="keyword">elseif</span> c&gt;=<span class="string">&#x27;0&#x27;</span> &amp;&amp; c&lt;=<span class="string">&#x27;9&#x27;</span></span><br><span class="line"><span class="built_in">disp</span>(str2double(c)^<span class="number">2</span>)</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="built_in">disp</span>(c)</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>'s’表示以字符串形式接受用户的输入<br>
+lower函数：将大写字母转换为相应的小写字母<br>
+upper函数：将小写字母转换成相应的大写字母<br>
+str2double函数：将字符串转换成数值</p>
+</blockquote>
+<h3 id="用switch语句实现选择结构"><a class="header-anchor" href="#用switch语句实现选择结构">¶</a>用switch语句实现选择结构</h3>
+<h4 id="switch语句的格式"><a class="header-anchor" href="#switch语句的格式">¶</a>switch语句的格式</h4>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">switch 表达式</span><br><span class="line">  case 结果表1</span><br><span class="line"><span class="code">    语句组1</span></span><br><span class="line"><span class="code">  case 结果表2</span></span><br><span class="line"><span class="code">    语句组2</span></span><br><span class="line"><span class="code">    ···</span></span><br><span class="line"><span class="code">  case 结果表m</span></span><br><span class="line"><span class="code">    语句组m</span></span><br><span class="line"><span class="code">  otherwise</span></span><br><span class="line"><span class="code">    语句组n</span></span><br><span class="line"><span class="code">end</span></span><br></pre></td></tr></table></figure>
+<p>流程图：</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200816104158.png" alt="image-20200816104156964"></p>
+<ul>
+<li>switch表达式应该是一个其值可以列举的表达式。</li>
+<li>case结果表为switch表达式的取值，当取值有多个时，用单元数<br>
+据表示。</li>
+</ul>
+<p>ex:输入一个英文单词，判断它是否以元音字母开头。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">c=input(<span class="string">&#x27;请输入一个单词: &#x27;</span>,<span class="string">&#x27;s&#x27;</span>);</span><br><span class="line"><span class="keyword">switch</span> c(<span class="number">1</span>)</span><br><span class="line"><span class="keyword">case</span> &#123;<span class="string">&#x27;A&#x27;</span>,<span class="string">&#x27;E&#x27;</span>,<span class="string">&#x27;I&#x27;&#x27;O&#x27;</span>,<span class="string">&#x27;U&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;e&#x27;</span>,<span class="string">&#x27;I&#x27;</span>,<span class="string">&#x27;o&#x27;</span>,<span class="string">&#x27;u&#x27;</span>&#125;</span><br><span class="line"><span class="built_in">disp</span>([c,<span class="string">&#x27;以元音字母开头&#x27;</span>]);</span><br><span class="line"><span class="keyword">otherwise</span></span><br><span class="line"><span class="built_in">disp</span>([c,<span class="string">&#x27;以辅音字母开头&#x27;</span>]);</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">c=input(<span class="string">&#x27;请输入一个单词: &#x27;</span>,<span class="string">&#x27;s&#x27;</span>);</span><br><span class="line"><span class="keyword">if</span> strfind(c(<span class="number">1</span>),<span class="string">&#x27;AEIOUaeiou&#x27;</span>)&gt;<span class="number">0</span></span><br><span class="line"><span class="built_in">disp</span>([c,<span class="string">&#x27;以元音字母开头&#x27;</span>]);</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="built_in">disp</span>([c,<span class="string">&#x27;以辅音字母开头&#x27;</span>]);</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>ex:例2 PM2. 5是指大气中直径小于或等于2.5微米的可入肺颗粒物，是衡量空气质量的重要指标。假定空气质量等级以PM2.5数值划分为6级。<br>
+PM2.5数值在[0，35)空气气质量为优，[35，75)为良，[75，115 )为轻度污染，[115， 150)为中度污染，[150， 250) 为重度污染,大于等于250为严重污染。<br>
+编写程序，输入PM2.5数值，输出空气质量等级。</p>
+<ul>
+<li>用六个单分支结构实现</li>
+<li>用多分支if语句实现</li>
+<li>用switch语句实现</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">g=input(<span class="string">&#x27;请输入PM2.5值: &#x27;</span>);</span><br><span class="line"><span class="keyword">switch</span> <span class="built_in">fix</span>(g)</span><br><span class="line"><span class="keyword">case</span> <span class="built_in">num2cell</span>(<span class="number">0</span>:<span class="number">34</span>)</span><br><span class="line">   <span class="built_in">disp</span>(<span class="string">&#x27;空气质量优&#x27;</span>);</span><br><span class="line"><span class="keyword">case</span> <span class="built_in">num2cell</span>(<span class="number">35</span>:<span class="number">74</span>)</span><br><span class="line">   <span class="built_in">disp</span>(<span class="string">&#x27;空气质量良好&#x27;</span>); </span><br><span class="line"><span class="keyword">case</span> <span class="built_in">num2cell</span>(<span class="number">75</span>:<span class="number">114</span>)</span><br><span class="line">   <span class="built_in">disp</span>(<span class="string">&#x27;空气质量轻度污染&#x27;</span>);</span><br><span class="line"><span class="keyword">case</span> <span class="built_in">num2cell</span>(<span class="number">115</span>:<span class="number">149</span>)</span><br><span class="line">   <span class="built_in">disp</span>(<span class="string">&#x27;空气质量中度污染&#x27;</span>);</span><br><span class="line"><span class="keyword">case</span> <span class="built_in">num2cell</span>(<span class="number">150</span>:<span class="number">249</span>)</span><br><span class="line">   <span class="built_in">disp</span>(<span class="string">&#x27;空气质量重度污染&#x27;</span>);</span><br><span class="line"><span class="keyword">otherwise</span></span><br><span class="line">   <span class="built_in">disp</span>(<span class="string">&#x27;空气质量严重污染&#x27;</span>); </span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>num2cell函数：将数值矩阵转换成单元矩阵</p>
+</blockquote>
+<h2 id="循环结构程序"><a class="header-anchor" href="#循环结构程序">¶</a>循环结构程序</h2>
+<h3 id="什么是循环结构"><a class="header-anchor" href="#什么是循环结构">¶</a>什么是循环结构?</h3>
+<p>循环结构又称为重复结构，是利用计算机运算速度快以及能进行逻辑控制的特点来重复执行某些操作。</p>
+<p>流程图：</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200816112840.png" alt="image-20200816112838938"></p>
+<h3 id="用for语句实现循环结构"><a class="header-anchor" href="#用for语句实现循环结构">¶</a>用for语句实现循环结构</h3>
+<h4 id="for语句"><a class="header-anchor" href="#for语句">¶</a>for语句</h4>
+<p>格式:</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">for 循环变量=表达式1:表达式2:表达式3   %初值|步长|终值%</span><br><span class="line"><span class="code">    循环体语句  %重复执行的语句%</span></span><br><span class="line"><span class="code">end</span></span><br></pre></td></tr></table></figure>
+<p>流程图：</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200816114109.png" alt="image-20200816113228653"></p>
+<p>说明:</p>
+<ul>
+<li>for语句针对向量的每一个元素执行一 次循环体。</li>
+<li>退出循环之后，循环变量的值就是向量中最后的元素值。</li>
+<li>当向量为空时，循环体一次也不执行。</li>
+</ul>
+<p>ex:计算圆周率π</p>
+<p>(1)利用无穷级数展开式求π的近似值。</p>
+<ul>
+<li>
+<p>这是求n个数之和的累加问题，可用以下递推式来描述:</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="../../../picture/PicGo/copypicture/image-20200816113638006.png" alt="image-20200816113638006"></p>
+</li>
+<li>
+<p>可用以下赋值语句来实现。</p>
+<p>y=y+f</p>
+</li>
+<li>
+<p>累加项f的符号可用以下赋值语句来实现(每循环一次反号一 次)<br>
+g=-g</p>
+</li>
+<li>
+<p>累加项f就可用以下赋值语句来实现。</p>
+<p><code>f=g*1/(2*i-1)</code></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200816114103.png" alt="image-20200816114102769"></p>
+</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">y=<span class="number">0</span>; </span><br><span class="line">g=<span class="number">-1</span>;</span><br><span class="line">n=input(<span class="string">&#x27;n=?&#x27;</span>);</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:n</span><br><span class="line">g=-g;</span><br><span class="line">y=y+g* <span class="number">1</span>/(<span class="number">2</span>*<span class="built_in">i</span><span class="number">-1</span>); </span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">pai=<span class="number">4</span>*y</span><br></pre></td></tr></table></figure>
+<p>用向量求和的方法实现程序:</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">n=input(<span class="string">&#x27;n=?&#x27;</span>);</span><br><span class="line">x=<span class="number">1</span>:<span class="number">2</span>:(<span class="number">2</span>*n<span class="number">-1</span>);</span><br><span class="line">y=(<span class="number">-1</span>).^(<span class="number">2</span>:n+<span class="number">1</span>)./x;</span><br><span class="line">pai=sum(y)*<span class="number">4</span></span><br></pre></td></tr></table></figure>
+<p>(2)利用定积分的近似值求π的近似值。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="../../../picture/PicGo/copypicture/image-20200816114949511.png" alt="image-20200816114949511"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200816143239.png" alt="image-20200816143236999"></p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">a=<span class="number">0</span>;</span><br><span class="line">b=<span class="number">1</span>;</span><br><span class="line">n=input(<span class="string">&#x27;n=?&#x27;</span>);</span><br><span class="line">h=(b-a)/n;</span><br><span class="line">x=a:h:b;</span><br><span class="line">f=<span class="built_in">sqrt</span>(<span class="number">1</span>-x.*x);</span><br><span class="line">s=[];</span><br><span class="line"><span class="keyword">for</span> k=<span class="number">1</span>:n</span><br><span class="line">   s1=(f(k)+f(k+<span class="number">1</span>))*h/<span class="number">2</span>;</span><br><span class="line">   s=[s,s1];</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">pai=<span class="number">4</span> *sum(s) </span><br></pre></td></tr></table></figure>
+<p>(3)利用蒙特卡洛法求π的近似值。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200816150444.png" alt="image-20200816145725433"></p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">s=<span class="number">0</span>;</span><br><span class="line">n=input(<span class="string">&#x27;n=?&#x27;</span>);</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">1</span>:n</span><br><span class="line">    x=<span class="built_in">rand</span>(<span class="number">1</span>);</span><br><span class="line">    y=<span class="built_in">rand</span>(<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">if</span> x*x+y*y&lt;=<span class="number">1</span></span><br><span class="line">        s=s+<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">pai=s/n*<span class="number">4</span></span><br></pre></td></tr></table></figure>
+<p>按照MATLAB的定义，for语句的循环变量也可以是一个列向量，其格式为:</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">for 循环变量=矩阵表达式</span><br><span class="line"><span class="code">    循环体语句</span></span><br><span class="line"><span class="code">end</span></span><br></pre></td></tr></table></figure>
+<h3 id="用while语句实现循环结构"><a class="header-anchor" href="#用while语句实现循环结构">¶</a>用while语句实现循环结构</h3>
+<p>格式：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">while 条件</span><br><span class="line"><span class="code">    循环体语句</span></span><br><span class="line"><span class="code">end</span></span><br></pre></td></tr></table></figure>
+<p>流程图：</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200816160404.png" alt="image-20200816160402909"></p>
+<p>ex:  从键盘输入若干个数，当输入0时结束输入，求这些数的平均值和它们之和。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">msum=<span class="number">0</span>;</span><br><span class="line">n=<span class="number">0</span>;</span><br><span class="line">x=input(<span class="string">&#x27;Enter a number(end in 0):&#x27;</span>);</span><br><span class="line"><span class="keyword">while</span> x~=<span class="number">0</span></span><br><span class="line">    msum=msum+x;</span><br><span class="line">    n=n+<span class="number">1</span>;</span><br><span class="line">    x=input(<span class="string">&#x27;Enter a number(end in 0):&#x27;</span>);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">if</span> n&gt;<span class="number">0</span></span><br><span class="line">    msum</span><br><span class="line">    <span class="built_in">mean</span>=msum/n</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>while语句多用于循环次数不确定的情况,而对于循环次数确定的情况，使用for语句更方便。</li>
+<li>针对不同情况可以选择不同的循环语句，但从功能上讲两种循环语句可以相互替代。</li>
+</ul>
+<h4 id="break语句和continue语句"><a class="header-anchor" href="#break语句和continue语句">¶</a>break语句和continue语句</h4>
+<ul>
+<li>break语句用来跳出循环体，结束整个循环。</li>
+<li>continue语 句用来结束本次循环，接着进行下一次是否执行循环的判断。</li>
+</ul>
+<p>ex:求1100，2001之间第一 个能被21整除的整数。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> n=<span class="number">100</span>:<span class="number">200</span></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">rem</span>(n,<span class="number">21</span>)~=<span class="number">0</span></span><br><span class="line">        <span class="keyword">continue</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    n</span><br><span class="line">    <span class="keyword">break</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<h4 id="循环的嵌套"><a class="header-anchor" href="#循环的嵌套">¶</a>循环的嵌套</h4>
+<p>如果一个循环结构的循环体又包含一个循环结构，就称为循环的嵌套，或称为多重循环结构。</p>
+<p>ex:用筛选法求某自然数范围内的全部素数。</p>
+<p>筛选法求素数的基本思想:要找出<code>2~m</code>之间的全部素数，首先在<code>2~m</code>中划去2的倍数(不包括2)，然后划去3的倍数(不包括3)，由于4已被划去，再找5的倍数(不包括5)，····，直到再划去不超过vm的倍数，剩下的就都是素数。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">m=input(<span class="string">&#x27;m=&#x27;</span>);</span><br><span class="line">p=<span class="number">1</span>:m;</span><br><span class="line">p(<span class="number">1</span>)=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span>=<span class="number">2</span>:<span class="built_in">sqrt</span>(m)</span><br><span class="line">    <span class="keyword">for</span> <span class="built_in">j</span>=<span class="number">2</span>*<span class="built_in">i</span>:<span class="built_in">i</span>:m</span><br><span class="line">        p(<span class="built_in">j</span>)=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">n=<span class="built_in">find</span>(p~=<span class="number">0</span>);</span><br><span class="line">p(n)</span><br></pre></td></tr></table></figure>
+<h2 id="函数文件的定义与调用"><a class="header-anchor" href="#函数文件的定义与调用">¶</a>函数文件的定义与调用</h2>
+<h3 id="函数文件的基本结构"><a class="header-anchor" href="#函数文件的基本结构">¶</a>函数文件的基本结构</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">function  输出形参表=函数名(输入形参表)</span><br><span class="line"><span class="code">     注释说明部分</span></span><br><span class="line"><span class="code">函数体语句</span></span><br><span class="line"><span class="code">当有多个形参时，形参之间用逗号分隔，组成形参表。当输出形参多于一个时，应该用方括号括起来，构成一个输出矩阵。</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>函数文件名通常由函数名再加上扩展名.m组成，函数文件名与函数名也可以不相同。</li>
+</ul>
+<blockquote>
+<p>不相同时，matlab将忽略函数名，调用时使用函数文件名</p>
+</blockquote>
+<ul>
+<li>return语句表示结束函数的执行。</li>
+</ul>
+<p>ex:编写函数文件,求半径为的圆的面积和周长。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[s,p]</span>=<span class="title">fcircle</span><span class="params">(r)</span></span></span><br><span class="line">s=<span class="built_in">pi</span>*r*r;</span><br><span class="line">p=<span class="number">2</span>*<span class="built_in">pi</span>*r;</span><br></pre></td></tr></table></figure>
+<h3 id="函数调用"><a class="header-anchor" href="#函数调用">¶</a>函数调用</h3>
+<p>调用格式:<br>
+[输出实参表]=函数名(输入实参表)<br>
+在调用函数时，函数输入输出参数称为实际参数，简称<strong>实参</strong>。</p>
+<p>在MATLAB命令行窗C ]调用前面定义的fcircle函数。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; [s,p]=fcircle(<span class="number">10</span>)</span><br><span class="line"></span><br><span class="line">s =</span><br><span class="line"></span><br><span class="line">  <span class="number">314.1593</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">p =</span><br><span class="line"></span><br><span class="line">   <span class="number">62.8319</span></span><br></pre></td></tr></table></figure>
+<h3 id="匿名函数"><a class="header-anchor" href="#匿名函数">¶</a>匿名函数</h3>
+<p>基本格式:<br>
+函数句柄变量=@(匿名函数输入参数)匿名函数表达式</p>
+<blockquote>
+<p>@:函数句柄的运算符</p>
+</blockquote>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; f=@(x,y) x^<span class="number">2</span>+y^<span class="number">2</span></span><br><span class="line"></span><br><span class="line">f = </span><br><span class="line"></span><br><span class="line">    @(x,y)x^<span class="number">2</span>+y^<span class="number">2</span></span><br><span class="line"></span><br><span class="line">&gt;&gt; f(<span class="number">3</span>,<span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"></span><br><span class="line">    <span class="number">25</span></span><br></pre></td></tr></table></figure>
+<p>函数句柄变量=@函数名</p>
+<blockquote>
+<p>函数名：内部函数或自定义函数</p>
+</blockquote>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; h=@<span class="built_in">sin</span></span><br><span class="line"></span><br><span class="line">h = </span><br><span class="line"></span><br><span class="line">    @<span class="built_in">sin</span></span><br><span class="line"></span><br><span class="line">&gt;&gt; h(<span class="built_in">pi</span>/<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"></span><br><span class="line">     <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>ex:<img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200816173757.png" alt="image-20200816170950565"></p>
+<p>第②问的函数文件f2.m。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>=<span class="title">f2</span><span class="params">(n)</span></span></span><br><span class="line">f=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> k=<span class="number">1</span>:n</span><br><span class="line">    f=f+k*(k+<span class="number">1</span>);</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>脚本文件mf.m</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">f1=@(n)n+<span class="number">10</span>*<span class="built_in">log</span>(n*n+<span class="number">5</span>)</span><br><span class="line">y1=f1(<span class="number">40</span>)/(f1(<span class="number">30</span>)+f1(<span class="number">20</span>))</span><br><span class="line">y2=f2(<span class="number">40</span>)/(f2(<span class="number">30</span>)+f2(<span class="number">20</span>))</span><br></pre></td></tr></table></figure>
+<p>调用：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; mf</span><br><span class="line"></span><br><span class="line">f1 = </span><br><span class="line"></span><br><span class="line">    @(n)n+<span class="number">10</span>*<span class="built_in">log</span>(n*n+<span class="number">5</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">y1 =</span><br><span class="line"></span><br><span class="line">    <span class="number">0.6390</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">y2 =</span><br><span class="line"></span><br><span class="line">    <span class="number">1.7662</span></span><br></pre></td></tr></table></figure>
+<h2 id="函数的递归调用"><a class="header-anchor" href="#函数的递归调用">¶</a>函数的递归调用</h2>
+<h3 id="函数的嵌套调用"><a class="header-anchor" href="#函数的嵌套调用">¶</a>函数的嵌套调用</h3>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200816173701.png" alt="image-20200816172833477"></p>
+<h3 id="函数的递归调用-v2"><a class="header-anchor" href="#函数的递归调用-v2">¶</a>函数的递归调用</h3>
+<p>一个函数调用它自身称为函数的递归调用。</p>
+<blockquote>
+<p>递归是把一个大型复杂的问题层层转化为一一个与原问题相似的规模较小的问题来求解。</p>
+</blockquote>
+<h4 id="1-直接递归调用"><a class="header-anchor" href="#1-直接递归调用">¶</a>(1)直接递归调用</h4>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200816173657.png" alt="image-20200816173120079"></p>
+<h4 id="2-间接递归调用"><a class="header-anchor" href="#2-间接递归调用">¶</a>(2)间接递归调用</h4>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200816173652.png" alt="image-20200816173141929"></p>
+<p>ex:利用函数的递归调用，求n!。</p>
+<p>函数文件fact.m如下：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>=<span class="title">fact</span><span class="params">(n)</span></span></span><br><span class="line"><span class="keyword">if</span> n&lt;=<span class="number">1</span></span><br><span class="line">    f=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">    f=fact (n<span class="number">-1</span>)*n; <span class="comment">%递归调用求(n-1)!</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>在脚本文件a.m中调用函数文件fat.m,求n!。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">n=input(<span class="string">&#x27;Please input n=&#x27;</span>); </span><br><span class="line">s=fact (n);</span><br><span class="line"><span class="built_in">disp</span>(s)</span><br></pre></td></tr></table></figure>
+<p>在命令行窗口运行脚本文件:</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt;a </span><br><span class="line">Please input n=<span class="number">3</span></span><br><span class="line"><span class="number">6</span></span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200816173641.png" alt="image-20200816173640738"></p>
+<p>ex:</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://raw.githubusercontent.com/stardust14/picture/master/img/20200816174407.png" alt="image-20200816173931078"></p>
+<ul>
+<li>首先建立函数文件ffib.m。</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>=<span class="title">ffib</span><span class="params">(n)</span></span></span><br><span class="line"><span class="keyword">if</span> n&gt;<span class="number">2</span></span><br><span class="line">   f=ffib(n- <span class="number">1</span>)+ffib(n<span class="number">-2</span>);</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">   f=<span class="number">1</span>;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>建立脚本文件test.m。</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">F=[];</span><br><span class="line"><span class="keyword">for</span> k=<span class="number">1</span>:<span class="number">20</span></span><br><span class="line">	F=[Fffib(k)*ffib(k)];</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">sum(F)</span><br><span class="line">ffib(<span class="number">20</span>)*ffib(<span class="number">21</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>运行结果为:</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt;test</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"><span class="number">7</span> <span class="number">4049690</span></span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"><span class="number">7</span> <span class="number">4049690</span></span><br></pre></td></tr></table></figure>
+<h2 id="函数参数与变量的作用域"><a class="header-anchor" href="#函数参数与变量的作用域">¶</a>函数参数与变量的作用域</h2>
+<h3 id="函数参数的可调性"><a class="header-anchor" href="#函数参数的可调性">¶</a>函数参数的可调性</h3>
+<p>nargin————&gt;输入实参的个数<br>
+nargout————&gt;输出实参的个数</p>
+<p>建立函数文件test.m</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fout</span>=<span class="title">test</span><span class="params">(a,b,c)</span></span></span><br><span class="line"><span class="keyword">if</span> nargin==<span class="number">1</span></span><br><span class="line">	fout=a;</span><br><span class="line"><span class="keyword">elseif</span> nargin==<span class="number">2</span></span><br><span class="line">	fout=a+b;</span><br><span class="line"><span class="keyword">elseif</span> nargin==<span class="number">3</span></span><br><span class="line">	fout=(a*b*c)/<span class="number">2</span>;</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>调用</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; fout=test(<span class="number">2</span>)</span><br><span class="line">fout =</span><br><span class="line">		<span class="number">2</span></span><br><span class="line">&gt;&gt; fout=test(<span class="number">2</span>,<span class="number">3</span>,<span class="number">2</span>)</span><br><span class="line">fout =</span><br><span class="line">		<span class="number">6</span></span><br></pre></td></tr></table></figure>
+<h3 id="全局变量与局部变量"><a class="header-anchor" href="#全局变量与局部变量">¶</a>全局变量与局部变量</h3>
+<ul>
+<li><strong>局部变量</strong>是指在程序中只在特定过程或函数中可以访问的变量。</li>
+<li><strong>全局变量</strong>的作用域是整个MATLAB工作空间，也就是全程有效，所有的函数都可以对它进行存取和修改。</li>
+</ul>
+<p>全局变量定义格式:<br>
+global    变量名</p>
+<p>建立函数文件wad.m。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>=<span class="title">wad</span><span class="params">(x,y)</span></span></span><br><span class="line"><span class="keyword">global</span> ALPHA BETA </span><br><span class="line">f=ALPHA*x+BETA*y;</span><br></pre></td></tr></table></figure>
+<p>在命令行窗口中输入命令并得到输出结果。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; <span class="keyword">global</span> ALPHA BETA</span><br><span class="line">&gt;&gt; ALPHA=<span class="number">1</span>;</span><br><span class="line">&gt;&gt; BETA=<span class="number">2</span>;</span><br><span class="line">&gt;&gt; s=wad(<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line">S=</span><br><span class="line">	<span class="number">5</span></span><br></pre></td></tr></table></figure>
+<h1>MATLAB绘图</h1>
+<h2 id="二维曲线"><a class="header-anchor" href="#二维曲线">¶</a>二维曲线</h2>
+<h3 id="plot函数"><a class="header-anchor" href="#plot函数">¶</a>plot函数</h3>
+<p>(1) plot函数的基本用法<br>
+plot(x, y)<br>
+其中，x和y分别用于存储x坐标和y坐标数据。</p>
+<h2 id="绘制图形的辅助操作"><a class="header-anchor" href="#绘制图形的辅助操作">¶</a>绘制图形的辅助操作</h2>
+<h2 id="其他形式的二维图形"><a class="header-anchor" href="#其他形式的二维图形">¶</a>其他形式的二维图形</h2>
+<h2 id="三维曲线"><a class="header-anchor" href="#三维曲线">¶</a>三维曲线</h2>
+<h2 id="三维曲面"><a class="header-anchor" href="#三维曲面">¶</a>三维曲面</h2>
+<h2 id="图形修饰处理"><a class="header-anchor" href="#图形修饰处理">¶</a>图形修饰处理</h2>
+<h2 id="交互式绘图工具"><a class="header-anchor" href="#交互式绘图工具">¶</a>交互式绘图工具</h2>
 ]]></content>
       <categories>
         <category>matlab</category>
