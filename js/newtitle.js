@@ -1,3 +1,4 @@
+/*
     var title;  // 用于临时存放原来的title内容
     window.onblur = function(){
       // onblur时先存下原来的title,再更改title内容
@@ -11,3 +12,21 @@
         document.title = title;
       }
     }
+*/
+
+// 可爱的Title
+var OriginTitle = document.title;
+var titleTime;
+document.addEventListener('visibilitychange', function() {
+    if (document.hidden) {
+        $('[rel="icon"]').attr('href', "/img/favicon.ico");
+        document.title = '(つェ⊂) 看不到我哦~~';
+        clearTimeout(titleTime);
+    } else {
+        $('[rel="icon"]').attr('href', "/img/favicon.ico");
+        document.title = 'w(ﾟДﾟ)w 被你发现啦~~' + OriginTitle;
+        titleTime = setTimeout(function() {
+            document.title = OriginTitle;
+        }, 2000);
+    }
+});
