@@ -1,0 +1,9 @@
+body {
+    cursor: url(https://cdn.jsdelivr.net/gh/stardust14/CDN/HexoStatic/img/default.cur),
+        default;
+}
+a,
+img {
+    cursor: url(https://cdn.jsdelivr.net/gh/stardust14/CDN/HexoStatic/img/pointer.cur),
+        default;
+}
