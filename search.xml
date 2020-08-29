@@ -4724,7 +4724,7 @@ d=d1+d2+d3<br>
 <h3 id="符号矩阵"><a class="header-anchor" href="#符号矩阵">¶</a>符号矩阵</h3>
 <p>符号矩阵也是一种符号表达式，所以符号表达式运算都可以在矩阵意 义下进行。</p>
 <div class="note success">
-            <p>success 注意：这些函数作用于符号矩阵时，是分别作用于矩阵的每一个元素。</p>
+            <p>注意：这些函数作用于符号矩阵时，是分别作用于矩阵的每一个元素。</p>
           </div>
 <p>ex1：建立符号矩阵并化简。</p>
 <p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829170952.png" alt="image-20200829170951954"></p>
@@ -4872,6 +4872,443 @@ d=d1+d2+d3<br>
 <p>ex:求下列微分方程或方程组的解。</p>
 <p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829190847.png" alt="image-20200829190846323"></p>
 <figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms x y t;</span><br><span class="line">&gt;&gt; y=dsolve(<span class="string">&#x27;Dy-(x^2+y^2)/x^2/2&#x27;</span>,x)</span><br><span class="line">y =</span><br><span class="line">x</span><br><span class="line">-x*(<span class="number">1</span>/(C5 + <span class="built_in">log</span>(x)/<span class="number">2</span>) - <span class="number">1</span>)</span><br><span class="line">&gt;&gt; [x,y]=dsolve(<span class="string">&#x27;Dx=4*x-2*y&#x27;</span>,<span class="string">&#x27;Dy=2*x-y&#x27;</span>,t)</span><br><span class="line">x =</span><br><span class="line">C8/<span class="number">2</span> + <span class="number">2</span>*C7*<span class="built_in">exp</span>(<span class="number">3</span>*t)</span><br><span class="line">y =</span><br><span class="line">C8 + C7*<span class="built_in">exp</span>(<span class="number">3</span>*t)</span><br></pre></td></tr></table></figure>
+<h1>MATLAB图形用户界面设计</h1>
+<h2 id="图形窗口与坐标轴"><a class="header-anchor" href="#图形窗口与坐标轴">¶</a>图形窗口与坐标轴</h2>
+<ul>
+<li>图形对象的句柄</li>
+<li>图形对象的属性</li>
+<li>图形窗口的操作</li>
+<li>坐标轴的操作</li>
+</ul>
+<h3 id="图形对象句柄"><a class="header-anchor" href="#图形对象句柄">¶</a>图形对象句柄</h3>
+<h4 id="句柄的概念"><a class="header-anchor" href="#句柄的概念">¶</a>句柄的概念</h4>
+<p>在MATLAB中，每一个具体的图形都是由若干个不同的图形对象组成的。</p>
+<p>在MATLAB中，用句柄来标识对象，通过句柄来访问相应对象的属性。</p>
+<p>ex:绘制多个图形，并保存图形句柄。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">t=<span class="number">0</span>:<span class="built_in">pi</span>/<span class="number">10</span>:<span class="number">2</span>*<span class="built_in">pi</span>;</span><br><span class="line">h1=<span class="built_in">plot3</span>(t+<span class="built_in">pi</span>,t<span class="number">-2</span>*<span class="built_in">pi</span>,<span class="built_in">sin</span>(t),<span class="string">&#x27;r&#x27;</span>);</span><br><span class="line"><span class="built_in">hold</span> on;</span><br><span class="line">[x,y]=<span class="built_in">meshgrid</span>(t);</span><br><span class="line">z=<span class="built_in">sin</span>(x);</span><br><span class="line">h2=mesh(t<span class="number">-2</span>*<span class="built_in">pi</span>,t+<span class="built_in">pi</span>,z);</span><br><span class="line">[x3,y3,z3]=cylinder(t);</span><br><span class="line">h3=surf(x3,y3,z3);</span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829213442.png" alt="image-20200829213441217"></p>
+<h4 id="访问图形对象"><a class="header-anchor" href="#访问图形对象">¶</a>访问图形对象</h4>
+<p>访问图形对象是指获取或设置图形对象的属性。不同图形对象所具有的属性不同，但访问的方法是一样的。</p>
+<p>对象句柄.属性名</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; x=<span class="number">0</span>:<span class="built_in">pi</span>/<span class="number">10</span>:<span class="number">2</span>*<span class="built_in">pi</span>;</span><br><span class="line">&gt;&gt; y=<span class="built_in">sin</span>(x);</span><br><span class="line">&gt;&gt; h0=<span class="built_in">plot</span>(x,y);</span><br><span class="line">&gt;&gt; h0.Color</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"><span class="number">0</span> <span class="number">0.4470</span> <span class="number">0.7410</span></span><br><span class="line">&gt;&gt; h0.LineWidth=<span class="number">2</span>;</span><br><span class="line">&gt;&gt; h0.LineStyle=<span class="string">&#x27;-.&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<h4 id="获取特定图形对象句柄的函数"><a class="header-anchor" href="#获取特定图形对象句柄的函数">¶</a>获取特定图形对象句柄的函数</h4>
+<ul>
+<li>gcf:获取当前图形窗口的句柄。</li>
+<li>gca:获取当前坐标轴的句柄。</li>
+<li>gco:获取最近被选中的图形对象的句柄。</li>
+<li>findobj:按照指定的属性来获取图形对象的句柄。</li>
+</ul>
+<h3 id="图形对象属性"><a class="header-anchor" href="#图形对象属性">¶</a>图形对象属性</h3>
+<h4 id="图形对象的常用公共属性"><a class="header-anchor" href="#图形对象的常用公共属性">¶</a>图形对象的常用公共属性</h4>
+<ul>
+<li>Children属性:该对象的所有子对象的句柄组成的一个向量。</li>
+<li>Parent属性:该对象的父对象的句柄。</li>
+<li>Type属性:对象的类型，这是一个只读属性。</li>
+<li>Tag属性:用于给对象定义一个标识符。</li>
+</ul>
+<p>ex:分别在两个子图中绘制曲线和曲面。然后设置子图1的背景色为黄 色，曲线线条颜色为红色，设置子图2的背景色为青色。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">subplot(<span class="number">1</span>,<span class="number">2</span>,<span class="number">1</span>)</span><br><span class="line">h1=fplot(@(t)t.*<span class="built_in">sin</span>(t),@(t)t.*<span class="built_in">cos</span>(t),[<span class="number">0</span>,<span class="number">6</span>*<span class="built_in">pi</span>] );</span><br><span class="line">axis equal</span><br><span class="line">subplot(<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>)</span><br><span class="line">[x,y,z]=peaks(<span class="number">20</span>);</span><br><span class="line">h2=mesh(x,y,z);</span><br><span class="line">h10=h1.Parent;</span><br><span class="line">h10.Color=<span class="string">&#x27;y&#x27;</span>;</span><br><span class="line">h1.Color=<span class="string">&#x27;r&#x27;</span>;</span><br><span class="line">h2.Parent.Color=<span class="string">&#x27;cyan&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829214455.png" alt="image-20200829214453961"></p>
+<h4 id="图形对象的常用动态属性"><a class="header-anchor" href="#图形对象的常用动态属性">¶</a>图形对象的常用动态属性</h4>
+<ul>
+<li>KeyPressFcn属性:定义按下键盘按键事件的响应。</li>
+<li>CreateFcn属性:定义创建图形对象时做出的响应。</li>
+<li>DeleteFcn属性:定义取消图形对象时做出的响应。</li>
+<li>WindowButtonDownFcn或ButtonDownFcn属性:定义鼠标键按下事件的响应。</li>
+</ul>
+<h3 id="图形窗口的操作"><a class="header-anchor" href="#图形窗口的操作">¶</a>图形窗口的操作</h3>
+<h4 id="建立图形窗口对象"><a class="header-anchor" href="#建立图形窗口对象">¶</a>建立图形窗口对象</h4>
+<p>MATLAB通过figure函数来创建窗口对象，其调用格式为：</p>
+<ul>
+<li>句柄变量=figure(属性1,属性值1,属性2,属性值2,…)</li>
+</ul>
+<blockquote>
+<p>其中，属性用于设置图形窗口的特征。</p>
+</blockquote>
+<ul>
+<li>句柄变量=figure</li>
+</ul>
+<blockquote>
+<p>按MATLAB默认的属性值建立图形窗口。</p>
+</blockquote>
+<ul>
+<li>figure(窗口句柄)</li>
+</ul>
+<blockquote>
+<p>设定该句柄对应的窗口为当前窗口。</p>
+</blockquote>
+<h4 id="图形窗口属性"><a class="header-anchor" href="#图形窗口属性">¶</a>图形窗口属性</h4>
+<ul>
+<li>
+<p>MenuBar属性:控制图形窗口是否具有菜单条，其取值为’none’或’figure’。</p>
+</li>
+<li>
+<p>Name属性:指定图形窗口的标题。</p>
+</li>
+<li>
+<p>NumberTitle属性:决定着在图形窗口的标题中是否以“Figure n:&quot;为标题前缀。</p>
+</li>
+<li>
+<p>Color属性:设定图形窗口背景的颜色。</p>
+</li>
+<li>
+<p>Position属性：定义图形窗口对象在屏幕上的位置和大小，值是一 个4元行向量：<br>
+[x，y，w，h]</p>
+</li>
+<li>
+<p>Units属性：定义图形窗口使用的度量单位，将影响一切定义大小 的属性项。</p>
+<ul>
+<li>‘pixels’:指定度量单位为像素（默认值）。</li>
+<li>‘inches’:指定度量单位为英寸。厘米、磅。</li>
+<li>‘centimeters’:指定度量单位为厘米。</li>
+<li>‘points’:指定度量单位为磅。</li>
+<li>‘normalized’:指定用相对单位。</li>
+</ul>
+</li>
+</ul>
+<p>ex:建立一个图形窗口。该图形窗口没有菜单条，标题名称为“图 形窗口示例”，起始于屏幕左下角、宽度和高度分别为300像素点和 150像素点，背景颜色为青色，且当用户从键盘按下任意一个键时，然 后在窗口中单击鼠标左键，在鼠标指针所在位置将显示 “Hello,World!” 。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">hf=<span class="built_in">figure</span>;</span><br><span class="line">hf.Color=[<span class="number">0</span>,<span class="number">1</span>,<span class="number">1</span>];</span><br><span class="line">hf.Position=[<span class="number">1</span>,<span class="number">1</span>,<span class="number">300</span>,<span class="number">150</span>];</span><br><span class="line">hf.Name=<span class="string">&#x27;图形窗口示例&#x27;</span>;</span><br><span class="line">hf.NumberTitle=<span class="string">&#x27;off&#x27;</span>;</span><br><span class="line">hf.MenuBar=<span class="string">&#x27;none&#x27;</span>;</span><br><span class="line">hf.ButtonDownFcn=<span class="string">&#x27;gtext(&#x27;&#x27;Hello,World!&#x27;&#x27;)&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829215020.png" alt="image-20200829215019375"></p>
+<h3 id="坐标轴对象的操作"><a class="header-anchor" href="#坐标轴对象的操作">¶</a>坐标轴对象的操作</h3>
+<h4 id="建立坐标轴对象"><a class="header-anchor" href="#建立坐标轴对象">¶</a>建立坐标轴对象</h4>
+<p>使用axes函数，其调用格式为：</p>
+<ul>
+<li>句柄变量=axes(属性1,属性值1,属性2,属性值2,…)</li>
+</ul>
+<blockquote>
+<p>其中，属性用于设置坐标轴的外观和行为。</p>
+</blockquote>
+<ul>
+<li>句柄变量=axes</li>
+</ul>
+<blockquote>
+<p>按MATLAB默认的属性值在当前图形窗口创建坐标轴。</p>
+</blockquote>
+<ul>
+<li>axes(坐标轴句柄)</li>
+</ul>
+<blockquote>
+<p>设定该句柄代表的坐标轴为当前坐标轴。</p>
+</blockquote>
+<h4 id="坐标轴对象的属性"><a class="header-anchor" href="#坐标轴对象的属性">¶</a>坐标轴对象的属性</h4>
+<ul>
+<li>Position属性:定义坐标轴在图形窗口中的位置和大小。</li>
+<li>Units属性:定义坐标轴使用的度量单位，默认值是’normalized’。</li>
+<li>Box属性:决定坐标轴是否带有边框，可取值是’on’或’off’（默认值）。</li>
+<li>GridLineStyle属性:用于定义网格线的类型，可取值是’:’(默认值）、’’、’-. ‘、’–’、 ‘none’。</li>
+<li>Title属性:用于对坐标轴标题对象进行操作，取值是通过title函数建立的标题对象的句柄。</li>
+<li>XLabel、YLabel、ZLabel属性：取值分别是通过xlabel、ylabel、 zlabel函数建立的标签对象的句柄。</li>
+<li>XLim、YLim、ZLim 属性：分别定义各坐标轴的下限和上限，取值 是2元向量[Lmin, Lmax]，默认值为[0，1]。</li>
+<li>XScale、YScale、ZScale 属性：定义各坐标轴的刻度类型。可取 值是’linear’ 、 ‘log’。</li>
+<li>View属性：定义视点，取值是2元向量[az, el]，az定义视点的方位角，el定义视点的仰角。坐标轴默认视点的方位角为0°，仰角为 90°。</li>
+</ul>
+<p>ex:利用坐标轴对象实现图形窗口的分割。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">ha1=axes(<span class="string">&#x27;Position&#x27;</span>,[<span class="number">0.1</span>,<span class="number">0.1</span>,<span class="number">0.7</span>,<span class="number">0.7</span>]);</span><br><span class="line">contour(peaks(<span class="number">20</span>))</span><br><span class="line">ha1.Title=title(<span class="string">&#x27;等高线&#x27;</span>);</span><br><span class="line">ha1.YLabel=ylabel(<span class="string">&#x27;南北向&#x27;</span>);</span><br><span class="line">ha1.XLabel=xlabel(<span class="string">&#x27;东西向&#x27;</span>);</span><br><span class="line">ha2=axes(<span class="string">&#x27;Position&#x27;</span>,[<span class="number">0.65</span>,<span class="number">0.7</span>,<span class="number">0.28</span>,<span class="number">0.28</span>]);</span><br><span class="line">surf(peaks(<span class="number">20</span>))</span><br><span class="line">ha2.View=[<span class="number">-30</span>,<span class="number">45</span>];</span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829215536.png" alt="image-20200829215535465"></p>
+<ul>
+<li>ColorOrder属性：用于设置多条曲线的颜色顺序，是一个n×3矩阵， 每行用RGB三元组表示一种颜色，默认n为7。</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; hc=gca;</span><br><span class="line">&gt;&gt; C=hc.ColorOrder</span><br><span class="line">C =</span><br><span class="line"><span class="number">0</span> <span class="number">0.4470</span> <span class="number">0.7410</span></span><br><span class="line"><span class="number">0.8500</span> <span class="number">0.3250</span> <span class="number">0.0980</span></span><br><span class="line"><span class="number">0.9290</span> <span class="number">0.6940</span> <span class="number">0.1250</span></span><br><span class="line"><span class="number">0.4940</span> <span class="number">0.1840</span> <span class="number">0.5560</span></span><br><span class="line"><span class="number">0.4660</span> <span class="number">0.6740</span> <span class="number">0.1880</span></span><br><span class="line"><span class="number">0.3010</span> <span class="number">0.7450</span> <span class="number">0.9330</span></span><br><span class="line"><span class="number">0.6350</span> <span class="number">0.0780</span> <span class="number">0.1840</span></span><br></pre></td></tr></table></figure>
+<p>ex:定义包含4种颜色的ColorOrder属性，绘制6条曲线。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">x=[<span class="number">0</span>,<span class="number">0</span>];y=[<span class="number">0</span>,<span class="number">1</span>];</span><br><span class="line">ha=axes;</span><br><span class="line">ha.ColorOrder=[<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>; <span class="number">1</span>,<span class="number">0</span>,<span class="number">0</span>; <span class="number">0</span>,<span class="number">1</span>,<span class="number">0</span>; <span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>];</span><br><span class="line"><span class="built_in">hold</span> on</span><br><span class="line"><span class="built_in">plot</span>(x,y,x+<span class="number">0.5</span>,y,x+<span class="number">1</span>,y,x+<span class="number">1.5</span>,y,x+<span class="number">2</span>,y,x+<span class="number">2.5</span>,y);</span><br><span class="line">ha.XLim=[<span class="number">-0.2</span>,<span class="number">3</span>];</span><br><span class="line">ha.YLim=[<span class="number">-0.2</span>,<span class="number">1.2</span>];</span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829220222.png" alt="image-20200829215647610"></p>
+<h2 id="曲线与曲面对象"><a class="header-anchor" href="#曲线与曲面对象">¶</a>曲线与曲面对象</h2>
+<ul>
+<li>曲线对象</li>
+<li>曲面对象</li>
+<li>光照处理</li>
+<li>图形对象的反射特性</li>
+</ul>
+<h3 id="曲线对象"><a class="header-anchor" href="#曲线对象">¶</a>曲线对象</h3>
+<h4 id="建立曲线对象"><a class="header-anchor" href="#建立曲线对象">¶</a>建立曲线对象</h4>
+<p>line函数的调用格式为：</p>
+<p>句柄变量=line(x, y, z, 属性1, 属性值1, 属性2, 属性值2, …)</p>
+<blockquote>
+<p>其中，x、y、z存储数据点的坐标，与plot、plot3函数含义相同。</p>
+</blockquote>
+<h4 id="曲线对象常用属性"><a class="header-anchor" href="#曲线对象常用属性">¶</a>曲线对象常用属性</h4>
+<ul>
+<li>Color属性：定义曲线的颜色，默认值为[0 0 0]。</li>
+<li>LineStyle属性：定义线型，默认值为’-’。</li>
+<li>LineWidth属性：定义线宽，默认值为0.5磅。</li>
+<li>Marker属性：定义数据点标记符号，默认值为’none’。</li>
+<li>MarkerSize属性：定义数据点标记符号的大小，默认值为6磅。</li>
+<li>XData、YData、ZData属性：用于设置3个坐标轴的数据源。</li>
+</ul>
+<p>ex:利用曲线对象绘制五环图案。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">t=<span class="number">-0.1</span> : <span class="number">0.1</span> : <span class="number">2</span>*<span class="built_in">pi</span>;</span><br><span class="line">x=<span class="built_in">cos</span>(t); y=<span class="built_in">sin</span>(t);</span><br><span class="line">line(x,y,<span class="string">&#x27;Color&#x27;</span>,<span class="string">&#x27;b&#x27;</span>)</span><br><span class="line">line(x+<span class="number">1.2</span>,y<span class="number">-1</span>,<span class="string">&#x27;Color&#x27;</span>,<span class="string">&#x27;y&#x27;</span>)</span><br><span class="line">line(x+<span class="number">2.4</span>,y,<span class="string">&#x27;Color&#x27;</span>,<span class="string">&#x27;k&#x27;</span>)</span><br><span class="line">line(x+<span class="number">3.6</span>,y<span class="number">-1</span>,<span class="string">&#x27;Color&#x27;</span>,<span class="string">&#x27;g&#x27;</span>)</span><br><span class="line">line(x+<span class="number">4.8</span>,y,<span class="string">&#x27;Color&#x27;</span>,<span class="string">&#x27;r&#x27;</span>)</span><br><span class="line">ha=gca;</span><br><span class="line"><span class="keyword">for</span> n=<span class="number">1</span>:<span class="built_in">size</span>(ha.Children)</span><br><span class="line">ha.Children(n).LineWidth=<span class="number">5</span>;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">ha.XLim=[<span class="number">-2</span>,<span class="number">7</span>];</span><br><span class="line">ha.YLim=[<span class="number">-3</span>,<span class="number">2</span>];</span><br><span class="line">axis equal</span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829220217.png" alt="image-20200829215946706"></p>
+<h3 id="曲面对象"><a class="header-anchor" href="#曲面对象">¶</a>曲面对象</h3>
+<h4 id="建立曲面对象"><a class="header-anchor" href="#建立曲面对象">¶</a>建立曲面对象</h4>
+<p>建立曲面对象使用surface函数，其调用格式为：</p>
+<p>句柄变量=surface(x,y,z,c,属性1,属性值1,属性2,属性值2,…)</p>
+<blockquote>
+<p>其中，x、y、z存储数据点的坐标，与mesh、surf函数含义相同；c用 于指定在不同高度下的曲面颜色。</p>
+</blockquote>
+<p>surf函数每调用一次，就会刷新坐标轴，清空原有图形，再绘制新的 图形。而surface函数生成的曲面则在已有图形上叠加显示。</p>
+<p>利用surface函数建立的曲面对象，默认视点在图形正上方，即方位角 为0°，仰角为90°。</p>
+<h4 id="与曲面形态有关的属性："><a class="header-anchor" href="#与曲面形态有关的属性：">¶</a>与曲面形态有关的属性：</h4>
+<ul>
+<li>
+<p>FaceColor属性：定义曲面网格片的颜色，可取值：</p>
+<ul>
+<li>‘flat’：每一个网格片用单一颜色填充。</li>
+<li>‘interp’：用渐变方式填充网格片。</li>
+<li>‘none’：网格片无颜色。</li>
+<li>‘texturemap’：用Cdata属性定义的颜色填充网格片。</li>
+<li>RGB向量或代表颜色的字符</li>
+</ul>
+</li>
+<li>
+<p>EdgeColor属性：定义曲面网格线的颜色。</p>
+</li>
+</ul>
+<p>ex:利用曲面对象绘制立体圆环，圆环方程为:</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829220206.png" alt="image-20200829220205761"></p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">r=<span class="built_in">linspace</span>(<span class="number">0</span>,<span class="number">2</span>*<span class="built_in">pi</span>,<span class="number">60</span>);</span><br><span class="line">[u,v]=<span class="built_in">meshgrid</span>(r);</span><br><span class="line">x=(<span class="number">8</span>+<span class="number">3</span>*<span class="built_in">cos</span>(v)).*<span class="built_in">cos</span>(u);</span><br><span class="line">y=(<span class="number">8</span>+<span class="number">3</span>*<span class="built_in">cos</span>(v)).*<span class="built_in">sin</span>(u);</span><br><span class="line">z=<span class="number">3</span>*<span class="built_in">sin</span>(v);</span><br><span class="line">axes(<span class="string">&#x27;view&#x27;</span>,[<span class="number">-37.5</span>,<span class="number">30</span>])</span><br><span class="line">hs=surface(x,y,z);</span><br><span class="line">axis equal;</span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829220340.png" alt="image-20200829220339527"></p>
+<h3 id="光照处理"><a class="header-anchor" href="#光照处理">¶</a>光照处理</h3>
+<h4 id="创建光源对象"><a class="header-anchor" href="#创建光源对象">¶</a>创建光源对象</h4>
+<p>light函数的调用格式为：</p>
+<p>对象句柄=light(属性1,属性值1,属性2,属性值2,…)</p>
+<blockquote>
+<p>其中，属性指定光源的特性。</p>
+</blockquote>
+<h4 id="光源对象的属性"><a class="header-anchor" href="#光源对象的属性">¶</a>光源对象的属性</h4>
+<ul>
+<li>Color属性:设置光的颜色。</li>
+<li>Style属性:设置光源类型，其取值为’infinite’（默认值）或’local’.</li>
+<li>Position属性:指定光源位置，值是一个3元向量。</li>
+</ul>
+<p>利用lighting命令可以设置光照模式，lighting命令格式为：</p>
+<p>lighting 选项</p>
+<blockquote>
+<p>其中，选项可取值为</p>
+<ul>
+<li>flat:使得入射光均匀洒落在图形对象的每个面上（默认值）。</li>
+<li>gouraud:先对顶点颜色插补，再对顶点勾画的面上颜色进行插补。</li>
+<li>phong:对顶点处的法线插值，再计算各个像素的反光。</li>
+<li>none:关闭所有光源。</li>
+</ul>
+</blockquote>
+<p>ex:绘制光照处理后的圆环面并观察不同光照模式下的效果。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">r=<span class="built_in">linspace</span>(<span class="number">0</span>,<span class="number">2</span>*<span class="built_in">pi</span>,<span class="number">60</span>); [u,v]=<span class="built_in">meshgrid</span>(r);</span><br><span class="line">x=(<span class="number">8</span>+<span class="number">3</span>*<span class="built_in">cos</span>(v)).*<span class="built_in">cos</span>(u); y=(<span class="number">8</span>+<span class="number">3</span>*<span class="built_in">cos</span>(v)).*<span class="built_in">sin</span>(u); z=<span class="number">3</span>*<span class="built_in">sin</span>(v);</span><br><span class="line">axes(<span class="string">&#x27;Position&#x27;</span>,[<span class="number">0.05</span>,<span class="number">0.675</span>,<span class="number">1.0</span>,<span class="number">0.3</span>], <span class="string">&#x27;View&#x27;</span>,[<span class="number">-37.5</span>,<span class="number">30</span>]);</span><br><span class="line">hs1=surface(x,y,z); axis equal;</span><br><span class="line">hs1.EdgeColor=<span class="string">&#x27;none&#x27;</span>; hs1.FaceColor=<span class="string">&#x27;interp&#x27;</span>;</span><br><span class="line">axes(<span class="string">&#x27;Position&#x27;</span>,[<span class="number">0.05</span>,<span class="number">0.35</span>,<span class="number">1.0</span>,<span class="number">0.3</span>], <span class="string">&#x27;View&#x27;</span>,[<span class="number">-37.5</span>,<span class="number">30</span>]);</span><br><span class="line">hs2=surface(x,y,z); axis equal;</span><br><span class="line">hs2.EdgeColor=<span class="string">&#x27;none&#x27;</span>; hs2.FaceColor=<span class="string">&#x27;interp&#x27;</span>;</span><br><span class="line">light(<span class="string">&#x27;Position&#x27;</span>,[<span class="number">0</span>,<span class="number">0</span>,<span class="number">8</span>])</span><br><span class="line">lighting flat</span><br><span class="line">axes(<span class="string">&#x27;Position&#x27;</span>,[<span class="number">0.05</span>,<span class="number">0.025</span>,<span class="number">1.0</span>,<span class="number">0.3</span>], <span class="string">&#x27;View&#x27;</span>,[<span class="number">-37.5</span>,<span class="number">30</span>]);</span><br><span class="line">hs3=surface(x,y,z); axis equal;</span><br><span class="line">hs3.EdgeColor=<span class="string">&#x27;none&#x27;</span>; hs3.FaceColor=<span class="string">&#x27;interp&#x27;</span>;</span><br><span class="line">light(<span class="string">&#x27;Position&#x27;</span>,[<span class="number">0</span>,<span class="number">0</span>,<span class="number">8</span>])</span><br><span class="line">lighting phong</span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829220748.png" alt="image-20200829220746419"></p>
+<h3 id="图形对象的反射特性"><a class="header-anchor" href="#图形对象的反射特性">¶</a>图形对象的反射特性</h3>
+<ul>
+<li>SpecularStrength属性：控制对象表面镜面反射的强度，属性值取 0~1之间的数，默认为0.9。</li>
+<li>DiffuseStrength 属性：控制对象表面漫反射的强度，属性值取0~1 之间的数，默认为0.6。</li>
+<li>AmbientStrength属性：确定环境光的强度，属性值取0~1之间的数 ，默认为0.3。  SpecularExponent属性：控制镜面反射指数，值大于等于1，大多设 置在[5 20]之间，默认为10。</li>
+<li>BackFaceLighting属性：控制对象内表面和外表面的差别，取值为
+<ul>
+<li>‘unlit’</li>
+<li>‘lit’</li>
+<li>‘reverselit’（默认值）</li>
+</ul>
+</li>
+</ul>
+<p>ex:绘制具有不同反射特性的圆环面并观察反射特性对图形效果的影响。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">r=<span class="built_in">linspace</span>(<span class="number">0</span>,<span class="number">2</span>*<span class="built_in">pi</span>,<span class="number">60</span>); [u,v]=<span class="built_in">meshgrid</span>(r);</span><br><span class="line">x=(<span class="number">8</span>+<span class="number">3</span>*<span class="built_in">cos</span>(v)).*<span class="built_in">cos</span>(u); y=(<span class="number">8</span>+<span class="number">3</span>*<span class="built_in">cos</span>(v)).*<span class="built_in">sin</span>(u); z=<span class="number">3</span>*<span class="built_in">sin</span>(v);</span><br><span class="line">axes(<span class="string">&#x27;Position&#x27;</span>,[<span class="number">0.05</span>,<span class="number">0.675</span>,<span class="number">1.0</span>,<span class="number">0.3</span>],<span class="string">&#x27;View&#x27;</span>,[<span class="number">-37.5</span>,<span class="number">30</span>]);</span><br><span class="line">hs1=surface(x,y,z);axis equal;</span><br><span class="line">hs1.EdgeColor=<span class="string">&#x27;none&#x27;</span>;hs1.FaceColor=<span class="string">&#x27;interp&#x27;</span>;</span><br><span class="line">light(<span class="string">&#x27;Position&#x27;</span>,[<span class="number">0</span>,<span class="number">0</span>,<span class="number">8</span>]) ;lighting phong</span><br><span class="line">hs1.SpecularStrength=<span class="number">0.1</span>;</span><br><span class="line">axes(<span class="string">&#x27;Position&#x27;</span>, [<span class="number">0.05</span>,<span class="number">0.35</span>,<span class="number">1.0</span>,<span class="number">0.3</span>],<span class="string">&#x27;View&#x27;</span>,[<span class="number">-37.5</span>,<span class="number">30</span>]);</span><br><span class="line">hs2=surface(x,y,z);axis equal;</span><br><span class="line">hs2.EdgeColor=<span class="string">&#x27;none&#x27;</span>;hs2.FaceColor=<span class="string">&#x27;interp&#x27;</span>;</span><br><span class="line">light(<span class="string">&#x27;Position&#x27;</span>,[<span class="number">0</span>,<span class="number">0</span>,<span class="number">8</span>]) ;lighting phong</span><br><span class="line">hs2.SpecularStrength=<span class="number">0.5</span>;</span><br><span class="line">axes(<span class="string">&#x27;Position&#x27;</span>, [<span class="number">0.05</span>,<span class="number">0.025</span>,<span class="number">1.0</span>,<span class="number">0.3</span>],<span class="string">&#x27;View&#x27;</span>,[<span class="number">-37.5</span>,<span class="number">30</span>]);</span><br><span class="line">hs3=surface(x,y,z);axis equal;</span><br><span class="line">hs3.EdgeColor=<span class="string">&#x27;none&#x27;</span>;hs3.FaceColor=<span class="string">&#x27;interp&#x27;</span>;</span><br><span class="line">light(<span class="string">&#x27;Position&#x27;</span>,[<span class="number">0</span>,<span class="number">0</span>,<span class="number">8</span>]) ;lighting phong ;</span><br><span class="line">hs3.SpecularStrength=<span class="number">1.0</span>;</span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829222132.png" alt="image-20200829220934946"></p>
+<h2 id="图形用户界面设计方法"><a class="header-anchor" href="#图形用户界面设计方法">¶</a>图形用户界面设计方法</h2>
+<ul>
+<li>图形用户界面的组成</li>
+<li>控件对象及其操作</li>
+<li>菜单对象及其操作</li>
+</ul>
+<h3 id="图形用户界面的组成"><a class="header-anchor" href="#图形用户界面的组成">¶</a>图形用户界面的组成</h3>
+<ul>
+<li>图形用户界面（Graphical User Interface，GUI）：用户与计算 机进行信息交流的窗口。</li>
+<li>设计图形用户界面的方法
+<ul>
+<li>调用建立用户界面控件的函数</li>
+<li>使用MATLAB提供的GUIDE工具进行可视化设计</li>
+</ul>
+</li>
+</ul>
+<h3 id="控件对象及其操作"><a class="header-anchor" href="#控件对象及其操作">¶</a>控件对象及其操作</h3>
+<h4 id="常用控件"><a class="header-anchor" href="#常用控件">¶</a>常用控件</h4>
+<ul>
+<li>输入和输出类控件：编辑框、静态文本、列表框、滑动条等。</li>
+<li>实施确认、选择操作类控件：按钮、双位按钮、单选按钮、复选框等。</li>
+</ul>
+<h4 id="建立控件对象"><a class="header-anchor" href="#建立控件对象">¶</a>建立控件对象</h4>
+<p>函数uicontrol用于建立控件对象，其调用格式为：</p>
+<p>句柄变量=uicontrol(图形窗口句柄,属性1,属性值1,属性2,属性值2,…)</p>
+<blockquote>
+<p>其中，属性及其取值决定了控件的特征。若省略图形窗口句柄，默认 在当前图形窗口建立控件对象。</p>
+</blockquote>
+<h4 id="控件对象的基本控制属性"><a class="header-anchor" href="#控件对象的基本控制属性">¶</a>控件对象的基本控制属性</h4>
+<ul>
+<li>Style属性：定义控件对象的类型，例如‘pushbutton’表示按钮对 象，'edit’表示编辑框，等等。</li>
+<li>String属性：定义控件对象的说明文字。</li>
+<li>Tag属性：标识控件对象。</li>
+<li>Enable属性：控制控件对象是否可用。</li>
+<li>Position属性：定义控件对象的位置，其取值形式为[x，y，w，h]。</li>
+<li>Callback属性：其属性值是描述命令的字符串或函数句柄，当选中控 件时，系统将自动执行字符串描述的命令或调用句柄所代表的函数， 实施相关操作。</li>
+</ul>
+<p>ex1:在图形窗口中建立三个按钮对象，当单击按钮时分别绘制正弦曲 线、显示或隐藏坐标轴的网格、清除坐标轴的图形。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">ha= axes(<span class="string">&#x27;Units&#x27;</span>,<span class="string">&#x27;pixels&#x27;</span>,<span class="string">&#x27;Position&#x27;</span>,[<span class="number">40</span>,<span class="number">40</span>,<span class="number">360</span>,<span class="number">360</span>]);</span><br><span class="line">ptgrid=uicontrol(<span class="string">&#x27;Style&#x27;</span>,<span class="string">&#x27;pushbutton&#x27;</span>,<span class="string">&#x27;String&#x27;</span>,<span class="string">&#x27;网格&#x27;</span>, <span class="string">&#x27;Position&#x27;</span>, [<span class="number">450</span>,<span class="number">120</span>,<span class="number">48</span>,<span class="number">20</span>],<span class="string">&#x27;Callback&#x27;</span>,<span class="string">&#x27;grid&#x27;</span> );</span><br><span class="line">btncla = uicontrol(<span class="string">&#x27;Style&#x27;</span>, <span class="string">&#x27;pushbutton&#x27;</span>,<span class="string">&#x27;String&#x27;</span>, <span class="string">&#x27;清除&#x27;</span>,<span class="string">&#x27;Position&#x27;</span>, [<span class="number">450</span>,<span class="number">80</span>,<span class="number">48</span>,<span class="number">20</span>],<span class="string">&#x27;Callback&#x27;</span>,<span class="string">&#x27;cla&#x27;</span> );</span><br><span class="line">btnplot = uicontrol(<span class="string">&#x27;Style&#x27;</span>, <span class="string">&#x27;pushbutton&#x27;</span>,<span class="string">&#x27;String&#x27;</span>,<span class="string">&#x27;绘图&#x27;</span>,<span class="string">&#x27;Position&#x27;</span>, [<span class="number">450</span>,<span class="number">160</span>,<span class="number">48</span>,<span class="number">20</span>]);</span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829222125.png" alt="image-20200829221851937"></p>
+<p>回调函数定义对象怎样处理信息并响应某事件。回调函数的定义格式：</p>
+<p>function 函数名(source, eventdata)</p>
+<p>……</p>
+<p>end</p>
+<blockquote>
+<p>其中，参数source是发生事件的源控件对象句柄，eventdata存储事件 数据。</p>
+</blockquote>
+<p>ex2:将上例的“绘图”按钮要实现的功能定义为回调函数plot_sin。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">plot_sin</span><span class="params">(source, callbackdata)</span></span></span><br><span class="line">t=-<span class="built_in">pi</span>:<span class="built_in">pi</span>/<span class="number">20</span>:<span class="built_in">pi</span>;</span><br><span class="line"><span class="built_in">plot</span>(t,<span class="built_in">sin</span>(t));</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">ha= axes(<span class="string">&#x27;Units&#x27;</span>,<span class="string">&#x27;pixels&#x27;</span>,<span class="string">&#x27;Position&#x27;</span>,[<span class="number">40</span>,<span class="number">40</span>,<span class="number">360</span>,<span class="number">360</span>]);</span><br><span class="line">ptgrid=uicontrol(<span class="string">&#x27;Style&#x27;</span>,<span class="string">&#x27;pushbutton&#x27;</span>,...</span><br><span class="line"><span class="string">&#x27;String&#x27;</span>,<span class="string">&#x27;网格&#x27;</span>, <span class="string">&#x27;Position&#x27;</span>, [<span class="number">450</span>,<span class="number">120</span>,<span class="number">48</span>,<span class="number">20</span>],...</span><br><span class="line"><span class="string">&#x27;Callback&#x27;</span>,<span class="string">&#x27;grid&#x27;</span> );</span><br><span class="line">btncla = uicontrol(<span class="string">&#x27;Style&#x27;</span>, <span class="string">&#x27;pushbutton&#x27;</span>, ...</span><br><span class="line"><span class="string">&#x27;String&#x27;</span>, <span class="string">&#x27;清除&#x27;</span>,<span class="string">&#x27;Position&#x27;</span>, [<span class="number">450</span>,<span class="number">80</span>,<span class="number">48</span>,<span class="number">20</span>],...</span><br><span class="line"><span class="string">&#x27;Callback&#x27;</span>,<span class="string">&#x27;cla&#x27;</span> );</span><br><span class="line">btnplot = uicontrol(<span class="string">&#x27;Style&#x27;</span>, <span class="string">&#x27;pushbutton&#x27;</span>, ...</span><br><span class="line"><span class="string">&#x27;String&#x27;</span>,<span class="string">&#x27;绘图&#x27;</span>,<span class="string">&#x27;Position&#x27;</span>, [<span class="number">450</span>,<span class="number">160</span>,<span class="number">48</span>,<span class="number">20</span>]);</span><br><span class="line"><span class="comment">%设置“绘图”按钮的Callback属性值是plot_sin函数句柄。</span></span><br><span class="line">btnplot.Callback=@plot_sin;</span><br></pre></td></tr></table></figure>
+<h3 id="菜单对象"><a class="header-anchor" href="#菜单对象">¶</a>菜单对象</h3>
+<h4 id="建立菜单对象"><a class="header-anchor" href="#建立菜单对象">¶</a>建立菜单对象</h4>
+<p>uimenu函数用于创建、设置、修改菜单。</p>
+<ul>
+<li>建立一级菜单项的函数调用格式为：</li>
+</ul>
+<p>一级菜单项句柄=uimenu(图形窗口句柄,属性,属性值1,属性2,属性值2,…)</p>
+<ul>
+<li>建立子菜单项的函数调用格式为：</li>
+</ul>
+<p>子菜单项句柄=uimenu(上级菜单项句柄,属性1,属性值1,属性2,属性值2,…)</p>
+<h4 id="菜单属性"><a class="header-anchor" href="#菜单属性">¶</a>菜单属性</h4>
+<ul>
+<li>Label属性：定义菜单项的名字。</li>
+<li>Accelerator属性：定义菜单项的快捷键。</li>
+<li>Checked属性：指示菜单项是否已选中。E</li>
+<li>nable属性：控制菜单项的可选择性。</li>
+<li>Separator属性：在菜单项上方添加一条分隔线。</li>
+</ul>
+<p>ex3:在ex1的界面中添加“图形选项”菜单项，其中包括一个二级菜 单项“线型”，其下又有3个子菜单项，分别为“实线”、“虚线”、 “双划线”。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">hopt=uimenu(gcf,<span class="string">&#x27;Label&#x27;</span>,<span class="string">&#x27;图形选项&#x27;</span>,<span class="string">&#x27;Accelerator&#x27;</span>,<span class="string">&#x27;L&#x27;</span>);</span><br><span class="line">hLStyle=uimenu(hopt,<span class="string">&#x27;Label&#x27;</span>,<span class="string">&#x27;线型&#x27;</span>,<span class="string">&#x27;Tag&#x27;</span>,<span class="string">&#x27;LStyle&#x27;</span>,</span><br><span class="line"><span class="string">&#x27;Enable&#x27;</span>,<span class="string">&#x27;off&#x27;</span>);</span><br><span class="line">hL_Solid=uimenu(hLStyle,<span class="string">&#x27;Label&#x27;</span>,<span class="string">&#x27;实线&#x27;</span>,...</span><br><span class="line"><span class="string">&#x27;Tag&#x27;</span>,<span class="string">&#x27;Solid&#x27;</span>,<span class="string">&#x27;Callback&#x27;</span>, @MLine_Type);</span><br><span class="line">hL_Dotted=uimenu(hLStyle,<span class="string">&#x27;Label&#x27;</span>,<span class="string">&#x27;虚线&#x27;</span>,...</span><br><span class="line"><span class="string">&#x27;Tag&#x27;</span>,<span class="string">&#x27;Dotted&#x27;</span>,<span class="string">&#x27;Callback&#x27;</span>, @MLine_Type);</span><br><span class="line">hL_Dashed=uimenu(hLStyle,<span class="string">&#x27;Label&#x27;</span>,<span class="string">&#x27;双划线&#x27;</span>,...</span><br><span class="line"><span class="string">&#x27;Tag&#x27;</span>,<span class="string">&#x27;Dashed&#x27;</span>,<span class="string">&#x27;Callback&#x27;</span>, @MLine_Type);</span><br></pre></td></tr></table></figure>
+<p>新建函数文件MLine_Type.m，内容如下：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MLine_Type</span><span class="params">(source,callbackdata)</span></span></span><br><span class="line">hline=findobj(<span class="string">&#x27;Type&#x27;</span>,<span class="string">&#x27;line&#x27;</span>);</span><br><span class="line"><span class="keyword">if</span> strcmp(source.Tag,<span class="string">&#x27;Solid&#x27;</span> )==<span class="number">1</span></span><br><span class="line">hline.LineStyle=<span class="string">&#x27;-&#x27;</span>;</span><br><span class="line"><span class="keyword">elseif</span> strcmp(source.Tag,<span class="string">&#x27;Dotted&#x27;</span> )==<span class="number">1</span></span><br><span class="line">hline.LineStyle=<span class="string">&#x27;:&#x27;</span>;</span><br><span class="line"><span class="keyword">elseif</span> strcmp(source.Tag,<span class="string">&#x27;Dashed&#x27;</span> )==<span class="number">1</span></span><br><span class="line">hline.LineStyle=<span class="string">&#x27;--&#x27;</span>;</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>修改函数文件plot_sin.m，内容如下：</p>
+<div class="note default">
+            <p>在运行时报错，source, callbackdata，未使用参数，换成了~</p>
+          </div>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">plot_sin</span><span class="params">(~, ~)</span></span></span><br><span class="line">t=-<span class="built_in">pi</span>:<span class="built_in">pi</span>/<span class="number">20</span>:<span class="built_in">pi</span>;</span><br><span class="line"><span class="built_in">plot</span>(t,<span class="built_in">sin</span>(t));</span><br><span class="line">h1=findobj(<span class="string">&#x27;Tag&#x27;</span>,<span class="string">&#x27;LStyle&#x27;</span>);</span><br><span class="line">h1.Enable=<span class="string">&#x27;On&#x27;</span>; <span class="comment">%使得 “线型”菜单项可用</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>程序的运行结果。 首先运行ex1的程序生成图形界面，再 运行ex2程序，在界面中添加“图形选 项”菜单项，这时“线型”菜单项不 可用，单击“绘图”按钮绘制正弦函 数曲线后“线型”菜单项变为可用， 这时可以改变线型，例如双划线，这时界面如图所示。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829223223.png" alt="image-20200829223222692"></p>
+<h2 id="用户界面设计工具"><a class="header-anchor" href="#用户界面设计工具">¶</a>用户界面设计工具</h2>
+<ul>
+<li>图形界面设计窗口</li>
+<li>图形用户界面设计工具</li>
+<li>定义回调函数</li>
+</ul>
+<h3 id="图形用户界面设计窗口"><a class="header-anchor" href="#图形用户界面设计窗口">¶</a>图形用户界面设计窗口</h3>
+<h4 id="打开GUIDE"><a class="header-anchor" href="#打开GUIDE">¶</a>打开GUIDE</h4>
+<ul>
+<li>在MATLAB命令行窗口输入guide命令。</li>
+<li>在MATLAB主窗口中选择“主页”选项卡，单击工具栏的“新建”命令按钮，再选择“应用程序”下的GUIDE命令。</li>
+</ul>
+<h4 id="图形用户界面设计模板"><a class="header-anchor" href="#图形用户界面设计模板">¶</a>图形用户界面设计模板</h4>
+<ul>
+<li>Blank GUI (Default)</li>
+<li>GUI with Uicontrols</li>
+<li>GUI with Axes and Menu</li>
+<li>Modal Question Dialog</li>
+</ul>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829224022.png" alt="image-20200829224020745"></p>
+<h4 id="图形用户界面设计窗口-v2"><a class="header-anchor" href="#图形用户界面设计窗口-v2">¶</a>图形用户界面设计窗口</h4>
+<p>图形用户界面设计窗口由菜单栏、 工具栏、组件选项板、界面设计区、状 态栏等部分组成。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829224239.png" alt="image-20200829224237966"></p>
+<p>ex:建立一个图形用户界面，该界面包括1个坐标轴，3个静态文本，3 个可编辑文本，2个按钮。还有1个按钮组，里面有两个单选按钮。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829224645.png" alt="image-20200829224644316"></p>
+<h3 id="图形用户界面设计工具"><a class="header-anchor" href="#图形用户界面设计工具">¶</a>图形用户界面设计工具</h3>
+<ul>
+<li>对齐对象工具</li>
+<li>菜单编辑器</li>
+<li>Tab键顺序编辑器</li>
+<li>工具栏编辑器</li>
+<li>代码编辑器</li>
+<li>对象属性检查器</li>
+<li>对象浏览器</li>
+</ul>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829225044.png" alt="image-20200829224931549"></p>
+<h4 id="对象属性检查器"><a class="header-anchor" href="#对象属性检查器">¶</a>对象属性检查器</h4>
+<p>对象属性检查器是用于检查/修改对象属性的工具。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829225034.png" alt="image-20200829225033302"></p>
+<p>ex2:利用属性检查器设置ex1界面对象上显示的文字和对象标识。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829225513.png" alt="image-20200829225512519"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829225854.png" alt="image-20200829225853500"></p>
+<ul>
+<li>设置控件的String属性</li>
+</ul>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829230320.png" alt="image-20200829230319345"></p>
+<ul>
+<li>设置控件的Tag 属性</li>
+<li>设置按钮组的Title 属性</li>
+</ul>
+<h4 id="菜单编辑器"><a class="header-anchor" href="#菜单编辑器">¶</a>菜单编辑器</h4>
+<ul>
+<li>
+<p>菜单编辑器构成</p>
+<ul>
+<li>工具栏</li>
+<li>菜单列表</li>
+<li>菜单属性面板</li>
+</ul>
+</li>
+<li>
+<p>图形窗口的MenuBar属性</p>
+<ul>
+<li>figure</li>
+<li>none</li>
+</ul>
+</li>
+</ul>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829231354.png" alt="image-20200829231353261"></p>
+<p>ex3:在ex2的菜单栏添加一个一级菜单项“绘图选项” ，而且这个菜 单只有在画有曲线时才是可用的。其下有6项，前3项定义线型，后3项 定义曲线颜色。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829235227.png" alt="image-20200829235226564"></p>
+<div class='tip error'><p>注意：出现错误，未解决<p></div>
+<ul>
+<li>添加自定义菜单
+<ul>
+<li>新建菜单</li>
+<li>新建菜单项</li>
+<li>设置菜单项属性</li>
+</ul>
+</li>
+</ul>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829235454.png" alt="image-20200829235453021"></p>
+<h4 id="对象浏览器"><a class="header-anchor" href="#对象浏览器">¶</a>对象浏览器</h4>
+<p>对象浏览器用于查看图形对象和展示界面的组织架构。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829235947.png" alt="image-20200829235543324"></p>
+<h3 id="回调属性与回调函数"><a class="header-anchor" href="#回调属性与回调函数">¶</a>回调属性与回调函数</h3>
+<h4 id="回调属性"><a class="header-anchor" href="#回调属性">¶</a>回调属性</h4>
+<ul>
+<li>Callback属性：按钮类控件和菜单项的单击事件的默认回调属性。</li>
+<li>CreateFcn属性：定义创建图形对象的响应。</li>
+<li>DeleteFcn属性：定义取消图形对象的响应。</li>
+<li>ButtonDownFcn属性：定义单击鼠标键按下的响应。</li>
+<li>KeyPressFcn属性：定义键盘键按下的响应。</li>
+<li>SelectionChangeFcn属性：定义改变选项的响应。</li>
+</ul>
+<h4 id="回调函数框架"><a class="header-anchor" href="#回调函数框架">¶</a>回调函数框架</h4>
+<p>function 对象标识_Callback(hObject, eventdata, handles)</p>
+<blockquote>
+<p>其中，hObject为发生事件的源控件，eventdata为事件数据，handles保 存图形界面中所有对象的句柄。</p>
+</blockquote>
+<h4 id="回调函数举例"><a class="header-anchor" href="#回调函数举例">¶</a>回调函数举例</h4>
+<ul>
+<li>“绘图”按钮的Callback函数</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">pushbutton1_Callback</span><span class="params">(hObject, eventdata, handles)</span></span></span><br><span class="line">A=eval(handles.editfz.String);</span><br><span class="line">f=eval(handles.editpl.String)/<span class="number">50</span>;</span><br><span class="line">theta=eval(handles.editxj.String)/<span class="number">180</span>*<span class="built_in">pi</span>;</span><br><span class="line">x=<span class="built_in">linspace</span>(<span class="number">0</span>,<span class="number">2</span>*<span class="built_in">pi</span>,<span class="number">60</span>);</span><br><span class="line"><span class="keyword">if</span> handles.OpSin.Value==<span class="number">1</span></span><br><span class="line">y=A*<span class="built_in">sin</span>(f*x+theta);</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">y=A*<span class="built_in">cos</span>(f*x+theta);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="built_in">plot</span>(x,y);</span><br><span class="line">handles.PStyle.Enable=<span class="string">&#x27;On&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829235947.png" alt="image-20200829235812870"></p>
+<ul>
+<li>“实线”菜单项的回调函数</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Solid_Callback</span><span class="params">(hObject, eventdata, handles)</span></span></span><br><span class="line">hline=findobj(<span class="string">&#x27;Type&#x27;</span>,<span class="string">&#x27;line&#x27;</span>);</span><br><span class="line">hline.LineStyle=<span class="string">&#x27;-&#x27;</span>;</span><br><span class="line">handles.Solid.Checked=<span class="string">&#x27;On&#x27;</span>;</span><br><span class="line">handles.Dotted.Checked=<span class="string">&#x27;Off&#x27;</span>;</span><br><span class="line">handles.Dashed.Checked=<span class="string">&#x27;Off&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>“红”菜单项的回调函数</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">r_Callback</span><span class="params">(hObject, eventdata, handles)</span></span></span><br><span class="line">hline=findobj(<span class="string">&#x27;Type&#x27;</span>,<span class="string">&#x27;line&#x27;</span>);</span><br><span class="line">hline.Color=<span class="string">&#x27;r&#x27;</span>;</span><br><span class="line">handles.r.Checked=<span class="string">&#x27;On&#x27;</span>;</span><br><span class="line">handles.g.Checked=<span class="string">&#x27;Off&#x27;</span>;</span><br><span class="line">handles.b.Checked=<span class="string">&#x27;Off&#x27;</span>;</span><br></pre></td></tr></table></figure>
+<h4 id="运行图形用户界面的方法"><a class="header-anchor" href="#运行图形用户界面的方法">¶</a>运行图形用户界面的方法</h4>
+<ul>
+<li>在GUIDE窗口中单击工具栏上的“运行图形”命令按钮。</li>
+<li>在GUIDE窗口中选择“工具”菜单中的“运行”命令。</li>
+</ul>
 ]]></content>
       <categories>
         <category>matlab</category>
