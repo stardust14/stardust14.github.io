@@ -4548,6 +4548,330 @@ d=d1+d2+d3<br>
 <p><font color="purple">时间已过 0.070974 秒。</font></p>
 <p><font color="purple">ode15s计算的点数98</font></p>
 <p>对于刚性问题，我们需要改变求解算法。我们选择以“s”结尾的函数，他们 专门用于求解刚性方程。计算时间大大缩短，计算的点数大大减少。</p>
+<h2 id="常微分方程应用举例"><a class="header-anchor" href="#常微分方程应用举例">¶</a>常微分方程应用举例</h2>
+<ul>
+<li>Lotka-Volterra模型</li>
+<li>Lotka-Volterra改进模型</li>
+</ul>
+<h3 id="Lotka-Volterra模型"><a class="header-anchor" href="#Lotka-Volterra模型">¶</a>Lotka-Volterra模型</h3>
+<p>一阶非线性微分方程组：</p>
+<p>dr / dt = 2r − λrƒ，r(0) = r0</p>
+<p>dƒ / dt = −ƒ + λrƒ，ƒ(0)= ƒ0</p>
+<blockquote>
+<p>其中，t为时间， 𝐫 (𝒕) 为兔子数量，ƒ (𝒕) 为狐狸数量，𝝀为一个正常数。该系统解具有周 期性，其周期取决于初始条件。也就是说，对于任意数量的𝐫 (𝟎) 和ƒ (𝟎) ，总存在一个时间 𝐭 = 𝒕𝒑，使这两个种群的数量回归初始值。</p>
+</blockquote>
+<p>① 在𝒓𝟎 = 𝟑𝟎𝟎、ƒ𝟎 = 𝟏𝟓𝟎、𝝀 = 𝟎. 𝟎𝟏的条件下，求该系统的解，结果会发现𝒕𝒑接 近5。进一步绘制𝐫(𝐭)和ƒ(t)函数的曲线，以及以𝐫和ƒ为坐标轴画相平面图。</p>
+<p>② 在𝒓𝟎 = 𝟏𝟓、ƒ𝟎 = 𝟐𝟐、𝝀 = 𝟎. 𝟎𝟏时求解并绘制图形，发现会发现𝒕𝒑接近6.62。</p>
+<p>③ 在𝒓𝟎 = 𝟏𝟎𝟐、ƒ𝟎 = 𝟏𝟗𝟖、𝝀 = 𝟎. 𝟎𝟏时求解并绘制图形，并确定周期𝒕𝒑。</p>
+<p>④ 点（𝒓𝟎，ƒ𝟎）=（𝟏 𝝀，𝟐 𝝀）是一个稳定平衡点。若以此为初值，那么种群数量 不发生变化。若初值接近此平衡点，那么数量不会发生大的变化。试作图验证。</p>
+<h4 id="模型分析-v2"><a class="header-anchor" href="#模型分析-v2">¶</a>模型分析</h4>
+<p>x1(t)—兔子在t时刻的数量			 x2(t)—狐狸在t时刻的数量</p>
+<p>r1—兔子独立生存时的增长率 		r2—狐狸独自存在时的死亡率</p>
+<p>λ 1—狐狸掠取兔子的能力			 λ 2—兔子对狐狸的供养能力</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829153627.png" alt="image-20200829152315097"></p>
+<p>这里假设r1= 2，r2=1，λ 1= λ 2= 0.01，即系统模型如下：</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829153623.png" alt="image-20200829152720561"></p>
+<p>第①问：兔子数量初始值x1(0)=300，狐狸数量初始值x2(0)=150。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">rabbitFox=@(t,x) [x(<span class="number">1</span>)*(<span class="number">2</span><span class="number">-0.01</span>*x(<span class="number">2</span>));x(<span class="number">2</span>)*(<span class="number">-1</span>+<span class="number">0.01</span>*x(<span class="number">1</span>))];</span><br><span class="line">[t,x]=ode45(rabbitFox,[<span class="number">0</span>,<span class="number">30</span>],[<span class="number">300</span>,<span class="number">150</span>])</span><br><span class="line">subplot(<span class="number">1</span>,<span class="number">2</span>,<span class="number">1</span>);<span class="built_in">plot</span>(t,x(:,<span class="number">1</span>),<span class="string">&#x27;-&#x27;</span>,t,x(:,<span class="number">2</span>),<span class="string">&#x27;-*&#x27;</span>);</span><br><span class="line"><span class="built_in">legend</span>(<span class="string">&#x27;x1(t)&#x27;</span>,<span class="string">&#x27;x2(t)&#x27;</span>);</span><br><span class="line">xlabel(<span class="string">&#x27;时间&#x27;</span>);ylabel(<span class="string">&#x27;物种数量&#x27;</span>);</span><br><span class="line">grid on</span><br><span class="line">subplot(<span class="number">1</span>,<span class="number">2</span>,<span class="number">2</span>);<span class="built_in">plot</span>(x(:,<span class="number">1</span>),x(:,<span class="number">2</span>))</span><br><span class="line">grid on </span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829153618.png" alt="image-20200829153123062"></p>
+<p>我们可以看到，兔子和狐狸两者相互制约，当狐狸逐渐增多时，兔子逐渐减少，当狐狸增 加到一定数量时，由于种群内部竞争激烈，又导致其数量减少，从而兔子天敌减少，进而 导致兔子数量增加，当兔子增加到一定数量时，种间竞争加剧，从而又导致兔子数量减少， 如此循环，相互制约发展。</p>
+<p>第②问：兔子初始值x1(0)=15，狐狸初始值x2(0)=22。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829153609.png" alt="image-20200829153355658"></p>
+<p>第③问：兔子初始值x1(0)=102，狐狸初始值x2(0)=198。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829153604.png" alt="image-20200829153439155"></p>
+<p>第④问：验证（1/λ ，2/λ ）是稳定平衡点。</p>
+<ul>
+<li>取λ =0.01， 所以稳定平衡点（1/λ ，2/λ ）即是（100，200），以此点作 为初值时，画出其图像。</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">rabbitFox=@(t,x) [x(<span class="number">1</span>)*(<span class="number">2</span><span class="number">-0.01</span>*x(<span class="number">2</span>));...</span><br><span class="line"> x(<span class="number">2</span>)*(<span class="number">-1</span>+<span class="number">0.01</span>*x(<span class="number">1</span>))];</span><br><span class="line">[t,x]=ode45(rabbitFox,[<span class="number">0</span>,<span class="number">30</span>],[<span class="number">100</span>,<span class="number">200</span>]);</span><br><span class="line"><span class="built_in">plot</span>(t,x(:,<span class="number">1</span>),<span class="string">&#x27;-o&#x27;</span>,t,x(:,<span class="number">2</span>),<span class="string">&#x27;-*&#x27;</span>);</span><br><span class="line"><span class="built_in">legend</span>(<span class="string">&#x27;x1(t)-兔子&#x27;</span>,<span class="string">&#x27;x2(t)-狐狸&#x27;</span>);</span><br><span class="line">xlabel(<span class="string">&#x27;时间&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;物种数量&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829153550.png" alt="image-20200829153548985"></p>
+<ul>
+<li>当将初始值变为（98,195）时，即向下十分接近平衡点，画出其图像。</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">rabbitFox=@(t,x) [x(<span class="number">1</span>)*(<span class="number">2</span><span class="number">-0.01</span>*x(<span class="number">2</span>));...</span><br><span class="line"> x(<span class="number">2</span>)*(<span class="number">-1</span>+<span class="number">0.01</span>*x(<span class="number">1</span>))];</span><br><span class="line">[t,x]=ode45(rabbitFox,[<span class="number">0</span>,<span class="number">30</span>],[<span class="number">98</span>,<span class="number">195</span>]);</span><br><span class="line"><span class="built_in">plot</span>(t,x(:,<span class="number">1</span>),<span class="string">&#x27;-o&#x27;</span>,t,x(:,<span class="number">2</span>),<span class="string">&#x27;-*&#x27;</span>);</span><br><span class="line"><span class="built_in">legend</span>(<span class="string">&#x27;x1(t)-兔子&#x27;</span>,<span class="string">&#x27;x2(t)-狐狸&#x27;</span>);</span><br><span class="line">xlabel(<span class="string">&#x27;时间&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;物种数量&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829154248.png" alt="image-20200829153745712"></p>
+<blockquote>
+<p>两者图像没有交点，兔子和狐狸的数量分别以各自的平衡点进行周期性波动， 但是两者的数量变化不是很大。</p>
+</blockquote>
+<ul>
+<li>当将初始值变为（70,150）时（向下偏离平衡点比较远时），画出其图像。</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">rabbitFox=@(t,x) [x(<span class="number">1</span>)*(<span class="number">2</span><span class="number">-0.01</span>*x(<span class="number">2</span>));...</span><br><span class="line"> x(<span class="number">2</span>)*(<span class="number">-1</span>+<span class="number">0.01</span>*x(<span class="number">1</span>))];</span><br><span class="line">[t,x]=ode45(rabbitFox,[<span class="number">0</span>,<span class="number">30</span>],[<span class="number">70</span>,<span class="number">150</span>]);</span><br><span class="line"><span class="built_in">plot</span>(t,x(:,<span class="number">1</span>),<span class="string">&#x27;-o&#x27;</span>,t,x(:,<span class="number">2</span>),<span class="string">&#x27;-*&#x27;</span>);</span><br><span class="line"><span class="built_in">legend</span>(<span class="string">&#x27;x1(t)-兔子&#x27;</span>,<span class="string">&#x27;x2(t)-狐狸&#x27;</span>);</span><br><span class="line">xlabel(<span class="string">&#x27;时间&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;物种数量&#x27;</span>); </span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829154243.png" alt="image-20200829153845856"></p>
+<blockquote>
+<p>可以发现兔子和狐狸的数量变化比较剧烈，但是依然成周期性变化。</p>
+</blockquote>
+<ul>
+<li>当将初始值变为（900,1600）时（向上偏离平衡点十分远时），画出其图像。</li>
+</ul>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">rabbitFox=@(t,x) [x(<span class="number">1</span>)*(<span class="number">2</span><span class="number">-0.01</span>*x(<span class="number">2</span>));...</span><br><span class="line"> x(<span class="number">2</span>)*(<span class="number">-1</span>+<span class="number">0.01</span>*x(<span class="number">1</span>))];</span><br><span class="line">[t,x]=ode45(rabbitFox,[<span class="number">0</span>,<span class="number">500</span>],[<span class="number">900</span>,<span class="number">1600</span>]);</span><br><span class="line"><span class="built_in">plot</span>(t,x(:,<span class="number">1</span>),t,x(:,<span class="number">2</span>));</span><br><span class="line"><span class="built_in">legend</span>(<span class="string">&#x27;x1(t)-兔子&#x27;</span>,<span class="string">&#x27;x2(t)-狐狸&#x27;</span>);</span><br><span class="line">xlabel(<span class="string">&#x27;时间&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;物种数量&#x27;</span>); </span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829154237.png" alt="image-20200829153952626"></p>
+<blockquote>
+<p>可以发现，此时兔子和狐狸的数量变化相当的剧烈，但是依然存在周期。</p>
+</blockquote>
+<h3 id="Lotka-Volterra改进模型"><a class="header-anchor" href="#Lotka-Volterra改进模型">¶</a>Lotka-Volterra改进模型</h3>
+<p>修改后的方程：</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829154232.png" alt="image-20200829154048156"></p>
+<blockquote>
+<p>其中，t为时间； 𝐫 𝒕 为兔子数量；𝒇 𝒕 为狐狸数量；𝝀为一个正常数，R也是 一个正常数。方程在𝒓𝟎 = 𝟑𝟎𝟎、ƒ𝟎 = 𝟏𝟓𝟎初始条件下的50个时间单位上求解 并绘制图形。</p>
+</blockquote>
+<p>① 原模型下，狐狸数量和兔子数量的时间函数曲线。<br>
+② 改进模型下，狐狸数量和兔子数量的时间函数曲线。<br>
+③ 原模型下，狐狸数量相对兔子数量的关系曲线。<br>
+④ 改进模型下，狐狸数量相对兔子数量的关系曲线。</p>
+<p>第①问：在原模型下，绘制狐狸和兔子数量的时间函数曲线。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">rabbitFox=@(t,x) [x(<span class="number">1</span>)*(<span class="number">2</span><span class="number">-0.01</span>*x(<span class="number">2</span>));...</span><br><span class="line"> x(<span class="number">2</span>)*(<span class="number">-1</span>+<span class="number">0.01</span>*x(<span class="number">1</span>))];</span><br><span class="line"><span class="built_in">plot</span>(t,x(:,<span class="number">1</span>),t,x(:,<span class="number">2</span>));</span><br><span class="line"><span class="built_in">legend</span>(<span class="string">&#x27;x1(t)-兔子&#x27;</span>,<span class="string">&#x27;x2(t)-狐狸&#x27;</span>);</span><br><span class="line">xlabel(<span class="string">&#x27;时间&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;物种数量&#x27;</span>);</span><br><span class="line">title(<span class="string">&#x27;原模型下，狐狸和兔子数量的函数曲线&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829154224.png" alt="image-20200829154223112"></p>
+<p>第②问：在改进模型下，狐狸和兔子数量的时间函数曲线。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">rabbitFox=@(t,x) [<span class="number">2</span>*x(<span class="number">1</span>)*(<span class="number">1</span>-x(<span class="number">1</span>)/<span class="number">400</span><span class="number">-0.005</span>*x(<span class="number">2</span>));...</span><br><span class="line"> x(<span class="number">2</span>)*(<span class="number">-1</span>+<span class="number">0.01</span>*x(<span class="number">1</span>))];</span><br><span class="line">[t,x]=ode45(rabbitFox,[<span class="number">0</span>,<span class="number">50</span>],[<span class="number">300</span>,<span class="number">150</span>]);</span><br><span class="line"><span class="built_in">plot</span>(t,x(:,<span class="number">1</span>),t,x(:,<span class="number">2</span>));</span><br><span class="line"><span class="built_in">legend</span>(<span class="string">&#x27;x1(t)-兔子&#x27;</span>,<span class="string">&#x27;x2(t)-狐狸&#x27;</span>);</span><br><span class="line">xlabel(<span class="string">&#x27;时间&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;物种数量&#x27;</span>);</span><br><span class="line">title(<span class="string">&#x27;改进模型下，狐狸和兔子数量的函数曲线&#x27;</span>); </span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829154340.png" alt="image-20200829154339459"></p>
+<p>通过对比发现，原模型无论经历多长时间，狐狸和兔子的数量总是在自己的平 衡点之间波动；而改进以后的模型，虽然在先前一段时间有较大的波动，但随 着时间的推移，它们的波动越来越小，在经历足够长的时间后，狐狸和兔子的 数量分别达到稳定平衡，这更加接近自然界中的实际情况。</p>
+<p>第③问：在原模型下，绘制狐狸数量相对于兔子数量的关系曲线。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">rabbitFox=@(t,x) [x(<span class="number">1</span>)*(<span class="number">2</span><span class="number">-0.01</span>*x(<span class="number">2</span>));...</span><br><span class="line"> x(<span class="number">2</span>)*(<span class="number">-1</span>+<span class="number">0.01</span>*x(<span class="number">1</span>))];</span><br><span class="line">[t,x]=ode45(rabbitFox,[<span class="number">0</span>,<span class="number">50</span>],[<span class="number">300</span>,<span class="number">150</span>]);</span><br><span class="line"><span class="built_in">plot</span>(x(:,<span class="number">1</span>),x(:,<span class="number">2</span>));</span><br><span class="line">xlabel(<span class="string">&#x27;兔子数量&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;狐狸数量&#x27;</span>);</span><br><span class="line">title(<span class="string">&#x27;原模型下，狐狸数量相对于兔子数量的关系曲线&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829154523.png" alt="image-20200829154431392"></p>
+<p>第④问：在改进模型下，狐狸数量相对于兔子数量的关系曲线。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">rabbitFox=@(t,x) [<span class="number">2</span>*x(<span class="number">1</span>)*(<span class="number">1</span>-x(<span class="number">1</span>)/<span class="number">400</span><span class="number">-0.005</span>*x(<span class="number">2</span>));...</span><br><span class="line"> x(<span class="number">2</span>)*(<span class="number">-1</span>+<span class="number">0.01</span>*x(<span class="number">1</span>))];</span><br><span class="line">[t,x]=ode45(rabbitFox,[<span class="number">0</span>,<span class="number">50</span>],[<span class="number">300</span>,<span class="number">150</span>]);</span><br><span class="line"><span class="built_in">plot</span>(x(:,<span class="number">1</span>),x(:,<span class="number">2</span>));</span><br><span class="line">xlabel(<span class="string">&#x27;兔子数量&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;狐狸数量&#x27;</span>);</span><br><span class="line">title(<span class="string">&#x27;改进模型下，狐狸数量相对于兔子数量的关系曲线&#x27;</span>);</span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829154516.png" alt="image-20200829154515140"></p>
+<p>模型的进一步改进:</p>
+<ul>
+<li>考虑狐狸的环境容纳量</li>
+<li>考虑到兔子其他天敌和狐狸天敌的影响</li>
+<li>考虑自然灾害、人为捕捉等因素</li>
+</ul>
+<h1>MATLAB符号计算</h1>
+<h2 id="符号对象"><a class="header-anchor" href="#符号对象">¶</a>符号对象</h2>
+<ul>
+<li>符号对象的建立</li>
+<li>符号对象的运算</li>
+<li>符号矩阵</li>
+</ul>
+<h3 id="符号对象的建立"><a class="header-anchor" href="#符号对象的建立">¶</a>符号对象的建立</h3>
+<h4 id="sym函数"><a class="header-anchor" href="#sym函数">¶</a>sym函数</h4>
+<p>sym函数用于建立单个符号对象，其常用调用格式为：</p>
+<p>符号对象名=sym(A)</p>
+<p>将由A来建立符号对象。其中，A可以是一个数值常量、数值矩阵或数值表达式（<font color="red">不加单引号</font>），此时符号对象为一 个<font color="red">符号常量</font>；A也可以是一个变量名（<font color="red">加单引号</font>），这时 符号对象为一个<font color="red">符号变量</font>。</p>
+<p>请对比以下程序：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; t=sym(<span class="number">2</span>);</span><br><span class="line">&gt;&gt; t+<span class="number">1</span>/<span class="number">2</span></span><br><span class="line"> </span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"> </span><br><span class="line"><span class="number">5</span>/<span class="number">2</span></span><br><span class="line"> </span><br><span class="line">&gt;&gt; <span class="built_in">sin</span>(sym(<span class="built_in">pi</span>/<span class="number">3</span>))</span><br><span class="line"> </span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"> </span><br><span class="line"><span class="number">3</span>^(<span class="number">1</span>/<span class="number">2</span>)/<span class="number">2</span></span><br><span class="line"> </span><br><span class="line">&gt;&gt; <span class="built_in">sin</span>(<span class="built_in">pi</span>/<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"></span><br><span class="line">    <span class="number">0.8660</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; a=<span class="number">5</span>;</span><br><span class="line">&gt;&gt; b=<span class="number">-8</span>;</span><br><span class="line">&gt;&gt; x=sym(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line">&gt;&gt; y=sym(<span class="string">&#x27;b&#x27;</span>);</span><br><span class="line">&gt;&gt; w=(a+b)*(a-b)</span><br><span class="line"></span><br><span class="line">w =</span><br><span class="line"></span><br><span class="line">   <span class="number">-39</span></span><br><span class="line"></span><br><span class="line">&gt;&gt; s=(x+y)*(x-y)</span><br><span class="line"> </span><br><span class="line">s =</span><br><span class="line"> </span><br><span class="line">(a + b)*(a - b)</span><br><span class="line"> </span><br><span class="line">&gt;&gt; eval(s)</span><br><span class="line"></span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"></span><br><span class="line">   <span class="number">-39</span></span><br></pre></td></tr></table></figure>
+<p>由以上的例子我们可以看出：</p>
+<ul>
+<li>符号计算的结果是一个精确的数学表达式。</li>
+<li>数值计算的结果是一个数值。</li>
+</ul>
+<h4 id="syms命令"><a class="header-anchor" href="#syms命令">¶</a>syms命令</h4>
+<p>syms命令可以一次定义多个符号变量，其一般调用格式如下：</p>
+<p>syms 符号变量名1 符号变量名2 … 符号变量名n</p>
+<blockquote>
+<p>其中，变量名不能加单引号，相互之间用空格隔开。</p>
+</blockquote>
+<p>例如，要同时定义四个符号变量a、b、c、d，则可以输入如下 命令：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms a b c d</span><br></pre></td></tr></table></figure>
+<h3 id="符号对象的运算"><a class="header-anchor" href="#符号对象的运算">¶</a>符号对象的运算</h3>
+<h4 id="四则运算"><a class="header-anchor" href="#四则运算">¶</a>四则运算</h4>
+<p>符号表达式的四则运算与数值运算一样，用+、-、*、/、^ 运 算符实现，其运算结果依然是一个符号表达式。例如：</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms x;</span><br><span class="line">&gt;&gt; f=<span class="number">2</span>*x^<span class="number">2</span>+<span class="number">3</span>*x<span class="number">-5</span>;</span><br><span class="line">&gt;&gt; g=x^<span class="number">2</span>-x+<span class="number">7</span>;</span><br><span class="line">&gt;&gt; f+g</span><br><span class="line"> </span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"> </span><br><span class="line"><span class="number">3</span>*x^<span class="number">2</span> + <span class="number">2</span>*x + <span class="number">2</span></span><br></pre></td></tr></table></figure>
+<h4 id="关系运算-v2"><a class="header-anchor" href="#关系运算-v2">¶</a>关系运算</h4>
+<ul>
+<li>6种关系运算符:&lt;、&lt;=、&gt;、&gt;=、=、一=。</li>
+<li>对应的6个函数: lt()、le()、gt()、ge()、eq()、ne()。</li>
+</ul>
+<p>若参与运算的是<font color="red">符号表达式</font>，其结果是一个<font color="red">符号关系表达式</font>；若参与运算的是<font color="red">符号矩阵</font>，其结果是<font color="red">由符号关系表达式组 成的矩阵</font>。</p>
+<p>在进行符号对象的运算前，可用<font color="red">assume函数</font>对符号对象设置值域， 函数调用格式为：</p>
+<p>assume(condition)</p>
+<p>assume(expr,set)</p>
+<blockquote>
+<p>第一种格式指定变量满足条件condition，第二种格式指定表达式 expr属于集合set。</p>
+</blockquote>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms x;</span><br><span class="line">&gt;&gt; assume(x&lt;<span class="number">0</span>);</span><br><span class="line">&gt;&gt; <span class="built_in">abs</span>(x)==x</span><br><span class="line"><span class="built_in">ans</span>=</span><br><span class="line">-x==x</span><br><span class="line"><span class="comment">%因为x&lt;0，所以abs(x)的值为-x。</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; assume(x,<span class="string">&#x27;positive&#x27;</span>);</span><br><span class="line">&gt;&gt; <span class="built_in">abs</span>(x)==x</span><br><span class="line"><span class="built_in">ans</span>=</span><br><span class="line">x==x</span><br><span class="line"><span class="comment">%因为x为正数，所以abs(x)的值为x。</span></span><br></pre></td></tr></table></figure>
+<h4 id="逻辑运算-v2"><a class="header-anchor" href="#逻辑运算-v2">¶</a>逻辑运算</h4>
+<ul>
+<li>3种逻辑运算符:&amp;（与）、│(或）和～（非）。</li>
+<li>4个逻辑运算函数: and(a, b)、or(a,b)、not(a)和xor(a, b)。</li>
+</ul>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829171020.png" alt="image-20200829160458763"></p>
+<h4 id="因式分解与展开运算"><a class="header-anchor" href="#因式分解与展开运算">¶</a>因式分解与展开运算</h4>
+<p>MATLAB提供了符号表达式的因式分解与展开的函数，函数的调用格式为：</p>
+<p>①factor(s):对符号表达式s分解因式。<br>
+②expand(s):对符号表达式s进行展开。<br>
+③collect(s):对符号表达式s合并同类项。<br>
+④collect(s,v):对符号表达式s按变量v合并同类项。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms a b;</span><br><span class="line">&gt;&gt; s=a^<span class="number">3</span>-b^<span class="number">3</span>;</span><br><span class="line">&gt;&gt; <span class="built_in">factor</span>(s)</span><br><span class="line"><span class="built_in">ans</span>=</span><br><span class="line">[ a-b, a^<span class="number">2</span> + a*b + b^<span class="number">2</span>]</span><br></pre></td></tr></table></figure>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; <span class="built_in">factor</span>(<span class="number">12</span>)</span><br><span class="line"><span class="built_in">ans</span>=</span><br><span class="line"><span class="number">2</span> <span class="number">2</span> <span class="number">3</span></span><br></pre></td></tr></table></figure>
+<p>梅森素数的验证问题</p>
+<p>所谓梅森数，是指形如2 p -1的一类整数，其中指数p是素数。将梅森数记为Mp。 如果梅森数是素数，就称为梅森素数。请验证M19 、 M23 、 M29 、 M31是否 为梅森素数。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms p;</span><br><span class="line">&gt;&gt; m=<span class="number">2</span>^p<span class="number">-1</span>;</span><br><span class="line">&gt;&gt; p=<span class="number">19</span>;</span><br><span class="line">&gt;&gt; m19=eval(m)</span><br><span class="line"></span><br><span class="line">m19 =</span><br><span class="line"></span><br><span class="line">      <span class="number">524287</span></span><br><span class="line"></span><br><span class="line">&gt;&gt; <span class="built_in">factor</span>(m19)</span><br><span class="line"></span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"></span><br><span class="line">      <span class="number">524287</span></span><br><span class="line"></span><br><span class="line">&gt;&gt; p=<span class="number">23</span>;</span><br><span class="line">&gt;&gt; m23=eval(m)</span><br><span class="line"></span><br><span class="line">m23 =</span><br><span class="line"></span><br><span class="line">     <span class="number">8388607</span></span><br><span class="line"></span><br><span class="line">&gt;&gt; <span class="built_in">factor</span>(m23)</span><br><span class="line"></span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"></span><br><span class="line">          <span class="number">47</span>      <span class="number">178481</span></span><br><span class="line"></span><br><span class="line">&gt;&gt; p=<span class="number">29</span>;</span><br><span class="line">&gt;&gt; m29=eval(m)</span><br><span class="line"></span><br><span class="line">m29 =</span><br><span class="line"></span><br><span class="line">   <span class="number">536870911</span></span><br><span class="line"></span><br><span class="line">&gt;&gt; <span class="built_in">factor</span>(m29)</span><br><span class="line"></span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"></span><br><span class="line">         <span class="number">233</span>        <span class="number">1103</span>        <span class="number">2089</span></span><br><span class="line"></span><br><span class="line">&gt;&gt; p=<span class="number">31</span>;</span><br><span class="line">&gt;&gt; m31=eval(m)</span><br><span class="line"></span><br><span class="line">m31 =</span><br><span class="line"></span><br><span class="line">   <span class="number">2.1475e+09</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&gt;&gt; <span class="built_in">factor</span>(m31)</span><br><span class="line"></span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"></span><br><span class="line">   <span class="number">2.1475e+09</span></span><br></pre></td></tr></table></figure>
+<h4 id="其他运算"><a class="header-anchor" href="#其他运算">¶</a>其他运算</h4>
+<p>① 提取有理分式的分子分母：[n,d]=numden(s)。<br>
+② 提取符号表达式的系数：c=coeffs(s,x)。<br>
+③ 符号表达式化简：simplify(s)。<br>
+④ 符号多项式与多项式系数向量之间的转换：</p>
+<ul>
+<li>符号多项式转换为多项式系数向量: p=sym2poly(s)。</li>
+<li>多项式系数向量转换为符号多项式:s=poly2sym§。</li>
+</ul>
+<p>ex1:求方程ax^2+bx+c=0的根。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms a b c x;</span><br><span class="line">&gt;&gt; f=a*x^<span class="number">2</span>+b*x+c</span><br><span class="line"> </span><br><span class="line">f =</span><br><span class="line"> </span><br><span class="line">a*x^<span class="number">2</span> + b*x + c</span><br><span class="line"> </span><br><span class="line">&gt;&gt; g=coeffs(f,x)</span><br><span class="line"> </span><br><span class="line">g =</span><br><span class="line"> </span><br><span class="line">[ c, b, a]</span><br><span class="line"> </span><br><span class="line">&gt;&gt; g=g(<span class="keyword">end</span>:<span class="number">-1</span>:<span class="number">1</span>)</span><br><span class="line"> </span><br><span class="line">g =</span><br><span class="line"> </span><br><span class="line">[ a, b, c]</span><br><span class="line"> </span><br><span class="line">&gt;&gt; roots(g)</span><br><span class="line"> </span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"> </span><br><span class="line"> -(b + (b^<span class="number">2</span> - <span class="number">4</span>*a*c)^(<span class="number">1</span>/<span class="number">2</span>))/(<span class="number">2</span>*a)</span><br><span class="line"> -(b - (b^<span class="number">2</span> - <span class="number">4</span>*a*c)^(<span class="number">1</span>/<span class="number">2</span>))/(<span class="number">2</span>*a)</span><br></pre></td></tr></table></figure>
+<h4 id="符号运算中变量的确定"><a class="header-anchor" href="#符号运算中变量的确定">¶</a>符号运算中变量的确定</h4>
+<p>① 如果没有明确指定自变量，MATLAB将按以下原则确定主变量并对其进行相应运算:</p>
+<ul>
+<li>寻找除i、j之外，在字母顺序上最接近x的小写字母。</li>
+<li>若表达式中有两个符号变量与x的距离相等，则ASCII码大者优先。</li>
+</ul>
+<p>② symvar()函数可以用于查找一个符号表达式中的符号变量，函数的调用格式为：</p>
+<p>symvar(s,n)</p>
+<p>函数返回符号表达式s中的n个符号变量。因此，可以用<font color="red">symvar(s,1)</font>查找表达式s的主变量。</p>
+<h3 id="符号矩阵"><a class="header-anchor" href="#符号矩阵">¶</a>符号矩阵</h3>
+<p>符号矩阵也是一种符号表达式，所以符号表达式运算都可以在矩阵意 义下进行。</p>
+<div class="note success">
+            <p>success 注意：这些函数作用于符号矩阵时，是分别作用于矩阵的每一个元素。</p>
+          </div>
+<p>ex1：建立符号矩阵并化简。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829170952.png" alt="image-20200829170951954"></p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms a b x y alp;</span><br><span class="line">&gt;&gt; m=[a^<span class="number">3</span>-b^<span class="number">3</span>,<span class="built_in">sin</span>(alp)^<span class="number">2</span>+<span class="built_in">cos</span>(alp)^<span class="number">2</span>;(<span class="number">15</span>*x*y<span class="number">-3</span>*x^<span class="number">2</span>)/(x<span class="number">-5</span>*y),<span class="number">78</span>]</span><br><span class="line">m =</span><br><span class="line">[ a^<span class="number">3</span> - b^<span class="number">3</span>,<span class="built_in">cos</span>(alp)^<span class="number">2</span> + <span class="built_in">sin</span>(alp)^<span class="number">2</span>]</span><br><span class="line">[(- <span class="number">3</span>*x^<span class="number">2</span> + <span class="number">15</span>*y*x)/(x - <span class="number">5</span>*y), <span class="number">78</span>]</span><br><span class="line">&gt;&gt; simplify(m)</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line">[ a^<span class="number">3</span> - b^<span class="number">3</span>, <span class="number">1</span>]</span><br><span class="line">[ <span class="number">-3</span>*x, <span class="number">78</span>]</span><br></pre></td></tr></table></figure>
+<p>ex2:当λ取何值时，以下齐次线性方程组有非零解。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829171105.png" alt="image-20200829171104371"></p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">syms lamda;</span><br><span class="line">A=[<span class="number">1</span>-lamda,<span class="number">-2</span>,<span class="number">4</span>;<span class="number">2</span>,<span class="number">3</span>-lamda,<span class="number">1</span>;<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>-lamda];</span><br><span class="line">D=det(A);</span><br><span class="line"><span class="built_in">factor</span>(D)</span><br><span class="line"></span><br><span class="line"><span class="comment">%程序运行结果为：</span></span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line">[<span class="number">-1</span>, lamda, lamda - <span class="number">2</span>, lamda - <span class="number">3</span>]</span><br><span class="line"><span class="comment">%从而得知，当λ=0、λ=2或λ=3时，原方程组有非零解。</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>对于齐次线性方程组Ax=0，当 rank(A)&lt;n或|A|=0时，齐次线性方程组有非零解。</p>
+</blockquote>
+<h2 id="符号微积分"><a class="header-anchor" href="#符号微积分">¶</a>符号微积分</h2>
+<ul>
+<li>符号函数的极限</li>
+<li>符号函数的导数</li>
+<li>符号函数的积分</li>
+</ul>
+<h3 id="符号函数的极限"><a class="header-anchor" href="#符号函数的极限">¶</a>符号函数的极限</h3>
+<ul>
+<li>求符号函数极限的命令为limit，其调用格式为：</li>
+</ul>
+<p>limit(f,x,a)</p>
+<p>即求函数f关于变量x在a点的极限。</p>
+<p>limit函数的另一种功能是求单边极限，其调用格式为：</p>
+<p>limit(f,x,a,‘right’)</p>
+<p>limit(f,x,a,‘left’)</p>
+<p>ex:求下列极限。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829171745.png" alt="image-20200829171743840"></p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms a m x n;</span><br><span class="line">&gt;&gt; f=(x^(<span class="number">1</span>/m)-a^(<span class="number">1</span>/m))/(x-a);</span><br><span class="line">&gt;&gt; limit(f,x,a)</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line">a^(<span class="number">1</span>/m - <span class="number">1</span>)/m</span><br><span class="line">&gt;&gt; g=(<span class="number">1</span>+<span class="number">1</span>/n)^n;</span><br><span class="line">&gt;&gt; limit(g,n,<span class="built_in">inf</span>)</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"><span class="built_in">exp</span>(<span class="number">1</span>)</span><br><span class="line"><span class="comment">%即自然常数e。</span></span><br></pre></td></tr></table></figure>
+<h3 id="符号函数的导数"><a class="header-anchor" href="#符号函数的导数">¶</a>符号函数的导数</h3>
+<p>MATLAB中的求导函数为：</p>
+<p>diff(f,x,n)</p>
+<p>即求函数f关于变量x的n阶导数。参数x的用法同求极限函数limit，可以缺省，默认值与limit相同，n的默认值是1。</p>
+<p>ex:求下列函数的导数。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829171930.png" alt="image-20200829171929798"></p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="comment">%（1）</span></span><br><span class="line">&gt;&gt; syms x y z;</span><br><span class="line">&gt;&gt; f=<span class="built_in">sqrt</span>(<span class="number">1</span>+<span class="built_in">exp</span>(x));</span><br><span class="line">&gt;&gt; diff(f)</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"><span class="built_in">exp</span>(x)/(<span class="number">2</span>*(<span class="built_in">exp</span>(x) + <span class="number">1</span>)^(<span class="number">1</span>/<span class="number">2</span>)) </span><br><span class="line"><span class="comment">%(2)</span></span><br><span class="line">&gt;&gt; g=x*<span class="built_in">exp</span>(y)/y^<span class="number">2</span>;</span><br><span class="line">&gt;&gt; diff(g,x)</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"><span class="built_in">exp</span>(y)/y^<span class="number">2</span></span><br><span class="line">&gt;&gt; diff(g,y)</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line">(x*<span class="built_in">exp</span>(y))/y^<span class="number">2</span> - (<span class="number">2</span>*x*<span class="built_in">exp</span>(y))/y^<span class="number">3</span></span><br></pre></td></tr></table></figure>
+<h3 id="符号函数的积分"><a class="header-anchor" href="#符号函数的积分">¶</a>符号函数的积分</h3>
+<h4 id="不定积分"><a class="header-anchor" href="#不定积分">¶</a>不定积分</h4>
+<p>在MATLAB中，求不定积分的函数是int()，其常用 的调用格式为：</p>
+<p>int(f,x)</p>
+<p>即求函数f对变量x的不定积分。</p>
+<p>ex:求下列不定积分。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="../../../picture/PicGo/copypicture/image-20200829172130927.png" alt="image-20200829172130927"></p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms x t;</span><br><span class="line">&gt;&gt; f=(<span class="number">3</span>-x^<span class="number">2</span>)^<span class="number">3</span>;</span><br><span class="line">&gt;&gt; int(f)</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line">- x^<span class="number">7</span>/<span class="number">7</span> + (<span class="number">9</span>*x^<span class="number">5</span>)/<span class="number">5</span> - <span class="number">9</span>*x^<span class="number">3</span> + <span class="number">27</span>*x</span><br><span class="line">&gt;&gt; g=<span class="number">5</span>*x*t/(<span class="number">1</span>+x^<span class="number">2</span>);</span><br><span class="line">&gt;&gt; int(g,t)</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line">(<span class="number">5</span>*t^<span class="number">2</span>*x)/(<span class="number">2</span>*(x^<span class="number">2</span> + <span class="number">1</span>))</span><br></pre></td></tr></table></figure>
+<h4 id="定积分"><a class="header-anchor" href="#定积分">¶</a>定积分</h4>
+<p>在MATLAB中，定积分的计算也使用int()函数，但调用格式有区别：</p>
+<p>int(f,x,a,b)</p>
+<blockquote>
+<p>其中，a、b分别表示定积分的下限和上限。</p>
+</blockquote>
+<ul>
+<li>当函数f关于变量x在闭区间[a, b]可积时，函数返回一个定积分结果。</li>
+<li>当a、b中有一个是inf时，函数返回一个广义积分。</li>
+<li>当a、b中有一个符号表达式时，函数返回一个符号函数。</li>
+</ul>
+<p>ex:求下列定积分。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829172312.png" alt="image-20200829172311087"></p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms x t;</span><br><span class="line">&gt;&gt; int(<span class="built_in">abs</span>(<span class="number">1</span>-x),<span class="number">1</span>,<span class="number">2</span>)</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"><span class="number">1</span>/<span class="number">2</span></span><br><span class="line">&gt;&gt; int(<span class="number">1</span>/(<span class="number">1</span>+x^<span class="number">2</span>),-<span class="built_in">inf</span>,<span class="built_in">inf</span>)</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"><span class="built_in">pi</span></span><br><span class="line">&gt;&gt; int(<span class="number">4</span>*x/t,t,<span class="number">2</span>,<span class="built_in">sin</span>(x))</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"><span class="number">4</span>*x*(<span class="built_in">log</span>(<span class="built_in">sin</span>(x)) - <span class="built_in">log</span>(<span class="number">2</span>))</span><br></pre></td></tr></table></figure>
+<h2 id="级数"><a class="header-anchor" href="#级数">¶</a>级数</h2>
+<ul>
+<li>级数求和</li>
+<li>泰勒级数</li>
+</ul>
+<h3 id="级数求和"><a class="header-anchor" href="#级数求和">¶</a>级数求和</h3>
+<p>求无穷级数的和需要符号表达式求和函数symsum()，其调 用格式为：</p>
+<p>symsum(s,v,n,m)</p>
+<blockquote>
+<p>其中，s表示一个级数的通项，是一个符号表达式。v是求 和变量，v省略时使用系统的默认变量。n和m是求和变量v 的初值和末值。</p>
+</blockquote>
+<p>ex:求下列级数之和。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829172515.png" alt="image-20200829172514352"></p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms n;</span><br><span class="line">&gt;&gt; s1=symsum(n^<span class="number">2</span>,<span class="number">1</span>,<span class="number">100</span>)</span><br><span class="line">s1 =</span><br><span class="line"><span class="number">338350</span></span><br><span class="line">&gt;&gt; s2=symsum((<span class="number">-1</span>)^(n<span class="number">-1</span>)/n,<span class="number">1</span>,<span class="built_in">inf</span>)</span><br><span class="line">s2=</span><br><span class="line"><span class="built_in">log</span>(<span class="number">2</span>)</span><br><span class="line">&gt;&gt; s3=symsum((<span class="number">-1</span>)^(n<span class="number">-1</span>)/(<span class="number">2</span>*n<span class="number">-1</span>),n,<span class="number">1</span>,<span class="built_in">inf</span>)</span><br><span class="line">s3 =</span><br><span class="line">hypergeom([<span class="number">-1</span>/<span class="number">2</span>, <span class="number">1</span>], <span class="number">1</span>/<span class="number">2</span>, <span class="number">-1</span>)–<span class="number">1</span></span><br><span class="line">&gt;&gt; hypergeom([<span class="number">-1</span>/<span class="number">2</span>, <span class="number">1</span>], <span class="number">1</span>/<span class="number">2</span>, <span class="number">-1</span>) <span class="comment">%超几何函数</span></span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"><span class="number">1.7854</span></span><br><span class="line">&gt;&gt; eval(s3)*<span class="number">4</span></span><br><span class="line"><span class="built_in">ans</span>=</span><br><span class="line"><span class="number">3.141592653589792</span></span><br><span class="line"><span class="comment">%即原级数之和为π/4。</span></span><br></pre></td></tr></table></figure>
+<p>银行利率的计算问题</p>
+<p>假设某人在银行存款50000元，年利率为4.5%，按复利计息。</p>
+<p>①若半年期计息一次，请问一年后总金额是多少？</p>
+<p>②若每季度计息一次，请问一年后总金额是多少？</p>
+<p>③若每月计息一次，请问一年后总金额是多少？</p>
+<p>④若计息时间无限短，即计息期数趋于无穷，则一年后总金额是多少？</p>
+<p><font color='purple'>思考：期数无限多，总金额是否也会无限增长？</font></p>
+<p><font color='purple'>问题分析：</font></p>
+<p>假设存款（初始总金额）为p，年利率为r，计息期数为k。<br>
+第一期后总金额为<code>p*(1+r/k)</code>。<br>
+第二期后总金额为<code>p*(1+r/k)^2</code>。<br>
+第三期后总金额为<code>p*(1+r/k)^3</code>。<br>
+依此类推，第k期后总金额为<code>p*(1+r/k)^k</code>。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms k r;</span><br><span class="line">&gt;&gt; p2=symsum(<span class="number">50000</span>*(<span class="number">1</span>+<span class="number">0.045</span>/k)^k,k,<span class="number">2</span>,<span class="number">2</span>);</span><br><span class="line">&gt;&gt; eval(p2)</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"><span class="number">5.2275e+04</span></span><br><span class="line">&gt;&gt; p4=symsum(<span class="number">50000</span>*(<span class="number">1</span>+<span class="number">0.045</span>/k)^k,k,<span class="number">4</span>,<span class="number">4</span>);</span><br><span class="line">&gt;&gt; eval(p4)</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"><span class="number">5.2288e+04</span></span><br><span class="line">&gt;&gt; p12=symsum(<span class="number">50000</span>*(<span class="number">1</span>+<span class="number">0.045</span>/k)^k,k,<span class="number">12</span>,<span class="number">12</span>);</span><br><span class="line">&gt;&gt; eval(p12)</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"><span class="number">5.2297e+04</span></span><br><span class="line">&gt;&gt; limit((<span class="number">1</span>+r/k)^k,k,<span class="built_in">inf</span>)</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"><span class="built_in">exp</span>(r)</span><br><span class="line">&gt;&gt; <span class="number">50000</span>*<span class="built_in">exp</span>(<span class="number">0.045</span>)</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"><span class="number">5.2301e+04</span></span><br></pre></td></tr></table></figure>
+<p>所以，即使是无数次计息，只要年利率确定， 总金额也不会无限增长，它收敛于pe^r 。</p>
+<blockquote>
+<p>注意：在符号计算中，因为小数都表示为有理分数的形式，随着计算次数的 增加，容易导致分子或分母出现极大整数从而无法计算的情况。</p>
+</blockquote>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms n;</span><br><span class="line">&gt;&gt; s=symsum(<span class="number">1</span>/n^<span class="number">2</span>,n,<span class="number">1</span>,<span class="built_in">inf</span>)</span><br><span class="line">s =</span><br><span class="line"><span class="built_in">pi</span>^<span class="number">2</span>/<span class="number">6</span></span><br><span class="line">&gt;&gt; s1=symsum(<span class="number">1</span>/n^<span class="number">2</span>,n,<span class="number">1</span>,<span class="number">500</span>)</span><br><span class="line">s1 =</span><br><span class="line"><span class="number">40989667509417020364501093692502</span> …</span><br><span class="line">&gt;&gt; eval(s1)</span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line">NaN</span><br></pre></td></tr></table></figure>
+<h3 id="泰勒级数"><a class="header-anchor" href="#泰勒级数">¶</a>泰勒级数</h3>
+<p>MATLAB提供了taylor()函数将函数展开为幂级数，其调用格式为：</p>
+<p>taylor(f,v,a,Name,Value)</p>
+<p>该函数将函数f按变量v在a点展开为泰勒级数，v的默认值 与diff函数相同，a的默认值是0。 Name和Value为选项设置，经常成对使用，前者为选项名，后者为该选项的值。</p>
+<p>Name有3个可取字符串：</p>
+<p>① ‘ExpansionPoint’：指定展开点，对应值可以是标量或向量。 未设置时，展开点为0。</p>
+<p>② ‘Order’：指定截断参数，对应值为一个正整数。未设置时， 截断参数为6，即展开式的最高阶为5。</p>
+<p>③ ‘OrderMode’：指定展开式采用绝对阶或相对阶，对应值为 ‘Absolute’ 或’Relative’。 未设置时取’Absolute’。</p>
+<p>ex:求函数f在x=1处的5阶泰勒级数展开式。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829180353.png" alt="image-20200829180352257"></p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms x;</span><br><span class="line">&gt;&gt; f=(<span class="number">1</span>+x+x^<span class="number">2</span>)/(<span class="number">1</span>-x+x^<span class="number">2</span>);</span><br><span class="line">&gt;&gt; taylor(f,x,<span class="number">1</span>,<span class="string">&#x27;Order&#x27;</span>,<span class="number">6</span>)</span><br><span class="line"> </span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"> </span><br><span class="line"><span class="number">2</span>*(x - <span class="number">1</span>)^<span class="number">3</span> - <span class="number">2</span>*(x - <span class="number">1</span>)^<span class="number">2</span> - <span class="number">2</span>*(x - <span class="number">1</span>)^<span class="number">5</span> + <span class="number">3</span></span><br><span class="line"> </span><br><span class="line">&gt;&gt; expand(<span class="built_in">ans</span>)</span><br><span class="line"> </span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"> </span><br><span class="line">- <span class="number">2</span>*x^<span class="number">5</span> + <span class="number">10</span>*x^<span class="number">4</span> - <span class="number">18</span>*x^<span class="number">3</span> + <span class="number">12</span>*x^<span class="number">2</span> + <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>复杂函数的计算方法问题</p>
+<p>除了四则运算以外，计算机对其他复杂函数怎么计算？ 是否存在一种方法，使得计算机只需要通过四则运算， 就能计算其他复杂函数？</p>
+<p><font color='purple'>泰勒级数展开就是一种非常好的解决方案。</font></p>
+<p>ex:利用泰勒展开式计算三角函数的值。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms x;</span><br><span class="line">&gt;&gt; f=taylor(<span class="built_in">cos</span>(x),x,<span class="built_in">pi</span>)</span><br><span class="line"> </span><br><span class="line">f =</span><br><span class="line"> </span><br><span class="line">(x - <span class="built_in">pi</span>)^<span class="number">2</span>/<span class="number">2</span> - (x - <span class="built_in">pi</span>)^<span class="number">4</span>/<span class="number">24</span> - <span class="number">1</span></span><br><span class="line"> </span><br><span class="line">&gt;&gt; x=<span class="number">3</span>;</span><br><span class="line">&gt;&gt; eval(f)</span><br><span class="line"></span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"></span><br><span class="line">   <span class="number">-0.9900</span></span><br><span class="line"></span><br><span class="line">&gt;&gt; <span class="built_in">cos</span>(<span class="number">3</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"></span><br><span class="line">   <span class="number">-0.9900</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>通过泰勒级数展开的方法，成功地将三角函数的计算转换成了四则运算。</p>
+</blockquote>
+<h2 id="符号方程求解"><a class="header-anchor" href="#符号方程求解">¶</a>符号方程求解</h2>
+<ul>
+<li>代数方程符号求解</li>
+<li>常微分方程符号求解</li>
+</ul>
+<h3 id="代数方程符号求解"><a class="header-anchor" href="#代数方程符号求解">¶</a>代数方程符号求解</h3>
+<p>在MATLAB中，求解用符号表达式表示的代数方程可由函数 solve()实现，其调用格式为：</p>
+<p>① solve(s)：求解符号表达式s的代数方程，求解变量为 默认变量。<br>
+② solve(s,v)：求解符号表达式s的代数方程，求解变量 为v。<br>
+③ solve(s1,s2,…,sn,v1,v2,…,vn)：求解符号表达式 s1，s2，…，sn组成的代数方程组，求解变量分别为v1， v2，…，vn。</p>
+<p>ex:解方程 <code>a*x^2+b*x+c=0</code>。</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms x y a b c;</span><br><span class="line"><span class="comment">%①</span></span><br><span class="line">&gt;&gt; solve(a*x^<span class="number">2</span>+b*x+c==<span class="number">0</span>)</span><br><span class="line"> </span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"> </span><br><span class="line"> -(b + (b^<span class="number">2</span> - <span class="number">4</span>*a*c)^(<span class="number">1</span>/<span class="number">2</span>))/(<span class="number">2</span>*a)</span><br><span class="line"> -(b - (b^<span class="number">2</span> - <span class="number">4</span>*a*c)^(<span class="number">1</span>/<span class="number">2</span>))/(<span class="number">2</span>*a)</span><br><span class="line"> <span class="comment">%②</span></span><br><span class="line">&gt;&gt; f=a*x^<span class="number">2</span>+b*x+c==<span class="number">0</span>;</span><br><span class="line">&gt;&gt; solve(f)</span><br><span class="line"> </span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"> </span><br><span class="line"> -(b + (b^<span class="number">2</span> - <span class="number">4</span>*a*c)^(<span class="number">1</span>/<span class="number">2</span>))/(<span class="number">2</span>*a)</span><br><span class="line"> -(b - (b^<span class="number">2</span> - <span class="number">4</span>*a*c)^(<span class="number">1</span>/<span class="number">2</span>))/(<span class="number">2</span>*a)</span><br><span class="line"> <span class="comment">%③</span></span><br><span class="line">&gt;&gt; solve(a*x^<span class="number">2</span>+b*x+c)</span><br><span class="line"> </span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"> </span><br><span class="line"> -(b + (b^<span class="number">2</span> - <span class="number">4</span>*a*c)^(<span class="number">1</span>/<span class="number">2</span>))/(<span class="number">2</span>*a)</span><br><span class="line"> -(b - (b^<span class="number">2</span> - <span class="number">4</span>*a*c)^(<span class="number">1</span>/<span class="number">2</span>))/(<span class="number">2</span>*a)</span><br><span class="line"> <span class="comment">%④</span></span><br><span class="line">&gt;&gt; f=a*x^<span class="number">2</span>+b*x+c</span><br><span class="line"> </span><br><span class="line">f =</span><br><span class="line"> </span><br><span class="line">a*x^<span class="number">2</span> + b*x + c</span><br><span class="line"> </span><br><span class="line">&gt;&gt; solve(f)</span><br><span class="line"> </span><br><span class="line"><span class="built_in">ans</span> =</span><br><span class="line"> </span><br><span class="line"> -(b + (b^<span class="number">2</span> - <span class="number">4</span>*a*c)^(<span class="number">1</span>/<span class="number">2</span>))/(<span class="number">2</span>*a)</span><br><span class="line"> -(b - (b^<span class="number">2</span> - <span class="number">4</span>*a*c)^(<span class="number">1</span>/<span class="number">2</span>))/(<span class="number">2</span>*a)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意：solve()函数求解方程时，所得到的结果不一定准确。</p>
+</blockquote>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829190446.png" alt="image-20200829190445337"></p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms x y;</span><br><span class="line">&gt;&gt; [u,v]=solve(x+y==<span class="number">98</span>,x^(<span class="number">1</span>/<span class="number">3</span>)+y^(<span class="number">1</span>/<span class="number">3</span>)==<span class="number">2</span>)</span><br><span class="line"> </span><br><span class="line">u =</span><br><span class="line"> </span><br><span class="line">Empty sym: <span class="number">0</span>-by<span class="number">-1</span></span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">v =</span><br><span class="line"> </span><br><span class="line">Empty sym: <span class="number">0</span>-by<span class="number">-1</span></span><br></pre></td></tr></table></figure>
+<p><font color='purple'>转化过后，再解方程：</font></p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms x y;</span><br><span class="line">&gt;&gt; u=solve(x+(<span class="number">2</span>-x^(<span class="number">1</span>/<span class="number">3</span>))^<span class="number">3</span>==<span class="number">98</span>)</span><br><span class="line"> </span><br><span class="line">u =</span><br><span class="line"> </span><br><span class="line"><span class="number">125</span></span><br><span class="line"> </span><br><span class="line">&gt;&gt; v=<span class="number">98</span>-u</span><br><span class="line"> </span><br><span class="line">v =</span><br><span class="line"> </span><br><span class="line"><span class="number">-27</span></span><br></pre></td></tr></table></figure>
+<h3 id="常微分方程符号求解"><a class="header-anchor" href="#常微分方程符号求解">¶</a>常微分方程符号求解</h3>
+<ul>
+<li>
+<p>在MATLAB中，用大写字母D表示导数。例如，Dy表示y’，D2y表示y’’， Dy(0)=5表示y’(0)=5。D3y+D2y+Dy-x+5=0表示微分方程y’’’+y’’+y’-x+5=0。</p>
+</li>
+<li>
+<p>符号常微分方程求解可以通过函数dsolve()函数来实现，其调用格式为：</p>
+<p>dsolve(e,c,v)</p>
+<p>用于求解常微分方程e在初值条件c下的特解。参数v是方程中的自变量，省 略时按默认原则处理，若没有给出初值条件c，则求方程的通解。</p>
+</li>
+<li>
+<p>dsolve在求常微分方程组时的调用格式为：</p>
+<p>dsolve(e1,e2,…,en,c1,c2,…,cn,v)</p>
+<p>用于求解常微分方程组e1, e2, …, en在初值条件c1, c2, …, cn下的特解，若不 给出初值条件，则求方程组的通解。v给出求解变量，如果没有指定自变量， 则采用默认自变量t。</p>
+</li>
+</ul>
+<p>ex:求下列微分方程或方程组的解。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200829190847.png" alt="image-20200829190846323"></p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; syms x y t;</span><br><span class="line">&gt;&gt; y=dsolve(<span class="string">&#x27;Dy-(x^2+y^2)/x^2/2&#x27;</span>,x)</span><br><span class="line">y =</span><br><span class="line">x</span><br><span class="line">-x*(<span class="number">1</span>/(C5 + <span class="built_in">log</span>(x)/<span class="number">2</span>) - <span class="number">1</span>)</span><br><span class="line">&gt;&gt; [x,y]=dsolve(<span class="string">&#x27;Dx=4*x-2*y&#x27;</span>,<span class="string">&#x27;Dy=2*x-y&#x27;</span>,t)</span><br><span class="line">x =</span><br><span class="line">C8/<span class="number">2</span> + <span class="number">2</span>*C7*<span class="built_in">exp</span>(<span class="number">3</span>*t)</span><br><span class="line">y =</span><br><span class="line">C8 + C7*<span class="built_in">exp</span>(<span class="number">3</span>*t)</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>matlab</category>
