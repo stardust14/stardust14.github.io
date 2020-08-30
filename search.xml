@@ -17,25 +17,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/stardust14.github.io/2020/01/04/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a class="header-anchor" href="#Quick-Start">¶</a>Quick Start</h2>
-<h3 id="Create-a-new-post"><a class="header-anchor" href="#Create-a-new-post">¶</a>Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a class="header-anchor" href="#Run-server">¶</a>Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a class="header-anchor" href="#Generate-static-files">¶</a>Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a class="header-anchor" href="#Deploy-to-remote-sites">¶</a>Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>hexo一些配置（不定期更新）</title>
     <url>/stardust14.github.io/2020/08/10/hexo%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>Front-matter</h1>
@@ -359,6 +340,59 @@ This is my website, click the button <a class="btn-beautify button--animated lar
       </tags>
   </entry>
   <entry>
+    <title>如何修改blog</title>
+    <url>/stardust14.github.io/2020/01/05/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9blog/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>学习怎么进行主题设置</h1>
+<h2 id="参考网上的教程，进行学习"><a class="header-anchor" href="#参考网上的教程，进行学习">¶</a>参考网上的教程，进行学习</h2>
+<p>基本的使用:</p>
+<h1>一级标题（# ）</h1>
+<h2 id="二级标题（-）"><a class="header-anchor" href="#二级标题（-）">¶</a>二级标题（## ）</h2>
+<h3 id="三级标题（-）"><a class="header-anchor" href="#三级标题（-）">¶</a>三级标题（### ）</h3>
+<blockquote>
+<p>以此类推（引用&gt;）</p>
+</blockquote>
+<p>虚线（—、***）</p>
+<ul>
+<li>列表1<br>
+a 字列表<br>
+<a href="https://www.baidu.com/?tn=98012088_5_dg&amp;ch=12">百度</a></li>
+</ul>
+<blockquote>
+<p>超链接</p>
+</blockquote>
+<p><em>斜体</em><br>
+<strong>粗体</strong></p>
+<p><code>&lt;html&gt;&lt;/html&gt;</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">	&lt;title&gt;代码引用，直接敲&lt;&#x2F;title&gt;</span><br><span class="line">  &lt;&#x2F;head&gt;</span><br><span class="line">  &lt;body&gt;&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/stardust14.github.io/2020/01/04/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a class="header-anchor" href="#Quick-Start">¶</a>Quick Start</h2>
+<h3 id="Create-a-new-post"><a class="header-anchor" href="#Create-a-new-post">¶</a>Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a class="header-anchor" href="#Run-server">¶</a>Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a class="header-anchor" href="#Generate-static-files">¶</a>Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a class="header-anchor" href="#Deploy-to-remote-sites">¶</a>Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>hexo出现的问题</title>
     <url>/stardust14.github.io/2020/07/06/hexo%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>在进行博客编写过程中，出现了一些问题。</h1>
@@ -392,40 +426,6 @@ This is my website, click the button <a class="btn-beautify button--animated lar
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive</span><br></pre></td></tr></table></figure>
 <h2 id="8-部署到GitHub上出现错误"><a class="header-anchor" href="#8-部署到GitHub上出现错误">¶</a>8.部署到GitHub上出现错误</h2>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何修改blog</title>
-    <url>/stardust14.github.io/2020/01/05/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9blog/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>学习怎么进行主题设置</h1>
-<h2 id="参考网上的教程，进行学习"><a class="header-anchor" href="#参考网上的教程，进行学习">¶</a>参考网上的教程，进行学习</h2>
-<p>基本的使用:</p>
-<h1>一级标题（# ）</h1>
-<h2 id="二级标题（-）"><a class="header-anchor" href="#二级标题（-）">¶</a>二级标题（## ）</h2>
-<h3 id="三级标题（-）"><a class="header-anchor" href="#三级标题（-）">¶</a>三级标题（### ）</h3>
-<blockquote>
-<p>以此类推（引用&gt;）</p>
-</blockquote>
-<p>虚线（—、***）</p>
-<ul>
-<li>列表1<br>
-a 字列表<br>
-<a href="https://www.baidu.com/?tn=98012088_5_dg&amp;ch=12">百度</a></li>
-</ul>
-<blockquote>
-<p>超链接</p>
-</blockquote>
-<p><em>斜体</em><br>
-<strong>粗体</strong></p>
-<p><code>&lt;html&gt;&lt;/html&gt;</code></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">	&lt;title&gt;代码引用，直接敲&lt;&#x2F;title&gt;</span><br><span class="line">  &lt;&#x2F;head&gt;</span><br><span class="line">  &lt;body&gt;&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
-<hr>
 ]]></content>
       <categories>
         <category>hexo</category>
@@ -5309,6 +5309,301 @@ d=d1+d2+d3<br>
 <li>在GUIDE窗口中单击工具栏上的“运行图形”命令按钮。</li>
 <li>在GUIDE窗口中选择“工具”菜单中的“运行”命令。</li>
 </ul>
+<h1>Simulink系统仿真</h1>
+<h2 id="Simulink仿真基础"><a class="header-anchor" href="#Simulink仿真基础">¶</a>Simulink仿真基础</h2>
+<ul>
+<li>Simulink的启动</li>
+<li>系统仿真模型的创建</li>
+<li>仿真参数的设置</li>
+</ul>
+<h3 id="Simulink的启动"><a class="header-anchor" href="#Simulink的启动">¶</a>Simulink的启动</h3>
+<ul>
+<li>在MATLAB主窗口选择“主页”选项卡，再单击“文件”命令组中的“新建”命令按钮，然后从下拉菜单中选择“Simulink Model”命令。</li>
+<li>在MATLAB主窗口选择“主页”选项卡，再单击“SIMULINK”命令组中的 “Simulink”命令按钮。</li>
+<li>在MATLAB的命令行窗口输入simulink命令。</li>
+</ul>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830105132.png" alt=""></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830104938.png" alt=""></p>
+<ul>
+<li>利用File→New命令，可以建立新的仿真模型；利用File→Open命令，可以打 开已经建立好的模型文件。</li>
+<li>单击“Library Browser”按钮，将打开Simulink模块库浏览器窗口，此时， 可以通过鼠标将模块库中的模块拖动到模型编辑窗口，再将各个模块连接起来， 就构成了仿真模型。</li>
+</ul>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830105425.png" alt=""></p>
+<h3 id="系统仿真模型的创建"><a class="header-anchor" href="#系统仿真模型的创建">¶</a>系统仿真模型的创建</h3>
+<h4 id="Simulink-Library-Browser窗口"><a class="header-anchor" href="#Simulink-Library-Browser窗口">¶</a>Simulink Library Browser窗口</h4>
+<p>“Simulink模块库浏览器”窗口 包含两个窗格，左侧的窗格以树 状列表的形式列出了所有模块库。 单击某个模块库，即在右侧窗格 中列出该模块库的子模块库；再 双击其中的子模块库图标，即列 出该子模块库的所有模块。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830105739.png" alt=""></p>
+<p>Simulink的模块库大体分为两类，一类是基本模块库,即Simulink 模块库，另一类是专业模块库,种类很多。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830105912.png" alt=""></p>
+<p>如果双击连续系统子模块库图标，模块库浏览器窗口左侧展开了 Simulink基本模块库的全部子模块库，并且目前选中连续系统子模块库， 右侧显示了连续系统子模块库的各个模块，可供连续系统建模使用。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830110000.png" alt=""></p>
+<h4 id="Simulink模块的操作"><a class="header-anchor" href="#Simulink模块的操作">¶</a>Simulink模块的操作</h4>
+<ul>
+<li><font color="red">模块的添加：</font>首先要在Simulink模块库浏览器窗口中找到该模块， 然后用鼠标将这个模块拖曳到模型编辑窗口中即可。</li>
+<li><font color="red">模块的删除或复制：</font>需要先选定模块，再按删除键；或在模型编 辑窗口选择Edit菜单项中的Cut、Copy、Paste等剪贴板操作命令。</li>
+<li><font color="red">两个模块的连接：</font>先将鼠标指针移动到一个模块的输出端，当鼠标 指针变成十字形光标时按住鼠标左键，移动鼠标指针到另一个模块 的输入端，当连接线由虚线变成实线时，释放鼠标左键就完成了两 个模块的连接。</li>
+</ul>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830110548.png" alt=""></p>
+<ul>
+<li><font color='red'>连线的分支：</font>在先连好一条线之后，把鼠标指针移到分支点的 位置，先按下Ctrl键，然后按住鼠标拖曳到目标模块的输入端， 释放鼠标和Ctrl键。</li>
+</ul>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830110502.png" alt=""></p>
+<h4 id="模型存盘"><a class="header-anchor" href="#模型存盘">¶</a>模型存盘</h4>
+<ul>
+<li>在Simulink模型编辑窗口选择File→Save命令或Save as命令。</li>
+<li>单击模型编辑窗口工具栏中的Save命令按钮。</li>
+</ul>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830111023.png" alt=""></p>
+<h4 id="模块参数的设置"><a class="header-anchor" href="#模块参数的设置">¶</a>模块参数的设置</h4>
+<ul>
+<li>双击要设置的模块。</li>
+<li>选择要设置的模块，再选择Diagram→Block Parameters命令。</li>
+<li>右击要设置的模块，从快捷菜单中选择Block Parameters命令。</li>
+</ul>
+<p>模块参数设置对话框分为两部分， 上面一部分是模块功能说明，下面 一部分用来进行模块参数设置。例 如，正弦波模块参数对话框，用户 可以设置它的幅值、偏移量、频率、 相位、采样时间等参数。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830111012.png" alt=""></p>
+<h3 id="仿真参数的设置"><a class="header-anchor" href="#仿真参数的设置">¶</a>仿真参数的设置</h3>
+<ul>
+<li>选择Simulation→Model Configuration Paramerers命令。</li>
+<li>二单击工具栏中的Model Configuration Paramerers命令按钮。</li>
+</ul>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830111236.png" alt=""></p>
+<p>在仿真参数设置对话框中，仿真参数分为7类，Solver参数用于设置仿 真起始和终止时间，选择微分方程求解算法并为其规定参数，以及选择某些输出选项。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830111940.png" alt=""></p>
+<p>仿真算法的选择首先设定算法类别：固定步长或变步长算法，再选择具体算法。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830112116.png" alt="(a)固定步长"></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830112237.png" alt="(b)变步长"></p>
+<p>设置完仿真参数之后，单击模型编辑窗口工具栏中的Run按钮，或选择 Simulation菜单项中的Run命令，便可启动对当前模型的仿真。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830162723.png" alt=""></p>
+<p>利用Simulink仿真，分别显示曲线y=sint和y=cost，同时显示sint对 cost的变化曲线。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830164041.png" alt=""></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830170647.png" alt=""></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830170702.png" alt=""></p>
+<div class='tip success'><p>注意：scope默认是一个接口，可以在双击之后，左上角设置Number of input ports为2
+实现cosx可以相位延时pi/2。模块属性中直接设置，将Phase（rad）设置为-pi/2即可。    
+    <p></div>
+<p>Simulink系统仿真的步骤：</p>
+<ul>
+<li>建立系统仿真模型</li>
+<li>设置仿真参数</li>
+<li>启动仿真并分析仿真结果</li>
+</ul>
+<h2 id="子系统的创建与封装"><a class="header-anchor" href="#子系统的创建与封装">¶</a>子系统的创建与封装</h2>
+<ul>
+<li>子系统的创建</li>
+<li>子系统的封装</li>
+<li>子系统的条件执行</li>
+</ul>
+<h3 id="子系统的创建"><a class="header-anchor" href="#子系统的创建">¶</a>子系统的创建</h3>
+<ul>
+<li>通过Subsystem模块建立子系统</li>
+<li>将已有的模块转换为子系统</li>
+</ul>
+<p>两者的区别是：前者先建立子系统，再为其添加功能模块；后者先 选择模块，再建立子系统。</p>
+<p>下面以创建y=kx+b子系统为例，说明具体操作。</p>
+<h4 id="通过Subsystem模块建立子系统"><a class="header-anchor" href="#通过Subsystem模块建立子系统">¶</a>通过Subsystem模块建立子系统</h4>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830172151.png" alt=""></p>
+<p>双击子系统模块打开子系统编辑窗口，窗口中已经自动添加了相互连接 的一个输入模块和输出模块，表示子系统的输入端口和输出端口。将要组合的模块插入到输入模块和输出模块中间，这里需要k和b两个常数模块，一个乘法模块和一个加法模块，将这些模块重新连接起来，一个子 系统就建好了。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830172140.png" alt=""></p>
+<p>启动仿真后查看示波器的曲线，其中蓝色曲线是正弦曲线，黄色曲线 是经过y=kx+b变换之后的曲线，这里在MATLAB命令行窗口事先给k赋3， b赋2，即黄色曲线代表y=3sint+2。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830172938.png" alt=""></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830172959.png" alt=""></p>
+<h4 id="通过已有的模块建立子系统"><a class="header-anchor" href="#通过已有的模块建立子系统">¶</a>通过已有的模块建立子系统</h4>
+<p>建立的系统模型如图所示，选中系统模型中的所有模块，在模型编辑窗 口选择Diagram菜单项中的相关命令（Diagram →Subsystem &amp; Model Reference→Create Subsystem from Selection命令），或按Ctrl+G组 合键建立子系统，所选模块将被一个子系统模块取代，如果想要查看子 系统的内部结构又可以双击子系统模块。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830173259.png" alt=""></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830173322.png" alt=""></p>
+<h3 id="子系统的封装"><a class="header-anchor" href="#子系统的封装">¶</a>子系统的封装</h3>
+<p>先选中所要封装的子系统，再在模型编辑窗口选择Diagram菜单项中的 Create Mask命令，或按Ctrl+M组合键，这时将出现封装编辑器（Mask Editor）对话框。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830173723.png" alt=""></p>
+<ul>
+<li>第一个选项卡用于设置被封装模块的图标。</li>
+<li>第二个选项卡用来设置子系统参数设置对话框。</li>
+<li>第三个选项卡用于设置初始化命令。</li>
+<li>第四个选项卡用于定义封装模 块的类型、描述和帮助文本。</li>
+</ul>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830173934.png" alt=""></p>
+<p>第二个选项卡由3部分组成：左侧为控件工具箱（Controls），中间 区域显示对话框中的控件，右侧区域用于显示和修改控件的属性。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830174050.png" alt=""></p>
+<p>下面以y=kx+b子系统为例，说明子系统参数设置对话框的设置方法。 在第二个选项卡的左侧控件工具箱中，连续2次单击Edit按钮，为子系统的2个变量准备输入位置。在中间区域分别输入该控件的提示信息和控件名，最后单击OK按钮确认设置。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830175026.png" alt="">子系统参数设置对话框设置完成后，双击子系统图标将出现其参数对话 框。例如，双击仿真模型中的y=kx+b子系统图标，则弹出如图所示的参 数对话框，允许用户输入参数k和b的值。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830175020.png" alt=""></p>
+<p>受控制信号控制的子系统称为条件执行子系统。在条件执行子系统 中，输出信号取决于输入信号和控制信号。</p>
+<p>条件执行子系统：</p>
+<ul>
+<li>使能子系统</li>
+<li>触发子系统</li>
+<li>使能加触发子系统</li>
+</ul>
+<h3 id="子系统的条件执行"><a class="header-anchor" href="#子系统的条件执行">¶</a>子系统的条件执行</h3>
+<h4 id="使能子系统"><a class="header-anchor" href="#使能子系统">¶</a>使能子系统</h4>
+<p>使能子系统表示控制信号由负变正时子系统开始执行，直到控制信号 再次变为负时结束。控制信号可以是标量也可以是向量。如果控制信 号是标量，则当标量的值大于0时子系统开始执行。如果控制信号是 向量，则向量中任何一个元素大于0，子系统将执行。</p>
+<p>使能子系统外观上有一个“使能”控制信号输入端口。“使能”是指当 且仅当“使能”输入信号为正时，该模块才接收输入端的信号。可直接 选择使能子系统模块来建立使能子系统，双击使能子系统模块，打开其 内部结构窗口。</p>
+<p>也可以展开已有子系统，添加端口与子系统（Ports &amp; Subsystems）模块库中的使能（Enable）模块，将该子系统转换为使能子系统。</p>
+<div class="justified-gallery"><p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830175739.png" alt=""></p>
+          </div>
+<div class="justified-gallery"><p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830175733.png" alt=""></p>
+          </div>
+<p>ex:利用使能子系统构成一个正弦半波整流器。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830175723.png" alt=""></p>
+<p>新建一个仿真模型，将正弦波（Sine Wave）、使能子系统（Enabled Subsystem）和示波器（Scope）三个模块拖至新打开的模型编辑窗口，连接各 模块、设置参数并存盘，创建一个使能子系统。其中使能信号端接正弦模块。 在示波器窗口设置输入端口数（Number of input ports）为2，并设置输出布 局（Layout）。</p>
+<p>在模型编辑窗口单击工具栏的Run命令按钮，就可看到半波整流波形和正弦波形。这里正弦信号当控制信号，当控制信号为负值时子系统停止执行， 输出是零。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830180219.png" alt=""></p>
+<h4 id="触发子系统"><a class="header-anchor" href="#触发子系统">¶</a>触发子系统</h4>
+<p>触发子系统是指当触发事件发生时开始执行子系统。</p>
+<p>与使能子系统相类似，触发子系统的建立可直接选择Triggered Subsystem模块，或者展开已有子系统，添加Ports &amp; Subsystems模块 库中的Trigger模块，将该子系统转换为触发子系统。</p>
+<ul>
+<li>rising（上跳沿触发）：控制信号从负值或0上升到正值时子系统开始执行。</li>
+<li>falling（下跳沿触发）：控制信号从正值或0下降到负值时子系统开始执行。</li>
+<li>either（上跳沿或下跳沿触发）：当控制信号满足上跳沿或下跳沿触发条 件时，子系统开始执行。</li>
+<li>function-call（函数调用触发）：这种触发方式必须与S函数配合使用。</li>
+</ul>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830180208.png" alt=""></p>
+<p>ex:利用触发子系统将一锯齿波转换成方波。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830182316.png" alt=""></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830182330.png" alt=""></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830182401.png" alt=""></p>
+<div class='tip error'><p>error:没出现，方波太长<p></div>
+<h4 id="使能加触发子系统"><a class="header-anchor" href="#使能加触发子系统">¶</a>使能加触发子系统</h4>
+<p>所谓使能加触发子系统就是当使能控制信号和触发控制信号共 同作用时执行子系统。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830183411.png" alt=""></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830183441.png" alt=""></p>
+<h2 id="S函数的设计与应用"><a class="header-anchor" href="#S函数的设计与应用">¶</a>S函数的设计与应用</h2>
+<ul>
+<li>什么叫S函数</li>
+<li>用M文件编写S函数的方法</li>
+<li>在仿真模型中使用S函数的方法</li>
+</ul>
+<h3 id="什么叫S函数"><a class="header-anchor" href="#什么叫S函数">¶</a>什么叫S函数</h3>
+<ul>
+<li>S函数是系统函数(System Function)的简称,是指采用一种程序设 计语言描述的一个功能模块。</li>
+<li>用户可以采用MATLAB语言，也可以采用C、C++或FORTRAN等语言来编写S函数。</li>
+<li>S函数有自己特定的语法构成规则,可以用来描述并实现连续系统、 离散系统以及复合系统。</li>
+<li>S函数能够接收来自Simulink求解算法的相关信息,并对求解算法发出的命令做出适当的响应,这种交互作用类似于Simulink系统模块与求解算法的相互作用。</li>
+</ul>
+<h3 id="用MATLAB语言编写S函数"><a class="header-anchor" href="#用MATLAB语言编写S函数">¶</a>用MATLAB语言编写S函数</h3>
+<p>在MATLAB命令行窗口输入命令，打开模板文件。</p>
+<p><font color='purple'>&gt;&gt; edit sfuntmpl.m</font></p>
+<p>模板文件sfuntmpl.m包括：</p>
+<ul>
+<li>1个主函数</li>
+<li>6个子函数</li>
+</ul>
+<h4 id="主函数"><a class="header-anchor" href="#主函数">¶</a>主函数</h4>
+<p>主函数的引导语句为：</p>
+<p><font color='purple'>function [sys,x0,str,ts]=fname(t,x,u,flag)</font></p>
+<ul>
+<li>fname是S函数的函数名。</li>
+<li>输入形参t、x、u、flag分别为仿真时间、状态向量、输入向量 和子函数调用标志。</li>
+<li>输出形参sys代表一种返回参数；x0是初始状态值；对于M文件S 函数，str将被置成一个空阵；ts是一个两列矩阵。</li>
+</ul>
+<h4 id="子函数"><a class="header-anchor" href="#子函数">¶</a>子函数</h4>
+<p>S函数共有6个子函数， 这些子函数的前辍为mdl，由flag的值来控 制在仿真的各阶段调用S函数的哪一个子函数。</p>
+<ul>
+<li><font color='purple'>flag取0：</font>调用初始化子函数mdlInitializeSizes。</li>
+<li><font color='purple'>flag取1：</font>调用子函数mdlDerivatives实现连续状态的更新。</li>
+<li><font color='purple'>flag取2：</font>调用子函数mdlUpdate实现离散状态的更新。</li>
+<li><font color='purple'>flag取3：</font>调用输出子函数mdlOutputs。</li>
+</ul>
+<h3 id="S函数的应用"><a class="header-anchor" href="#S函数的应用">¶</a>S函数的应用</h3>
+<p>采用S函数实现y=kx+b。</p>
+<h4 id="定义S函数"><a class="header-anchor" href="#定义S函数">¶</a>定义S函数</h4>
+<p>①主函数</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[sys,x0,str,ts]</span>=<span class="title">timekb</span><span class="params">(t,x,u,flag,k,b)</span></span></span><br><span class="line"><span class="keyword">switch</span> flag</span><br><span class="line"><span class="keyword">case</span> <span class="number">0</span></span><br><span class="line">[sys,x0,str,ts]=mdlInitializeSizes; <span class="comment">%初始化</span></span><br><span class="line"><span class="keyword">case</span> <span class="number">3</span></span><br><span class="line">sys=mdlOutputs(t,x,u,k,b); <span class="comment">%计算输出量</span></span><br><span class="line"><span class="keyword">case</span> &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">9</span>&#125;</span><br><span class="line">sys=[];</span><br><span class="line"><span class="keyword">otherwise</span> <span class="comment">%出错处理</span></span><br><span class="line">error(num2str(flag))</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>②初始化子函数</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[sys,x0,str,ts]</span>=<span class="title">mdlInitializeSizes</span><span class="params">()</span></span></span><br><span class="line">sizes=simsizes;</span><br><span class="line">sizes.NumContStates=<span class="number">0</span>; <span class="comment">%无连续状态</span></span><br><span class="line">sizes.NumDiscStates=<span class="number">0</span>; <span class="comment">%无离散状态</span></span><br><span class="line">sizes.NumOutputs=<span class="number">1</span>; <span class="comment">%有一个输出量</span></span><br><span class="line">sizes.NumInputs=<span class="number">1</span>; <span class="comment">%有一个输入信号</span></span><br><span class="line">sizes.DirFeedthrough=<span class="number">1</span>; <span class="comment">%输出量中含有输入量</span></span><br><span class="line">sizes.NumSampleTimes=<span class="number">1</span>; <span class="comment">%单个采样周期</span></span><br><span class="line">sys=simsizes(sizes);</span><br><span class="line"><span class="comment">%给其他返回参数赋值</span></span><br><span class="line">x0=[]; <span class="comment">%设置初始状态为零状态</span></span><br><span class="line">str=[]; <span class="comment">%将str变量设置为空字符串</span></span><br><span class="line">ts=[<span class="number">-1</span>,<span class="number">0</span>]; <span class="comment">%假定继承输入信号的采样周期</span></span><br></pre></td></tr></table></figure>
+<p>③输出子函数</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sys</span>=<span class="title">mdlOutputs</span><span class="params">(t,x,u,k,b)</span></span></span><br><span class="line">sys=k*u+b;</span><br></pre></td></tr></table></figure>
+<h4 id="在Simulink模型中使用S函数"><a class="header-anchor" href="#在Simulink模型中使用S函数">¶</a>在Simulink模型中使用S函数</h4>
+<p>新建一个模型，向模型编辑窗口中添加S函数模块、Sine Wave模 块和Scope模块。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830184543.png" alt=""></p>
+<p>在模型编辑窗口中双击S函数模块，打开其参数对话框，填入S函数名 timesn，填入外部参数k和b。如果有多个外部参数，参数之间用逗号分隔。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830185558.png" alt=""></p>
+<p>在模型编辑窗口选中S函数模块，选择Diagram→Mask→Create Mask命令， 打开封装编辑器，选择Parameters &amp; Dialog选项卡，在左侧控件工具箱 中单击Edit工具，往中间的Dialog box区域的控件列表中添加编辑框控 件#1，选中该控件后，在右侧的Property editor中，在Name栏填入k， Prompt栏填入“放大倍数”，再设置参数b，设置完成后单击OK按钮。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830185551.png" alt=""></p>
+<p>S函数模块被封装后，双击它，则得到模块参数对话框。当输入k的值为 3，b的值为2时，得到的仿真结果。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830185545.png" alt=""></p>
+<p>第一根曲线是经过S函数变化后的曲线2+3sinx，第二根曲线是sinx。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830185539.png" alt=""></p>
+<ul>
+<li>利用S函数可以创建用户自己的Simulink模块，从而使得 Simulink可以应用于更复杂系统的建模与仿真。</li>
+<li>Simulink提供了现成的S函数模板文件，用户可以通过直 接修改模板文件来编写S函数。</li>
+</ul>
+<h2 id="Simulink仿真应用举例"><a class="header-anchor" href="#Simulink仿真应用举例">¶</a>Simulink仿真应用举例</h2>
+<ul>
+<li>蹦极跳系统的Simulink仿真模型</li>
+<li>蹦极跳系统的安全性</li>
+</ul>
+<h3 id="蹦极跳（Bungee-Jumping）系统的建模与仿真"><a class="header-anchor" href="#蹦极跳（Bungee-Jumping）系统的建模与仿真">¶</a>蹦极跳（Bungee Jumping）系统的建模与仿真</h3>
+<p>采用Simulink对蹦极跳系统进行仿真研究。要求如下：</p>
+<ul>
+<li>建立蹦极跳系统的Simulink仿真模型。</li>
+<li>分析蹦极跳系统的安全性，包括：
+<ul>
+<li>当弹力绳弹性系数一定时，求蹦极者的安全体重。</li>
+<li>当蹦极者体重一定时，求弹力绳的最小弹性系数。</li>
+</ul>
+</li>
+</ul>
+<h4 id="系统分析"><a class="header-anchor" href="#系统分析">¶</a>系统分析</h4>
+<p>蹦极者从跳台自由下落，跳台距水面的高度为h，弹力绳的长 度为s。蹦极者受到的力包括自身的重力、弹力绳的张力和空 气的阻力。设k为弹力绳的弹性系数，同时我们定义人站在跳 台时弹力绳的下端为坐标原点O，y为蹦极者相对于坐标原点的 距离，b(y)表示弹力绳的张力，其数学表达式为：</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830185532.png" alt=""></p>
+<p>又设m为蹦极者的质量，g为重力加速度，a1与a2为空气阻力系 数，则系统方程可表示为这样的方程：</p>
+<p><code>mg+b(y)-a1y'-a2y'|y'|=my''</code></p>
+<blockquote>
+<p>其中第3项和第4项表示空气的阻力。方程的初始条件为 y(0)=-s, y’(0)=0，也就是初始速度为0。</p>
+</blockquote>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830185458.png" alt=""></p>
+<h4 id="仿真模型"><a class="header-anchor" href="#仿真模型">¶</a>仿真模型</h4>
+<p>启动Simulink，打开模型编辑窗口。因为该微分方程包含的导数最高为2 阶，所以在仿真模型中需要两个积分器，可以从Simulink的连续系统模 块库中，将积分模块添加到模型编辑窗口并实现连接，y的二阶导数经过 积分环节后得到y的一阶导数，y的一阶导数经过积分环节后得到y。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830185755.png" alt=""></p>
+<p>空气阻力有两项，都与y的一阶导数，即速度有关。使用数学运算模块库（Math Operations）中的增益模块表示空气阻力比例系数，使用用户自定义函数模块库 （User-defined Functions）中函数（Fcn）模块表示空气阻力中的非线性部分， 同时将增益模块和函数模块翻转180度，并确定它们的参数。另外添加数学运算模 块库（Math Operations）中的加法模块，并设置好参数。还有个增益模块，其输 出是y的二阶导数。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830190906.png" alt=""></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830191552.png" alt=""></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830191533.png" alt=""></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830191527.png" alt=""></p>
+<p>再回到蹦极跳系统，进行弹力绳张力的模块连接。用Switch模块来实现弹 力绳的张力，同时需要增益模块和常数模块，设置好参数并进行模块连接后得到此时的仿真模型。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830192535.png" alt=""></p>
+<p>最后添加重力模块和输出模块。添加信号源模块中的常数模块，表示蹦极者的重力， 添加输出模块库中的示波器模块，用于输出蹦极者弹出的距离，同时还输出蹦极者与 水面的距离，即坐标原点距水面的距离，也就是h-s，再减去蹦极者弹起的距离y，如 果该值小于零，即表示人将在蹦极过程中接触水面，这是不安全的。添加常数模块、 加法模块和示波器模块，设置模块参数并进行连接，这样系统仿真模型就建好了。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830214110.png" alt=""></p>
+<h4 id="仿真结果及分析"><a class="header-anchor" href="#仿真结果及分析">¶</a>仿真结果及分析</h4>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">&gt;&gt; m=<span class="number">75</span>;</span><br><span class="line">&gt;&gt; g=<span class="number">9.8</span>;</span><br><span class="line">&gt;&gt; k=<span class="number">20</span>;</span><br><span class="line">&gt;&gt; a1=<span class="number">1</span>;</span><br><span class="line">&gt;&gt; a2=<span class="number">1</span>;</span><br><span class="line">&gt;&gt; h=<span class="number">100</span>;</span><br><span class="line">&gt;&gt; s=<span class="number">40</span>;</span><br></pre></td></tr></table></figure>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830214103.png" alt=""></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830214055.png" alt=""></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830213906.png" alt=""></p>
+<div class="note info">
+            <p>注意设置步长为100，从Configuration Parameters修改默认步长！！！</p>
+          </div>
+<p>&gt;&gt; m=65;</p>
+<p>现在将蹦极者的体重改为65kg， 其他参数不变，查看此时的曲 线，人距离水面的距离大于0， 系统是安全的，因此在系统其 他参数确定之后，对蹦极者的 体重是有要求的。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830214037.png" alt=""></p>
+<h3 id="蹦极跳系统的安全性"><a class="header-anchor" href="#蹦极跳系统的安全性">¶</a>蹦极跳系统的安全性</h3>
+<h4 id="求最大安全体重"><a class="header-anchor" href="#求最大安全体重">¶</a>求最大安全体重</h4>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> m=<span class="number">100</span>:<span class="number">-0.5</span>:<span class="number">20</span></span><br><span class="line">    [t,x,y_w]=sim(<span class="string">&#x27;bengji&#x27;</span>,<span class="number">0</span>:<span class="number">0.01</span>:<span class="number">100</span>);</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">min</span>(y_w)&gt;<span class="number">1.5</span></span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="built_in">disp</span>([<span class="string">&#x27;最大安全体重是&#x27;</span>,num2str(m)])</span><br><span class="line">dis=<span class="built_in">min</span>(y_w);</span><br><span class="line"><span class="built_in">disp</span>([<span class="string">&#x27;最小的安全距离是&#x27;</span>,num2str(dis)])</span><br><span class="line"><span class="built_in">plot</span>(t,y_w)</span><br><span class="line">grid on</span><br></pre></td></tr></table></figure>
+<div class="note info">
+            <p>注意simulink仿真要保存为bengji的名称，与上述代码中保持一致。否则会报错！！</p>
+          </div>
+<p>程序运行后，得到结果如下：</p>
+<p><font color='purple'>最大安全体重是67.5</font><br>
+<font color='purple'>最小的安全距离是1.6803</font></p>
+<p>弹力绳的弹性系数是20时，安全体重是67.5kg，安全距离是1.68m。 人到水面距离的变化曲线如图所示。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830215544.png" alt=""></p>
+<h4 id="求最小弹性系数"><a class="header-anchor" href="#求最小弹性系数">¶</a>求最小弹性系数</h4>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line">m=<span class="number">65</span>;</span><br><span class="line"><span class="keyword">for</span> k=<span class="number">10</span>:<span class="number">0.1</span>:<span class="number">50</span></span><br><span class="line">    [t,x,y_w]=sim(<span class="string">&#x27;bengji&#x27;</span>,<span class="number">0</span>:<span class="number">0.01</span>:<span class="number">100</span>);</span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">min</span>(y_w)&gt;<span class="number">1.5</span></span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"><span class="built_in">disp</span>([<span class="string">&#x27;最小弹性系数k是&#x27;</span>,num2str(k)])</span><br><span class="line">dis=<span class="built_in">min</span>(y_w);</span><br><span class="line"><span class="built_in">disp</span>([<span class="string">&#x27;最小的安全距离是&#x27;</span>,num2str(dis)])</span><br><span class="line"><span class="built_in">plot</span>(t,y_w)</span><br><span class="line">grid on</span><br></pre></td></tr></table></figure>
+<p>程序运行后，得到结果如下：</p>
+<p><font color='purple'>最小弹性系数k是18.9</font><br>
+<font color='purple'>最小的安全距离是1.5521</font></p>
+<p>最小安全弹性常数是18.9，蹦极者与地面之间的最小距离是1.55m， 最小安全弹性常数下系统的仿真结果如图所示。</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200830220148.png" alt=""></p>
+<h1>外部程序接口</h1>
+<h2 id="在Excel中使用MATLAB"><a class="header-anchor" href="#在Excel中使用MATLAB">¶</a>在Excel中使用MATLAB</h2>
+<ul>
+<li>Spreadsheet Link程序</li>
+<li>将Excel表格中的数据导出到MATLAB工作空间中</li>
+<li>从MATLAB工作空间导入数据到Excel表格中</li>
+<li>在Excel中调用MATLAB函数进行运算</li>
+</ul>
+<h3 id="Spreadsheet-Link程序"><a class="header-anchor" href="#Spreadsheet-Link程序">¶</a>Spreadsheet Link程序</h3>
+<p>Spreadsheet Link程序是MATLAB提供的Excel与MATLAB的接口 ，通过 Spreadsheet Link，可以在Excel工作区和MATLAB工作区之间进行数据交换 ，也可以在Excel中调用MATLAB的函数。</p>
 ]]></content>
       <categories>
         <category>matlab</category>
