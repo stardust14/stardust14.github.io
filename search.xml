@@ -5995,7 +5995,9 @@ d=d1+d2+d3<br>
 <p>编译选项-client指定生成客户端程序， 选项engine指定连接时加入MATLAB计算引擎库。</p>
 <p>启动MATLAB引擎后，应用程序会打开一个新的MATLAB进程，通过调用引擎函数可以控制这个进程完成计算和绘图操作。</p>
 <p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200831004147.png" alt=""></p>
-]]></content>
+<h1>思维导图</h1>
+<div class="justified-gallery"><p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200831163118.jpg" alt="专题1知识点总结_1_1"></p><p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200831163149.jpg" alt="专题2知识点总结_1_1"></p><p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200831163213.jpg" alt="专题3知识点总结_1_1"></p><p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200831163232.jpg" alt="专题4知识点总结_1_1"></p><p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200831163248.jpg" alt="专题5知识点总结_1_1"></p><p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200831163309.jpg" alt="专题6知识点总结_1_1"></p><p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200831163329.jpg" alt="专题7知识点总结_1_1"></p><p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200831163345.jpg" alt="专题8知识点总结_1_1"></p><p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200831163359.jpg" alt="专题9知识点总结_1_1"></p><p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20200831163037.jpg" alt="专题10知识点总结_1_1"></p>
+          </div>]]></content>
       <categories>
         <category>matlab</category>
       </categories>
