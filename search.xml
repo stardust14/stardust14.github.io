@@ -72,6 +72,23 @@
       </tags>
   </entry>
   <entry>
+    <title>DSP</title>
+    <url>/stardust14.github.io/2021/03/08/DSP/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>DSP入门</h1>
+<blockquote>
+<p>本次DSP是数字信号处理器</p>
+</blockquote>
+<p>DSP——数据分析处理</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210308114041.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>dsp</category>
+      </categories>
+      <tags>
+        <tag>dsp</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>C语言例题</title>
     <url>/stardust14.github.io/2020/09/24/C%E8%AF%AD%E8%A8%80%E4%BE%8B%E9%A2%98/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>前言</h1>
@@ -106,47 +123,6 @@
       </categories>
       <tags>
         <tag>C</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DSP</title>
-    <url>/stardust14.github.io/2021/03/08/DSP/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>DSP入门</h1>
-<blockquote>
-<p>本次DSP是数字信号处理器</p>
-</blockquote>
-<p>DSP——数据分析处理</p>
-<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210308114041.png" alt=""></p>
-]]></content>
-      <categories>
-        <category>dsp</category>
-      </categories>
-      <tags>
-        <tag>dsp</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DSP杂烩</title>
-    <url>/stardust14.github.io/2020/12/04/DSP%E6%9D%82%E7%83%A9/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>随手记</h1>
-<p>一些知识和疑问</p>
-<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204095119.png" alt=""></p>
-<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204100437.png" alt=""></p>
-<blockquote>
-<p>有一个疑问：之间的衔接关系！</p>
-</blockquote>
-<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201205171135.png" alt="image-20201205171133171"></p>
-<h1>傅里叶变换的理解</h1>
-<p>把一个信号的全部信息全部提取出来，在频率上说：w（频率）就表示的位置，振幅表示的强度，而相位则是表示的是信息的反转与否（波的位置）。</p>
-<p>用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo separator="true">⋅</mo><mi>c</mi><mi>o</mi><mi>s</mi><mo stretchy="false">(</mo><mi>w</mi><mo separator="true">⋅</mo><mi>t</mi><mo>+</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A·cos(w·t+\phi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">A</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault">s</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">t</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">ϕ</span><span class="mclose">)</span></span></span></span>在时域上，w与时间建立起了联系，相位的改变就是在时间轴上的平移。所以，在频域上的相位就是</p>
-<p>换个角度（域）看问题！！！！</p>
-<p>若一个信号可以分解成正弦函数或着指数形式的组合，那么叠加的函数的相位可能会不同，在同一频率w下的幅度和相位一一对应。那么可以用这三个基本的信息，获取到全部的信息。（有待加深…）</p>
-]]></content>
-      <categories>
-        <category>记录&amp;烂笔头</category>
-      </categories>
-      <tags>
-        <tag>dsp</tag>
       </tags>
   </entry>
   <entry>
@@ -418,6 +394,30 @@
       </categories>
       <tags>
         <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DSP杂烩</title>
+    <url>/stardust14.github.io/2020/12/04/DSP%E6%9D%82%E7%83%A9/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>随手记</h1>
+<p>一些知识和疑问</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204095119.png" alt=""></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204100437.png" alt=""></p>
+<blockquote>
+<p>有一个疑问：之间的衔接关系！</p>
+</blockquote>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201205171135.png" alt="image-20201205171133171"></p>
+<h1>傅里叶变换的理解</h1>
+<p>把一个信号的全部信息全部提取出来，在频率上说：w（频率）就表示的位置，振幅表示的强度，而相位则是表示的是信息的反转与否（波的位置）。</p>
+<p>用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo separator="true">⋅</mo><mi>c</mi><mi>o</mi><mi>s</mi><mo stretchy="false">(</mo><mi>w</mi><mo separator="true">⋅</mo><mi>t</mi><mo>+</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A·cos(w·t+\phi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">A</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault">s</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">t</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">ϕ</span><span class="mclose">)</span></span></span></span>在时域上，w与时间建立起了联系，相位的改变就是在时间轴上的平移。所以，在频域上的相位就是</p>
+<p>换个角度（域）看问题！！！！</p>
+<p>若一个信号可以分解成正弦函数或着指数形式的组合，那么叠加的函数的相位可能会不同，在同一频率w下的幅度和相位一一对应。那么可以用这三个基本的信息，获取到全部的信息。（有待加深…）</p>
+]]></content>
+      <categories>
+        <category>记录&amp;烂笔头</category>
+      </categories>
+      <tags>
+        <tag>dsp</tag>
       </tags>
   </entry>
   <entry>
