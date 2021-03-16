@@ -421,6 +421,21 @@
       </tags>
   </entry>
   <entry>
+    <title>MUSIC算法</title>
+    <url>/stardust14.github.io/2021/03/15/MUSIC%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>MUSIC算法</h1>
+<p>假设入射到天线阵列的近似为远场窄带信号，它们分别来自$$</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210315114937.jpg" alt=""></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210316095024.jpg" alt=""></p>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Typora使用</title>
     <url>/stardust14.github.io/2020/10/09/Typora%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>公式的使用</h1>
@@ -1014,6 +1029,9 @@ a = \left[
 </blockquote>
 <h2 id="10-hexo-d报错"><a class="header-anchor" href="#10-hexo-d报错">¶</a>10. hexo d报错</h2>
 <p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210312102354.png" alt=""></p>
+<p>查询了众多解决方法均无效，最后是修改博客根目录下的_config.yml配置</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210312111329.png" alt=""></p>
+<p>修改repo的链接，运行hexo d之后，上传成功。</p>
 <h1>主题升级git pull出现的问题</h1>
 <p><code>hexo clean&amp;hexo g</code>后出现：</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">INFO  Start processing</span><br><span class="line">ERROR &#123;</span><br><span class="line">  err: Error: D:\blog\blog\themes\butterfly1\layout\includes\widget\index.pug:22:2</span><br><span class="line"><span class="code">      20|     if theme.aside.card_webinfo.enable</span></span><br><span class="line"><span class="code">      21|       include ./card_webinfo.pug</span></span><br><span class="line"><span class="code">    &gt; 22| =======</span></span><br><span class="line"><span class="code">  ---------^</span></span><br><span class="line"><span class="code">      23| if theme.aside.enable</span></span><br><span class="line"><span class="code">      24|   if page.aside !== false</span></span><br><span class="line"><span class="code">      25|     #aside_content.aside_content</span></span><br></pre></td></tr></table></figure>
@@ -1087,12 +1105,6 @@ a = \left[
       </tags>
   </entry>
   <entry>
-    <title>阵列信号</title>
-    <url>/stardust14.github.io/2021/02/16/%E9%98%B5%E5%88%97%E4%BF%A1%E5%8F%B7/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>协方差：一般用来刻画两个随机变量的相似程度。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>如何修改blog</title>
     <url>/stardust14.github.io/2020/01/05/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9blog/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>学习怎么进行主题设置</h1>
@@ -1125,6 +1137,12 @@ a 字列表<br>
       <tags>
         <tag>hexo</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>阵列信号</title>
+    <url>/stardust14.github.io/2021/02/16/%E9%98%B5%E5%88%97%E4%BF%A1%E5%8F%B7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>协方差：一般用来刻画两个随机变量的相似程度。</p>
+]]></content>
   </entry>
   <entry>
     <title>Quartus记录</title>
