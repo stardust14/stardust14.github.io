@@ -72,6 +72,23 @@
       </tags>
   </entry>
   <entry>
+    <title>DSP</title>
+    <url>/stardust14.github.io/2021/03/08/DSP/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>DSP入门</h1>
+<blockquote>
+<p>本次DSP是数字信号处理器</p>
+</blockquote>
+<p>DSP——数据分析处理</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210308114041.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>dsp</category>
+      </categories>
+      <tags>
+        <tag>dsp</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>C语言例题</title>
     <url>/stardust14.github.io/2020/09/24/C%E8%AF%AD%E8%A8%80%E4%BE%8B%E9%A2%98/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>前言</h1>
@@ -106,47 +123,6 @@
       </categories>
       <tags>
         <tag>C</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DSP</title>
-    <url>/stardust14.github.io/2021/03/08/DSP/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>DSP入门</h1>
-<blockquote>
-<p>本次DSP是数字信号处理器</p>
-</blockquote>
-<p>DSP——数据分析处理</p>
-<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210308114041.png" alt=""></p>
-]]></content>
-      <categories>
-        <category>dsp</category>
-      </categories>
-      <tags>
-        <tag>dsp</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DSP杂烩</title>
-    <url>/stardust14.github.io/2020/12/04/DSP%E6%9D%82%E7%83%A9/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>随手记</h1>
-<p>一些知识和疑问</p>
-<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204095119.png" alt=""></p>
-<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204100437.png" alt=""></p>
-<blockquote>
-<p>有一个疑问：之间的衔接关系！</p>
-</blockquote>
-<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201205171135.png" alt="image-20201205171133171"></p>
-<h1>傅里叶变换的理解</h1>
-<p>把一个信号的全部信息全部提取出来，在频率上说：w（频率）就表示的位置，振幅表示的强度，而相位则是表示的是信息的反转与否（波的位置）。</p>
-<p>用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo separator="true">⋅</mo><mi>c</mi><mi>o</mi><mi>s</mi><mo stretchy="false">(</mo><mi>w</mi><mo separator="true">⋅</mo><mi>t</mi><mo>+</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A·cos(w·t+\phi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">A</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault">s</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">t</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">ϕ</span><span class="mclose">)</span></span></span></span>在时域上，w与时间建立起了联系，相位的改变就是在时间轴上的平移。所以，在频域上的相位就是</p>
-<p>换个角度（域）看问题！！！！</p>
-<p>若一个信号可以分解成正弦函数或着指数形式的组合，那么叠加的函数的相位可能会不同，在同一频率w下的幅度和相位一一对应。那么可以用这三个基本的信息，获取到全部的信息。（有待加深…）</p>
-]]></content>
-      <categories>
-        <category>记录&amp;烂笔头</category>
-      </categories>
-      <tags>
-        <tag>dsp</tag>
       </tags>
   </entry>
   <entry>
@@ -421,6 +397,30 @@
       </tags>
   </entry>
   <entry>
+    <title>DSP杂烩</title>
+    <url>/stardust14.github.io/2020/12/04/DSP%E6%9D%82%E7%83%A9/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>随手记</h1>
+<p>一些知识和疑问</p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204095119.png" alt=""></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204100437.png" alt=""></p>
+<blockquote>
+<p>有一个疑问：之间的衔接关系！</p>
+</blockquote>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201205171135.png" alt="image-20201205171133171"></p>
+<h1>傅里叶变换的理解</h1>
+<p>把一个信号的全部信息全部提取出来，在频率上说：w（频率）就表示的位置，振幅表示的强度，而相位则是表示的是信息的反转与否（波的位置）。</p>
+<p>用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo separator="true">⋅</mo><mi>c</mi><mi>o</mi><mi>s</mi><mo stretchy="false">(</mo><mi>w</mi><mo separator="true">⋅</mo><mi>t</mi><mo>+</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A·cos(w·t+\phi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">A</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault">s</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">t</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">ϕ</span><span class="mclose">)</span></span></span></span>在时域上，w与时间建立起了联系，相位的改变就是在时间轴上的平移。所以，在频域上的相位就是</p>
+<p>换个角度（域）看问题！！！！</p>
+<p>若一个信号可以分解成正弦函数或着指数形式的组合，那么叠加的函数的相位可能会不同，在同一频率w下的幅度和相位一一对应。那么可以用这三个基本的信息，获取到全部的信息。（有待加深…）</p>
+]]></content>
+      <categories>
+        <category>记录&amp;烂笔头</category>
+      </categories>
+      <tags>
+        <tag>dsp</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MUSIC算法</title>
     <url>/stardust14.github.io/2021/03/15/MUSIC%E7%AE%97%E6%B3%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>MUSIC算法</h1>
@@ -600,7 +600,7 @@ c-1 5-5 9-11 9h-2L532 67 19 159h-2c-5 0-9-4-11-9l-5-22c-1-6 2-12 8-13z'/></svg><
 <figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="comment">%仿真黄永兢的仿真数据结果图2-4</span></span><br><span class="line"><span class="comment">%music算法部分，候补上MVDR算法</span></span><br><span class="line">clear all;clc;</span><br><span class="line">derad = <span class="built_in">pi</span>/<span class="number">180</span>;<span class="comment">%角度转换弧度</span></span><br><span class="line">N = <span class="number">5</span>;<span class="comment">%阵元个数</span></span><br><span class="line">M = <span class="number">1</span>;<span class="comment">%信源数目</span></span><br><span class="line">theta = [<span class="number">21</span>];<span class="comment">%待估计的角度</span></span><br><span class="line">snr = <span class="number">12</span>;<span class="comment">%信噪比</span></span><br><span class="line">K = <span class="number">100</span>;<span class="comment">%快拍数</span></span><br><span class="line"></span><br><span class="line"><span class="comment">%%%阵元间隔为半个波长的5阵元均匀线阵</span></span><br><span class="line"><span class="comment">%syms q;%设波长为q</span></span><br><span class="line">q = <span class="number">0.5</span>;</span><br><span class="line">d = <span class="number">0</span>:q:(N<span class="number">-1</span>)*q;<span class="comment">%设置步长</span></span><br><span class="line">A=<span class="built_in">exp</span>(<span class="number">-1</span><span class="built_in">i</span>*<span class="number">2</span>*<span class="built_in">pi</span>*d.&#x27;*<span class="built_in">sin</span>(theta*derad));<span class="comment">%方向矢量</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">%%%构建信号模型</span></span><br><span class="line"><span class="comment">%实际上还是基础的公式</span></span><br><span class="line"><span class="comment">%X = A*S+noise;</span></span><br><span class="line">S = <span class="built_in">randn</span>(M,K);<span class="comment">%信源信号   100快拍数划分信号</span></span><br><span class="line">X = A*S;</span><br><span class="line">X1 = awgn(X,snr,<span class="string">&#x27;measured&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">%计算协方差矩阵</span></span><br><span class="line">Rxx = X1*X1&#x27;/K;</span><br><span class="line"><span class="comment">%&quot;.&#x27;&quot;是转置，&quot;&#x27;&quot;是共轭转置</span></span><br><span class="line"><span class="comment">%特征值分解</span></span><br><span class="line">[EV,D] = eig(Rxx);<span class="comment">%特征值分解</span></span><br><span class="line"></span><br><span class="line"><span class="comment">%eig函数的用法</span></span><br><span class="line"><span class="comment">%求出的特征值会自动升序。</span></span><br><span class="line"><span class="comment">%[V,D] = eig(A)</span></span><br><span class="line"><span class="comment">%其中的V是A的特征向量，D是特征值(对角阵)</span></span><br><span class="line"></span><br><span class="line">EVA = <span class="built_in">diag</span>(D)&#x27;;<span class="comment">%取对角线的数据并共轭转置</span></span><br><span class="line">[EVA,I] = <span class="built_in">sort</span>(EVA);</span><br><span class="line"><span class="comment">%sort函数可以按从小到大排列数，默认是列排序</span></span><br><span class="line"><span class="comment">%EVA表示输出的值（按从小到大）</span></span><br><span class="line"><span class="comment">%I表示输出排序后值原来的位置，记忆特征值原来的位置，为下一步做准备</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">%这一步的作用是把特征向量按照从大到小进行排列，I的作用就是是变换后的特征向量的顺序和上一步特征值的顺序保持一致，一一对应。</span></span><br><span class="line"><span class="comment">%由于fliplr括号里面特征向量是按照从小到大的顺序，所以再通过fliplr函数进行翻转，使之变成特征值大的元素对应的特征向量按照从小到大的原则排序。</span></span><br><span class="line"><span class="comment">%处理完之后EV里的特征向量其实就变成了前面是信号子空间，后面是噪声子空间里的向量。</span></span><br><span class="line">EV = <span class="built_in">fliplr</span>(EV(:,I));<span class="comment">%对应特征矢量排序，特征向量根据特征值排列</span></span><br><span class="line"><span class="comment">%fliplr函数作用是翻转矩阵</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">%遍历每个角落，计算空间谱</span></span><br><span class="line"><span class="keyword">for</span> iang = <span class="number">1</span>:<span class="number">361</span><span class="comment">%360°全覆盖测角</span></span><br><span class="line">    <span class="built_in">angle</span>(iang)=(iang<span class="number">-181</span>)/<span class="number">2</span>;</span><br><span class="line">    phim=derad*<span class="built_in">angle</span>(iang);</span><br><span class="line">    a=<span class="built_in">exp</span>(<span class="number">-1</span><span class="built_in">i</span>*<span class="number">2</span>*<span class="built_in">pi</span>*d*<span class="built_in">sin</span>(phim)).&#x27;;</span><br><span class="line">    En=EV(:,M+<span class="number">1</span>:N);     <span class="comment">%取矩阵的第M+1到N列组成噪声子空间</span></span><br><span class="line">    Pmusic(iang)=<span class="number">1</span>/(a&#x27;*En*En&#x27;*a);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">Pmusic=<span class="built_in">abs</span>(Pmusic);<span class="comment">%提取模值</span></span><br><span class="line">Pmmax=<span class="built_in">max</span>(Pmusic);<span class="comment">%求出最大值</span></span><br><span class="line">Pmusic=<span class="number">10</span>*<span class="built_in">log10</span>(Pmusic/Pmmax);      <span class="comment">%归一化的处理</span></span><br><span class="line">h=<span class="built_in">plot</span>(<span class="built_in">angle</span>,Pmusic);</span><br><span class="line"><span class="built_in">legend</span>(<span class="string">&#x27;MUSIC&#x27;</span>)</span><br><span class="line">set(h,<span class="string">&#x27;Linewidth&#x27;</span>,<span class="number">2</span>);</span><br><span class="line">xlabel(<span class="string">&#x27;入射角/(degree)&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;空间谱/(dB)&#x27;</span>);</span><br><span class="line">set(gca,<span class="string">&#x27;XTick&#x27;</span>,[<span class="number">-100</span>:<span class="number">20</span>:<span class="number">100</span>]);</span><br><span class="line">grid on;</span><br></pre></td></tr></table></figure>
 <p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210320104613.png" alt=""></p>
 <div class='tip success'><p>改进的程序<p></div>
-<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="comment">%music算法的改进</span></span><br><span class="line">clear all;clc;</span><br><span class="line">derad=<span class="built_in">pi</span>/<span class="number">180</span>;</span><br><span class="line">N = <span class="number">5</span>;</span><br><span class="line">M = <span class="number">1</span>;</span><br><span class="line">theta = [<span class="number">21</span>];<span class="comment">%待测角度</span></span><br><span class="line">snr = <span class="number">12</span>;</span><br><span class="line">K = <span class="number">100</span>;<span class="comment">%快拍数</span></span><br><span class="line">dd = <span class="number">0.5</span>;</span><br><span class="line">d = <span class="number">0</span>:dd:(N<span class="number">-1</span>)*dd;<span class="comment">%步长</span></span><br><span class="line">A=<span class="built_in">exp</span>(-<span class="built_in">j</span>*<span class="number">2</span>*<span class="built_in">pi</span>*d.&#x27;*<span class="built_in">sin</span>(theta*derad));<span class="comment">%方向矢量</span></span><br><span class="line"></span><br><span class="line">S = <span class="built_in">randn</span>(M,K);</span><br><span class="line">X = A * S;</span><br><span class="line">Xn = awgn(X,snr,<span class="string">&#x27;measured&#x27;</span>);<span class="comment">%构成的信号</span></span><br><span class="line"></span><br><span class="line">Rxx = Xn*Xn&#x27;/K;</span><br><span class="line">[EV,D] = eig(Rxx);<span class="comment">%特征值分解，并且按照从小到大排序</span></span><br><span class="line"></span><br><span class="line">EV = <span class="built_in">fliplr</span>(EV);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> iange = <span class="number">1</span>:<span class="number">361</span>;</span><br><span class="line">    <span class="built_in">angle</span>(iange) = (iange<span class="number">-181</span>)/<span class="number">2</span>;</span><br><span class="line">    phim = derad*<span class="built_in">angle</span>(iange);</span><br><span class="line">    a = <span class="built_in">exp</span>(-<span class="built_in">j</span>*<span class="number">2</span>*<span class="built_in">pi</span>*d*<span class="built_in">sin</span>(phim)).&#x27;;<span class="comment">%保证是列向量</span></span><br><span class="line">    G = EV(:,M+<span class="number">1</span>:N);</span><br><span class="line">    P_music(iange) = <span class="number">1</span>/(a&#x27;*G*G&#x27;*a);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">P_music = <span class="built_in">abs</span>(P_music);<span class="comment">%提取模值</span></span><br><span class="line">Pm_max = <span class="built_in">max</span>(P_music);</span><br><span class="line">P_music = <span class="number">10</span>*<span class="built_in">log10</span>(P_music/Pm_max);</span><br><span class="line">h = <span class="built_in">plot</span>(<span class="built_in">angle</span>,P_music);</span><br><span class="line"><span class="built_in">legend</span>(<span class="string">&#x27;MUSIC&#x27;</span>);</span><br><span class="line">set(h,<span class="string">&#x27;Linewidth&#x27;</span>,<span class="number">1</span>);</span><br><span class="line">xlabel(<span class="string">&#x27;入射角/(degree)&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;空间谱/(dB)&#x27;</span>);</span><br><span class="line">set(gca,<span class="string">&#x27;XTick&#x27;</span>,[<span class="number">-100</span>:<span class="number">20</span>:<span class="number">100</span>]);</span><br><span class="line">grid on;</span><br></pre></td></tr></table></figure>
 <p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210315114937.jpg" alt=""></p>
 <p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210316095024.jpg" alt=""></p>
 ]]></content>
@@ -610,6 +610,25 @@ c-1 5-5 9-11 9h-2L532 67 19 159h-2c-5 0-9-4-11-9l-5-22c-1-6 2-12 8-13z'/></svg><
       <tags>
         <tag>算法</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/stardust14.github.io/2020/01/04/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a class="header-anchor" href="#Quick-Start">¶</a>Quick Start</h2>
+<h3 id="Create-a-new-post"><a class="header-anchor" href="#Create-a-new-post">¶</a>Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a class="header-anchor" href="#Run-server">¶</a>Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a class="header-anchor" href="#Generate-static-files">¶</a>Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a class="header-anchor" href="#Deploy-to-remote-sites">¶</a>Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
   </entry>
   <entry>
     <title>Typora使用</title>
@@ -1133,25 +1152,6 @@ a = \left[
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/stardust14.github.io/2020/01/04/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a class="header-anchor" href="#Quick-Start">¶</a>Quick Start</h2>
-<h3 id="Create-a-new-post"><a class="header-anchor" href="#Create-a-new-post">¶</a>Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a class="header-anchor" href="#Run-server">¶</a>Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a class="header-anchor" href="#Generate-static-files">¶</a>Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a class="header-anchor" href="#Deploy-to-remote-sites">¶</a>Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>hexo出现的问题</title>
     <url>/stardust14.github.io/2020/07/06/hexo%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>在进行博客编写过程中，出现了一些问题。</h1>
@@ -1233,42 +1233,6 @@ a = \left[
       </tags>
   </entry>
   <entry>
-    <title>python 爬虫随笔记录</title>
-    <url>/stardust14.github.io/2020/10/14/python%E7%88%AC%E8%99%AB%E9%9A%8F%E7%AC%94%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>前言</h1>
-<p>记录一下遇到的错误，或者是疑问，解决的问题，随笔记录！！！</p>
-<h1>python 爬虫问题</h1>
-<h2 id="语句解释"><a class="header-anchor" href="#语句解释">¶</a>语句解释</h2>
-<p>爬虫中<code>if __name__ == '__main__'</code>语句解释：</p>
-<p>相当于是 Python <strong>模拟的程序入口</strong>。</p>
-<p>由于模块之间相互引用，不同模块可能都有这样的定义，而入口程序只能有一个。到底哪个入口程序被选中，这取决于 <code>__name__</code> 的值。</p>
-<p><code>__name__</code>是Python的内置变量，用于指代当前模块。</p>
-<p>两个例子说明：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&#x27;hello,I\&#x27;m A&#x27;</span>)</span><br><span class="line">print(<span class="string">&#x27;A的__name__值:&#123;&#125;&#x27;</span>.format(__name__))</span><br><span class="line">print(<span class="string">&#x27;---------------&#x27;</span>)</span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> day01 <span class="keyword">import</span> demo01</span><br><span class="line">print(<span class="string">&#x27;hello,I\&#x27;m B&#x27;</span>)</span><br><span class="line">print(<span class="string">&#x27;B中__name__的值：&#123;&#125;&#x27;</span>.format(__name__))</span><br></pre></td></tr></table></figure>
-<p>上述两个例子分别结果：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hello,I<span class="string">&#x27;m A</span></span><br><span class="line"><span class="string">A的__name__值:__main__</span></span><br><span class="line"><span class="string">---------------</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hello,I<span class="string">&#x27;m A</span></span><br><span class="line"><span class="string">A的__name__值:day01.demo01</span></span><br><span class="line"><span class="string">---------------</span></span><br><span class="line"><span class="string">hello,I&#x27;</span>m B</span><br><span class="line">B中__name__的值：__main__</span><br></pre></td></tr></table></figure>
-<p>发现神奇之处了吗？当哪个模块被直接执行时，该模块“<code>__name__</code>”的值就是“<code>__main__</code>”，当被导入另一模块时，“<code>__name__</code>”的值就是模块的真实名称。用一个类比来解释一下：记得小时候要轮流打算教室，轮到自己的时候（模块被直接执行的时候），我们会说今天是“我”（<code>__main__</code>）值日，称呼其他人时，我们就会直接喊他们的名字。所以，“<code>__main__</code>”就相当于当事人，或者说第一人称的“我”。</p>
-<p>所以，当运行“<code>if __name__=='__main__':</code>”语句时，如果当前模块时被直接执行，<code>__name__</code>的值就是<code>__main__</code>，条件判断的结果为True，“<code>if __name__=='__main__':</code>”下面的代码块就会被执行。</p>
-<h2 id="遇到的错误"><a class="header-anchor" href="#遇到的错误">¶</a>遇到的错误</h2>
-<p>在进行当当网爬虫练习时，出现<code>UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd0 in position 284: invalid continuation byte</code></p>
-<p>修改字符集参数，一般这种情况出现得较多是在国标码(GBK)和utf-8之间选择出现了问题。<br>
-出现异常报错是由于设置了decode()方法的第二个参数errors为严格（strict）形式造成的，因为默认就是这个参数，将其更改为ignore等即可。例如:</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">html=response.read().decode(<span class="string">&quot;utf-8&quot;</span>,<span class="string">&quot;ignore&quot;</span>)</span><br></pre></td></tr></table></figure>
-<h1>PyCharm中的问题</h1>
-<h2 id="第三方库安装失败"><a class="header-anchor" href="#第三方库安装失败">¶</a>第三方库安装失败</h2>
-<p>pycharm安装路径：<code>D:\Python\Code\venv\Scripts&gt;</code>在该径路下打开命令窗口，输入提示的信息。<code>python.exe -m pip install --upgrade pip</code></p>
-<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201018204828.png" alt=""></p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>js学习</title>
     <url>/stardust14.github.io/2020/10/17/js%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>快速入门</h1>
@@ -1319,6 +1283,42 @@ a 字列表<br>
     <url>/stardust14.github.io/2021/02/16/%E9%98%B5%E5%88%97%E4%BF%A1%E5%8F%B7/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>协方差：一般用来刻画两个随机变量的相似程度。</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>python 爬虫随笔记录</title>
+    <url>/stardust14.github.io/2020/10/14/python%E7%88%AC%E8%99%AB%E9%9A%8F%E7%AC%94%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>前言</h1>
+<p>记录一下遇到的错误，或者是疑问，解决的问题，随笔记录！！！</p>
+<h1>python 爬虫问题</h1>
+<h2 id="语句解释"><a class="header-anchor" href="#语句解释">¶</a>语句解释</h2>
+<p>爬虫中<code>if __name__ == '__main__'</code>语句解释：</p>
+<p>相当于是 Python <strong>模拟的程序入口</strong>。</p>
+<p>由于模块之间相互引用，不同模块可能都有这样的定义，而入口程序只能有一个。到底哪个入口程序被选中，这取决于 <code>__name__</code> 的值。</p>
+<p><code>__name__</code>是Python的内置变量，用于指代当前模块。</p>
+<p>两个例子说明：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">&#x27;hello,I\&#x27;m A&#x27;</span>)</span><br><span class="line">print(<span class="string">&#x27;A的__name__值:&#123;&#125;&#x27;</span>.format(__name__))</span><br><span class="line">print(<span class="string">&#x27;---------------&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> day01 <span class="keyword">import</span> demo01</span><br><span class="line">print(<span class="string">&#x27;hello,I\&#x27;m B&#x27;</span>)</span><br><span class="line">print(<span class="string">&#x27;B中__name__的值：&#123;&#125;&#x27;</span>.format(__name__))</span><br></pre></td></tr></table></figure>
+<p>上述两个例子分别结果：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hello,I<span class="string">&#x27;m A</span></span><br><span class="line"><span class="string">A的__name__值:__main__</span></span><br><span class="line"><span class="string">---------------</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">hello,I<span class="string">&#x27;m A</span></span><br><span class="line"><span class="string">A的__name__值:day01.demo01</span></span><br><span class="line"><span class="string">---------------</span></span><br><span class="line"><span class="string">hello,I&#x27;</span>m B</span><br><span class="line">B中__name__的值：__main__</span><br></pre></td></tr></table></figure>
+<p>发现神奇之处了吗？当哪个模块被直接执行时，该模块“<code>__name__</code>”的值就是“<code>__main__</code>”，当被导入另一模块时，“<code>__name__</code>”的值就是模块的真实名称。用一个类比来解释一下：记得小时候要轮流打算教室，轮到自己的时候（模块被直接执行的时候），我们会说今天是“我”（<code>__main__</code>）值日，称呼其他人时，我们就会直接喊他们的名字。所以，“<code>__main__</code>”就相当于当事人，或者说第一人称的“我”。</p>
+<p>所以，当运行“<code>if __name__=='__main__':</code>”语句时，如果当前模块时被直接执行，<code>__name__</code>的值就是<code>__main__</code>，条件判断的结果为True，“<code>if __name__=='__main__':</code>”下面的代码块就会被执行。</p>
+<h2 id="遇到的错误"><a class="header-anchor" href="#遇到的错误">¶</a>遇到的错误</h2>
+<p>在进行当当网爬虫练习时，出现<code>UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd0 in position 284: invalid continuation byte</code></p>
+<p>修改字符集参数，一般这种情况出现得较多是在国标码(GBK)和utf-8之间选择出现了问题。<br>
+出现异常报错是由于设置了decode()方法的第二个参数errors为严格（strict）形式造成的，因为默认就是这个参数，将其更改为ignore等即可。例如:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">html=response.read().decode(<span class="string">&quot;utf-8&quot;</span>,<span class="string">&quot;ignore&quot;</span>)</span><br></pre></td></tr></table></figure>
+<h1>PyCharm中的问题</h1>
+<h2 id="第三方库安装失败"><a class="header-anchor" href="#第三方库安装失败">¶</a>第三方库安装失败</h2>
+<p>pycharm安装路径：<code>D:\Python\Code\venv\Scripts&gt;</code>在该径路下打开命令窗口，输入提示的信息。<code>python.exe -m pip install --upgrade pip</code></p>
+<p><img src= "/stardust14.github.io/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201018204828.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
   </entry>
   <entry>
     <title>Quartus记录</title>
