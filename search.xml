@@ -1866,7 +1866,7 @@ a = \left[
 <td>【可选】配置代码框是否展开 (true/false)(默认为设置中 highlight_shrink 的配置)</td>
 </tr>
 <tr>
-<td>stick</td>
+<td>sticky</td>
 <td>【可选】支持文章置顶,数值越大,置顶的优先级越大</td>
 </tr>
 </tbody>
