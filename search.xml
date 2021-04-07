@@ -1804,7 +1804,7 @@ a = \left[
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>Front-matter</h1>
 <p>这一部分是写博客时，档案最上方以<code>---</code>分隔的区域，用于指定个别参数。</p>
 <h2 id="page-Front-matter"><a class="header-anchor" href="#page-Front-matter">¶</a>page Front-matter</h2>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title:</span><br><span class="line">date:</span><br><span class="line">updated:</span><br><span class="line">type:</span><br><span class="line">comments:</span><br><span class="line">description:</span><br><span class="line">keywords:</span><br><span class="line">top<span class="emphasis">_img:</span></span><br><span class="line"><span class="emphasis">mathjax:</span></span><br><span class="line"><span class="emphasis">katex:</span></span><br><span class="line"><span class="emphasis">aside:</span></span><br><span class="line"><span class="emphasis">aplayer：</span></span><br><span class="line"><span class="emphasis">sticky: 1</span></span><br><span class="line"><span class="emphasis">---</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title:</span><br><span class="line">date:</span><br><span class="line">updated:</span><br><span class="line">type:</span><br><span class="line">comments:</span><br><span class="line">description:</span><br><span class="line">keywords:</span><br><span class="line">top<span class="emphasis">_img:</span></span><br><span class="line"><span class="emphasis">mathjax:</span></span><br><span class="line"><span class="emphasis">katex:</span></span><br><span class="line"><span class="emphasis">aside:</span></span><br><span class="line"><span class="emphasis">aplayer：</span></span><br><span class="line"><span class="emphasis">top: 1</span></span><br><span class="line"><span class="emphasis">---</span></span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -1866,7 +1866,7 @@ a = \left[
 <td>【可选】配置代码框是否展开 (true/false)(默认为设置中 highlight_shrink 的配置)</td>
 </tr>
 <tr>
-<td>sticky</td>
+<td>top</td>
 <td>【可选】支持文章置顶,数值越大,置顶的优先级越大</td>
 </tr>
 </tbody>
@@ -2209,7 +2209,12 @@ This is my website, click the button <a class="btn-beautify button--animated lar
 </ul>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#x27;Theme Test - Xray&#x27;</span><br><span class="line">date: 2020-12-23 22:21:50</span><br><span class="line">tags:</span><br><span class="line">theme: xray</span><br><span class="line">password: hello</span><br><span class="line">message: This is encrypted by Theme - xray</span><br><span class="line">--</span><br></pre></td></tr></table></figure>
 <h1>文章置顶</h1>
-<p>使用插件<code>hexo-generator-index</code></p>
+<p>使用插件<code>hexo-generator-index</code>，修改源码</p>
+<p>修改博客目录下的“<code>node_modules\hexo-generator-index\lib</code>”目录，其中的“<code>generator.js</code>”文件就是需要修改的文件。</p>
+<p>实现该功能需要在<code>const posts = locals.posts.sort(config.index_generator.order_by);</code><br>
+代码下添加一下内容：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">  posts.data = posts.data.sort(function(a, b) &#123;</span><br><span class="line"><span class="code">    if(a.top &amp;&amp; b.top) &#123; // 两篇文章都有top，top大的在前</span></span><br><span class="line"><span class="code">        if(a.top == b.top)</span></span><br><span class="line"><span class="code">			return b.date - a.date; // 若top值一样，最新的文章在前面</span></span><br><span class="line"><span class="code">        else</span></span><br><span class="line"><span class="code">			return b.top - a.top; // top大的在前面</span></span><br><span class="line"><span class="code">    &#125;</span></span><br><span class="line"><span class="code">    else if(a.top &amp;&amp; !b.top) &#123; // 以下是只有一篇文章top有定义，那么将有top的排在前面</span></span><br><span class="line"><span class="code">        return -1;</span></span><br><span class="line"><span class="code">    &#125;</span></span><br><span class="line"><span class="code">    else if(!a.top &amp;&amp; b.top) &#123;</span></span><br><span class="line"><span class="code">        return 1;</span></span><br><span class="line"><span class="code">    &#125;</span></span><br><span class="line"><span class="code">    else return b.date - a.date; 	//都没有top标签，最新的文章在前面</span></span><br><span class="line"><span class="code">&#125;);</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210407180508.png" alt=""></p>
 <p>直接在文章的front-matter区域里添加<code>sticky: 100</code>属性来把这篇文章置顶。数值越大，置顶的优先级越大。</p>
 ]]></content>
       <categories>
