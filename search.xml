@@ -1292,8 +1292,22 @@ a = \left[
   <entry>
     <title>分享&amp;记录</title>
     <url>/2021/04/07/%E5%88%86%E4%BA%AB-%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note success flat"><p>分享阅读的书籍&amp;记录</p>
-</div>]]></content>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="7066236b71bd093e2c9f53bf82622c0e9bd218274369bab2b32498af42cebc66">31242a41c922984c3c7e6ed39d2c978a39cd93922d549058b144463d7a1519272fa19dce3629f278aaed84c96a5c85cfb21d90190581ad32f40bbabf9b62b7250d325eea2bf076e2cdbf55e3c24285bf6e8b911be2da55e80e31eb116cedd161373c576f9c7eaa34b0c22d52333648cbf1b2b32bce14fc44950b046203047fc8965e48c16a0577d7647ad1aa56ad7a4484d547b335e841275628ebe6cebe760b9fd61250d56736073b6ecd28ad45846bba3f5259cc41984812e7d4a99811c18466a3d31dc1150a203670051b3b07265a6a81fde20fe261ddd6b07f9001256de791c796602283c7045ce9c585d9165b9bb33c144c782ecc9a705562505efbb8f1e77a8555cd0468f569fb23a2579cf7476dd2194d4d78b619b79d8c07b1f9c2175635095ac4bc51805ba7e820143398c9263cdef1a2746ecac1bc72bc7520025e</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-xray">
+      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Hey, password is required here.</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>记录&amp;烂笔头</category>
       </categories>
@@ -1304,30 +1318,22 @@ a = \left[
   <entry>
     <title>如何修改blog</title>
     <url>/2020/01/05/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9blog/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>学习怎么进行主题设置</h1>
-<h2 id="参考网上的教程，进行学习"><a class="header-anchor" href="#参考网上的教程，进行学习">¶</a>参考网上的教程，进行学习</h2>
-<p>基本的使用:</p>
-<h1>一级标题（# ）</h1>
-<h2 id="二级标题（-）"><a class="header-anchor" href="#二级标题（-）">¶</a>二级标题（## ）</h2>
-<h3 id="三级标题（-）"><a class="header-anchor" href="#三级标题（-）">¶</a>三级标题（### ）</h3>
-<blockquote>
-<p>以此类推（引用&gt;）</p>
-</blockquote>
-<p>虚线（—、***）</p>
-<ul>
-<li>列表1<br>
-a 字列表<br>
-<a href="https://www.baidu.com/?tn=98012088_5_dg&amp;ch=12">百度</a></li>
-</ul>
-<blockquote>
-<p>超链接</p>
-</blockquote>
-<p><em>斜体</em><br>
-<strong>粗体</strong></p>
-<p><code>&lt;html&gt;&lt;/html&gt;</code></p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">	&lt;title&gt;代码引用，直接敲&lt;&#x2F;title&gt;</span><br><span class="line">  &lt;&#x2F;head&gt;</span><br><span class="line">  &lt;body&gt;&lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
-<hr>
-]]></content>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="04dafb7bfcd7f56adb55c246aaec540487cc4c458e17451790694a8e56bf0c92">22064b17c03cb0c0e58c99349b6889d0c7e9d327de57f2d214b057f3875d6b37b9b20ab3b449f9d3b0ba6ffe12bb71d82eff8171349bc71e3a2c9718b358eacc07c1e2d0dcdcc94bb927d4bdef70eb39fd8e7de731fdf8f27d06339a84133e4a974b5fae5fee1809df024fdfbb238fba030fdd8003e2826f0a33da9ce588a76e8e6bc91b4049cb9065bb5b9840402572bd86834c2d0c361fdb4259dd56633b9d286b14b14b74d50d4ca10de4c2e54f118835e2ea5a28de2ac78c4f57666f83faa6cf49198dbd3f86312e8ae6475e1ad5fab6439a79e2e3cad197c03dd08b87bec442910f76725c0e06a65602b36b614a3dbe3e1d519977487176b3d65656620cd72102c0def41ebc432387d76b636e45e96da4d0d2015c57f1f6282e715a4ed94b8949ee040b776bdb60c6b41c7bf7d2bec32f7db09f41636e0ba0f33e9f5aad83d4a53e423b83dcbdea2742f32be593356c62a2968451923b154f5e036a39cbdd6fcd80a613853754fe646a0de433776dd485754f1f17b2420393e69bb66cccbe0065816d55d0b4a0706af94be5d48af9149f258b8c164dc5c499e09ce6ae2395fe58fc4673842bc1c24ed5fbe0c2d84ef9001554821f5b7139fdb01c48479e5fc02d82f3fed2c97001b18231cb475838e503f66a191b1c148a74455c18e2587f787e99433a412eef7137f5eeb3bd025997438d6778fc97b822c2636b8f6fd3424e1d4bd83594ee93ca32cd43c98af006c98be3036fd781ee160d33ffd5aa4dde42245cdadc0d845a4fec279aa520ef858301c797bdb4a57082b418ba662c283a875b6780da01692c82a3d97a138ad23767acedb7b1c656f322b618466ee97a9c5b3a13e053767448b7b7c6846b7a28c1686a94ee40d9bd6e26304dfa5c87e9e21f55970d5f91f5f7b6209a24a58845e72c8077321540be017f2fd071e3c8358ca0169a52e69907ff1c3c22e8510664c9aaa4b6102dc7b23e1a71b4518af0f7d4f9af72e49b741e4147c985f15b37dc4b70766ead339f9034a42c9a89a214e5878f7832336c3bca0a1d1fa1cbdb786017fadda2b6255f8f8591978a1566e25f9b454fdd38c75035e3d6a8167ca2831cc29e127fe69e076ce192c1e2d39ce042acbdad850df5c4a72ab31af05c489e5b3aa50e1e4b458b5caebcbc899a4035de16965dd78a327538019e25a7f57da15c66f3a99d3d78da69c82b148df2e45fda975cc111350de4d44912b27e8cb329153c8abc5e683088c99c224a7943b5c21a9fa7964756b462df80b62ada84b9b4045eb032baf01a45068f899e077940f029e45ce08b8819f40e51c85e5b7015133f2a2b0675cfc3f1fd6453e112698de4e6637844ecb93f0114ed55c1eea08e3a303820fe1d2c9ce78167c8f11a22d08cdcf237b03dafbdea47a2fe0fb7ea193c2aca177cf6518a7b7e25b68bc16b56d0e8507a2f3e3f9ba9bc8fdccf705af740fee68e91c910a09af611861a6bf5b096c1659c64a3390225136d2f3307c181002e8101fe438a07b20e68c6cb82a1a0c7b25d2e159e2c6ecfe1f93069575b63873bd542f9088dcfc07dc6169b40d3134e178167c35fbb2da0e7844663088b8a44bb472b82448bbffa32286b8552c8614f24cbe06bf073343a7251a7f8290ea4dab37949b632305320408e7eafec04c43d13e6bad11217c88fe8f973136882b107e735beec48585d45206ecff596b9e2489cacbae57e0e71283313e8f59906f20ba470b171938908876d55754c81c792298ada51eefb12d1689c7c8b5581690bfe0a9d62bf2edbbf3f771846669d506c5dc4cfe7959b57aa1282e2cfc1987719f5b288fcbf100df87a363e90e4ba712da5bbecaf5ded66481c3ce4f67385f730dd3bda7931782ed5c693bd59a7fdcb057201c7057a863d63365ba935f15ea487576f51ceb5bc26e2aeb633439c9c31b34501ab7fdc6ab4e3ed1786f6ac8c390b10a4d5b8577c3ed5feceed757ebbdbb9944e905c0ea89ce91282c7b8ba974864f2f6b22a38f375f22be76b325796de4530f33c1ac3814482d019d2981fb9d79dd42aca5076dd4f31c784491d5b2fb6453984b5657d1b62278d7e6eeb2c164ad865e33ac6dcf82e5e503e07b0d30a37a2e5a5</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-xray">
+      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Hey, password is required here.</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>hexo</category>
       </categories>
@@ -1338,11 +1344,22 @@ a 字列表<br>
   <entry>
     <title>批注记录</title>
     <url>/2021/04/07/%E6%89%B9%E6%B3%A8%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class="note success flat"><p>当作word记录的论文理解&amp;总结,仅作为个人纪录</p>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="291b0b36ee585448d9329fbee742f88f8dfdad37b60bddea13aff1ed3d6749e7">22064b17c03cb0c0e58c99349b6889d0c7e9d327de57f2d214b057f3875d6b37b9b20ab3b449f9d3b0ba6ffe12bb71d82eff8171349bc71e3a2c9718b358eacc07c1e2d0dcdcc94bb927d4bdef70eb39fd8e7de731fdf8f27d06339a84133e4a974b5fae5fee1809df024fdfbb238fba030fdd8003e2826f0a33da9ce588a76e8e6bc91b4049cb9065bb5b9840402572bd86834c2d0c361fdb4259dd56633b9d286b14b14b74d50d4ca10de4c2e54f118835e2ea5a28de2ac78c4f57666f83faa6cf49198dbd3f86312e8ae6475e1ad55bc0f991fa504124763e450733221c2a781fb4c5fbae0d7123703d7ac9a38542095b3da435e03cc3247b4eff26b05bc0b9e2a2c706e61562c7bb934180842f9b6dc301690938c4f21c78468483f3e95d8b5dcc7048e9b21da20cd49dde4a8cd683cfc91feffd222c011316f66497312604f8b20b5ffc02ed9b9ca7b27ed4db1cd53fe96c268e720fa222687b475d0ce58791b3f7da2d900cdaf58269d88b6c20cbada81f02e840030715d6e565756915b4d0cb8fe965065fd8ff8b1614f000b4865630456e5b30794759410cb19e9299b8df259ff9e0dd282057528064f1feba1e2354f208f8add32a5d96f9879264e81396f1b3d4e71a6b5c5665756626ef9a24713668c2fd67155f59eca72ab01c5b04482b0202087e653954eea98a3d0f732cbaa7c8f96cabf15dc21dfb548afee9c5fbc7efc481eb658229f8238c81ae3abc3dc2c3ffcf079d4195b78ab5be094c77fcaac0b6623655af2b8ea3e3599c76c3ab124f1de662a495429cfcd2d78a480df24cd295ad167d403bbed08dd7d4ac252747baa4309e59bca946629e56107d</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-xray">
+      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Hey, password is required here.</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
 </div>
-<h1>论文总结</h1>
-<h2 id="1-基于空间谱估计的快速测向技术研究-黄永兢"><a class="header-anchor" href="#1-基于空间谱估计的快速测向技术研究-黄永兢">¶</a>1.基于空间谱估计的快速测向技术研究_黄永兢</h2>
-]]></content>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>随笔</category>
       </categories>
@@ -2177,6 +2194,23 @@ This is my website, click the button <a class="btn-beautify button--animated lar
 <li><code>git commit -m&quot;这里添加修改的备注&quot;</code></li>
 <li><code>git push -u origin master</code> 上传到GitHub上去</li>
 </ol>
+<h1>文章加密</h1>
+<p>hexo博客butterfly好像没有文章加密的功能,因此要安装插件进行文章加密</p>
+<h2 id="安装"><a class="header-anchor" href="#安装">¶</a>安装</h2>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">npm install --save hexo-blog-encrypt</span><br></pre></td></tr></table></figure>
+<h2 id="使用说明"><a class="header-anchor" href="#使用说明">¶</a>使用说明</h2>
+<ul>
+<li>将“password”加入到Front-matter中</li>
+</ul>
+<p>也可按照标签加密</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World</span><br><span class="line">tags:</span><br><span class="line"><span class="bullet">-</span> 作为日记加密</span><br><span class="line">date: 2016-03-30 21:12:21</span><br><span class="line">password: mikemessi</span><br><span class="line">abstract: 有东西被加密了, 请输入密码查看.</span><br><span class="line">message: 您好, 这里需要密码.</span><br><span class="line">wrong<span class="emphasis">_pass_</span>message: 抱歉, 这个密码看着不太对, 请再试试.</span><br><span class="line">wrong<span class="emphasis">_hash_</span>message: 抱歉, 这个文章不能被校验, 不过您还是能看看解密后的内容.</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<ul>
+<li>密码的主题</li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#x27;Theme Test - Xray&#x27;</span><br><span class="line">date: 2020-12-23 22:21:50</span><br><span class="line">tags:</span><br><span class="line">theme: xray</span><br><span class="line">password: hello</span><br><span class="line">message: This is encrypted by Theme - xray</span><br><span class="line">--</span><br></pre></td></tr></table></figure>
+<h1>文章置顶</h1>
+<p>使用插件<code>hexo-generator-index</code></p>
+<p>直接在文章的front-matter区域里添加<code>sticky: 100</code>属性来把这篇文章置顶。数值越大，置顶的优先级越大。</p>
 ]]></content>
       <categories>
         <category>hexo使用手册</category>
