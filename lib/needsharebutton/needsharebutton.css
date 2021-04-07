@@ -1,4 +1,4 @@
-<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>/***********************************************
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>/***********************************************
   needShareButton
   - Version 1.0.0
   - Copyright 2015 Dzmitry Vasileuski

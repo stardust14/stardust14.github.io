@@ -2,8 +2,8 @@
 <search>
   <entry>
     <title>4D毫米波雷达</title>
-    <url>/stardust14.github.io/2021/02/26/4D%E6%AF%AB%E7%B1%B3%E6%B3%A2%E9%9B%B7%E8%BE%BE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
+    <url>/2021/02/26/4D%E6%AF%AB%E7%B1%B3%E6%B3%A2%E9%9B%B7%E8%BE%BE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
 <p>随着知识的积累再填充，更新待续~~</p>
 </blockquote>
 <h1>毫米波和4D毫米波</h1>
@@ -27,8 +27,8 @@
   </entry>
   <entry>
     <title>CentOs6.5下升级Firefox</title>
-    <url>/stardust14.github.io/2020/11/28/CentOs6-5%E4%B8%8B%E5%8D%87%E7%BA%A7Firefox/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class='tip error'><p>无效<p></div>
+    <url>/2020/11/28/CentOs6-5%E4%B8%8B%E5%8D%87%E7%BA%A7Firefox/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class='tip error'><p>无效<p></div>
 <p><s>1.下载最新安装文件</s></p>
 <p><s>在firefox的官网里下载最新的linux版安装文件Firefox-latest-x86_64.tar.bz2(我下载的是64bit版)，然后解压。</s></p>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">[star@localhost 下载]# tar -xjvf Firefox-latest-x86_64.tar.bz2 </span><br></pre></td></tr></table></figure>
@@ -73,8 +73,8 @@
   </entry>
   <entry>
     <title>C语言例题</title>
-    <url>/stardust14.github.io/2020/09/24/C%E8%AF%AD%E8%A8%80%E4%BE%8B%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>前言</h1>
+    <url>/2020/09/24/C%E8%AF%AD%E8%A8%80%E4%BE%8B%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>前言</h1>
 <p>做的例题整理，修改和改进</p>
 <blockquote>
 <p>VS2019中scanf语句要使用scanf_s</p>
@@ -110,8 +110,8 @@
   </entry>
   <entry>
     <title>DSP</title>
-    <url>/stardust14.github.io/2021/03/08/DSP/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>DSP入门</h1>
+    <url>/2021/03/08/DSP/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>DSP入门</h1>
 <blockquote>
 <p>本次DSP是数字信号处理器</p>
 </blockquote>
@@ -127,8 +127,8 @@
   </entry>
   <entry>
     <title>DSP杂烩</title>
-    <url>/stardust14.github.io/2020/12/04/DSP%E6%9D%82%E7%83%A9/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>随手记</h1>
+    <url>/2020/12/04/DSP%E6%9D%82%E7%83%A9/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>随手记</h1>
 <p>一些知识和疑问</p>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204095119.png" alt=""></p>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204100437.png" alt=""></p>
@@ -151,8 +151,8 @@
   </entry>
   <entry>
     <title>Linux简单知识</title>
-    <url>/stardust14.github.io/2020/10/31/Linux%E7%AE%80%E5%8D%95%E7%9F%A5%E8%AF%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>简单命令</h1>
+    <url>/2020/10/31/Linux%E7%AE%80%E5%8D%95%E7%9F%A5%E8%AF%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>简单命令</h1>
 <h2 id="常用系统工作命令"><a class="header-anchor" href="#常用系统工作命令">¶</a>常用系统工作命令</h2>
 <ol>
 <li>echo命令</li>
@@ -422,8 +422,8 @@
   </entry>
   <entry>
     <title>MUSIC算法</title>
-    <url>/stardust14.github.io/2021/03/15/MUSIC%E7%AE%97%E6%B3%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>MUSIC算法</h1>
+    <url>/2021/03/15/MUSIC%E7%AE%97%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>MUSIC算法</h1>
 <div class="note warning flat"><p>以下部分是基于线阵阵列！！！还有许多不完善的地方，待续···</p>
 </div>
 <p>假设入射到天线阵列的近似为远场窄带信号，它们分别来自<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>θ</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>θ</mi><mn>2</mn></msub><mo separator="true">,</mo><mo separator="true">⋅</mo><mo separator="true">⋅</mo><mo separator="true">⋅</mo><mo separator="true">,</mo><msub><mi>θ</mi><mi>K</mi></msub></mrow><annotation encoding="application/x-tex">\theta_1,\theta_2,···,\theta_K</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.07153em;">K</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>共K个方向，则有</p>
@@ -616,8 +616,8 @@ c-1 5-5 9-11 9h-2L532 67 19 159h-2c-5 0-9-4-11-9l-5-22c-1-6 2-12 8-13z'/></svg><
   </entry>
   <entry>
     <title>Typora使用</title>
-    <url>/stardust14.github.io/2020/10/09/Typora%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>公式的使用</h1>
+    <url>/2020/10/09/Typora%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>公式的使用</h1>
 <p><strong>上/下标</strong></p>
 <table>
 <thead>
@@ -1121,8 +1121,8 @@ a = \left[
   </entry>
   <entry>
     <title>first blog</title>
-    <url>/stardust14.github.io/2020/01/04/first-blog/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>first blog</p>
+    <url>/2020/01/04/first-blog/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>first blog</p>
 <p>内容：又重新来了一遍！</p>
 <hr>
 <p>second</p>
@@ -1137,8 +1137,8 @@ a = \left[
   </entry>
   <entry>
     <title>Hello World</title>
-    <url>/stardust14.github.io/2020/01/04/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+    <url>/2020/01/04/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a class="header-anchor" href="#Quick-Start">¶</a>Quick Start</h2>
 <h3 id="Create-a-new-post"><a class="header-anchor" href="#Create-a-new-post">¶</a>Create a new post</h3>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
@@ -1156,8 +1156,8 @@ a = \left[
   </entry>
   <entry>
     <title>hexo出现的问题</title>
-    <url>/stardust14.github.io/2020/07/06/hexo%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>在进行博客编写过程中，出现了一些问题。</h1>
+    <url>/2020/07/06/hexo%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>在进行博客编写过程中，出现了一些问题。</h1>
 <h2 id="1-出现hexo无法识别"><a class="header-anchor" href="#1-出现hexo无法识别">¶</a>1.出现hexo无法识别</h2>
 <p>‘hexo’ 不是内部或外部命令，也不是可运行的程序 或批处理文件。<br>
 或着是<code>bash: hexo: command not found</code></p>
@@ -1211,6 +1211,7 @@ a = \left[
 <p>查询了众多解决方法均无效，最后是修改博客根目录下的_config.yml配置</p>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210312111329.png" alt=""></p>
 <p>修改repo的链接，运行hexo d之后，上传成功。</p>
+<p>hexo</p>
 <h1>主题升级git pull出现的问题</h1>
 <p>1.<code>hexo clean&amp;hexo g</code>后出现：</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">INFO  Start processing</span><br><span class="line">ERROR &#123;</span><br><span class="line">  err: Error: D:\blog\blog\themes\butterfly1\layout\includes\widget\index.pug:22:2</span><br><span class="line"><span class="code">      20|     if theme.aside.card_webinfo.enable</span></span><br><span class="line"><span class="code">      21|       include ./card_webinfo.pug</span></span><br><span class="line"><span class="code">    &gt; 22| =======</span></span><br><span class="line"><span class="code">  ---------^</span></span><br><span class="line"><span class="code">      23| if theme.aside.enable</span></span><br><span class="line"><span class="code">      24|   if page.aside !== false</span></span><br><span class="line"><span class="code">      25|     #aside_content.aside_content</span></span><br></pre></td></tr></table></figure>
@@ -1241,8 +1242,8 @@ a = \left[
   </entry>
   <entry>
     <title>js学习</title>
-    <url>/stardust14.github.io/2020/10/17/js%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>快速入门</h1>
+    <url>/2020/10/17/js%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>快速入门</h1>
 ]]></content>
       <categories>
         <category>js</category>
@@ -1253,8 +1254,8 @@ a = \left[
   </entry>
   <entry>
     <title>python 爬虫随笔记录</title>
-    <url>/stardust14.github.io/2020/10/14/python%E7%88%AC%E8%99%AB%E9%9A%8F%E7%AC%94%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>前言</h1>
+    <url>/2020/10/14/python%E7%88%AC%E8%99%AB%E9%9A%8F%E7%AC%94%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>前言</h1>
 <p>记录一下遇到的错误，或者是疑问，解决的问题，随笔记录！！！</p>
 <h1>python 爬虫问题</h1>
 <h2 id="语句解释"><a class="header-anchor" href="#语句解释">¶</a>语句解释</h2>
@@ -1289,8 +1290,8 @@ a = \left[
   </entry>
   <entry>
     <title>如何修改blog</title>
-    <url>/stardust14.github.io/2020/01/05/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9blog/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>学习怎么进行主题设置</h1>
+    <url>/2020/01/05/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9blog/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>学习怎么进行主题设置</h1>
 <h2 id="参考网上的教程，进行学习"><a class="header-anchor" href="#参考网上的教程，进行学习">¶</a>参考网上的教程，进行学习</h2>
 <p>基本的使用:</p>
 <h1>一级标题（# ）</h1>
@@ -1323,14 +1324,14 @@ a 字列表<br>
   </entry>
   <entry>
     <title>阵列信号</title>
-    <url>/stardust14.github.io/2021/02/16/%E9%98%B5%E5%88%97%E4%BF%A1%E5%8F%B7/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>协方差：一般用来刻画两个随机变量的相似程度。</p>
+    <url>/2021/02/16/%E9%98%B5%E5%88%97%E4%BF%A1%E5%8F%B7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>协方差：一般用来刻画两个随机变量的相似程度。</p>
 ]]></content>
   </entry>
   <entry>
     <title>Quartus记录</title>
-    <url>/stardust14.github.io/2020/11/30/Quartus%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>基础知识</h1>
+    <url>/2020/11/30/Quartus%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>基础知识</h1>
 <ol>
 <li>模块语句及其表达方式</li>
 </ol>
@@ -1754,8 +1755,8 @@ a 字列表<br>
   </entry>
   <entry>
     <title>hexo一些配置（不定期更新）</title>
-    <url>/stardust14.github.io/2020/08/10/hexo%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>Front-matter</h1>
+    <url>/2020/08/10/hexo%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>Front-matter</h1>
 <p>这一部分是写博客时，档案最上方以<code>---</code>分隔的区域，用于指定个别参数。</p>
 <h2 id="page-Front-matter"><a class="header-anchor" href="#page-Front-matter">¶</a>page Front-matter</h2>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title:</span><br><span class="line">date:</span><br><span class="line">updated:</span><br><span class="line">type:</span><br><span class="line">comments:</span><br><span class="line">description:</span><br><span class="line">keywords:</span><br><span class="line">top<span class="emphasis">_img:</span></span><br><span class="line"><span class="emphasis">mathjax:</span></span><br><span class="line"><span class="emphasis">katex:</span></span><br><span class="line"><span class="emphasis">aside:</span></span><br><span class="line"><span class="emphasis">aplayer：</span></span><br><span class="line"><span class="emphasis">---</span></span><br></pre></td></tr></table></figure>
@@ -1969,7 +1970,7 @@ a 字列表<br>
   <figcaption>
   <div class="gallery-group-name">壁纸</div>
   <p>收藏的一些壁纸</p>
-  <a href='/stardust14.github.io/Gallery/wallpaper'></a>
+  <a href='/Gallery/wallpaper'></a>
   </figcaption>
   </figure>
   
@@ -1979,7 +1980,7 @@ a 字列表<br>
   <figcaption>
   <div class="gallery-group-name">漫威</div>
   <p>关于漫威的图片</p>
-  <a href='/stardust14.github.io/Gallery/marvel'></a>
+  <a href='/Gallery/marvel'></a>
   </figcaption>
   </figure>
   
@@ -1989,7 +1990,7 @@ a 字列表<br>
   <figcaption>
   <div class="gallery-group-name">OH MY GIRL</div>
   <p>关于OH MY GIRL的图片</p>
-  <a href='/stardust14.github.io/Gallery/ohmygirl'></a>
+  <a href='/Gallery/ohmygirl'></a>
   </figcaption>
   </figure>
   
@@ -2154,8 +2155,8 @@ This is my website, click the button <a class="btn-beautify button--animated lar
   </entry>
   <entry>
     <title>python爬虫</title>
-    <url>/stardust14.github.io/2020/10/20/python%E7%88%AC%E8%99%AB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>预备知识</h1>
+    <url>/2020/10/20/python%E7%88%AC%E8%99%AB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>预备知识</h1>
 <h2 id="正则法则"><a class="header-anchor" href="#正则法则">¶</a>正则法则</h2>
 <table>
 <thead>
@@ -2419,8 +2420,8 @@ b ： 二进制文件</p>
   </entry>
   <entry>
     <title>MATLAB例题</title>
-    <url>/stardust14.github.io/2020/09/22/MATLAB%E4%BE%8B%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>引言</h1>
+    <url>/2020/09/22/MATLAB%E4%BE%8B%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>引言</h1>
 <p>参考胡广书老师所著的《数字信号处理-理论算法与实现》</p>
 <p>下面给出Matlab中下标及希腊字母的使用方法，还有更多的使用方法可以参考matlab帮助 文档中的Text Properties: 下标用 _(下划线) 上标用^ （尖号） 希腊字母等特殊字符用 \加拼音如α \alphaβ \betaγ \gammaθ \thetaΘ \ThetaГ \Gammaδ \deltaΔ \Deltaξ \xiΞ \Xiη \eltaε \epsilongζ \zetaμ \miuυ \nuτ \tauλ \lamdaΛ \Lamdaπ \piΠ \Piσ \sigmaΣ \Sigmaφ \phiΦ \Phiψ \psiΨ \Psiχ \chiω \ommigaΩ \Ommiga&lt; \leq&gt; \geq不等于 \neq&gt; \gg正负\pm左箭头 \leftarrow 右箭头 \rightarrow 上箭头 \uparrow 上圆圈（度数） \circ 例text(2,3,’\alpha_2^\beta’) 很多时候都要在matlab画图的时候添加一些公式符号之类的，有一些特殊的字符并不能直接从键盘上输入，比如希腊字母等等。</p>
 <h1>胡广书老师课本例题</h1>
@@ -2904,8 +2905,8 @@ b ： 二进制文件</p>
   </entry>
   <entry>
     <title>Python基础知识</title>
-    <url>/stardust14.github.io/2020/07/28/Python%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>前言</h1>
+    <url>/2020/07/28/Python%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>前言</h1>
 <p>Python是一种面向对象、 解释型、弱类型的脚本语言,它也是一种功能强大而完善的通用型语言。</p>
 <p>Python的两大特色是<strong>清晰的语法</strong>和<strong>可扩展性</strong>:</p>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">Python的语法非常清晰,它甚至不是一 种格式自由的语言。例如,它要求if语句的下一-行必须向右缩进,否则不能通过编译。</span><br><span class="line">Python的可扩展性体现为它的模块, Python具有脚本语言中最丰富和强大的类库(这些类库被形象地称为&quot;batteries included , 内置电池”), 这些类库覆盖 了文件I/O、GUI、 网络编程、数据库访问、文本操作等绝大部分应用场景。</span><br></pre></td></tr></table></figure>
@@ -3800,8 +3801,8 @@ s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class=
   </entry>
   <entry>
     <title>java基础知识学习笔记</title>
-    <url>/stardust14.github.io/2020/07/08/java%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>定义方法</h1>
+    <url>/2020/07/08/java%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>定义方法</h1>
 <h3 id="1、定义一个方法（函数）的格式："><a class="header-anchor" href="#1、定义一个方法（函数）的格式：">¶</a>1、定义一个方法（函数）的格式：</h3>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> 方法名称()&#123;</span><br><span class="line"></span><br><span class="line">	方法体</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="2、调用方法（函数），格式："><a class="header-anchor" href="#2、调用方法（函数），格式：">¶</a>2、调用方法（函数），格式：</h3>
@@ -4628,8 +4629,8 @@ USB规范，实现USB接口，否则鼠标和键盘的生产出来也无法使�
   </entry>
   <entry>
     <title>C语言基础</title>
-    <url>/stardust14.github.io/2020/09/08/C%E8%AF%AD%E8%A8%80/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>引言</h1>
+    <url>/2020/09/08/C%E8%AF%AD%E8%A8%80/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>引言</h1>
 <p>基于VS2019版，编写练习代码，基础中的基础。通过菜鸟教程上的知识学习。</p>
 <h1>C语言基本</h1>
 <h2 id="基本语法"><a class="header-anchor" href="#基本语法">¶</a>基本语法</h2>
@@ -6967,8 +6968,8 @@ static 修饰符也可以应用于<strong>全局变量</strong>。当 static 修
   </entry>
   <entry>
     <title>MATLAB语言</title>
-    <url>/stardust14.github.io/2020/08/13/MATLAB%E8%AF%AD%E8%A8%80/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\stardust14.github.io\assets\css\APlayer.min.css"><script src="\stardust14.github.io\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>引言</h1>
+    <url>/2020/08/13/MATLAB%E8%AF%AD%E8%A8%80/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>引言</h1>
 <p>MATLAB语言的主要功能：</p>
 <ul>
 <li>数值计算</li>
