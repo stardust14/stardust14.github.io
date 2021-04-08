@@ -1120,22 +1120,6 @@ a = \left[
       </tags>
   </entry>
   <entry>
-    <title>first blog</title>
-    <url>/2020/01/04/first-blog/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>first blog</p>
-<p>内容：又重新来了一遍！</p>
-<hr>
-<p>second</p>
-<p>内容：太不容易了。</p>
-<hr>
-<p>参考：</p>
-<p>来自B站codecheeep</p>
-]]></content>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>butterfly主题美化</title>
     <url>/2021/04/08/butterfly%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>butterfly主题美化记录</h1>
@@ -1168,6 +1152,9 @@ a = \left[
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210408091858.png" alt=""></p>
 <p>其他图标同样的做法</p>
 <h2 id="电子时钟"><a class="header-anchor" href="#电子时钟">¶</a>电子时钟</h2>
+<blockquote>
+<p>有错误，未解决</p>
+</blockquote>
 <h3 id="插件安装"><a class="header-anchor" href="#插件安装">¶</a>插件安装</h3>
 <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">npm i hexo-electric-clock --save</span><br><span class="line"></span><br><span class="line"><span class="section"># 或者</span></span><br><span class="line"></span><br><span class="line">cnpm i hexo-electric-clock --save</span><br></pre></td></tr></table></figure>
 <h3 id="添加博客根目录-config配置项"><a class="header-anchor" href="#添加博客根目录-config配置项">¶</a>添加博客根目录_config配置项</h3>
@@ -1255,6 +1242,22 @@ a = \left[
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>first blog</title>
+    <url>/2020/01/04/first-blog/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>first blog</p>
+<p>内容：又重新来了一遍！</p>
+<hr>
+<p>second</p>
+<p>内容：太不容易了。</p>
+<hr>
+<p>参考：</p>
+<p>来自B站codecheeep</p>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>hexo出现的问题</title>
@@ -1447,7 +1450,7 @@ a = \left[
     <title>批注记录</title>
     <url>/2021/04/07/%E6%89%B9%E6%B3%A8%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="291b0b36ee585448d9329fbee742f88f8dfdad37b60bddea13aff1ed3d6749e7">22064b17c03cb0c0e58c99349b6889d0c7e9d327de57f2d214b057f3875d6b37b9b20ab3b449f9d3b0ba6ffe12bb71d82eff8171349bc71e3a2c9718b358eacc07c1e2d0dcdcc94bb927d4bdef70eb39fd8e7de731fdf8f27d06339a84133e4a974b5fae5fee1809df024fdfbb238fba030fdd8003e2826f0a33da9ce588a76e8e6bc91b4049cb9065bb5b9840402572bd86834c2d0c361fdb4259dd56633b9d286b14b14b74d50d4ca10de4c2e54f118835e2ea5a28de2ac78c4f57666f83faa6cf49198dbd3f86312e8ae6475e1ad55bc0f991fa504124763e450733221c2a781fb4c5fbae0d7123703d7ac9a38542095b3da435e03cc3247b4eff26b05bc0b9e2a2c706e61562c7bb934180842f9b6dc301690938c4f21c78468483f3e95d8b5dcc7048e9b21da20cd49dde4a8cd683cfc91feffd222c011316f66497312604f8b20b5ffc02ed9b9ca7b27ed4db1cd53fe96c268e720fa222687b475d0ce58791b3f7da2d900cdaf58269d88b6c20cbada81f02e840030715d6e565756915b4d0cb8fe965065fd8ff8b1614f000b4865630456e5b30794759410cb19e9299b8df259ff9e0dd282057528064f1feba1e2354f208f8add32a5d96f9879264e81396f1b3d4e71a6b5c5665756626ef9a24713668c2fd67155f59eca72ab01c5b04482b0202087e653954eea98a3d0f732cbaa7c8f96cabf15dc21dfb548afee9c5fbc7efc481eb658229f8238c81ae3abc3dc2c3ffcf079d4195b78ab5be094c77fcaac0b6623655af2b8ea3e3599c76c3ab124f1de662a495429cfcd2d78a480df24cd295ad167d403bbed08dd7d4ac252747baa4309e59bca946629e56107d</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="c4b87240ed900345c68c76f7a0561e1435ef9f4a6d58eedf778a60be6a32214a">22064b17c03cb0c0e58c99349b6889d0c7e9d327de57f2d214b057f3875d6b37b9b20ab3b449f9d3b0ba6ffe12bb71d82eff8171349bc71e3a2c9718b358eacc07c1e2d0dcdcc94bb927d4bdef70eb39fd8e7de731fdf8f27d06339a84133e4a974b5fae5fee1809df024fdfbb238fba030fdd8003e2826f0a33da9ce588a76e8e6bc91b4049cb9065bb5b9840402572bd86834c2d0c361fdb4259dd56633b9d286b14b14b74d50d4ca10de4c2e54f118835e2ea5a28de2ac78c4f57666f83faa6cf49198dbd3f86312e8ae6475e1ad55bc0f991fa504124763e450733221c2a781fb4c5fbae0d7123703d7ac9a38542095b3da435e03cc3247b4eff26b05bc0b9e2a2c706e61562c7bb934180842f9b6dc301690938c4f21c78468483f3e95d8b5dcc7048e9b21da20cd49dde4a8cd683cfc91feffd222c011316f66497312604f8b20b5ffc02ed9b9ca7b27ed4db1cd53fe96c268e720fa222687b475d0ce58791b3f7da2d900cdaf58269d88b6c20cbada81f02e840030715d6e565756915b4d0cb8fe965065fd8ff8b1614f000b4865630456e5b30794759410cb19e9299b8df259ff9e0dd282057528064f1feba1e2354f208f8add32a5d96f9879264e81396f1b3d4e71a6b5c5665756626ef9a24713668c2fd67155f59eca72ab01c5b04482b0202087e653954eea98a3d0f732cbaa7c8f96cabf15dc21dfb548afee9c5fbc7efc481eb658229f8238c81ae3abc3dc2c3ffcf079d4195b78ab5be094c77fcaac0b6623655af2b8ea3e3599c76c3ab124f1de662a495429cfcd2d78a48de2b27d48b58602ee7ba4c8aa5ce3613d576307cd31efd30823ce2a8afdae7b9a02371323ec3fb9ed839d4d126b2d465e0f5cbd0712f81646cf03c3d952d7d18a0d96a2f9b42886432e98b2a96fda270b0db3dedad0e3cc3ba3bddf25d70624971bbfa16a8320cebb2b1f8c4fd89752ea1e39c952ed53ffa55cc4f61b813cb95ef7f9a4eef1c89a326f4e010119cc5597fd39774bad0b5a5044deb7746aa015d6570dc8905e102dde19bbfca3572a04d2804a9df23e5d279a4d6949bbd7d1b6469b5a9ae2cb0d96435efb7a4e289a852bf42b2415e6c59441a2b2c997046f278619a69ebb0d34a52e7e4db69c3802dcd9312ef2c26d12fa34b3fe2c99a01566b527441c03c51d26fe0fc43c24a49b3212570b81c6fa08c79a8c4bdc46e6b0f826c5271d2ff12b5fd31fb2f1bbd8d0119ba11af22c25fae2d6e8bc1e98d8ae5a9e89005f6cbcd29958405e3c742d464a22a4b8fff8ceb4ba417a542fd8e760f8c94ce8233f1218bab9ea5846dd1466ab1334ff7fdf7d0bbac400846e9cbfe08dc77399c9b315df8977634e95e9a12167d51ea02f5effaab4286a0cec84cd4bdcc1d8229507ba4b3e72c4efd295ed3dfe3e1cdf7b9caa9273b5c207f2f39eb82520abc46e5193a2822029b9fc6a5d0e2910ef8c65fea5c915ae9037a678a0e9665f469b787e20b5b4cf3d9eced296804f7543a2c0aaf5336719c4b9217ce2ea82abb764b722fd038ef99ea922f89a3a57a12255e787f9405ede808fdff3b094b6b9ceb3221fcf29e624d9a8a578cef5c418258e4321e62bd7b69644f1533e2de9ac1b8bf105fc1a0cd7db7618b5df7669d343a7ab77f1ded0edc6b9916084369c4456efc0081c8ff25a3dbefe97728c89a3aa9f5cb5f355549dde2097a24400b0c</script>
   <div class="hbe hbe-content">
     <div class="hbe hbe-input hbe-input-xray">
       <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
