@@ -72,38 +72,6 @@
       </tags>
   </entry>
   <entry>
-    <title>DSP</title>
-    <url>/2021/03/08/DSP/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>DSP入门</h1>
-<blockquote>
-<p>本次DSP是数字信号处理器</p>
-</blockquote>
-<p>DSP——数据分析处理</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210308114041.png" alt=""></p>
-<p>数字信号处理器的特点</p>
-<ul>
-<li>丰富的外部接口+DMA</li>
-<li>哈佛+多总线结构</li>
-<li>实时中断系统</li>
-<li>硬件乘法器</li>
-<li>丰富的并行机制</li>
-<li>灵活的寻址方式</li>
-</ul>
-<p>信号处理的核心算法：</p>
-<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>N</mi><mo>−</mo><mn>1</mn></mrow></munderover><mi>x</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mi>i</mi><mo stretchy="false">)</mo><mi>h</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">y(n)=\sum_{i=0}^{N-1}x(n-i)h(i)
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.1060050000000006em;vertical-align:-1.277669em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.8283360000000004em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">0</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">i</span><span class="mclose">)</span><span class="mord mathdefault">h</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mclose">)</span></span></span></span></span></p>
-<blockquote>
-<p>DSP C6748</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>dsp</category>
-      </categories>
-      <tags>
-        <tag>dsp</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>C语言例题</title>
     <url>/2020/09/24/C%E8%AF%AD%E8%A8%80%E4%BE%8B%E9%A2%98/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>前言</h1>
@@ -138,6 +106,38 @@
       </categories>
       <tags>
         <tag>C</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DSP</title>
+    <url>/2021/03/08/DSP/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>DSP入门</h1>
+<blockquote>
+<p>本次DSP是数字信号处理器</p>
+</blockquote>
+<p>DSP——数据分析处理</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210308114041.png" alt=""></p>
+<p>数字信号处理器的特点</p>
+<ul>
+<li>丰富的外部接口+DMA</li>
+<li>哈佛+多总线结构</li>
+<li>实时中断系统</li>
+<li>硬件乘法器</li>
+<li>丰富的并行机制</li>
+<li>灵活的寻址方式</li>
+</ul>
+<p>信号处理的核心算法：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>N</mi><mo>−</mo><mn>1</mn></mrow></munderover><mi>x</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mi>i</mi><mo stretchy="false">)</mo><mi>h</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">y(n)=\sum_{i=0}^{N-1}x(n-i)h(i)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.1060050000000006em;vertical-align:-1.277669em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.8283360000000004em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">0</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">i</span><span class="mclose">)</span><span class="mord mathdefault">h</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mclose">)</span></span></span></span></span></p>
+<blockquote>
+<p>DSP C6748</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>dsp</category>
+      </categories>
+      <tags>
+        <tag>dsp</tag>
       </tags>
   </entry>
   <entry>
@@ -626,6 +626,12 @@ c-1 5-5 9-11 9h-2L532 67 19 159h-2c-5 0-9-4-11-9l-5-22c-1-6 2-12 8-13z'/></svg><
 <div class='tip success'><p>改进的程序<p></div>
 <figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="comment">%music算法的改进</span></span><br><span class="line">clear all;clc;</span><br><span class="line">derad=<span class="built_in">pi</span>/<span class="number">180</span>;</span><br><span class="line">N = <span class="number">5</span>;</span><br><span class="line">M = <span class="number">1</span>;</span><br><span class="line">theta = [<span class="number">21</span>];<span class="comment">%待测角度</span></span><br><span class="line">snr = <span class="number">12</span>;</span><br><span class="line">K = <span class="number">100</span>;<span class="comment">%快拍数</span></span><br><span class="line">dd = <span class="number">0.5</span>;</span><br><span class="line">d = <span class="number">0</span>:dd:(N<span class="number">-1</span>)*dd;<span class="comment">%步长</span></span><br><span class="line">A=<span class="built_in">exp</span>(-<span class="built_in">j</span>*<span class="number">2</span>*<span class="built_in">pi</span>*d.&#x27;*<span class="built_in">sin</span>(theta*derad));<span class="comment">%方向矢量</span></span><br><span class="line"></span><br><span class="line">S = <span class="built_in">randn</span>(M,K);</span><br><span class="line">X = A * S;</span><br><span class="line">Xn = awgn(X,snr,<span class="string">&#x27;measured&#x27;</span>);<span class="comment">%构成的信号</span></span><br><span class="line"></span><br><span class="line">Rxx = Xn*Xn&#x27;/K;</span><br><span class="line">[EV,D] = eig(Rxx);<span class="comment">%特征值分解，并且按照从小到大排序</span></span><br><span class="line"></span><br><span class="line">EV = <span class="built_in">fliplr</span>(EV);</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> iange = <span class="number">1</span>:<span class="number">361</span>;</span><br><span class="line">    <span class="built_in">angle</span>(iange) = (iange<span class="number">-181</span>)/<span class="number">2</span>;</span><br><span class="line">    phim = derad*<span class="built_in">angle</span>(iange);</span><br><span class="line">    a = <span class="built_in">exp</span>(-<span class="built_in">j</span>*<span class="number">2</span>*<span class="built_in">pi</span>*d*<span class="built_in">sin</span>(phim)).&#x27;;<span class="comment">%保证是列向量</span></span><br><span class="line">    G = EV(:,M+<span class="number">1</span>:N);</span><br><span class="line">    P_music(iange) = <span class="number">1</span>/(a&#x27;*G*G&#x27;*a);</span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">P_music = <span class="built_in">abs</span>(P_music);<span class="comment">%提取模值</span></span><br><span class="line">Pm_max = <span class="built_in">max</span>(P_music);</span><br><span class="line">P_music = <span class="number">10</span>*<span class="built_in">log10</span>(P_music/Pm_max);</span><br><span class="line">h = <span class="built_in">plot</span>(<span class="built_in">angle</span>,P_music);</span><br><span class="line"><span class="built_in">legend</span>(<span class="string">&#x27;MUSIC&#x27;</span>);</span><br><span class="line">set(h,<span class="string">&#x27;Linewidth&#x27;</span>,<span class="number">1</span>);</span><br><span class="line">xlabel(<span class="string">&#x27;入射角/(degree)&#x27;</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;空间谱/(dB)&#x27;</span>);</span><br><span class="line">set(gca,<span class="string">&#x27;XTick&#x27;</span>,[<span class="number">-100</span>:<span class="number">20</span>:<span class="number">100</span>]);</span><br><span class="line">grid on;</span><br></pre></td></tr></table></figure>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210322110314.png" alt=""></p>
+<p>不同阵元数对MUSIC算法的影响</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="comment">%阵元数不同的情况下</span></span><br><span class="line"></span><br><span class="line">clear all;clc</span><br><span class="line">derad = <span class="built_in">pi</span> / <span class="number">180</span>;<span class="comment">%弧度转换</span></span><br><span class="line">N = [<span class="number">5</span> <span class="number">10</span> <span class="number">20</span>];<span class="comment">%阵元个数</span></span><br><span class="line">M = <span class="number">3</span>;<span class="comment">%信源数目</span></span><br><span class="line">doa = [<span class="number">-30</span> <span class="number">0</span> <span class="number">60</span>]*derad;<span class="comment">%待测角度</span></span><br><span class="line">snr = <span class="number">10</span>;<span class="comment">%信噪比</span></span><br><span class="line">K = <span class="number">100</span>;<span class="comment">%快拍数</span></span><br><span class="line">dd = <span class="number">0.5</span>;<span class="comment">%阵元间隔（假设值）</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span>:<span class="built_in">length</span>(N)</span><br><span class="line">    d = <span class="number">0</span>:dd:(<span class="built_in">max</span>(N)<span class="number">-1</span>)*dd;</span><br><span class="line">    <span class="keyword">for</span> ii = <span class="number">1</span>:<span class="built_in">length</span>(doa)</span><br><span class="line">        A(:,ii)=<span class="built_in">exp</span>(-<span class="built_in">j</span>*<span class="number">2</span>*<span class="built_in">pi</span>*d.&#x27;*<span class="built_in">sin</span>(doa(ii)));</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    S = <span class="built_in">randn</span>(M,K);</span><br><span class="line">    X = A(<span class="number">1</span>:N(<span class="built_in">i</span>),:) * S;</span><br><span class="line">    Xn = awgn(X,snr,<span class="string">&#x27;measured&#x27;</span>);</span><br><span class="line">    </span><br><span class="line">    Rxx = Xn*Xn&#x27;/K;</span><br><span class="line">    [EV,D] = eig(Rxx);</span><br><span class="line">    </span><br><span class="line">    EV  = <span class="built_in">fliplr</span>(EV);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> iangle= <span class="number">1</span>:<span class="number">361</span></span><br><span class="line">        <span class="built_in">angle</span>(iangle) = (iangle<span class="number">-181</span>)/<span class="number">2</span>;</span><br><span class="line">        phim = derad*<span class="built_in">angle</span>(iangle);</span><br><span class="line">        a = <span class="built_in">exp</span>(-<span class="built_in">j</span>*<span class="number">2</span>*<span class="built_in">pi</span>*d(<span class="number">1</span>:N(<span class="built_in">i</span>))*<span class="built_in">sin</span>(phim)).&#x27;;</span><br><span class="line">        En = EV(:,M+<span class="number">1</span>:N(<span class="built_in">i</span>));</span><br><span class="line">        pmusic(<span class="built_in">i</span>,iangle)=<span class="number">1</span>/(a&#x27;*En*En&#x27;*a);</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">    pmusic=<span class="built_in">abs</span>(pmusic);</span><br><span class="line">    pmmax = <span class="built_in">max</span>(pmusic,[],<span class="number">2</span>);</span><br><span class="line"><span class="keyword">for</span> i3 = <span class="number">1</span>:<span class="number">1</span>:<span class="built_in">size</span>(pmusic)</span><br><span class="line">   sp(i3,:) = pmusic(i3,:)./pmmax(i3); </span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">Pmusic = <span class="number">10</span>*<span class="built_in">log10</span>(sp);</span><br><span class="line"><span class="built_in">plot</span>(<span class="built_in">angle</span>,Pmusic,<span class="string">&#x27;LineWidth&#x27;</span>,<span class="number">2</span>);</span><br><span class="line"><span class="built_in">legend</span>(<span class="string">&#x27;阵元数N = 5&#x27;</span>,<span class="string">&#x27;阵元数N = 10&#x27;</span>,<span class="string">&#x27;阵元数N = 20&#x27;</span>)</span><br><span class="line">title(<span class="string">&#x27;仿真实验2：不同阵元数下MUSIC算法性能比较&#x27;</span>,<span class="string">&#x27;fontsize&#x27;</span>,<span class="number">12</span>);</span><br><span class="line">xlabel(<span class="string">&#x27;入射角度/degree&#x27;</span>,<span class="string">&#x27;fontsize&#x27;</span>,<span class="number">12</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;归一化空间谱/dB&#x27;</span>,<span class="string">&#x27;fontsize&#x27;</span>,<span class="number">12</span>);</span><br><span class="line">grid on</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210531101205.png" alt=""></p>
+<p>不同信噪比下对MUSIC算法的影响</p>
+<figure class="highlight matlab"><table><tr><td class="code"><pre><span class="line"><span class="comment">%信噪比不同的比较</span></span><br><span class="line">clear all;clc</span><br><span class="line">N = <span class="number">10</span>;<span class="comment">%阵元数</span></span><br><span class="line">derad = <span class="built_in">pi</span>/<span class="number">180</span>;</span><br><span class="line">M = <span class="number">3</span>;<span class="comment">%信源数目</span></span><br><span class="line">doa = [<span class="number">-30</span> <span class="number">20</span> <span class="number">60</span>]/<span class="number">180</span>*<span class="built_in">pi</span>;</span><br><span class="line">snr = [<span class="number">5</span> <span class="number">10</span> <span class="number">20</span>];</span><br><span class="line">dd = <span class="number">0.5</span>;</span><br><span class="line">K = <span class="number">100</span>;<span class="comment">%快拍数</span></span><br><span class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span>:<span class="built_in">length</span>(snr)</span><br><span class="line">    d = <span class="number">0</span>:dd:(N<span class="number">-1</span>)*dd;<span class="comment">%间距</span></span><br><span class="line">    <span class="keyword">for</span> ii = <span class="number">1</span>:<span class="built_in">length</span>(doa)</span><br><span class="line">        A(:,ii) = <span class="built_in">exp</span>(-<span class="built_in">j</span>*<span class="number">2</span>*<span class="built_in">pi</span>*d.&#x27;*<span class="built_in">sin</span>(doa(ii)));</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">    <span class="comment">%</span></span><br><span class="line"><span class="comment">%     S = sqrt();</span></span><br><span class="line">    snr1 = snr(<span class="built_in">i</span>);</span><br><span class="line">    S = <span class="built_in">randn</span>(M,K);</span><br><span class="line">    X = A*S;</span><br><span class="line">    Xn = awgn(X,snr1,<span class="string">&#x27;measured&#x27;</span>);</span><br><span class="line">    </span><br><span class="line">    Rxx = Xn*Xn&#x27;/K;</span><br><span class="line">    [EV,D] = eig(Rxx);</span><br><span class="line">    </span><br><span class="line">    EV  = <span class="built_in">fliplr</span>(EV);</span><br><span class="line">    </span><br><span class="line"><span class="comment">%     theta = -90:0.1:90;</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> iangle= <span class="number">1</span>:<span class="number">361</span></span><br><span class="line">        <span class="built_in">angle</span>(iangle) = (iangle<span class="number">-181</span>)/<span class="number">2</span>;</span><br><span class="line">        phim = derad*<span class="built_in">angle</span>(iangle);</span><br><span class="line"><span class="comment">%         a=exp(-j*2*pi*d*sin(pi*theta(i3)/180)).&#x27;;</span></span><br><span class="line">        a = <span class="built_in">exp</span>(-<span class="built_in">j</span>*<span class="number">2</span>*<span class="built_in">pi</span>*d*<span class="built_in">sin</span>(phim)).&#x27;;</span><br><span class="line">        En = EV(:,M+<span class="number">1</span>:N);</span><br><span class="line">        pmusic(<span class="built_in">i</span>,iangle)=<span class="number">1</span>/(a&#x27;*En*En&#x27;*a);</span><br><span class="line"><span class="comment">%         Pmusic(iange) = 1/(a&#x27;*En*En&#x27;*a);</span></span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">   </span><br><span class="line"><span class="comment">%     pmusic = 10*log(pmusic/max(pmusic));</span></span><br><span class="line"><span class="comment">%     Pmusic(ii,:) = pmusic;</span></span><br><span class="line"><span class="comment">%     pmusic = 10*log10(pmusic/pmmax);</span></span><br><span class="line">   </span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">    pmusic=<span class="built_in">abs</span>(pmusic);</span><br><span class="line">    pmmax = <span class="built_in">max</span>(pmusic,[],<span class="number">2</span>);</span><br><span class="line"><span class="keyword">for</span> i3 = <span class="number">1</span>:<span class="number">1</span>:<span class="built_in">size</span>(pmusic)</span><br><span class="line">   sp(i3,:) = pmusic(i3,:)./pmmax(i3); </span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">Pmusic = <span class="number">10</span>*<span class="built_in">log10</span>(sp);</span><br><span class="line"><span class="built_in">plot</span>(<span class="built_in">angle</span>,Pmusic,<span class="string">&#x27;LineWidth&#x27;</span>,<span class="number">2</span>);</span><br><span class="line"><span class="comment">% plot(theta,Pmusic(1,:),theta,Pmusic(2,:),theta,Pmusic(3,:),&#x27;LineWidth&#x27;,2); </span></span><br><span class="line"><span class="comment">% axis([-100 100 -110 10]);</span></span><br><span class="line"><span class="built_in">legend</span>(<span class="string">&#x27;SNR = 5&#x27;</span>,<span class="string">&#x27;SNR = 10&#x27;</span>,<span class="string">&#x27;SNR = 20&#x27;</span>,<span class="string">&#x27;Location&#x27;</span>,<span class="string">&#x27;NorthWest&#x27;</span>)</span><br><span class="line">title(<span class="string">&#x27;仿真实验1：不同信噪比下MUSIC算法性能比较&#x27;</span>,<span class="string">&#x27;fontsize&#x27;</span>,<span class="number">12</span>);</span><br><span class="line">xlabel(<span class="string">&#x27;入射角度/degree&#x27;</span>,<span class="string">&#x27;fontsize&#x27;</span>,<span class="number">12</span>);</span><br><span class="line">ylabel(<span class="string">&#x27;归一化空间谱/dB&#x27;</span>,<span class="string">&#x27;fontsize&#x27;</span>,<span class="number">12</span>);</span><br><span class="line">grid on</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210531101302.png" alt=""></p>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210315114937.jpg" alt=""></p>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210316095024.jpg" alt=""></p>
 ]]></content>
@@ -1282,18 +1288,6 @@ a = \left[
 ]]></content>
   </entry>
   <entry>
-    <title>js学习</title>
-    <url>/2020/10/17/js%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>快速入门</h1>
-]]></content>
-      <categories>
-        <category>js</category>
-      </categories>
-      <tags>
-        <tag>js</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>hexo出现的问题</title>
     <url>/2020/07/06/hexo%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>在进行博客编写过程中，出现了一些问题。</h1>
@@ -1378,6 +1372,18 @@ a = \left[
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>js学习</title>
+    <url>/2020/10/17/js%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>快速入门</h1>
+]]></content>
+      <categories>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
       </tags>
   </entry>
   <entry>
@@ -1510,7 +1516,7 @@ a = \left[
 <li>带通采样定理：</li>
 </ul>
 <p>设一个频率信号x(t)的频带限制在<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>L</mi></msub><mo separator="true">,</mo><msub><mi>f</mi><mi>H</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(f_L,f_H)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">L</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.10764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.08125em;">H</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>内</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210513201147.png" alt="image-20210513201139464"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210513201147.png" alt=""></p>
 <p>由于带限信号频谱具有轴对称性，故只需对一边的信号进行分析即可。如上图所示，进行采样时以采样频率fs为间隔对信号频谱进行搬移，不失真条件为搬移后的频谱在原频谱区域不发生混叠。</p>
 <p>第一次搬移时不混叠条件：</p>
 <p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo fence="true">{</mo><mtable rowspacing="0.3599999999999999em" columnalign="left left" columnspacing="1em"><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><msub><mi>f</mi><mi>H</mi></msub><mo>+</mo><msub><mi>f</mi><mi>S</mi></msub><mo>≥</mo><mo>−</mo><msub><mi>f</mi><mi>L</mi></msub></mrow></mstyle></mtd></mtr><mtr><mtd><mstyle scriptlevel="0" displaystyle="false"><mrow><mo>−</mo><msub><mi>f</mi><mi>L</mi></msub><mo>+</mo><msub><mi>f</mi><mi>S</mi></msub><mo>≤</mo><msub><mi>f</mi><mi>L</mi></msub><mo>−</mo><msub><mi>f</mi><mi>S</mi></msub></mrow></mstyle></mtd></mtr></mtable></mrow><annotation encoding="application/x-tex">\begin{cases}-f_H+f_S\geq -f_L\\ -f_L+f_S \leq f_L-f_S\end{cases}
@@ -1528,6 +1534,8 @@ a = \left[
 <p><strong>带通采样的限制条件</strong></p>
 <p>带通采样定理使用的前提条件是：只允许在其中一个频带上存在信号，而不允许在不同的频带同时存在信号，否则将会引起信号混叠。</p>
 </blockquote>
+<p>#############</p>
+<p>阵列输出的绝对值与来波方向之间的关系称为<strong>天线的方向图</strong></p>
 ]]></content>
       <categories>
         <category>记录&amp;烂笔头</category>
