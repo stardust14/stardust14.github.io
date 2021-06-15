@@ -165,6 +165,25 @@
       </tags>
   </entry>
   <entry>
+    <title>F4学习记录</title>
+    <url>/2021/06/15/F4%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>阿波罗STM32开发板底板引脚</h1>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210615090214.png" alt=""></p>
+<blockquote>
+<p>JTAG调试，需要占用5个IO端口；SWD则只需要2个IO端口</p>
+<p>KEY_UP 是高电平有效，而 KEY0、KEY1 和 KEY2 是低电平有效</p>
+</blockquote>
+<h2 id="核心板资源图"><a class="header-anchor" href="#核心板资源图">¶</a>核心板资源图</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210615090543.png" alt=""></p>
+]]></content>
+      <categories>
+        <category>记录&amp;烂笔头</category>
+      </categories>
+      <tags>
+        <tag>STM32</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux简单知识</title>
     <url>/2020/10/31/Linux%E7%AE%80%E5%8D%95%E7%9F%A5%E8%AF%86/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>简单命令</h1>
