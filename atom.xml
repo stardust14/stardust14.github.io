@@ -6,7 +6,7 @@
   <link href="http://stardust14.com/atom.xml" rel="self"/>
   
   <link href="http://stardust14.com/"/>
-  <updated>2021-06-15T02:33:45.831Z</updated>
+  <updated>2021-06-16T03:51:04.988Z</updated>
   <id>http://stardust14.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://stardust14.com/2021/06/15/F4%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     <id>http://stardust14.com/2021/06/15/F4%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</id>
     <published>2021-06-15T00:59:10.000Z</published>
-    <updated>2021-06-15T02:33:45.831Z</updated>
+    <updated>2021-06-16T03:51:04.988Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>阿波罗STM32开发板底板引脚</h1><p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210615090214.png" alt=""></p><blockquote><p>JTAG调试，需要占用5个IO端口；SWD则只需要2个IO端口</p><p>KEY_UP 是高电平有效，而 KEY0、KEY1 和 KEY2 是低电平有效</p></blockquote><h2 id="核心板资源图"><a class="header-anchor" href="#核心板资源图">¶</a>核心板资源图</h2><p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210615090543.png" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>阿波罗STM32开发板底板引脚</h1><p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210615090214.png" alt=""></p><blockquote><p>JTAG调试，需要占用5个IO端口；SWD则只需要2个IO端口</p><p>KEY_UP 是高电平有效，而 KEY0、KEY1 和 KEY2 是低电平有效</p></blockquote><h2 id="核心板资源图"><a class="header-anchor" href="#核心板资源图">¶</a>核心板资源图</h2><p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210615090543.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616094711.png" alt=""></p><h2 id="GPIO口（通用IO口）"><a class="header-anchor" href="#GPIO口（通用IO口）">¶</a>GPIO口（通用IO口）</h2><p>STM32F429芯片有176个引脚，其中140个可以作为GPIO口。</p><p>一共9组IO：PA~PI；其中PA-PH每组16个IO口，PI只有PI0-PI11（12）,一共有140个IO口（16*8+12=140）</p><p>复用可以大大节省IO口的资源。</p><p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616102931.png" alt=""></p><p>STM32引脚的功能：查找数据手册</p><p>FT可以容忍5V输入</p><p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616105528.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616105607.png" alt=""></p><h3 id="GPIO口的8种工作模式"><a class="header-anchor" href="#GPIO口的8种工作模式">¶</a>GPIO口的8种工作模式</h3><ul><li>4种输入模式：</li></ul><p>输入浮空</p><p>输入上拉</p><p>输入下拉</p><p>模拟输入</p><ul><li>4种输出模式（带上下拉）：</li></ul><p>开漏输出（带上拉或者下拉）</p><p>开漏复用功能（带上拉或者下拉）</p><p>推挽式输出（带上拉或者下拉）</p><p>推挽式复用功能（带上拉或者下拉 ）</p><ul><li>4种最大输出速度</li></ul><p>-2MHz    低速</p><p>-25MHz  中速</p><p>-50MHz  快速</p><p>-100MHz  高速</p><h3 id="IO口的基本结构"><a class="header-anchor" href="#IO口的基本结构">¶</a>IO口的基本结构</h3><p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616112000.png" alt=""></p><p>GPIO口的输入工作模式1——输入浮空模式</p><p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616113506.png" alt=""></p><blockquote><p>在浮空状态下，上拉下拉没有设置（不起作用），输出驱动器不起作用，模拟通道，复用功能输入也不起作用，直接到输入数据寄存器被CPU读取</p></blockquote><p>GPIO的输入工作方式2——输入上拉模式</p><p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616113917.png" alt=""></p><blockquote><p>在此模式下，上拉起作用，下拉不起作用，其他和浮空模式一样，被保存在输入数据寄存器</p></blockquote><p>GPIO的输入工作模式3——输入下拉模式</p><p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616114348.png" alt=""></p><blockquote><p>与上拉模式类似，下拉起作用，上拉不起作用</p></blockquote><p>GPIO的输入工作模式4——模拟模式</p><p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616114959.png" alt=""></p><blockquote><p>在信号到达TTL施密特触发器之前，会直接到模拟通道（也就是TTL施密特触发器开关是关闭的）；上拉和下拉是不起作用的</p></blockquote><p>GPIO的输出工作模式1——开漏输出模式</p>]]></content>
     
     
     <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; class=&quot;aplayer-secondary-script-marker&quot;&gt;&lt;/script&gt;&lt;h1&gt;阿波罗STM32开发板底板引脚&lt;/h1&gt;
@@ -34,7 +34,10 @@
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;核心板资源图&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#核心板资源图&quot;&gt;¶&lt;/a&gt;核心板资源图&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210615090543.png&quot; alt&gt;&lt;/p&gt;
-</summary>
+&lt;p&gt;&lt;img src=&quot;https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616094711.png&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;GPIO口（通用IO口）&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#GPIO口（通用IO口）&quot;&gt;¶&lt;/a&gt;GPIO口（通用IO口）&lt;/h2&gt;
+&lt;p&gt;STM32F429芯片有176个引脚，其中140个可以作为GPIO口。&lt;/p&gt;
+&lt;p&gt;一共9组IO：PA~PI；其中PA-PH每组16个IO口，PI只有PI0-PI11（12）,一共有140个IO口（16*8+12=140）&lt;/p&gt;</summary>
     
     
     
