@@ -47,31 +47,6 @@
       </tags>
   </entry>
   <entry>
-    <title>4D毫米波雷达</title>
-    <url>/2021/02/26/4D%E6%AF%AB%E7%B1%B3%E6%B3%A2%E9%9B%B7%E8%BE%BE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
-<p>随着知识的积累再填充，更新待续~~</p>
-</blockquote>
-<h1>毫米波和4D毫米波</h1>
-<p>毫米波：</p>
-<ol>
-<li>工作在毫米波波段（millimeter wave ）探测的雷达。工作频段一般为30GHz ~ 300 GHz， 波长 1~10mm，介于微波和厘米波之间，兼具有微波雷达和光电雷达的一些优点；</li>
-<li>毫米波雷达相比厘米波雷达具有体积小、易集成和空间分辨率高的特点。</li>
-<li>车载毫米波雷达的工作频率为一般为 24GHz 和77GHz ；</li>
-</ol>
-<p>4D毫米波雷达通过物理或虚拟软件增加毫米波雷达发射&amp;接收通道的个数，可在很大程度上提高毫米波雷达的感知角度、感知距离、进而弥补毫米波雷达无法有效感知纵向距离的问题，从而提供与激光雷达相当的点云密度信号。</p>
-<p>4D毫米波雷达可在恶劣的天气条件下提供更大的范围，视野，感知力和承受能力。但是目前还未能量产；主要是用于弥补传统的毫米波雷达测量误差范围大、无法识别静止物体的缺点。</p>
-<p><strong>传统毫米波雷达（Current Radars）：<strong>探测角度小，且呈现出锥状的波束，使得其测量误差相对较大，且</strong>难以探测静止的物体</strong>。</p>
-<p>**4D毫米波雷达（4D Imaging Radar）：**探测角度相对较大，且测量误差相对较小。由于增加了“探测物体高度”第四个指标，<strong>能够实现测量静止物体的功能</strong>。</p>
-]]></content>
-      <categories>
-        <category>科普</category>
-      </categories>
-      <tags>
-        <tag>毫米波雷达</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>C语言例题</title>
     <url>/2020/09/24/C%E8%AF%AD%E8%A8%80%E4%BE%8B%E9%A2%98/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>前言</h1>
@@ -106,6 +81,63 @@
       </categories>
       <tags>
         <tag>C</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4D毫米波雷达</title>
+    <url>/2021/02/26/4D%E6%AF%AB%E7%B1%B3%E6%B3%A2%E9%9B%B7%E8%BE%BE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
+<p>随着知识的积累再填充，更新待续~~</p>
+</blockquote>
+<h1>毫米波和4D毫米波</h1>
+<p>毫米波：</p>
+<ol>
+<li>工作在毫米波波段（millimeter wave ）探测的雷达。工作频段一般为30GHz ~ 300 GHz， 波长 1~10mm，介于微波和厘米波之间，兼具有微波雷达和光电雷达的一些优点；</li>
+<li>毫米波雷达相比厘米波雷达具有体积小、易集成和空间分辨率高的特点。</li>
+<li>车载毫米波雷达的工作频率为一般为 24GHz 和77GHz ；</li>
+</ol>
+<p>4D毫米波雷达通过物理或虚拟软件增加毫米波雷达发射&amp;接收通道的个数，可在很大程度上提高毫米波雷达的感知角度、感知距离、进而弥补毫米波雷达无法有效感知纵向距离的问题，从而提供与激光雷达相当的点云密度信号。</p>
+<p>4D毫米波雷达可在恶劣的天气条件下提供更大的范围，视野，感知力和承受能力。但是目前还未能量产；主要是用于弥补传统的毫米波雷达测量误差范围大、无法识别静止物体的缺点。</p>
+<p><strong>传统毫米波雷达（Current Radars）：<strong>探测角度小，且呈现出锥状的波束，使得其测量误差相对较大，且</strong>难以探测静止的物体</strong>。</p>
+<p>**4D毫米波雷达（4D Imaging Radar）：**探测角度相对较大，且测量误差相对较小。由于增加了“探测物体高度”第四个指标，<strong>能够实现测量静止物体的功能</strong>。</p>
+]]></content>
+      <categories>
+        <category>科普</category>
+      </categories>
+      <tags>
+        <tag>毫米波雷达</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DSP</title>
+    <url>/2021/03/08/DSP/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>DSP入门</h1>
+<blockquote>
+<p>本次DSP是数字信号处理器</p>
+</blockquote>
+<p>DSP——数据分析处理</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210308114041.png" alt=""></p>
+<p>数字信号处理器的特点</p>
+<ul>
+<li>丰富的外部接口+DMA</li>
+<li>哈佛+多总线结构</li>
+<li>实时中断系统</li>
+<li>硬件乘法器</li>
+<li>丰富的并行机制</li>
+<li>灵活的寻址方式</li>
+</ul>
+<p>信号处理的核心算法：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>N</mi><mo>−</mo><mn>1</mn></mrow></munderover><mi>x</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mi>i</mi><mo stretchy="false">)</mo><mi>h</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">y(n)=\sum_{i=0}^{N-1}x(n-i)h(i)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.1060050000000006em;vertical-align:-1.277669em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.8283360000000004em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">0</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">i</span><span class="mclose">)</span><span class="mord mathdefault">h</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mclose">)</span></span></span></span></span></p>
+<blockquote>
+<p>DSP C6748</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>dsp</category>
+      </categories>
+      <tags>
+        <tag>dsp</tag>
       </tags>
   </entry>
   <entry>
@@ -198,9 +230,12 @@
 <p>在信号到达TTL施密特触发器之前，会直接到模拟通道（也就是TTL施密特触发器开关是关闭的）；上拉和下拉是不起作用的</p>
 </blockquote>
 <p>GPIO的输出工作模式1——开漏输出模式</p>
+<blockquote>
+<p>输出不了高电平</p>
+</blockquote>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616160210.png" alt=""></p>
 <blockquote>
-<p>输入为1时，N-mos处于截至状态，对IO口电平没有影响，若是输出1，则需要接一个上拉电阻</p>
+<p>输入为1时，N-mos处于截至状态，对IO口电平没有影响，若是输出1，则需要接一个上拉电阻与电源相接</p>
 <p>输入为0时，N-mos处于导通状态 ，IO口会是0，输出0，接下拉电阻</p>
 <p>CPU可以通过输入数据寄存器读取到IO口的输出状态（1/0）</p>
 </blockquote>
@@ -210,6 +245,10 @@
 <p>此时，工作在复用功能输出</p>
 </blockquote>
 <p>GPIO的输出工作模式3——推挽输出模式</p>
+<blockquote>
+<p>推：灌电流 可以达到25mA（mos管内阻小）</p>
+<p>挽：拉电流</p>
+</blockquote>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616161250.png" alt=""></p>
 <blockquote>
 <p>此时，P-mos和N-mos都是工作的</p>
@@ -233,6 +272,9 @@ PB3:JTDO处于浮空状态</p>
 <h3 id="GPIO寄存器"><a class="header-anchor" href="#GPIO寄存器">¶</a>GPIO寄存器</h3>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616171206.png" alt=""></p>
 <p>1.端口模式寄存器</p>
+<blockquote>
+<p>x=A…K是对应的208个引脚的CPU；对于STM32F429来说，只用到x=A…I</p>
+</blockquote>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616172058.png" alt=""></p>
 <blockquote>
 <p>两位控制1个IO端口</p>
@@ -252,55 +294,69 @@ PB3:JTDO处于浮空状态</p>
 <div class='tip' ><p>至此，通过这4个寄存器的配置就可以达到GPIO的8种工作模式<p></div>
 <p>5.端口输入数据寄存器(GPIOx_IDR)</p>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616174807.png" alt=""></p>
+<blockquote>
+<p>低16位有效，输入是低电平还是高电平写入在此寄存器中</p>
+</blockquote>
 <p>6.端口输出数据寄存器(GPIOx_ODR)</p>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616175955.png" alt=""></p>
+<blockquote>
+<p>低16位，每一位控制一个输出电平；设置为1则输出高电平，设置为0则输出低电平</p>
+</blockquote>
 <p>7.端口置位/复位寄存器(GPIOx_BSRR)</p>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616180029.png" alt=""></p>
+<blockquote>
+<p>控制IO口输出电平状态，低16位是端口置位位，高16位是端口复位位；</p>
+<p>低16位：设置为1则输出高电平，设置为0则不产生影响</p>
+<p>高16位：设置为1则输出低电平，设置为0则不产生影响</p>
+<p>优点：不用读写与ODR相比</p>
+</blockquote>
+<div class='tip warning' ><p>上图中的位设置/清除寄存器就是BSRR；输出数据寄存器就是ODR，这就是两者的关系<p></div>
 <p>8.端口配置锁定寄存器(GPIOx_LCKR)</p>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616180101.png" alt=""></p>
+<blockquote>
+<p>低17位使用</p>
+</blockquote>
 <p>9.复用功能寄存器(GPIOx_AFRL、AFRH)</p>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616180134.png" alt=""></p>
 <blockquote>
-<p>分高位AFRH和低位AFRL，分别控制8个IO口</p>
+<p>分高位AFRH和低位AFRL，分别控制8个IO口；两个32位寄存器，一共64位；IO口是16个，所以每个IO口需要4位控制</p>
 </blockquote>
+<h2 id="跑马灯"><a class="header-anchor" href="#跑马灯">¶</a>跑马灯</h2>
+<p>led灯的硬件连接</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617165905.png" alt=""></p>
+<blockquote>
+<p>以LED0为例，若输出为0，则有电位差，LED0亮；若输出为1，则DS0右边是3.3V，无电位差，LED0不亮</p>
+<p>从电平方式上看，，总结出输出方式为推挽输出（上拉）</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617193151.png" alt=""></p>
+<blockquote>
+<p>外设使用之前，要使用使能IO口时钟。配置IO口时钟使能寄存器：RCC-&gt;AHB1ENR(外设时钟使能寄存器)</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617193807.png" alt=""></p>
+<p><font color="red">初始化IO口模式。配置四个配置寄存器：GPIOx_MODER(模式)、GPIOx_OTYPER(输出类型)、GPIOx_OSPEEDR(输出速度)、GPIOx_PUPDR(上拉下拉)</font></p>
+<p><font color="red">最后，操作IO口，输出高低电平。配置寄存器GPIOx_ODR或着GPIOx_BSRR。</font></p>
+<div class='tip error'><p>出现了一些错误<p></div>
+<p>1.编写led.h文件时出现</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617162736.png" alt=""></p>
+<p>解决：由于<code>#ifndef__LED_H</code>应该有空格，即<code>ifndef __LED_H</code>；同理<code>#define__LED_H</code>也是要变成<code>#define __LED_H</code></p>
+<p>2.出现宏定义无效的情况</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617163357.png" alt=""></p>
+<p>这是因为led.h出错的结果，把led.h文件改好，就无错了；注意：led.h文件要添加到工程去</p>
+<p>3.编译报错</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617163717.png" alt=""></p>
+<p>这是由于工程中还有一个main函数的存在，把另一个移除就可以了</p>
+<div class='tip success'><p>成功<p></div>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;sys.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;led.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;delay.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化PB0和PB1为输出口，并使能这两个口的时钟</span></span><br><span class="line"><span class="comment">//LED IO初始化</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">LED_Init</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	RCC-&gt;AHB1ENR |=<span class="number">1</span>&lt;&lt;<span class="number">1</span>;		<span class="comment">//使能PORTB时钟</span></span><br><span class="line">    <span class="comment">//只用操作位1，其他位不用管</span></span><br><span class="line">	<span class="comment">// “|=”是位或  “&lt;&lt;”：右移一位；使位1保持1，开时钟</span></span><br><span class="line">	</span><br><span class="line">	<span class="comment">//GPIOB是要操作的GPIO组，PIN0和PIN1这两个引脚分别控制LED1和LED0</span></span><br><span class="line">	<span class="comment">//GPIO_MODE_OUT在sys.h文件中宏定义为普通输出（也就是GPIO口模式选择输出）</span></span><br><span class="line">	<span class="comment">//GPIO_OTYPE_PP在sys.h文件中宏定义为推挽输出</span></span><br><span class="line">	<span class="comment">//GPIO_SPEED_100M在syys.h中宏定义为GPIO速度100Mhz</span></span><br><span class="line">	<span class="comment">//GPIO_PUPD_PU在sys.h中宏定义为上拉</span></span><br><span class="line">	GPIO_Set(GPIOB,PIN0|PIN1,GPIO_MODE_OUT,GPIO_OTYPE_PP,<span class="comment">//GPIO口设置：GPIO_Set函数</span></span><br><span class="line">			 GPIO_SPEED_100M,GPIO_PUPD_PU);	<span class="comment">//PB0,PB1设置</span></span><br><span class="line">	</span><br><span class="line">	LED0 = <span class="number">1</span>;	<span class="comment">//LED0关闭</span></span><br><span class="line">	LED1 = <span class="number">1</span>;	<span class="comment">//LED1关闭</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Stm32_Clock_Init(<span class="number">360</span>,<span class="number">25</span>,<span class="number">2</span>,<span class="number">8</span>);	<span class="comment">//设置时钟，180Mhz；初始化系统时钟</span></span><br><span class="line">	delay_init(<span class="number">180</span>);	<span class="comment">//初始化延时函数</span></span><br><span class="line">	LED_Init();		<span class="comment">//初始化LED时钟</span></span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		LED0 = <span class="number">0</span>;		<span class="comment">//DS0亮</span></span><br><span class="line">		LED1 = <span class="number">1</span>;		<span class="comment">//DS1灭</span></span><br><span class="line">		delay_ms(<span class="number">500</span>);</span><br><span class="line">		LED0 = <span class="number">1</span>;		<span class="comment">//DS0灭</span></span><br><span class="line">		LED1 = <span class="number">0</span>;		<span class="comment">//DS1亮</span></span><br><span class="line">		delay_ms(<span class="number">1000</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>keil软件一般在最后打出一行空行。</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> __LED_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> __LED_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&quot;sys.h&quot;</span></span></span><br><span class="line"><span class="comment">//LED端口定义</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LED0 PBout(1)	<span class="comment">//DS0，PBout输出为1</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LED1 PBout(0)	<span class="comment">//DS1，PBout输出为0</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">LED_Init</span><span class="params">(<span class="keyword">void</span>)</span></span>;	<span class="comment">//初始化</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>记录&amp;烂笔头</category>
       </categories>
       <tags>
         <tag>STM32</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DSP</title>
-    <url>/2021/03/08/DSP/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>DSP入门</h1>
-<blockquote>
-<p>本次DSP是数字信号处理器</p>
-</blockquote>
-<p>DSP——数据分析处理</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210308114041.png" alt=""></p>
-<p>数字信号处理器的特点</p>
-<ul>
-<li>丰富的外部接口+DMA</li>
-<li>哈佛+多总线结构</li>
-<li>实时中断系统</li>
-<li>硬件乘法器</li>
-<li>丰富的并行机制</li>
-<li>灵活的寻址方式</li>
-</ul>
-<p>信号处理的核心算法：</p>
-<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>y</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>N</mi><mo>−</mo><mn>1</mn></mrow></munderover><mi>x</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mi>i</mi><mo stretchy="false">)</mo><mi>h</mi><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">y(n)=\sum_{i=0}^{N-1}x(n-i)h(i)
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.1060050000000006em;vertical-align:-1.277669em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.8283360000000004em;"><span style="top:-1.872331em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">0</span></span></span></span><span style="top:-3.050005em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span><span style="top:-4.300005em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.277669em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">i</span><span class="mclose">)</span><span class="mord mathdefault">h</span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mclose">)</span></span></span></span></span></p>
-<blockquote>
-<p>DSP C6748</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>dsp</category>
-      </categories>
-      <tags>
-        <tag>dsp</tag>
       </tags>
   </entry>
   <entry>
