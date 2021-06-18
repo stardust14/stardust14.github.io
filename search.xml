@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>4D毫米波雷达</title>
+    <url>/2021/02/26/4D%E6%AF%AB%E7%B1%B3%E6%B3%A2%E9%9B%B7%E8%BE%BE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
+<p>随着知识的积累再填充，更新待续~~</p>
+</blockquote>
+<h1>毫米波和4D毫米波</h1>
+<p>毫米波：</p>
+<ol>
+<li>工作在毫米波波段（millimeter wave ）探测的雷达。工作频段一般为30GHz ~ 300 GHz， 波长 1~10mm，介于微波和厘米波之间，兼具有微波雷达和光电雷达的一些优点；</li>
+<li>毫米波雷达相比厘米波雷达具有体积小、易集成和空间分辨率高的特点。</li>
+<li>车载毫米波雷达的工作频率为一般为 24GHz 和77GHz ；</li>
+</ol>
+<p>4D毫米波雷达通过物理或虚拟软件增加毫米波雷达发射&amp;接收通道的个数，可在很大程度上提高毫米波雷达的感知角度、感知距离、进而弥补毫米波雷达无法有效感知纵向距离的问题，从而提供与激光雷达相当的点云密度信号。</p>
+<p>4D毫米波雷达可在恶劣的天气条件下提供更大的范围，视野，感知力和承受能力。但是目前还未能量产；主要是用于弥补传统的毫米波雷达测量误差范围大、无法识别静止物体的缺点。</p>
+<p><strong>传统毫米波雷达（Current Radars）：<strong>探测角度小，且呈现出锥状的波束，使得其测量误差相对较大，且</strong>难以探测静止的物体</strong>。</p>
+<p>**4D毫米波雷达（4D Imaging Radar）：**探测角度相对较大，且测量误差相对较小。由于增加了“探测物体高度”第四个指标，<strong>能够实现测量静止物体的功能</strong>。</p>
+]]></content>
+      <categories>
+        <category>科普</category>
+      </categories>
+      <tags>
+        <tag>毫米波雷达</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CentOs6.5下升级Firefox</title>
     <url>/2020/11/28/CentOs6-5%E4%B8%8B%E5%8D%87%E7%BA%A7Firefox/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class='tip error'><p>无效<p></div>
@@ -81,31 +106,6 @@
       </categories>
       <tags>
         <tag>C</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4D毫米波雷达</title>
-    <url>/2021/02/26/4D%E6%AF%AB%E7%B1%B3%E6%B3%A2%E9%9B%B7%E8%BE%BE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
-<p>随着知识的积累再填充，更新待续~~</p>
-</blockquote>
-<h1>毫米波和4D毫米波</h1>
-<p>毫米波：</p>
-<ol>
-<li>工作在毫米波波段（millimeter wave ）探测的雷达。工作频段一般为30GHz ~ 300 GHz， 波长 1~10mm，介于微波和厘米波之间，兼具有微波雷达和光电雷达的一些优点；</li>
-<li>毫米波雷达相比厘米波雷达具有体积小、易集成和空间分辨率高的特点。</li>
-<li>车载毫米波雷达的工作频率为一般为 24GHz 和77GHz ；</li>
-</ol>
-<p>4D毫米波雷达通过物理或虚拟软件增加毫米波雷达发射&amp;接收通道的个数，可在很大程度上提高毫米波雷达的感知角度、感知距离、进而弥补毫米波雷达无法有效感知纵向距离的问题，从而提供与激光雷达相当的点云密度信号。</p>
-<p>4D毫米波雷达可在恶劣的天气条件下提供更大的范围，视野，感知力和承受能力。但是目前还未能量产；主要是用于弥补传统的毫米波雷达测量误差范围大、无法识别静止物体的缺点。</p>
-<p><strong>传统毫米波雷达（Current Radars）：<strong>探测角度小，且呈现出锥状的波束，使得其测量误差相对较大，且</strong>难以探测静止的物体</strong>。</p>
-<p>**4D毫米波雷达（4D Imaging Radar）：**探测角度相对较大，且测量误差相对较小。由于增加了“探测物体高度”第四个指标，<strong>能够实现测量静止物体的功能</strong>。</p>
-]]></content>
-      <categories>
-        <category>科普</category>
-      </categories>
-      <tags>
-        <tag>毫米波雷达</tag>
       </tags>
   </entry>
   <entry>
@@ -351,6 +351,35 @@ PB3:JTDO处于浮空状态</p>
 <p>keil软件一般在最后打出一行空行。</p>
 </blockquote>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> __LED_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> __LED_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&quot;sys.h&quot;</span></span></span><br><span class="line"><span class="comment">//LED端口定义</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LED0 PBout(1)	<span class="comment">//DS0，PBout输出为1</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LED1 PBout(0)	<span class="comment">//DS1，PBout输出为0</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">LED_Init</span><span class="params">(<span class="keyword">void</span>)</span></span>;	<span class="comment">//初始化</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="按键输入实验"><a class="header-anchor" href="#按键输入实验">¶</a>按键输入实验</h2>
+<p>硬件连接</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618101547.png" alt=""></p>
+<blockquote>
+<p>当KEY0/KEY1/KEY2按下时，检测到低电平；松开检测到高电平</p>
+<p>当KEY_UP按下时，检测到高电平；松开检测到低电平</p>
+<p>通过上图可以看出，KEY0、KEY1、KEY2是低电平有效，KEY_UP是高电平有效；外部都没有上下拉电阻，所以，需要在 STM32F429 内部设置上下拉。</p>
+<p>按键 KEY0 连接在 PH3 上、KEY1 连接在 PH2 上、KEY2 连接在 PC13 上、KEY_UP 连接在 PA0上。</p>
+</blockquote>
+<blockquote>
+<p>KEY0-&gt;PH3  上拉输入<br>
+KEY1-&gt;PH2  上拉输入<br>
+KEY2-&gt;PC13  上拉输入<br>
+WK_UP-&gt;PA0  下拉输入</p>
+</blockquote>
+<p>由于使用了PA组、PC组、PH组三组GPIO口，所以外设时钟也要设置三种。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618103813.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618103801.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618103742.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618104011.png" alt=""></p>
+<blockquote>
+<p>再通过上面的图，设置时钟使能</p>
+</blockquote>
+<div class='tip error'><p>出现错误<p></div>
+<p>多个main函数定义</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618163923.png" alt=""></p>
+<blockquote>
+<p>这是因为定义了多个main函数，实际上的main函数要定义在USER文件夹下面</p>
+</blockquote>
 ]]></content>
       <categories>
         <category>记录&amp;烂笔头</category>
@@ -835,6 +864,127 @@ c-1 5-5 9-11 9h-2L532 67 19 159h-2c-5 0-9-4-11-9l-5-22c-1-6 2-12 8-13z'/></svg><
       </categories>
       <tags>
         <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>butterfly主题美化</title>
+    <url>/2021/04/08/butterfly%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>butterfly主题美化记录</h1>
+<h2 id="社交图标"><a class="header-anchor" href="#社交图标">¶</a>社交图标</h2>
+<p>在<a href="https://www.iconfont.cn/">阿里巴巴矢量图标库</a>，找到自己想要的图标，看中那个就加入购物车</p>
+<p>加购完毕之后点击右上角的购物车，添加至项目，选择其中一种快捷方式登录，项目名称随便填</p>
+<p>然后在我的项目里选择 <code>Font class</code>，点击查看在线链接并在浏览器中打开此链接，最后另存为本地<strong>主题文件夹</strong>下的<code>source\css</code>中。</p>
+<p>然后在主题配置文件（_config.yml）里，inject引用图标css文件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210408090314.png" alt=""></p>
+<p>然后继续在配置文件中找到social配置项</p>
+<p>格式为：iconfont class名：链接||名称</p>
+<p>其中</p>
+<ul>
+<li>
+<p>iconfont：是固定的</p>
+</li>
+<li>
+<p>class 名：可在刚刚的阿里巴巴矢量图标库生成的 css 文件里找到</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210408090734.png" alt=""></p>
+</li>
+<li>
+<p>链接：点击图标之后跳转的链接</p>
+</li>
+<li>
+<p>名称：对应你图标的含义，例如：QQ、Github</p>
+</li>
+</ul>
+<p>自定义图标的颜色：</p>
+<p>打开下载到本地的css文件，换身衣裳</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210408091858.png" alt=""></p>
+<p>其他图标同样的做法</p>
+<h2 id="电子时钟"><a class="header-anchor" href="#电子时钟">¶</a>电子时钟</h2>
+<blockquote>
+<p>有错误，未解决</p>
+</blockquote>
+<h3 id="插件安装"><a class="header-anchor" href="#插件安装">¶</a>插件安装</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">npm i hexo-electric-clock --save</span><br><span class="line"></span><br><span class="line"><span class="section"># 或者</span></span><br><span class="line"></span><br><span class="line">cnpm i hexo-electric-clock --save</span><br></pre></td></tr></table></figure>
+<h3 id="添加博客根目录-config配置项"><a class="header-anchor" href="#添加博客根目录-config配置项">¶</a>添加博客根目录_config配置项</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">electric<span class="emphasis">_clock:</span></span><br><span class="line"><span class="emphasis">  priority: 5</span></span><br><span class="line"><span class="emphasis">  enable: true</span></span><br><span class="line"><span class="emphasis">  enable_</span>page: all</span><br><span class="line">  layout:</span><br><span class="line"><span class="code">    type: class</span></span><br><span class="line"><span class="code">    name: sticky_layout</span></span><br><span class="line"><span class="code">    index: 0</span></span><br><span class="line"><span class="code">  temple_html: &#x27;&lt;div class=&quot;card-widget card-clock&quot;&gt;&lt;div class=&quot;card-glass&quot;&gt;&lt;div class=&quot;card-background&quot;&gt;&lt;div class=&quot;card-content&quot;&gt;&lt;div id=&quot;hexo_electric_clock&quot;&gt;&lt;img id=&quot;card-clock-loading&quot; src=&quot;https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif&quot; style=&quot;height: 120px; width: 100%;&quot; data-ll-status=&quot;loading&quot; class=&quot;entered loading&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
+<h3 id="enable"><a class="header-anchor" href="#enable">¶</a>enable</h3>
+<p>**参数：**true/false<br>
+**含义：**是否开启插件</p>
+<h3 id="enable-page"><a class="header-anchor" href="#enable-page">¶</a>enable_page</h3>
+<p>**参数：**all<br>
+**含义：**路由地址，all 代表全局开启。如 / 代表主页。</p>
+<h3 id="priority"><a class="header-anchor" href="#priority">¶</a>priority</h3>
+<p>**参数：**1<br>
+**含义：**插件的叠放顺序，数字越大，叠放约靠前。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">electric<span class="emphasis">_clock:</span></span><br><span class="line"><span class="emphasis">  enable: true</span></span><br><span class="line"><span class="emphasis">  priority: 5 # 这里是参数</span></span><br></pre></td></tr></table></figure>
+<h3 id="layout"><a class="header-anchor" href="#layout">¶</a>layout</h3>
+<p>**参数：**type; （class&amp;id）<br>
+**参数：**name;<br>
+**参数：**index；（数字）<br>
+**含义：**如果说 electric_clock 是一幅画，那么这个 layout 就是指定了哪面墙来挂画<br>
+而在 HTML 的是世界里有两种墙分别 type 为 id 和 class。<br>
+其中在定义 class 的时候会出现多个 class 的情况，这时就需要使用 index，确定是哪一个。<br>
+最后墙的名字即是 name;</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">desc</span>=<span class="string">&quot;我是墙&quot;</span> <span class="attr">id</span>=<span class="string">&quot;recent-posts&quot;</span>&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="comment">&lt;!-- id=&gt;</span></span>type  recent-posts=&gt;name    --&gt;</span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">desc</span>=<span class="string">&quot;我是画框&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;div desc=&quot;我是纸&quot;&gt;</span></span><br><span class="line"><span class="code">      &lt;!--这里通过js挂载electric_clock，也就是画画--&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;/div&gt;</span></span><br><span class="line"><span class="code">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="temple-html"><a class="header-anchor" href="#temple-html">¶</a>temple_html</h3>
+<p>**参数：**html 模板字段<br>
+**含义：**包含挂载容器</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">HTML</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-widget card-clock&quot;</span>&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="comment">&lt;!-- 挂载容器 --&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-glass&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;div class=&quot;card-background&quot;&gt;</span></span><br><span class="line"><span class="code">      &lt;div class=&quot;card-content&quot;&gt;</span></span><br><span class="line"><span class="code">        &lt;div id=&quot;hexo_electric_clock&quot;&gt;</span></span><br><span class="line"><span class="code">          &lt;img</span></span><br><span class="line"><span class="code">            id=&quot;card-clock-loading&quot;</span></span><br><span class="line"><span class="code">            src=&quot;https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif&quot;</span></span><br><span class="line"><span class="code">            style=&quot;height: 120px; width: 100%;&quot;</span></span><br><span class="line"><span class="code">            data-ll-status=&quot;loading&quot;</span></span><br><span class="line"><span class="code">            class=&quot;entered loading&quot;</span></span><br><span class="line"><span class="code">          /&gt;</span></span><br><span class="line"><span class="code">        &lt;/div&gt;</span></span><br><span class="line"><span class="code">      &lt;/div&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;/div&gt;</span></span><br><span class="line"><span class="code">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="历史今日"><a class="header-anchor" href="#历史今日">¶</a>历史今日</h2>
+<h3 id="安装插件"><a class="header-anchor" href="#安装插件">¶</a>安装插件</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">npm i hexo-history-calendar --save</span><br><span class="line"></span><br><span class="line"><span class="section"># 或者</span></span><br><span class="line"></span><br><span class="line">cnpm i hexo-history-calendar --save</span><br></pre></td></tr></table></figure>
+<h3 id="博客根目录-config-配置项-："><a class="header-anchor" href="#博客根目录-config-配置项-：">¶</a>博客根目录_config 配置项 ：</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">YAML</span><br><span class="line">复制成功history<span class="emphasis">_calendar:</span></span><br><span class="line"><span class="emphasis">  priority: 4</span></span><br><span class="line"><span class="emphasis">  enable: true</span></span><br><span class="line"><span class="emphasis">  enable_</span>page: all</span><br><span class="line">  layout:</span><br><span class="line"><span class="code">    type: class</span></span><br><span class="line"><span class="code">    name: sticky_layout</span></span><br><span class="line"><span class="code">    index: 0</span></span><br><span class="line"><span class="code">  temple_html: &#x27;&lt;div class=&quot;card-widget card-history&quot;&gt;&lt;div class=&quot;card-content&quot;&gt;&lt;div class=&quot;item-headline&quot;&gt;&lt;i class=&quot;fas fa-clock fa-spin&quot;&gt;&lt;/i&gt;&lt;span&gt;那年今日&lt;/span&gt;&lt;/div&gt;&lt;div id=&quot;history-baidu&quot; style=&quot;height: 100px;overflow: hidden&quot;&gt;&lt;div class=&quot;history_swiper-container&quot; id=&quot;history-container&quot; style=&quot;width: 100%;height: 100%&quot;&gt;&lt;div class=&quot;swiper-wrapper&quot; id=&quot;history_container_wrapper&quot; style=&quot;height:20px&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
+<h3 id="enable-v2"><a class="header-anchor" href="#enable-v2">¶</a>enable</h3>
+<p>**参数：**true/false<br>
+**含义：**是否开启插件</p>
+<h3 id="enable-page-v2"><a class="header-anchor" href="#enable-page-v2">¶</a>enable_page</h3>
+<p>**参数：**all<br>
+**含义：**路由地址，all 代表全局开启。如 / 代表主页。</p>
+<h3 id="priority-v2"><a class="header-anchor" href="#priority-v2">¶</a>priority</h3>
+<p>**参数：**1<br>
+**含义：**插件的叠放顺序，数字越大，叠放约靠前。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">YAML</span><br><span class="line">history<span class="emphasis">_calendar:</span></span><br><span class="line"><span class="emphasis">  enable: true</span></span><br><span class="line"><span class="emphasis">  priority: 4 # 这里是参数</span></span><br></pre></td></tr></table></figure>
+<h3 id="layout-v2"><a class="header-anchor" href="#layout-v2">¶</a>layout</h3>
+<p>**参数：**type; （class&amp;id）<br>
+**参数：**name;<br>
+**参数：**index；（数字）<br>
+**含义：**如果说 history_calendar 是一幅画，那么这个 layout 就是指定了哪面墙来挂画<br>
+而在 HTML 的是世界里有两种墙分别 type 为 id 和 class。<br>
+其中在定义 class 的时候会出现多个 class 的情况，这时就需要使用 index，确定是哪一个。<br>
+最后墙的名字即是 name;</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">HTML</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">desc</span>=<span class="string">&quot;我是墙&quot;</span> <span class="attr">id</span>=<span class="string">&quot;recent-posts&quot;</span>&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="comment">&lt;!-- id=&gt;</span></span>type  recent-posts=&gt;name    --&gt;</span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">desc</span>=<span class="string">&quot;我是画框&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;div desc=&quot;我是纸&quot;&gt;</span></span><br><span class="line"><span class="code">      &lt;!--这里通过js挂载history_calendar，也就是画画--&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;/div&gt;</span></span><br><span class="line"><span class="code">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="temple-html-v2"><a class="header-anchor" href="#temple-html-v2">¶</a>temple_html</h3>
+<p>**参数：**html 模板字段<br>
+**含义：**包含挂载容器</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">XML</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-widget card-history&quot;</span>&gt;</span></span> <span class="xml"><span class="comment">&lt;!-- 挂载容器 --&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-content&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;div class=&quot;item-headline&quot;&gt;</span></span><br><span class="line"><span class="code">      &lt;i class=&quot;fas fa-clock fa-spin&quot;&gt;&lt;/i&gt;</span></span><br><span class="line"><span class="code">      &lt;span&gt;那年今日&lt;/span&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;div id=&quot;history-baidu&quot; style=&quot;height: 100px;overflow: hidden&quot;&gt; &lt;!-- 挂载器 --&gt;</span></span><br><span class="line"><span class="code">    &lt;div class=&quot;history_swiper-container&quot; id=&quot;history-container&quot; style=&quot;width: 100%;height: 100%&quot;&gt;</span></span><br><span class="line"><span class="code">          &lt;div class=&quot;swiper-wrapper&quot; id=&quot;history_container_wrapper&quot; style=&quot;height:20px&quot;&gt;&lt;/div&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;/div&gt;</span></span><br><span class="line"><span class="code">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
+<h1>参考来自</h1>
+<a class="btn-beautify button--animated block" href="https://blog.imzjw.cn/posts/b74f504f/" 
+  title="点此跳转"><i class="far fa-hand-point-right fa-fw"></i><span>点此跳转</span></a>
+<a class="btn-beautify button--animated block" href="https://zfe.space/post/hexo-electric-clock.html" 
+  title="点此跳转"><i class="far fa-hand-point-right fa-fw"></i><span>点此跳转</span></a>
+<a class="btn-beautify button--animated block" href="https://zfe.space/post/hexo-history-calendar.html" 
+  title="点此跳转"><i class="far fa-hand-point-right fa-fw"></i><span>点此跳转</span></a>]]></content>
+      <categories>
+        <category>记录&amp;烂笔头</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>first blog</title>
+    <url>/2020/01/04/first-blog/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>first blog</p>
+<p>内容：又重新来了一遍！</p>
+<hr>
+<p>second</p>
+<p>内容：太不容易了。</p>
+<hr>
+<p>参考：</p>
+<p>来自B站codecheeep</p>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -1343,146 +1493,6 @@ a = \left[
       </tags>
   </entry>
   <entry>
-    <title>butterfly主题美化</title>
-    <url>/2021/04/08/butterfly%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>butterfly主题美化记录</h1>
-<h2 id="社交图标"><a class="header-anchor" href="#社交图标">¶</a>社交图标</h2>
-<p>在<a href="https://www.iconfont.cn/">阿里巴巴矢量图标库</a>，找到自己想要的图标，看中那个就加入购物车</p>
-<p>加购完毕之后点击右上角的购物车，添加至项目，选择其中一种快捷方式登录，项目名称随便填</p>
-<p>然后在我的项目里选择 <code>Font class</code>，点击查看在线链接并在浏览器中打开此链接，最后另存为本地<strong>主题文件夹</strong>下的<code>source\css</code>中。</p>
-<p>然后在主题配置文件（_config.yml）里，inject引用图标css文件</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210408090314.png" alt=""></p>
-<p>然后继续在配置文件中找到social配置项</p>
-<p>格式为：iconfont class名：链接||名称</p>
-<p>其中</p>
-<ul>
-<li>
-<p>iconfont：是固定的</p>
-</li>
-<li>
-<p>class 名：可在刚刚的阿里巴巴矢量图标库生成的 css 文件里找到</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210408090734.png" alt=""></p>
-</li>
-<li>
-<p>链接：点击图标之后跳转的链接</p>
-</li>
-<li>
-<p>名称：对应你图标的含义，例如：QQ、Github</p>
-</li>
-</ul>
-<p>自定义图标的颜色：</p>
-<p>打开下载到本地的css文件，换身衣裳</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210408091858.png" alt=""></p>
-<p>其他图标同样的做法</p>
-<h2 id="电子时钟"><a class="header-anchor" href="#电子时钟">¶</a>电子时钟</h2>
-<blockquote>
-<p>有错误，未解决</p>
-</blockquote>
-<h3 id="插件安装"><a class="header-anchor" href="#插件安装">¶</a>插件安装</h3>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">npm i hexo-electric-clock --save</span><br><span class="line"></span><br><span class="line"><span class="section"># 或者</span></span><br><span class="line"></span><br><span class="line">cnpm i hexo-electric-clock --save</span><br></pre></td></tr></table></figure>
-<h3 id="添加博客根目录-config配置项"><a class="header-anchor" href="#添加博客根目录-config配置项">¶</a>添加博客根目录_config配置项</h3>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">electric<span class="emphasis">_clock:</span></span><br><span class="line"><span class="emphasis">  priority: 5</span></span><br><span class="line"><span class="emphasis">  enable: true</span></span><br><span class="line"><span class="emphasis">  enable_</span>page: all</span><br><span class="line">  layout:</span><br><span class="line"><span class="code">    type: class</span></span><br><span class="line"><span class="code">    name: sticky_layout</span></span><br><span class="line"><span class="code">    index: 0</span></span><br><span class="line"><span class="code">  temple_html: &#x27;&lt;div class=&quot;card-widget card-clock&quot;&gt;&lt;div class=&quot;card-glass&quot;&gt;&lt;div class=&quot;card-background&quot;&gt;&lt;div class=&quot;card-content&quot;&gt;&lt;div id=&quot;hexo_electric_clock&quot;&gt;&lt;img id=&quot;card-clock-loading&quot; src=&quot;https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif&quot; style=&quot;height: 120px; width: 100%;&quot; data-ll-status=&quot;loading&quot; class=&quot;entered loading&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
-<h3 id="enable"><a class="header-anchor" href="#enable">¶</a>enable</h3>
-<p>**参数：**true/false<br>
-**含义：**是否开启插件</p>
-<h3 id="enable-page"><a class="header-anchor" href="#enable-page">¶</a>enable_page</h3>
-<p>**参数：**all<br>
-**含义：**路由地址，all 代表全局开启。如 / 代表主页。</p>
-<h3 id="priority"><a class="header-anchor" href="#priority">¶</a>priority</h3>
-<p>**参数：**1<br>
-**含义：**插件的叠放顺序，数字越大，叠放约靠前。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">electric<span class="emphasis">_clock:</span></span><br><span class="line"><span class="emphasis">  enable: true</span></span><br><span class="line"><span class="emphasis">  priority: 5 # 这里是参数</span></span><br></pre></td></tr></table></figure>
-<h3 id="layout"><a class="header-anchor" href="#layout">¶</a>layout</h3>
-<p>**参数：**type; （class&amp;id）<br>
-**参数：**name;<br>
-**参数：**index；（数字）<br>
-**含义：**如果说 electric_clock 是一幅画，那么这个 layout 就是指定了哪面墙来挂画<br>
-而在 HTML 的是世界里有两种墙分别 type 为 id 和 class。<br>
-其中在定义 class 的时候会出现多个 class 的情况，这时就需要使用 index，确定是哪一个。<br>
-最后墙的名字即是 name;</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">desc</span>=<span class="string">&quot;我是墙&quot;</span> <span class="attr">id</span>=<span class="string">&quot;recent-posts&quot;</span>&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="comment">&lt;!-- id=&gt;</span></span>type  recent-posts=&gt;name    --&gt;</span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">desc</span>=<span class="string">&quot;我是画框&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;div desc=&quot;我是纸&quot;&gt;</span></span><br><span class="line"><span class="code">      &lt;!--这里通过js挂载electric_clock，也就是画画--&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;/div&gt;</span></span><br><span class="line"><span class="code">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="temple-html"><a class="header-anchor" href="#temple-html">¶</a>temple_html</h3>
-<p>**参数：**html 模板字段<br>
-**含义：**包含挂载容器</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">HTML</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-widget card-clock&quot;</span>&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="comment">&lt;!-- 挂载容器 --&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-glass&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;div class=&quot;card-background&quot;&gt;</span></span><br><span class="line"><span class="code">      &lt;div class=&quot;card-content&quot;&gt;</span></span><br><span class="line"><span class="code">        &lt;div id=&quot;hexo_electric_clock&quot;&gt;</span></span><br><span class="line"><span class="code">          &lt;img</span></span><br><span class="line"><span class="code">            id=&quot;card-clock-loading&quot;</span></span><br><span class="line"><span class="code">            src=&quot;https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif&quot;</span></span><br><span class="line"><span class="code">            style=&quot;height: 120px; width: 100%;&quot;</span></span><br><span class="line"><span class="code">            data-ll-status=&quot;loading&quot;</span></span><br><span class="line"><span class="code">            class=&quot;entered loading&quot;</span></span><br><span class="line"><span class="code">          /&gt;</span></span><br><span class="line"><span class="code">        &lt;/div&gt;</span></span><br><span class="line"><span class="code">      &lt;/div&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;/div&gt;</span></span><br><span class="line"><span class="code">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="历史今日"><a class="header-anchor" href="#历史今日">¶</a>历史今日</h2>
-<h3 id="安装插件"><a class="header-anchor" href="#安装插件">¶</a>安装插件</h3>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">npm i hexo-history-calendar --save</span><br><span class="line"></span><br><span class="line"><span class="section"># 或者</span></span><br><span class="line"></span><br><span class="line">cnpm i hexo-history-calendar --save</span><br></pre></td></tr></table></figure>
-<h3 id="博客根目录-config-配置项-："><a class="header-anchor" href="#博客根目录-config-配置项-：">¶</a>博客根目录_config 配置项 ：</h3>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">YAML</span><br><span class="line">复制成功history<span class="emphasis">_calendar:</span></span><br><span class="line"><span class="emphasis">  priority: 4</span></span><br><span class="line"><span class="emphasis">  enable: true</span></span><br><span class="line"><span class="emphasis">  enable_</span>page: all</span><br><span class="line">  layout:</span><br><span class="line"><span class="code">    type: class</span></span><br><span class="line"><span class="code">    name: sticky_layout</span></span><br><span class="line"><span class="code">    index: 0</span></span><br><span class="line"><span class="code">  temple_html: &#x27;&lt;div class=&quot;card-widget card-history&quot;&gt;&lt;div class=&quot;card-content&quot;&gt;&lt;div class=&quot;item-headline&quot;&gt;&lt;i class=&quot;fas fa-clock fa-spin&quot;&gt;&lt;/i&gt;&lt;span&gt;那年今日&lt;/span&gt;&lt;/div&gt;&lt;div id=&quot;history-baidu&quot; style=&quot;height: 100px;overflow: hidden&quot;&gt;&lt;div class=&quot;history_swiper-container&quot; id=&quot;history-container&quot; style=&quot;width: 100%;height: 100%&quot;&gt;&lt;div class=&quot;swiper-wrapper&quot; id=&quot;history_container_wrapper&quot; style=&quot;height:20px&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
-<h3 id="enable-v2"><a class="header-anchor" href="#enable-v2">¶</a>enable</h3>
-<p>**参数：**true/false<br>
-**含义：**是否开启插件</p>
-<h3 id="enable-page-v2"><a class="header-anchor" href="#enable-page-v2">¶</a>enable_page</h3>
-<p>**参数：**all<br>
-**含义：**路由地址，all 代表全局开启。如 / 代表主页。</p>
-<h3 id="priority-v2"><a class="header-anchor" href="#priority-v2">¶</a>priority</h3>
-<p>**参数：**1<br>
-**含义：**插件的叠放顺序，数字越大，叠放约靠前。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">YAML</span><br><span class="line">history<span class="emphasis">_calendar:</span></span><br><span class="line"><span class="emphasis">  enable: true</span></span><br><span class="line"><span class="emphasis">  priority: 4 # 这里是参数</span></span><br></pre></td></tr></table></figure>
-<h3 id="layout-v2"><a class="header-anchor" href="#layout-v2">¶</a>layout</h3>
-<p>**参数：**type; （class&amp;id）<br>
-**参数：**name;<br>
-**参数：**index；（数字）<br>
-**含义：**如果说 history_calendar 是一幅画，那么这个 layout 就是指定了哪面墙来挂画<br>
-而在 HTML 的是世界里有两种墙分别 type 为 id 和 class。<br>
-其中在定义 class 的时候会出现多个 class 的情况，这时就需要使用 index，确定是哪一个。<br>
-最后墙的名字即是 name;</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">HTML</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">desc</span>=<span class="string">&quot;我是墙&quot;</span> <span class="attr">id</span>=<span class="string">&quot;recent-posts&quot;</span>&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="comment">&lt;!-- id=&gt;</span></span>type  recent-posts=&gt;name    --&gt;</span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">desc</span>=<span class="string">&quot;我是画框&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;div desc=&quot;我是纸&quot;&gt;</span></span><br><span class="line"><span class="code">      &lt;!--这里通过js挂载history_calendar，也就是画画--&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;/div&gt;</span></span><br><span class="line"><span class="code">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="temple-html-v2"><a class="header-anchor" href="#temple-html-v2">¶</a>temple_html</h3>
-<p>**参数：**html 模板字段<br>
-**含义：**包含挂载容器</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">XML</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-widget card-history&quot;</span>&gt;</span></span> <span class="xml"><span class="comment">&lt;!-- 挂载容器 --&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-content&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;div class=&quot;item-headline&quot;&gt;</span></span><br><span class="line"><span class="code">      &lt;i class=&quot;fas fa-clock fa-spin&quot;&gt;&lt;/i&gt;</span></span><br><span class="line"><span class="code">      &lt;span&gt;那年今日&lt;/span&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;div id=&quot;history-baidu&quot; style=&quot;height: 100px;overflow: hidden&quot;&gt; &lt;!-- 挂载器 --&gt;</span></span><br><span class="line"><span class="code">    &lt;div class=&quot;history_swiper-container&quot; id=&quot;history-container&quot; style=&quot;width: 100%;height: 100%&quot;&gt;</span></span><br><span class="line"><span class="code">          &lt;div class=&quot;swiper-wrapper&quot; id=&quot;history_container_wrapper&quot; style=&quot;height:20px&quot;&gt;&lt;/div&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;/div&gt;</span></span><br><span class="line"><span class="code">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
-<h1>参考来自</h1>
-<a class="btn-beautify button--animated block" href="https://blog.imzjw.cn/posts/b74f504f/" 
-  title="点此跳转"><i class="far fa-hand-point-right fa-fw"></i><span>点此跳转</span></a>
-<a class="btn-beautify button--animated block" href="https://zfe.space/post/hexo-electric-clock.html" 
-  title="点此跳转"><i class="far fa-hand-point-right fa-fw"></i><span>点此跳转</span></a>
-<a class="btn-beautify button--animated block" href="https://zfe.space/post/hexo-history-calendar.html" 
-  title="点此跳转"><i class="far fa-hand-point-right fa-fw"></i><span>点此跳转</span></a>]]></content>
-      <categories>
-        <category>记录&amp;烂笔头</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>first blog</title>
-    <url>/2020/01/04/first-blog/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>first blog</p>
-<p>内容：又重新来了一遍！</p>
-<hr>
-<p>second</p>
-<p>内容：太不容易了。</p>
-<hr>
-<p>参考：</p>
-<p>来自B站codecheeep</p>
-]]></content>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/01/04/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a class="header-anchor" href="#Quick-Start">¶</a>Quick Start</h2>
-<h3 id="Create-a-new-post"><a class="header-anchor" href="#Create-a-new-post">¶</a>Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a class="header-anchor" href="#Run-server">¶</a>Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a class="header-anchor" href="#Generate-static-files">¶</a>Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a class="header-anchor" href="#Deploy-to-remote-sites">¶</a>Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>hexo出现的问题</title>
     <url>/2020/07/06/hexo%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>在进行博客编写过程中，出现了一些问题。</h1>
@@ -1570,16 +1580,23 @@ a = \left[
       </tags>
   </entry>
   <entry>
-    <title>js学习</title>
-    <url>/2020/10/17/js%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>快速入门</h1>
+    <title>Hello World</title>
+    <url>/2020/01/04/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a class="header-anchor" href="#Quick-Start">¶</a>Quick Start</h2>
+<h3 id="Create-a-new-post"><a class="header-anchor" href="#Create-a-new-post">¶</a>Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a class="header-anchor" href="#Run-server">¶</a>Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a class="header-anchor" href="#Generate-static-files">¶</a>Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a class="header-anchor" href="#Deploy-to-remote-sites">¶</a>Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-      <categories>
-        <category>js</category>
-      </categories>
-      <tags>
-        <tag>js</tag>
-      </tags>
   </entry>
   <entry>
     <title>python 爬虫随笔记录</title>
@@ -1618,6 +1635,18 @@ a = \left[
       </tags>
   </entry>
   <entry>
+    <title>js学习</title>
+    <url>/2020/10/17/js%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>快速入门</h1>
+]]></content>
+      <categories>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>分享&amp;记录</title>
     <url>/2021/04/07/%E5%88%86%E4%BA%AB-%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -1638,6 +1667,32 @@ a = \left[
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
         <category>记录&amp;烂笔头</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>批注记录</title>
+    <url>/2021/04/07/%E6%89%B9%E6%B3%A8%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="2fcf70f93106af4f44a6b4a9317f1bf81351f4e94bb6f1323459216d14f02c18">22064b17c03cb0c0e58c99349b6889d0c7e9d327de57f2d214b057f3875d6b37b9b20ab3b449f9d3b0ba6ffe12bb71d82eff8171349bc71e3a2c9718b358eacc07c1e2d0dcdcc94bb927d4bdef70eb39fd8e7de731fdf8f27d06339a84133e4a974b5fae5fee1809df024fdfbb238fba030fdd8003e2826f0a33da9ce588a76e8e6bc91b4049cb9065bb5b9840402572bd86834c2d0c361fdb4259dd56633b9d286b14b14b74d50d4ca10de4c2e54f118835e2ea5a28de2ac78c4f57666f83faa6cf49198dbd3f86312e8ae6475e1ad55bc0f991fa504124763e450733221c2a781fb4c5fbae0d7123703d7ac9a38542095b3da435e03cc3247b4eff26b05bc0b9e2a2c706e61562c7bb934180842f9b6dc301690938c4f21c78468483f3e95d8b5dcc7048e9b21da20cd49dde4a8cd683cfc91feffd222c011316f66497312669c395d166bbc4e9518b0008cf6b92975c76b75ea7645421c9d7e156f6d824d2c0892d2b3835cb34e29b6164ac5b171e91b073be40a5f07d833b0ba2047deb5c5681bf1fb48fb4af8bb0e2493e2b3b3e98279dbcdb3cb4aeb62164bf28ae94eb18e587b9ae3d7340b674b5f9e1f77e5e60c56c06cfa36d7460e8e19b4156cc0b35de9e2506da358011c8d20166305cbedbaa6a5a43e35dd4f1120bf05c3a51149693768289c76395859688f7c40ac480bee9427637213b8611f31b86f53e56d25b0247028467efd7a299c21016038df477e1219595d90fcfdc57fba758f96301f5146be17f7f14a48229757225def14d3c30eb76c32c626a63606bad9c98bda3e69c6268be1f5954e80690f082bf9027805bc03d4096deeb9ccb9cb48b2c6db5e42ae71d320fae1a5ed921463cd37936f0cd0225ca9124108d0abb447665cff099be802002607c1db5c7608155344f315d28759b32b514948d47a45574124d9b3e6574ad48e371cec8cec9a50fe7d2376d7bb18ed6604f5da90b43818367f002f26aef4d7bbdfc84f1dc0957a9f5ed72809c5642a90b5823f3f98e8842cd1c800e9b2147bba8ccf0cd51d8473a2d4d2d24f53dcf6cb5cfb6749f5d0683d3ad3db3d179878a4b60b02ef9184de71532847e6ed2747ed50c01f0ab899b938f64b98c09a0dad54d087533805dc3eb56b5fcf1bc41f1416e0d1ac664dd22764c7e222a590fd133459ad9566ba24a997e0fe2d1b9948fee107708e334353a08b1bb39c62357fa125768f0f8946f86b93a14feb91a334e0517a4c086c7171c03c3fd9287a4971411042a380d562a88163c0aab3d7496559144df81f103e0f1028598cdc7632dde89026b29d6e6763cf5386ea826f7ae0212d2f0c72720929b60b88d59e10bf3f58a7e0544a1f87786018230fa970b072e05f32c014b06a3886f2f8af1443d921285384ebd6b8eab3e0505a39f309afef9c7f2e2d2a7a0727483e195c4b3dbb3609c0793b497647c21b4015c71eecf2e802e2b13e40c0d008f547c79d327028eab87299957fa33075fd43ffe2461ddc83982c4c8000aa50f5e36649d147aaebc9cd91c0f8d18577a08fd8e8b65a2f5a017454efdec16f6cfea82e59ae3e08d2bb550606ba5e632aaa828ce85b3ec25a6bfcb87e484743d5d7faf354e676e8ef4f658766e13848b2b337d0b4ee60490302e0f45ba4364762313e27ddeac613a36865942f94e7eb1d0303be635165332bceb8c6227c7075b825d80cd8653e502d54213bd8f2a5b0fe6d0d718b2d25a299ea8ca868f26d5647af9080cb5eb8bc1f6d3b2363b452fdfa5cee1a31d03d6a2cfa36a0e7806da9043630257cb159a2a36b6cfc67c1af4baf7e2d802193e883890ac38e14209dad36a5cba95696e635d4d1d5b08d94343d8f54de79f67932f16914214594230b1ef79b6f6f0abf9853d97df149480f1f9b32087eeda3df0181431201c82e597ff5d7554874b7a87f1f171053046e7b5f438a23c4705a999bccffedf1643f35a351fcdea90fe1fb6c15a277cf7a8c852e028bbc94a201ac62ea61cbed40107fdf8a4e33010f4c56f44f8779a3a7743a585bf632bf53ac21d2f5a7b9c3380f08685157e1392d48c31f373057d6f02b8ca66924aeca4f1f1649bbccf0c1e65317c3e7889d00209ffd2052d75f400f7ea67d307c7382e5e0726dc1b1a69f35d1c430aefe96b09d9e387</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-xray">
+      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Hey, password is required here.</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>随笔</category>
       </categories>
       <tags>
         <tag>随笔</tag>
@@ -1667,32 +1722,6 @@ a = \left[
       </categories>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>批注记录</title>
-    <url>/2021/04/07/%E6%89%B9%E6%B3%A8%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="2fcf70f93106af4f44a6b4a9317f1bf81351f4e94bb6f1323459216d14f02c18">22064b17c03cb0c0e58c99349b6889d0c7e9d327de57f2d214b057f3875d6b37b9b20ab3b449f9d3b0ba6ffe12bb71d82eff8171349bc71e3a2c9718b358eacc07c1e2d0dcdcc94bb927d4bdef70eb39fd8e7de731fdf8f27d06339a84133e4a974b5fae5fee1809df024fdfbb238fba030fdd8003e2826f0a33da9ce588a76e8e6bc91b4049cb9065bb5b9840402572bd86834c2d0c361fdb4259dd56633b9d286b14b14b74d50d4ca10de4c2e54f118835e2ea5a28de2ac78c4f57666f83faa6cf49198dbd3f86312e8ae6475e1ad55bc0f991fa504124763e450733221c2a781fb4c5fbae0d7123703d7ac9a38542095b3da435e03cc3247b4eff26b05bc0b9e2a2c706e61562c7bb934180842f9b6dc301690938c4f21c78468483f3e95d8b5dcc7048e9b21da20cd49dde4a8cd683cfc91feffd222c011316f66497312669c395d166bbc4e9518b0008cf6b92975c76b75ea7645421c9d7e156f6d824d2c0892d2b3835cb34e29b6164ac5b171e91b073be40a5f07d833b0ba2047deb5c5681bf1fb48fb4af8bb0e2493e2b3b3e98279dbcdb3cb4aeb62164bf28ae94eb18e587b9ae3d7340b674b5f9e1f77e5e60c56c06cfa36d7460e8e19b4156cc0b35de9e2506da358011c8d20166305cbedbaa6a5a43e35dd4f1120bf05c3a51149693768289c76395859688f7c40ac480bee9427637213b8611f31b86f53e56d25b0247028467efd7a299c21016038df477e1219595d90fcfdc57fba758f96301f5146be17f7f14a48229757225def14d3c30eb76c32c626a63606bad9c98bda3e69c6268be1f5954e80690f082bf9027805bc03d4096deeb9ccb9cb48b2c6db5e42ae71d320fae1a5ed921463cd37936f0cd0225ca9124108d0abb447665cff099be802002607c1db5c7608155344f315d28759b32b514948d47a45574124d9b3e6574ad48e371cec8cec9a50fe7d2376d7bb18ed6604f5da90b43818367f002f26aef4d7bbdfc84f1dc0957a9f5ed72809c5642a90b5823f3f98e8842cd1c800e9b2147bba8ccf0cd51d8473a2d4d2d24f53dcf6cb5cfb6749f5d0683d3ad3db3d179878a4b60b02ef9184de71532847e6ed2747ed50c01f0ab899b938f64b98c09a0dad54d087533805dc3eb56b5fcf1bc41f1416e0d1ac664dd22764c7e222a590fd133459ad9566ba24a997e0fe2d1b9948fee107708e334353a08b1bb39c62357fa125768f0f8946f86b93a14feb91a334e0517a4c086c7171c03c3fd9287a4971411042a380d562a88163c0aab3d7496559144df81f103e0f1028598cdc7632dde89026b29d6e6763cf5386ea826f7ae0212d2f0c72720929b60b88d59e10bf3f58a7e0544a1f87786018230fa970b072e05f32c014b06a3886f2f8af1443d921285384ebd6b8eab3e0505a39f309afef9c7f2e2d2a7a0727483e195c4b3dbb3609c0793b497647c21b4015c71eecf2e802e2b13e40c0d008f547c79d327028eab87299957fa33075fd43ffe2461ddc83982c4c8000aa50f5e36649d147aaebc9cd91c0f8d18577a08fd8e8b65a2f5a017454efdec16f6cfea82e59ae3e08d2bb550606ba5e632aaa828ce85b3ec25a6bfcb87e484743d5d7faf354e676e8ef4f658766e13848b2b337d0b4ee60490302e0f45ba4364762313e27ddeac613a36865942f94e7eb1d0303be635165332bceb8c6227c7075b825d80cd8653e502d54213bd8f2a5b0fe6d0d718b2d25a299ea8ca868f26d5647af9080cb5eb8bc1f6d3b2363b452fdfa5cee1a31d03d6a2cfa36a0e7806da9043630257cb159a2a36b6cfc67c1af4baf7e2d802193e883890ac38e14209dad36a5cba95696e635d4d1d5b08d94343d8f54de79f67932f16914214594230b1ef79b6f6f0abf9853d97df149480f1f9b32087eeda3df0181431201c82e597ff5d7554874b7a87f1f171053046e7b5f438a23c4705a999bccffedf1643f35a351fcdea90fe1fb6c15a277cf7a8c852e028bbc94a201ac62ea61cbed40107fdf8a4e33010f4c56f44f8779a3a7743a585bf632bf53ac21d2f5a7b9c3380f08685157e1392d48c31f373057d6f02b8ca66924aeca4f1f1649bbccf0c1e65317c3e7889d00209ffd2052d75f400f7ea67d307c7382e5e0726dc1b1a69f35d1c430aefe96b09d9e387</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-xray">
-      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Hey, password is required here.</span>
-      </label>
-      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
-      </svg>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
