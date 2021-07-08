@@ -1,31 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>4D毫米波雷达</title>
-    <url>/2021/02/26/4D%E6%AF%AB%E7%B1%B3%E6%B3%A2%E9%9B%B7%E8%BE%BE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
-<p>随着知识的积累再填充，更新待续~~</p>
-</blockquote>
-<h1>毫米波和4D毫米波</h1>
-<p>毫米波：</p>
-<ol>
-<li>工作在毫米波波段（millimeter wave ）探测的雷达。工作频段一般为30GHz ~ 300 GHz， 波长 1~10mm，介于微波和厘米波之间，兼具有微波雷达和光电雷达的一些优点；</li>
-<li>毫米波雷达相比厘米波雷达具有体积小、易集成和空间分辨率高的特点。</li>
-<li>车载毫米波雷达的工作频率为一般为 24GHz 和77GHz ；</li>
-</ol>
-<p>4D毫米波雷达通过物理或虚拟软件增加毫米波雷达发射&amp;接收通道的个数，可在很大程度上提高毫米波雷达的感知角度、感知距离、进而弥补毫米波雷达无法有效感知纵向距离的问题，从而提供与激光雷达相当的点云密度信号。</p>
-<p>4D毫米波雷达可在恶劣的天气条件下提供更大的范围，视野，感知力和承受能力。但是目前还未能量产；主要是用于弥补传统的毫米波雷达测量误差范围大、无法识别静止物体的缺点。</p>
-<p><strong>传统毫米波雷达（Current Radars）：<strong>探测角度小，且呈现出锥状的波束，使得其测量误差相对较大，且</strong>难以探测静止的物体</strong>。</p>
-<p>**4D毫米波雷达（4D Imaging Radar）：**探测角度相对较大，且测量误差相对较小。由于增加了“探测物体高度”第四个指标，<strong>能够实现测量静止物体的功能</strong>。</p>
-]]></content>
-      <categories>
-        <category>科普</category>
-      </categories>
-      <tags>
-        <tag>毫米波雷达</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CentOs6.5下升级Firefox</title>
     <url>/2020/11/28/CentOs6-5%E4%B8%8B%E5%8D%87%E7%BA%A7Firefox/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><div class='tip error'><p>无效<p></div>
@@ -69,6 +44,31 @@
       </categories>
       <tags>
         <tag>CentOS6.5</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4D毫米波雷达</title>
+    <url>/2021/02/26/4D%E6%AF%AB%E7%B1%B3%E6%B3%A2%E9%9B%B7%E8%BE%BE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
+<p>随着知识的积累再填充，更新待续~~</p>
+</blockquote>
+<h1>毫米波和4D毫米波</h1>
+<p>毫米波：</p>
+<ol>
+<li>工作在毫米波波段（millimeter wave ）探测的雷达。工作频段一般为30GHz ~ 300 GHz， 波长 1~10mm，介于微波和厘米波之间，兼具有微波雷达和光电雷达的一些优点；</li>
+<li>毫米波雷达相比厘米波雷达具有体积小、易集成和空间分辨率高的特点。</li>
+<li>车载毫米波雷达的工作频率为一般为 24GHz 和77GHz ；</li>
+</ol>
+<p>4D毫米波雷达通过物理或虚拟软件增加毫米波雷达发射&amp;接收通道的个数，可在很大程度上提高毫米波雷达的感知角度、感知距离、进而弥补毫米波雷达无法有效感知纵向距离的问题，从而提供与激光雷达相当的点云密度信号。</p>
+<p>4D毫米波雷达可在恶劣的天气条件下提供更大的范围，视野，感知力和承受能力。但是目前还未能量产；主要是用于弥补传统的毫米波雷达测量误差范围大、无法识别静止物体的缺点。</p>
+<p><strong>传统毫米波雷达（Current Radars）：<strong>探测角度小，且呈现出锥状的波束，使得其测量误差相对较大，且</strong>难以探测静止的物体</strong>。</p>
+<p>**4D毫米波雷达（4D Imaging Radar）：**探测角度相对较大，且测量误差相对较小。由于增加了“探测物体高度”第四个指标，<strong>能够实现测量静止物体的功能</strong>。</p>
+]]></content>
+      <categories>
+        <category>科普</category>
+      </categories>
+      <tags>
+        <tag>毫米波雷达</tag>
       </tags>
   </entry>
   <entry>
@@ -135,30 +135,6 @@
 ]]></content>
       <categories>
         <category>dsp</category>
-      </categories>
-      <tags>
-        <tag>dsp</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DSP杂烩</title>
-    <url>/2020/12/04/DSP%E6%9D%82%E7%83%A9/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>随手记</h1>
-<p>一些知识和疑问</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204095119.png" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204100437.png" alt=""></p>
-<blockquote>
-<p>有一个疑问：之间的衔接关系！</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201205171135.png" alt="image-20201205171133171"></p>
-<h1>傅里叶变换的理解</h1>
-<p>把一个信号的全部信息全部提取出来，在频率上说：w（频率）就表示的位置，振幅表示的强度，而相位则是表示的是信息的反转与否（波的位置）。</p>
-<p>用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo separator="true">⋅</mo><mi>c</mi><mi>o</mi><mi>s</mi><mo stretchy="false">(</mo><mi>w</mi><mo separator="true">⋅</mo><mi>t</mi><mo>+</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A·cos(w·t+\phi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">A</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault">s</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">t</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">ϕ</span><span class="mclose">)</span></span></span></span>在时域上，w与时间建立起了联系，相位的改变就是在时间轴上的平移。所以，在频域上的相位就是</p>
-<p>换个角度（域）看问题！！！！</p>
-<p>若一个信号可以分解成正弦函数或着指数形式的组合，那么叠加的函数的相位可能会不同，在同一频率w下的幅度和相位一一对应。那么可以用这三个基本的信息，获取到全部的信息。（有待加深…）</p>
-]]></content>
-      <categories>
-        <category>记录&amp;烂笔头</category>
       </categories>
       <tags>
         <tag>dsp</tag>
@@ -442,17 +418,48 @@ WK_UP-&gt;PA0  下拉输入</p>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210707155018.png" alt=""></p>
 <h2 id="时钟系统"><a class="header-anchor" href="#时钟系统">¶</a>时钟系统</h2>
 <p>STM32有5个时钟源：HSI、HSE、LSI、LSE、PLL</p>
-<p>①、HSI是高速内部时钟，RC振荡器，频率为16MHz，精度不高。可以直接作为系统时钟或者用作PLL时钟输入。</p>
-<p>②、HSE是高速外部时钟，可接石英/陶瓷谐振器，或者接外部时钟源，频率范围为4MHz~26MHz。</p>
-<p>③、LSI是低速内部时钟，RC振荡器，频率为32kHz，提供低功耗时钟。主要供独立看门狗和自动唤醒单元使用。</p>
-<p>④、LSE是低速外部时钟，接频率为32.768kHz的石英晶体。RTC</p>
-<p>⑤、PLL为锁相环倍频输出。</p>
+<p>①、HSI是<font color='red'>高速内部时钟</font>，RC振荡器，频率为16MHz，精度不高。可以直接作为系统时钟或者用作PLL时钟输入。　接的外部晶振</p>
+<p>②、HSE是<font color='red'>高速外部时钟</font>，可接石英/陶瓷谐振器，或者接外部时钟源，频率范围为4MHz~26MHz。</p>
+<p>③、LSI是<font color='red'>低速内部时钟</font>，RC振荡器，频率为32kHz，提供低功耗时钟。主要供独立看门狗和自动唤醒单元使用。</p>
+<p>④、LSE是<font color='red'>低速外部时钟</font>，接频率为32.768kHz的石英晶体。RTC（实时时钟）</p>
+<p>⑤、PLL为<font color='red'>锁相环倍频</font>输出。 来源可以是HSI/2、HSE、HSE/2，倍频范围为 2-16 倍</p>
+<blockquote></blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210708165624.png" alt="时钟树-F429"></p>
+<blockquote>
+<p>PLL是一种反馈控制电路。锁相环通常由鉴相器（PD,Phase Detector）、环路滤波器（LF,Loop Filter）和压控振荡器（VCO,Voltage Controlled Oscillator）三部分组成。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210708172720.png" alt="img"></p>
+<p>特点是：通过外部输入的参考信号和控制环路的压控振荡器的输入信号的相位差，来得到它们的电压差，以这个电压作为误差电压来控制振荡器的频率，使压控振荡器频率达到与输入参考信号频率按一定比例输出的频率，因锁相环可以实现输出信号频率对输入信号频率的自动跟踪，所以锁相环通常用于闭环跟踪电路。锁相环在工作过程中，当输出信号的频率成比例地反映输入信号的频率时，输出电压与输入电压保持固定的相位差值，这样输出电压与输入电压的相位就被锁住了。</p>
+</blockquote>
 ]]></content>
       <categories>
         <category>记录&amp;烂笔头</category>
       </categories>
       <tags>
         <tag>STM32</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DSP杂烩</title>
+    <url>/2020/12/04/DSP%E6%9D%82%E7%83%A9/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>随手记</h1>
+<p>一些知识和疑问</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204095119.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204100437.png" alt=""></p>
+<blockquote>
+<p>有一个疑问：之间的衔接关系！</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201205171135.png" alt="image-20201205171133171"></p>
+<h1>傅里叶变换的理解</h1>
+<p>把一个信号的全部信息全部提取出来，在频率上说：w（频率）就表示的位置，振幅表示的强度，而相位则是表示的是信息的反转与否（波的位置）。</p>
+<p>用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo separator="true">⋅</mo><mi>c</mi><mi>o</mi><mi>s</mi><mo stretchy="false">(</mo><mi>w</mi><mo separator="true">⋅</mo><mi>t</mi><mo>+</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A·cos(w·t+\phi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">A</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault">s</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">t</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">ϕ</span><span class="mclose">)</span></span></span></span>在时域上，w与时间建立起了联系，相位的改变就是在时间轴上的平移。所以，在频域上的相位就是</p>
+<p>换个角度（域）看问题！！！！</p>
+<p>若一个信号可以分解成正弦函数或着指数形式的组合，那么叠加的函数的相位可能会不同，在同一频率w下的幅度和相位一一对应。那么可以用这三个基本的信息，获取到全部的信息。（有待加深…）</p>
+]]></content>
+      <categories>
+        <category>记录&amp;烂笔头</category>
+      </categories>
+      <tags>
+        <tag>dsp</tag>
       </tags>
   </entry>
   <entry>
@@ -1714,28 +1721,6 @@ a = \left[
       </tags>
   </entry>
   <entry>
-    <title>如何修改blog</title>
-    <url>/2020/01/05/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9blog/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="04dafb7bfcd7f56adb55c246aaec540487cc4c458e17451790694a8e56bf0c92">22064b17c03cb0c0e58c99349b6889d0c7e9d327de57f2d214b057f3875d6b37b9b20ab3b449f9d3b0ba6ffe12bb71d82eff8171349bc71e3a2c9718b358eacc07c1e2d0dcdcc94bb927d4bdef70eb39fd8e7de731fdf8f27d06339a84133e4a974b5fae5fee1809df024fdfbb238fba030fdd8003e2826f0a33da9ce588a76e8e6bc91b4049cb9065bb5b9840402572bd86834c2d0c361fdb4259dd56633b9d286b14b14b74d50d4ca10de4c2e54f118835e2ea5a28de2ac78c4f57666f83faa6cf49198dbd3f86312e8ae6475e1ad5fab6439a79e2e3cad197c03dd08b87bec442910f76725c0e06a65602b36b614a3dbe3e1d519977487176b3d65656620cd72102c0def41ebc432387d76b636e45e96da4d0d2015c57f1f6282e715a4ed94b8949ee040b776bdb60c6b41c7bf7d2bec32f7db09f41636e0ba0f33e9f5aad83d4a53e423b83dcbdea2742f32be593356c62a2968451923b154f5e036a39cbdd6fcd80a613853754fe646a0de433776dd485754f1f17b2420393e69bb66cccbe0065816d55d0b4a0706af94be5d48af9149f258b8c164dc5c499e09ce6ae2395fe58fc4673842bc1c24ed5fbe0c2d84ef9001554821f5b7139fdb01c48479e5fc02d82f3fed2c97001b18231cb475838e503f66a191b1c148a74455c18e2587f787e99433a412eef7137f5eeb3bd025997438d6778fc97b822c2636b8f6fd3424e1d4bd83594ee93ca32cd43c98af006c98be3036fd781ee160d33ffd5aa4dde42245cdadc0d845a4fec279aa520ef858301c797bdb4a57082b418ba662c283a875b6780da01692c82a3d97a138ad23767acedb7b1c656f322b618466ee97a9c5b3a13e053767448b7b7c6846b7a28c1686a94ee40d9bd6e26304dfa5c87e9e21f55970d5f91f5f7b6209a24a58845e72c8077321540be017f2fd071e3c8358ca0169a52e69907ff1c3c22e8510664c9aaa4b6102dc7b23e1a71b4518af0f7d4f9af72e49b741e4147c985f15b37dc4b70766ead339f9034a42c9a89a214e5878f7832336c3bca0a1d1fa1cbdb786017fadda2b6255f8f8591978a1566e25f9b454fdd38c75035e3d6a8167ca2831cc29e127fe69e076ce192c1e2d39ce042acbdad850df5c4a72ab31af05c489e5b3aa50e1e4b458b5caebcbc899a4035de16965dd78a327538019e25a7f57da15c66f3a99d3d78da69c82b148df2e45fda975cc111350de4d44912b27e8cb329153c8abc5e683088c99c224a7943b5c21a9fa7964756b462df80b62ada84b9b4045eb032baf01a45068f899e077940f029e45ce08b8819f40e51c85e5b7015133f2a2b0675cfc3f1fd6453e112698de4e6637844ecb93f0114ed55c1eea08e3a303820fe1d2c9ce78167c8f11a22d08cdcf237b03dafbdea47a2fe0fb7ea193c2aca177cf6518a7b7e25b68bc16b56d0e8507a2f3e3f9ba9bc8fdccf705af740fee68e91c910a09af611861a6bf5b096c1659c64a3390225136d2f3307c181002e8101fe438a07b20e68c6cb82a1a0c7b25d2e159e2c6ecfe1f93069575b63873bd542f9088dcfc07dc6169b40d3134e178167c35fbb2da0e7844663088b8a44bb472b82448bbffa32286b8552c8614f24cbe06bf073343a7251a7f8290ea4dab37949b632305320408e7eafec04c43d13e6bad11217c88fe8f973136882b107e735beec48585d45206ecff596b9e2489cacbae57e0e71283313e8f59906f20ba470b171938908876d55754c81c792298ada51eefb12d1689c7c8b5581690bfe0a9d62bf2edbbf3f771846669d506c5dc4cfe7959b57aa1282e2cfc1987719f5b288fcbf100df87a363e90e4ba712da5bbecaf5ded66481c3ce4f67385f730dd3bda7931782ed5c693bd59a7fdcb057201c7057a863d63365ba935f15ea487576f51ceb5bc26e2aeb633439c9c31b34501ab7fdc6ab4e3ed1786f6ac8c390b10a4d5b8577c3ed5feceed757ebbdbb9944e905c0ea89ce91282c7b8ba974864f2f6b22a38f375f22be76b325796de4530f33c1ac3814482d019d2981fb9d79dd42aca5076dd4f31c784491d5b2fb6453984b5657d1b62278d7e6eeb2c164ad865e33ac6dcf82e5e503e07b0d30a37a2e5a5</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>分享&amp;记录</title>
     <url>/2021/04/07/%E5%88%86%E4%BA%AB-%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -1759,6 +1744,32 @@ a = \left[
       </categories>
       <tags>
         <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何修改blog</title>
+    <url>/2020/01/05/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9blog/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="04dafb7bfcd7f56adb55c246aaec540487cc4c458e17451790694a8e56bf0c92">22064b17c03cb0c0e58c99349b6889d0c7e9d327de57f2d214b057f3875d6b37b9b20ab3b449f9d3b0ba6ffe12bb71d82eff8171349bc71e3a2c9718b358eacc07c1e2d0dcdcc94bb927d4bdef70eb39fd8e7de731fdf8f27d06339a84133e4a974b5fae5fee1809df024fdfbb238fba030fdd8003e2826f0a33da9ce588a76e8e6bc91b4049cb9065bb5b9840402572bd86834c2d0c361fdb4259dd56633b9d286b14b14b74d50d4ca10de4c2e54f118835e2ea5a28de2ac78c4f57666f83faa6cf49198dbd3f86312e8ae6475e1ad5fab6439a79e2e3cad197c03dd08b87bec442910f76725c0e06a65602b36b614a3dbe3e1d519977487176b3d65656620cd72102c0def41ebc432387d76b636e45e96da4d0d2015c57f1f6282e715a4ed94b8949ee040b776bdb60c6b41c7bf7d2bec32f7db09f41636e0ba0f33e9f5aad83d4a53e423b83dcbdea2742f32be593356c62a2968451923b154f5e036a39cbdd6fcd80a613853754fe646a0de433776dd485754f1f17b2420393e69bb66cccbe0065816d55d0b4a0706af94be5d48af9149f258b8c164dc5c499e09ce6ae2395fe58fc4673842bc1c24ed5fbe0c2d84ef9001554821f5b7139fdb01c48479e5fc02d82f3fed2c97001b18231cb475838e503f66a191b1c148a74455c18e2587f787e99433a412eef7137f5eeb3bd025997438d6778fc97b822c2636b8f6fd3424e1d4bd83594ee93ca32cd43c98af006c98be3036fd781ee160d33ffd5aa4dde42245cdadc0d845a4fec279aa520ef858301c797bdb4a57082b418ba662c283a875b6780da01692c82a3d97a138ad23767acedb7b1c656f322b618466ee97a9c5b3a13e053767448b7b7c6846b7a28c1686a94ee40d9bd6e26304dfa5c87e9e21f55970d5f91f5f7b6209a24a58845e72c8077321540be017f2fd071e3c8358ca0169a52e69907ff1c3c22e8510664c9aaa4b6102dc7b23e1a71b4518af0f7d4f9af72e49b741e4147c985f15b37dc4b70766ead339f9034a42c9a89a214e5878f7832336c3bca0a1d1fa1cbdb786017fadda2b6255f8f8591978a1566e25f9b454fdd38c75035e3d6a8167ca2831cc29e127fe69e076ce192c1e2d39ce042acbdad850df5c4a72ab31af05c489e5b3aa50e1e4b458b5caebcbc899a4035de16965dd78a327538019e25a7f57da15c66f3a99d3d78da69c82b148df2e45fda975cc111350de4d44912b27e8cb329153c8abc5e683088c99c224a7943b5c21a9fa7964756b462df80b62ada84b9b4045eb032baf01a45068f899e077940f029e45ce08b8819f40e51c85e5b7015133f2a2b0675cfc3f1fd6453e112698de4e6637844ecb93f0114ed55c1eea08e3a303820fe1d2c9ce78167c8f11a22d08cdcf237b03dafbdea47a2fe0fb7ea193c2aca177cf6518a7b7e25b68bc16b56d0e8507a2f3e3f9ba9bc8fdccf705af740fee68e91c910a09af611861a6bf5b096c1659c64a3390225136d2f3307c181002e8101fe438a07b20e68c6cb82a1a0c7b25d2e159e2c6ecfe1f93069575b63873bd542f9088dcfc07dc6169b40d3134e178167c35fbb2da0e7844663088b8a44bb472b82448bbffa32286b8552c8614f24cbe06bf073343a7251a7f8290ea4dab37949b632305320408e7eafec04c43d13e6bad11217c88fe8f973136882b107e735beec48585d45206ecff596b9e2489cacbae57e0e71283313e8f59906f20ba470b171938908876d55754c81c792298ada51eefb12d1689c7c8b5581690bfe0a9d62bf2edbbf3f771846669d506c5dc4cfe7959b57aa1282e2cfc1987719f5b288fcbf100df87a363e90e4ba712da5bbecaf5ded66481c3ce4f67385f730dd3bda7931782ed5c693bd59a7fdcb057201c7057a863d63365ba935f15ea487576f51ceb5bc26e2aeb633439c9c31b34501ab7fdc6ab4e3ed1786f6ac8c390b10a4d5b8577c3ed5feceed757ebbdbb9944e905c0ea89ce91282c7b8ba974864f2f6b22a38f375f22be76b325796de4530f33c1ac3814482d019d2981fb9d79dd42aca5076dd4f31c784491d5b2fb6453984b5657d1b62278d7e6eeb2c164ad865e33ac6dcf82e5e503e07b0d30a37a2e5a5</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-xray">
+      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Hey, password is required here.</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
