@@ -1,17 +1,17 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>F4学习记录 | STAR</title><meta name="keywords" content="STM32"><meta name="author" content="stardust,邮箱"><meta name="copyright" content="stardust"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="阿波罗STM32开发板底板引脚   JTAG调试，需要占用5个IO端口；SWD则只需要2个IO端口 KEY_UP 是高电平有效，而 KEY0、KEY1 和 KEY2 是低电平有效  ¶核心板资源图   ¶GPIO口（通用IO口） STM32F429芯片有176个引脚，其中140个可以作为GPIO口。 一共9组IO：PA~PI；其中PA-PH每组16个IO口，PI只有PI0-PI11（12）,一共有">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>F4学习记录 | STAR</title><meta name="keywords" content="STM32"><meta name="author" content="stardust,邮箱"><meta name="copyright" content="stardust"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="阿波罗STM32  开发板底板引脚   JTAG调试，需要占用5个IO端口；SWD则只需要2个IO端口 KEY_UP 是高电平有效，而 KEY0、KEY1 和 KEY2 是低电平有效   核心板资源图    GPIO口（通用IO口） STM32F429芯片有176个引脚，其中140个可以作为GPIO口。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="F4学习记录">
 <meta property="og:url" content="http://stardust14.com/2021/06/15/F4%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="STAR">
-<meta property="og:description" content="阿波罗STM32开发板底板引脚   JTAG调试，需要占用5个IO端口；SWD则只需要2个IO端口 KEY_UP 是高电平有效，而 KEY0、KEY1 和 KEY2 是低电平有效  ¶核心板资源图   ¶GPIO口（通用IO口） STM32F429芯片有176个引脚，其中140个可以作为GPIO口。 一共9组IO：PA~PI；其中PA-PH每组16个IO口，PI只有PI0-PI11（12）,一共有">
+<meta property="og:description" content="阿波罗STM32  开发板底板引脚   JTAG调试，需要占用5个IO端口；SWD则只需要2个IO端口 KEY_UP 是高电平有效，而 KEY0、KEY1 和 KEY2 是低电平有效   核心板资源图    GPIO口（通用IO口） STM32F429芯片有176个引脚，其中140个可以作为GPIO口。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/stardust14/picture/img/Number_one_gril.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/stardust14/picture/img/test09.png">
 <meta property="article:published_time" content="2021-06-15T00:59:10.000Z">
-<meta property="article:modified_time" content="2021-07-08T09:41:36.302Z">
+<meta property="article:modified_time" content="2021-07-09T03:22:06.846Z">
 <meta property="article:author" content="stardust">
 <meta property="article:tag" content="STM32">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/stardust14/picture/img/Number_one_gril.jpg"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/stardust14/picture/img/blogstar.png"><link rel="canonical" href="http://stardust14.com/2021/06/15/F4%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/stardust14/picture/img/test09.png"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/stardust14/picture/img/blogstar.png"><link rel="canonical" href="http://stardust14.com/2021/06/15/F4%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
@@ -57,7 +57,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2021-07-08 17:41:36'
+  postUpdate: '2021-07-09 11:22:06'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -149,25 +149,26 @@
       document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
     }
     })(window)</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/stardust14/CDN/HexoStatic/css/newboth.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/stardust14/CDN/HexoStatic/css/hideCategory.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/stardust14/CDN/HexoStatic/css/scrollBar.css"><link rel="stylesheet" href="/css/mouse.css"><link rel="stylesheet" href="/css/icon.css" media="defer" onload="this.media='all'"><meta name="generator" content="Hexo 5.0.0"><link rel="alternate" href="/atom.xml" title="STAR" type="application/atom+xml">
-</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/images/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">17</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 放松一下</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li><li><a class="site-page child" href="/photograph"><i class="fa-fw fa fa-globe"></i><span> Photograph</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 专栏</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/pdf/"><i class="fa-fw fa fa-file-pdf"></i><span> pdf</span></a></li><li><a class="site-page child" href="/%E9%9A%8F%E7%AC%94"><i class="fa-fw fas fa-pencil-alt"></i><span> 随笔</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于me</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/stardust14/picture/img/Number_one_gril.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">STAR</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 放松一下</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li><li><a class="site-page child" href="/photograph"><i class="fa-fw fa fa-globe"></i><span> Photograph</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 专栏</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/pdf/"><i class="fa-fw fa fa-file-pdf"></i><span> pdf</span></a></li><li><a class="site-page child" href="/%E9%9A%8F%E7%AC%94"><i class="fa-fw fas fa-pencil-alt"></i><span> 随笔</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于me</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">F4学习记录<a class="post-edit-link" href="null_posts/F4学习记录.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-06-15T00:59:10.000Z" title="发表于 2021-06-15 08:59:10">2021-06-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-07-08T09:41:36.302Z" title="更新于 2021-07-08 17:41:36">2021-07-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%B0%E5%BD%95-%E7%83%82%E7%AC%94%E5%A4%B4/">记录&amp;烂笔头</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>10分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="F4学习记录"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1>阿波罗STM32开发板底板引脚</h1>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210615090214.png" alt=""></p>
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/images/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">28</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">17</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 放松一下</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li><li><a class="site-page child" href="/photograph"><i class="fa-fw fa fa-globe"></i><span> Photograph</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 专栏</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/pdf/"><i class="fa-fw fa fa-file-pdf"></i><span> pdf</span></a></li><li><a class="site-page child" href="/%E9%9A%8F%E7%AC%94"><i class="fa-fw fas fa-pencil-alt"></i><span> 随笔</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于me</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/stardust14/picture/img/test09.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">STAR</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 放松一下</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music"><i class="fa-fw fa fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li><li><a class="site-page child" href="/photograph"><i class="fa-fw fa fa-globe"></i><span> Photograph</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-book"></i><span> 专栏</span><i class="fas fa-chevron-down expand hide"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/pdf/"><i class="fa-fw fa fa-file-pdf"></i><span> pdf</span></a></li><li><a class="site-page child" href="/%E9%9A%8F%E7%AC%94"><i class="fa-fw fas fa-pencil-alt"></i><span> 随笔</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于me</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">F4学习记录<a class="post-edit-link" href="null_posts/F4学习记录.md" title="编辑" target="_blank"><i class="fas fa-pencil-alt"></i></a></h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-06-15T00:59:10.000Z" title="发表于 2021-06-15 08:59:10">2021-06-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-07-09T03:22:06.846Z" title="更新于 2021-07-09 11:22:06">2021-07-09</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%B0%E5%BD%95-%E7%83%82%E7%AC%94%E5%A4%B4/">记录&amp;烂笔头</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>13分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="F4学习记录"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="阿波罗stm32"><a class="markdownIt-Anchor" href="#阿波罗stm32"></a> 阿波罗STM32</h1>
+<h2 id="开发板底板引脚"><a class="markdownIt-Anchor" href="#开发板底板引脚"></a> 开发板底板引脚</h2>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210615090214.png" alt="" /></p>
 <blockquote>
 <p>JTAG调试，需要占用5个IO端口；SWD则只需要2个IO端口</p>
 <p>KEY_UP 是高电平有效，而 KEY0、KEY1 和 KEY2 是低电平有效</p>
 </blockquote>
-<h2 id="核心板资源图"><a class="header-anchor" href="#核心板资源图">¶</a>核心板资源图</h2>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210615090543.png" alt=""></p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616094711.png" alt=""></p>
-<h2 id="GPIO口（通用IO口）"><a class="header-anchor" href="#GPIO口（通用IO口）">¶</a>GPIO口（通用IO口）</h2>
+<h2 id="核心板资源图"><a class="markdownIt-Anchor" href="#核心板资源图"></a> 核心板资源图</h2>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210615090543.png" alt="" /></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616094711.png" alt="" /></p>
+<h2 id="gpio口通用io口"><a class="markdownIt-Anchor" href="#gpio口通用io口"></a> GPIO口（通用IO口）</h2>
 <p>STM32F429芯片有176个引脚，其中140个可以作为GPIO口。</p>
 <p>一共9组IO：PA~PI；其中PA-PH每组16个IO口，PI只有PI0-PI11（12）,一共有140个IO口（16*8+12=140）</p>
 <p>复用可以大大节省IO口的资源。</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616102931.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616102931.png" alt="" /></p>
 <p>STM32引脚的功能：查找数据手册</p>
 <p>FT可以容忍5V输入</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616105528.png" alt=""></p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616105607.png" alt=""></p>
-<h3 id="GPIO口的8种工作模式"><a class="header-anchor" href="#GPIO口的8种工作模式">¶</a>GPIO口的8种工作模式</h3>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616105528.png" alt="" /></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616105607.png" alt="" /></p>
+<h3 id="gpio口的8种工作模式"><a class="markdownIt-Anchor" href="#gpio口的8种工作模式"></a> GPIO口的8种工作模式</h3>
 <ul>
 <li>4种输入模式：</li>
 </ul>
@@ -189,25 +190,25 @@
 <p>-25MHz  中速</p>
 <p>-50MHz  快速</p>
 <p>-100MHz  高速</p>
-<h3 id="IO口的基本结构"><a class="header-anchor" href="#IO口的基本结构">¶</a>IO口的基本结构</h3>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616112000.png" alt=""></p>
+<h3 id="io口的基本结构"><a class="markdownIt-Anchor" href="#io口的基本结构"></a> IO口的基本结构</h3>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616112000.png" alt="" /></p>
 <p>GPIO口的输入工作模式1——输入浮空模式</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616113506.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616113506.png" alt="" /></p>
 <blockquote>
 <p>在浮空状态下，上拉下拉没有设置（不起作用），输出驱动器不起作用，模拟通道，复用功能输入也不起作用，直接到输入数据寄存器被CPU读取</p>
 </blockquote>
 <p>GPIO的输入工作方式2——输入上拉模式</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616113917.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616113917.png" alt="" /></p>
 <blockquote>
 <p>在此模式下，上拉起作用，下拉不起作用，其他和浮空模式一样，被保存在输入数据寄存器</p>
 </blockquote>
 <p>GPIO的输入工作模式3——输入下拉模式</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616114348.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616114348.png" alt="" /></p>
 <blockquote>
 <p>与上拉模式类似，下拉起作用，上拉不起作用</p>
 </blockquote>
 <p>GPIO的输入工作模式4——模拟模式</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616114959.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616114959.png" alt="" /></p>
 <blockquote>
 <p>在信号到达TTL施密特触发器之前，会直接到模拟通道（也就是TTL施密特触发器开关是关闭的）；上拉和下拉是不起作用的</p>
 </blockquote>
@@ -215,14 +216,14 @@
 <blockquote>
 <p>输出不了高电平</p>
 </blockquote>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616160210.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616160210.png" alt="" /></p>
 <blockquote>
 <p>输入为1时，N-mos处于截至状态，对IO口电平没有影响，若是输出1，则需要接一个上拉电阻与电源相接</p>
 <p>输入为0时，N-mos处于导通状态 ，IO口会是0，输出0，接下拉电阻</p>
 <p>CPU可以通过输入数据寄存器读取到IO口的输出状态（1/0）</p>
 </blockquote>
 <p>GPIO的输出工作模式2——开漏复用输出模式</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616160716.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616160716.png" alt="" /></p>
 <blockquote>
 <p>此时，工作在复用功能输出</p>
 </blockquote>
@@ -231,14 +232,14 @@
 <p>推：灌电流 可以达到25mA（mos管内阻小）</p>
 <p>挽：拉电流</p>
 </blockquote>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616161250.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616161250.png" alt="" /></p>
 <blockquote>
 <p>此时，P-mos和N-mos都是工作的</p>
 <p>若输入为1，则P-mos导通，N-mos截至，输出VDD高电平</p>
 <p>若输入为0，则P-mos截至，N-mos导通，输出0低电平</p>
 </blockquote>
 <p>GPIO的输出工作模式4——推挽复用输出模式</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616161504.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616161504.png" alt="" /></p>
 <p>推挽输出：可以输出高低电平，连接数字器件</p>
 <p>开漏输出：只可以输出强低电平，高电平得靠外部电阻拉高。输出端相当于三极管的集电极。要得到高电平状态需要上拉电阻才行，适合于做电流性的驱动，其吸收电流的能力相对强。</p>
 <ul>
@@ -246,46 +247,46 @@
 </ul>
 <p>上电复位后，GPIO默认为输入浮空状态，部分特殊功能引脚为特定状态</p>
 <p>复位后，调试引脚处于复位功能的上拉/下拉状态：</p>
-<p>PA15：JTDI处于上拉状态<br>
-PA14:JTCK/SWCLK处于下拉状态<br>
-PA13:JTMS/SWDAT处于下拉状态<br>
-PB4:NJTRST处于上拉状态<br>
+<p>PA15：JTDI处于上拉状态<br />
+PA14:JTCK/SWCLK处于下拉状态<br />
+PA13:JTMS/SWDAT处于下拉状态<br />
+PB4:NJTRST处于上拉状态<br />
 PB3:JTDO处于浮空状态</p>
-<h3 id="GPIO寄存器"><a class="header-anchor" href="#GPIO寄存器">¶</a>GPIO寄存器</h3>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616171206.png" alt=""></p>
+<h3 id="gpio寄存器"><a class="markdownIt-Anchor" href="#gpio寄存器"></a> GPIO寄存器</h3>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616171206.png" alt="" /></p>
 <p>1.端口模式寄存器</p>
 <blockquote>
 <p>x=A…K是对应的208个引脚的CPU；对于STM32F429来说，只用到x=A…I</p>
 </blockquote>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616172058.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616172058.png" alt="" /></p>
 <blockquote>
 <p>两位控制1个IO端口</p>
 </blockquote>
 <p>2.端口输出类型寄存器(GPIOx_OTYPER)</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616172532.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616172532.png" alt="" /></p>
 <blockquote>
 <p>每一位控制一个IO口，只用了低16位，16个IO口。</p>
 </blockquote>
 <p>3.端口输出速度寄存器(GPIOx_OSPEEDR)</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616173713.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616173713.png" alt="" /></p>
 <blockquote>
 <p>同32位寄存器，每两位控制一个IO口。</p>
 </blockquote>
 <p>4.端口上拉/下拉寄存器(GPIOx_PUPDR)</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616174212.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616174212.png" alt="" /></p>
 <div class='tip' ><p>至此，通过这4个寄存器的配置就可以达到GPIO的8种工作模式<p></div>
 <p>5.端口输入数据寄存器(GPIOx_IDR)</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616174807.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616174807.png" alt="" /></p>
 <blockquote>
 <p>低16位有效，输入是低电平还是高电平写入在此寄存器中</p>
 </blockquote>
 <p>6.端口输出数据寄存器(GPIOx_ODR)</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616175955.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616175955.png" alt="" /></p>
 <blockquote>
 <p>低16位，每一位控制一个输出电平；设置为1则输出高电平，设置为0则输出低电平</p>
 </blockquote>
 <p>7.端口置位/复位寄存器(GPIOx_BSRR)</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616180029.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616180029.png" alt="" /></p>
 <blockquote>
 <p>控制IO口输出电平状态，低16位是端口置位位，高16位是端口复位位；</p>
 <p>低16位：设置为1则输出高电平，设置为0则不产生影响</p>
@@ -294,38 +295,38 @@ PB3:JTDO处于浮空状态</p>
 </blockquote>
 <div class='tip warning' ><p>上图中的位设置/清除寄存器就是BSRR；输出数据寄存器就是ODR，这就是两者的关系<p></div>
 <p>8.端口配置锁定寄存器(GPIOx_LCKR)</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616180101.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616180101.png" alt="" /></p>
 <blockquote>
 <p>低17位使用</p>
 </blockquote>
 <p>9.复用功能寄存器(GPIOx_AFRL、AFRH)</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616180134.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616180134.png" alt="" /></p>
 <blockquote>
 <p>分高位AFRH和低位AFRL，分别控制8个IO口；两个32位寄存器，一共64位；IO口是16个，所以每个IO口需要4位控制</p>
 </blockquote>
-<h2 id="跑马灯"><a class="header-anchor" href="#跑马灯">¶</a>跑马灯</h2>
+<h2 id="跑马灯"><a class="markdownIt-Anchor" href="#跑马灯"></a> 跑马灯</h2>
 <p>led灯的硬件连接</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617165905.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617165905.png" alt="" /></p>
 <blockquote>
 <p>以LED0为例，若输出为0，则有电位差，LED0亮；若输出为1，则DS0右边是3.3V，无电位差，LED0不亮</p>
 <p>从电平方式上看，，总结出输出方式为推挽输出（上拉）</p>
 </blockquote>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617193151.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617193151.png" alt="" /></p>
 <blockquote>
 <p>外设使用之前，要使用使能IO口时钟。配置IO口时钟使能寄存器：RCC-&gt;AHB1ENR(外设时钟使能寄存器)</p>
 </blockquote>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617193807.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617193807.png" alt="" /></p>
 <p><font color="red">初始化IO口模式。配置四个配置寄存器：GPIOx_MODER(模式)、GPIOx_OTYPER(输出类型)、GPIOx_OSPEEDR(输出速度)、GPIOx_PUPDR(上拉下拉)</font></p>
 <p><font color="red">最后，操作IO口，输出高低电平。配置寄存器GPIOx_ODR或着GPIOx_BSRR。</font></p>
 <div class='tip error'><p>出现了一些错误<p></div>
 <p>1.编写led.h文件时出现</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617162736.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617162736.png" alt="" /></p>
 <p>解决：由于<code>#ifndef__LED_H</code>应该有空格，即<code>ifndef __LED_H</code>；同理<code>#define__LED_H</code>也是要变成<code>#define __LED_H</code></p>
 <p>2.出现宏定义无效的情况</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617163357.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617163357.png" alt="" /></p>
 <p>这是因为led.h出错的结果，把led.h文件改好，就无错了；注意：led.h文件要添加到工程去</p>
 <p>3.编译报错</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617163717.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617163717.png" alt="" /></p>
 <p>这是由于工程中还有一个main函数的存在，把另一个移除就可以了</p>
 <div class='tip success'><p>成功<p></div>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;sys.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;led.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;delay.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化PB0和PB1为输出口，并使能这两个口的时钟</span></span><br><span class="line"><span class="comment">//LED IO初始化</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">LED_Init</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	RCC-&gt;AHB1ENR |=<span class="number">1</span>&lt;&lt;<span class="number">1</span>;		<span class="comment">//使能PORTB时钟</span></span><br><span class="line">    <span class="comment">//只用操作位1，其他位不用管</span></span><br><span class="line">	<span class="comment">// “|=”是位或  “&lt;&lt;”：右移一位；使位1保持1，开时钟</span></span><br><span class="line">	</span><br><span class="line">	<span class="comment">//GPIOB是要操作的GPIO组，PIN0和PIN1这两个引脚分别控制LED1和LED0</span></span><br><span class="line">	<span class="comment">//GPIO_MODE_OUT在sys.h文件中宏定义为普通输出（也就是GPIO口模式选择输出）</span></span><br><span class="line">	<span class="comment">//GPIO_OTYPE_PP在sys.h文件中宏定义为推挽输出</span></span><br><span class="line">	<span class="comment">//GPIO_SPEED_100M在syys.h中宏定义为GPIO速度100Mhz</span></span><br><span class="line">	<span class="comment">//GPIO_PUPD_PU在sys.h中宏定义为上拉</span></span><br><span class="line">	GPIO_Set(GPIOB,PIN0|PIN1,GPIO_MODE_OUT,GPIO_OTYPE_PP,<span class="comment">//GPIO口设置：GPIO_Set函数</span></span><br><span class="line">			 GPIO_SPEED_100M,GPIO_PUPD_PU);	<span class="comment">//PB0,PB1设置</span></span><br><span class="line">	</span><br><span class="line">	LED0 = <span class="number">1</span>;	<span class="comment">//LED0关闭</span></span><br><span class="line">	LED1 = <span class="number">1</span>;	<span class="comment">//LED1关闭</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Stm32_Clock_Init(<span class="number">360</span>,<span class="number">25</span>,<span class="number">2</span>,<span class="number">8</span>);	<span class="comment">//设置时钟，180Mhz；初始化系统时钟</span></span><br><span class="line">	delay_init(<span class="number">180</span>);	<span class="comment">//初始化延时函数</span></span><br><span class="line">	LED_Init();		<span class="comment">//初始化LED时钟</span></span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		LED0 = <span class="number">0</span>;		<span class="comment">//DS0亮</span></span><br><span class="line">		LED1 = <span class="number">1</span>;		<span class="comment">//DS1灭</span></span><br><span class="line">		delay_ms(<span class="number">500</span>);</span><br><span class="line">		LED0 = <span class="number">1</span>;		<span class="comment">//DS0灭</span></span><br><span class="line">		LED1 = <span class="number">0</span>;		<span class="comment">//DS1亮</span></span><br><span class="line">		delay_ms(<span class="number">1000</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -333,9 +334,9 @@ PB3:JTDO处于浮空状态</p>
 <p>keil软件一般在最后打出一行空行。</p>
 </blockquote>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> __LED_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> __LED_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&quot;sys.h&quot;</span></span></span><br><span class="line"><span class="comment">//LED端口定义</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LED0 PBout(1)	<span class="comment">//DS0，PBout输出为1</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LED1 PBout(0)	<span class="comment">//DS1，PBout输出为0</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">LED_Init</span><span class="params">(<span class="keyword">void</span>)</span></span>;	<span class="comment">//初始化</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="按键输入实验"><a class="header-anchor" href="#按键输入实验">¶</a>按键输入实验</h2>
+<h2 id="按键输入实验"><a class="markdownIt-Anchor" href="#按键输入实验"></a> 按键输入实验</h2>
 <p>硬件连接</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618101547.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618101547.png" alt="" /></p>
 <blockquote>
 <p>当KEY0/KEY1/KEY2按下时，检测到低电平；松开检测到高电平</p>
 <p>当KEY_UP按下时，检测到高电平；松开检测到低电平</p>
@@ -343,26 +344,26 @@ PB3:JTDO处于浮空状态</p>
 <p>按键 KEY0 连接在 PH3 上、KEY1 连接在 PH2 上、KEY2 连接在 PC13 上、KEY_UP 连接在 PA0上。</p>
 </blockquote>
 <blockquote>
-<p>KEY0-&gt;PH3  上拉输入<br>
-KEY1-&gt;PH2  上拉输入<br>
-KEY2-&gt;PC13  上拉输入<br>
+<p>KEY0-&gt;PH3  上拉输入<br />
+KEY1-&gt;PH2  上拉输入<br />
+KEY2-&gt;PC13  上拉输入<br />
 WK_UP-&gt;PA0  下拉输入</p>
 </blockquote>
 <p>由于使用了PA组、PC组、PH组三组GPIO口，所以外设时钟也要设置三种。</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618103813.png" alt=""></p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618103801.png" alt=""></p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618103742.png" alt=""></p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618104011.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618103813.png" alt="" /></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618103801.png" alt="" /></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618103742.png" alt="" /></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618104011.png" alt="" /></p>
 <blockquote>
 <p>再通过上面的图，设置时钟使能</p>
 </blockquote>
 <div class='tip error'><p>出现错误<p></div>
 <p>多个main函数定义</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618163923.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618163923.png" alt="" /></p>
 <blockquote>
 <p>这是因为定义了多个main函数，实际上的main函数要定义在USER文件夹下面</p>
 </blockquote>
-<h2 id="复习"><a class="header-anchor" href="#复习">¶</a>复习</h2>
+<h2 id="复习"><a class="markdownIt-Anchor" href="#复习"></a> 复习</h2>
 <ol>
 <li>ifdef条件编译</li>
 </ol>
@@ -407,36 +408,72 @@ WK_UP-&gt;PA0  下拉输入</p>
 <p>将不同类型的数据存放在一起，作为一个整体进行处理</p>
 </blockquote>
 <p>可扩展性强</p>
-<h2 id="MDK使用"><a class="header-anchor" href="#MDK使用">¶</a>MDK使用</h2>
+<h2 id="mdk使用"><a class="markdownIt-Anchor" href="#mdk使用"></a> MDK使用</h2>
 <ol>
 <li>书签</li>
 </ol>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210707153710.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210707153710.png" alt="" /></p>
 <ol start="2">
 <li>生成hex文件</li>
 </ol>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210707154235.png" alt=""></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210707154235.png" alt="" /></p>
 <p>第一个框是生成hex文件</p>
 <p>第二个框是查看函数变量定义的地方</p>
 <ol start="3">
 <li>文本美化</li>
 </ol>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210707155018.png" alt=""></p>
-<h2 id="时钟系统"><a class="header-anchor" href="#时钟系统">¶</a>时钟系统</h2>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210707155018.png" alt="" /></p>
+<h2 id="时钟系统"><a class="markdownIt-Anchor" href="#时钟系统"></a> 时钟系统</h2>
 <p>STM32有5个时钟源：HSI、HSE、LSI、LSE、PLL</p>
 <p>①、HSI是<font color='red'>高速内部时钟</font>，RC振荡器，频率为16MHz，精度不高。可以直接作为系统时钟或者用作PLL时钟输入。　接的外部晶振</p>
 <p>②、HSE是<font color='red'>高速外部时钟</font>，可接石英/陶瓷谐振器，或者接外部时钟源，频率范围为4MHz~26MHz。</p>
 <p>③、LSI是<font color='red'>低速内部时钟</font>，RC振荡器，频率为32kHz，提供低功耗时钟。主要供独立看门狗和自动唤醒单元使用。</p>
 <p>④、LSE是<font color='red'>低速外部时钟</font>，接频率为32.768kHz的石英晶体。RTC（实时时钟）</p>
 <p>⑤、PLL为<font color='red'>锁相环倍频</font>输出。 来源可以是HSI/2、HSE、HSE/2，倍频范围为 2-16 倍</p>
-<blockquote></blockquote>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210708165624.png" alt="时钟树-F429"></p>
+<div class="note info flat"><p>任何一个外设在使用之前，必须首先使能其相应的时钟</p>
+</div>
+<blockquote>
+<p>LSE接入外部晶振32.768kHz</p>
+<p>HSE接入外部晶振2-26MHz，可通过分频器，做RTC的一个时钟源；可做系统时钟的一个时钟源；可做PLL锁相环时钟源</p>
+<p>HSI可做系统时钟的一个时钟源；也可做锁相环的输入；也可做MCO1（PA8）信号输出引脚</p>
+<p>PLL可做系统时钟的一个时钟源</p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210708165624.png" alt="时钟树-F429" /></p>
 <blockquote>
 <p>PLL是一种反馈控制电路。锁相环通常由鉴相器（PD,Phase Detector）、环路滤波器（LF,Loop Filter）和压控振荡器（VCO,Voltage Controlled Oscillator）三部分组成。</p>
-<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210708172720.png" alt="img"></p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210708172720.png" alt="img" /></p>
 <p>特点是：通过外部输入的参考信号和控制环路的压控振荡器的输入信号的相位差，来得到它们的电压差，以这个电压作为误差电压来控制振荡器的频率，使压控振荡器频率达到与输入参考信号频率按一定比例输出的频率，因锁相环可以实现输出信号频率对输入信号频率的自动跟踪，所以锁相环通常用于闭环跟踪电路。锁相环在工作过程中，当输出信号的频率成比例地反映输入信号的频率时，输出电压与输入电压保持固定的相位差值，这样输出电压与输入电压的相位就被锁住了。</p>
 </blockquote>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:邮箱">stardust</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://stardust14.com/2021/06/15/F4%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">http://stardust14.com/2021/06/15/F4%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://stardust14.com" target="_blank">STAR</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/STM32/">STM32</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/stardust14/picture/img/Number_one_gril.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/"/></a><div class="post-qr-code-desc"></div></li><li class="reward-item"><a href="/" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/"/></a><div class="post-qr-code-desc"></div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/05/13/%E9%9B%B7%E8%BE%BE/"><img class="next-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/test013.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">雷达</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">阿波罗STM32开发板底板引脚</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E6%9D%BF%E8%B5%84%E6%BA%90%E5%9B%BE"><span class="toc-number">1.1.</span> <span class="toc-text">核心板资源图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GPIO%E5%8F%A3%EF%BC%88%E9%80%9A%E7%94%A8IO%E5%8F%A3%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">GPIO口（通用IO口）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#GPIO%E5%8F%A3%E7%9A%848%E7%A7%8D%E5%B7%A5%E4%BD%9C%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.2.1.</span> <span class="toc-text">GPIO口的8种工作模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IO%E5%8F%A3%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.2.</span> <span class="toc-text">IO口的基本结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#GPIO%E5%AF%84%E5%AD%98%E5%99%A8"><span class="toc-number">1.2.3.</span> <span class="toc-text">GPIO寄存器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%91%E9%A9%AC%E7%81%AF"><span class="toc-number">1.3.</span> <span class="toc-text">跑马灯</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8C%89%E9%94%AE%E8%BE%93%E5%85%A5%E5%AE%9E%E9%AA%8C"><span class="toc-number">1.4.</span> <span class="toc-text">按键输入实验</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8D%E4%B9%A0"><span class="toc-number">1.5.</span> <span class="toc-text">复习</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#MDK%E4%BD%BF%E7%94%A8"><span class="toc-number">1.6.</span> <span class="toc-text">MDK使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%B6%E9%92%9F%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.7.</span> <span class="toc-text">时钟系统</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/gh/stardust14/picture/img/Number_one_gril.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By stardust</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.css"><script>(() => {
+<blockquote>
+<p><strong>STM32F4 有三个 PLL:</strong></p>
+<p>1） 主 PLL(PLL)由 HSE 或者 HSI 提供时钟信号，并具有两个不同的输出时钟。第一个输出 PLLP 用于生成高速的系统时钟（最高 180MHz）第二个输出 PLLQ 为 48M 时钟， 用于 USB OTG FS 时钟，随机数发生器的时钟和 SDIO时钟。</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210709095542.png" alt="img" /></p>
+<p>2） 第一个专用 PLL(PLLI2S)用于生成精确时钟， 在 I2S 和 SAI1 上实现高品质音频性能。 其中， N 是用于 PLLI2S vco 的倍频系数，其取值范围是： 192~432； R 是 I2S 时钟的分频系数，其取值范围是： 2~7； Q 是 SAI 时钟分频系数，其取值范围是： 2~15； <font color='red'>P 没用到</font>。</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210709095609.png" alt="img" /></p>
+<p>3） 第二个专用 PLL(PLLSAI)同样用于生成精确时钟，用于 SAI1 输入时钟，同时还为 LCD_TFT接口提供精确时钟。 其中， N 是用于 PLLSAI vco 的倍频系数，其取值范围是： 192~432；Q 是 SAI 时钟分频系数，其取值范围是： 2~15； R 是 LTDC 时钟的分频系数，其取值范围是： 2~7；<font color='red'> P 没用到</font>。</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210709095725.png" alt="img" /></p>
+</blockquote>
+<ul>
+<li>主PLL时钟计算</li>
+</ul>
+<p>例子：主 PLL 时钟第一个高速时钟输出 PLLP 的计算方法：配置180MHz为例：</p>
+<p>分析：主 PLL 时钟的时钟源要先经过一个分频系数为 M 的分频器，然后经过倍频系数为 N 的倍频器出来之后还需要经过一个分频系数为 P（第一个输出 PLLP）或者 Q（第二个输出 PLLQ）的分频器分频之后，最后才生成最终的主 PLL 时钟。例如我们的外部晶振选择 25MHz。同时我们设置相应的分频器 M=25，倍频器倍频系数 N=360，分频器分频系数 P=2，那么主 PLL 生成的第一个输出高速时钟 PLLP 为：</p>
+<blockquote>
+<p><strong>PLL=25MHz * N/ (M*P)=25MHz* 360 /(25*2) = 180MHz</strong></p>
+</blockquote>
+<p>配置过程如下图所示：</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210709102606.png" alt="img" /></p>
+<h2 id="时钟系统初始化"><a class="markdownIt-Anchor" href="#时钟系统初始化"></a> 时钟系统初始化</h2>
+<p>在系统进入主函数之前，首先会执行SystemInit这个函数对系统进行初始化</p>
+<p><img src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210709110732.png" alt="img" /></p>
+<p>程序源码：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SystemInit</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">/* FPU 设置------------------------------------------------------------*/</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">if</span> (__FPU_PRESENT == 1) &amp;&amp; (__FPU_USED == 1)</span></span><br><span class="line">SCB-&gt;CPACR |= ((<span class="number">3U</span>L &lt;&lt; <span class="number">10</span>*<span class="number">2</span>)|(<span class="number">3U</span>L &lt;&lt; <span class="number">11</span>*<span class="number">2</span>)); <span class="comment">/* set CP10 and CP11 Full Access */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"><span class="comment">/* 复位 RCC 时钟配置为默认配置-----------*/</span></span><br><span class="line">RCC-&gt;CR |= (<span class="keyword">uint32_t</span>)<span class="number">0x00000001</span>;<span class="comment">//打开 HSION 位，默认给的是HSI的时钟</span></span><br><span class="line">RCC-&gt;CFGR = <span class="number">0x00000000</span>;<span class="comment">//复位 CFGR 寄存器</span></span><br><span class="line">RCC-&gt;CR &amp;= (<span class="keyword">uint32_t</span>)<span class="number">0xFEF6FFFF</span>;<span class="comment">//复位 HSEON, CSSON and PLLON 位</span></span><br><span class="line">RCC-&gt;PLLCFGR = <span class="number">0x24003010</span>; <span class="comment">//复位寄存器 PLLCFGR</span></span><br><span class="line">RCC-&gt;CR &amp;= (<span class="keyword">uint32_t</span>)<span class="number">0xFFFBFFFF</span>;<span class="comment">//复位 HSEBYP 位</span></span><br><span class="line">RCC-&gt;CIR = <span class="number">0x00000000</span>;<span class="comment">//关闭所有中断</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">if</span> defined (DATA_IN_ExtSRAM) || defined (DATA_IN_ExtSDRAM)</span></span><br><span class="line">SystemInit_ExtMemCtl();</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span> <span class="comment">/* DATA_IN_ExtSRAM || DATA_IN_ExtSDRAM */</span></span></span><br><span class="line"><span class="comment">/* 配置中断向量表地址=基地址+偏移地址 ------------------*/</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> VECT_TAB_SRAM</span></span><br><span class="line">SCB-&gt;VTOR = SRAM_BASE | VECT_TAB_OFFSET;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line">SCB-&gt;VTOR = FLASH_BASE | VECT_TAB_OFFSET;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>程序的作用：</p>
+<p>1） FPU 设置<br />
+2） 复位 RCC 时钟配置为默认复位值（默认开始了 HIS）<br />
+3） 外部存储器配置<br />
+4） 中断向量表地址配置</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:邮箱">stardust</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://stardust14.com/2021/06/15/F4%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/">http://stardust14.com/2021/06/15/F4%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://stardust14.com" target="_blank">STAR</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/STM32/">STM32</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/stardust14/picture/img/test09.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/"/></a><div class="post-qr-code-desc"></div></li><li class="reward-item"><a href="/" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="/"/></a><div class="post-qr-code-desc"></div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/05/13/%E9%9B%B7%E8%BE%BE/"><img class="next-cover" src= "data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-lazy-src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/Number_one_gril.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">雷达</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%98%BF%E6%B3%A2%E7%BD%97stm32"><span class="toc-number">1.</span> <span class="toc-text"> 阿波罗STM32</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E6%9D%BF%E5%BA%95%E6%9D%BF%E5%BC%95%E8%84%9A"><span class="toc-number">1.1.</span> <span class="toc-text"> 开发板底板引脚</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E6%9D%BF%E8%B5%84%E6%BA%90%E5%9B%BE"><span class="toc-number">1.2.</span> <span class="toc-text"> 核心板资源图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gpio%E5%8F%A3%E9%80%9A%E7%94%A8io%E5%8F%A3"><span class="toc-number">1.3.</span> <span class="toc-text"> GPIO口（通用IO口）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#gpio%E5%8F%A3%E7%9A%848%E7%A7%8D%E5%B7%A5%E4%BD%9C%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.3.1.</span> <span class="toc-text"> GPIO口的8种工作模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#io%E5%8F%A3%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="toc-number">1.3.2.</span> <span class="toc-text"> IO口的基本结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gpio%E5%AF%84%E5%AD%98%E5%99%A8"><span class="toc-number">1.3.3.</span> <span class="toc-text"> GPIO寄存器</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%91%E9%A9%AC%E7%81%AF"><span class="toc-number">1.4.</span> <span class="toc-text"> 跑马灯</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8C%89%E9%94%AE%E8%BE%93%E5%85%A5%E5%AE%9E%E9%AA%8C"><span class="toc-number">1.5.</span> <span class="toc-text"> 按键输入实验</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%8D%E4%B9%A0"><span class="toc-number">1.6.</span> <span class="toc-text"> 复习</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mdk%E4%BD%BF%E7%94%A8"><span class="toc-number">1.7.</span> <span class="toc-text"> MDK使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%B6%E9%92%9F%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.8.</span> <span class="toc-text"> 时钟系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%B6%E9%92%9F%E7%B3%BB%E7%BB%9F%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">1.9.</span> <span class="toc-text"> 时钟系统初始化</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/gh/stardust14/picture/img/test09.png')"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By stardust</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.css"><script>(() => {
   document.querySelectorAll('#article-container span.katex-display').forEach(item => {
     btf.wrap(item, 'div', '', 'katex-wrap')
   })
