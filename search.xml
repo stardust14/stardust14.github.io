@@ -109,6 +109,30 @@
       </tags>
   </entry>
   <entry>
+    <title>DSP杂烩</title>
+    <url>/2020/12/04/DSP%E6%9D%82%E7%83%A9/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>随手记</h1>
+<p>一些知识和疑问</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204095119.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204100437.png" alt=""></p>
+<blockquote>
+<p>有一个疑问：之间的衔接关系！</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201205171135.png" alt="image-20201205171133171"></p>
+<h1>傅里叶变换的理解</h1>
+<p>把一个信号的全部信息全部提取出来，在频率上说：w（频率）就表示的位置，振幅表示的强度，而相位则是表示的是信息的反转与否（波的位置）。</p>
+<p>用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo separator="true">⋅</mo><mi>c</mi><mi>o</mi><mi>s</mi><mo stretchy="false">(</mo><mi>w</mi><mo separator="true">⋅</mo><mi>t</mi><mo>+</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A·cos(w·t+\phi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">A</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault">s</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">t</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">ϕ</span><span class="mclose">)</span></span></span></span>在时域上，w与时间建立起了联系，相位的改变就是在时间轴上的平移。所以，在频域上的相位就是</p>
+<p>换个角度（域）看问题！！！！</p>
+<p>若一个信号可以分解成正弦函数或着指数形式的组合，那么叠加的函数的相位可能会不同，在同一频率w下的幅度和相位一一对应。那么可以用这三个基本的信息，获取到全部的信息。（有待加深…）</p>
+]]></content>
+      <categories>
+        <category>记录&amp;烂笔头</category>
+      </categories>
+      <tags>
+        <tag>dsp</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>DSP</title>
     <url>/2021/03/08/DSP/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>DSP入门</h1>
@@ -135,30 +159,6 @@
 ]]></content>
       <categories>
         <category>dsp</category>
-      </categories>
-      <tags>
-        <tag>dsp</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DSP杂烩</title>
-    <url>/2020/12/04/DSP%E6%9D%82%E7%83%A9/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>随手记</h1>
-<p>一些知识和疑问</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204095119.png" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204100437.png" alt=""></p>
-<blockquote>
-<p>有一个疑问：之间的衔接关系！</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201205171135.png" alt="image-20201205171133171"></p>
-<h1>傅里叶变换的理解</h1>
-<p>把一个信号的全部信息全部提取出来，在频率上说：w（频率）就表示的位置，振幅表示的强度，而相位则是表示的是信息的反转与否（波的位置）。</p>
-<p>用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo separator="true">⋅</mo><mi>c</mi><mi>o</mi><mi>s</mi><mo stretchy="false">(</mo><mi>w</mi><mo separator="true">⋅</mo><mi>t</mi><mo>+</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A·cos(w·t+\phi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">A</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault">s</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">t</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">ϕ</span><span class="mclose">)</span></span></span></span>在时域上，w与时间建立起了联系，相位的改变就是在时间轴上的平移。所以，在频域上的相位就是</p>
-<p>换个角度（域）看问题！！！！</p>
-<p>若一个信号可以分解成正弦函数或着指数形式的组合，那么叠加的函数的相位可能会不同，在同一频率w下的幅度和相位一一对应。那么可以用这三个基本的信息，获取到全部的信息。（有待加深…）</p>
-]]></content>
-      <categories>
-        <category>记录&amp;烂笔头</category>
       </categories>
       <tags>
         <tag>dsp</tag>
@@ -1269,25 +1269,6 @@ a = \left[
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/01/04/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a class="header-anchor" href="#Quick-Start">¶</a>Quick Start</h2>
-<h3 id="Create-a-new-post"><a class="header-anchor" href="#Create-a-new-post">¶</a>Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a class="header-anchor" href="#Run-server">¶</a>Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a class="header-anchor" href="#Generate-static-files">¶</a>Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a class="header-anchor" href="#Deploy-to-remote-sites">¶</a>Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>hexo出现的问题</title>
     <url>/2020/07/06/hexo%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E9%94%99%E8%AF%AF/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>在进行博客编写过程中，出现了一些问题。</h1>
@@ -1387,32 +1368,6 @@ a = \left[
       </tags>
   </entry>
   <entry>
-    <title>分享&amp;记录</title>
-    <url>/2021/04/07/%E5%88%86%E4%BA%AB-%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="7066236b71bd093e2c9f53bf82622c0e9bd218274369bab2b32498af42cebc66">31242a41c922984c3c7e6ed39d2c978a39cd93922d549058b144463d7a1519272fa19dce3629f278aaed84c96a5c85cfb21d90190581ad32f40bbabf9b62b7250d325eea2bf076e2cdbf55e3c24285bf6e8b911be2da55e80e31eb116cedd161373c576f9c7eaa34b0c22d52333648cbf1b2b32bce14fc44950b046203047fc8965e48c16a0577d7647ad1aa56ad7a4484d547b335e841275628ebe6cebe760b9fd61250d56736073b6ecd28ad45846bba3f5259cc41984812e7d4a99811c18466a3d31dc1150a203670051b3b07265a6a81fde20fe261ddd6b07f9001256de791c796602283c7045ce9c585d9165b9bb33c144c782ecc9a705562505efbb8f1e77a8555cd0468f569fb23a2579cf7476dd2194d4d78b619b79d8c07b1f9c2175635095ac4bc51805ba7e820143398c9263cdef1a2746ecac1bc72bc7520025e</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-xray">
-      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Hey, password is required here.</span>
-      </label>
-      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
-      </svg>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>记录&amp;烂笔头</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>python 爬虫随笔记录</title>
     <url>/2020/10/14/python%E7%88%AC%E8%99%AB%E9%9A%8F%E7%AC%94%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>前言</h1>
@@ -1449,32 +1404,6 @@ a = \left[
       </tags>
   </entry>
   <entry>
-    <title>如何修改blog</title>
-    <url>/2020/01/05/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9blog/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="04dafb7bfcd7f56adb55c246aaec540487cc4c458e17451790694a8e56bf0c92">22064b17c03cb0c0e58c99349b6889d0c7e9d327de57f2d214b057f3875d6b37b9b20ab3b449f9d3b0ba6ffe12bb71d82eff8171349bc71e3a2c9718b358eacc07c1e2d0dcdcc94bb927d4bdef70eb39fd8e7de731fdf8f27d06339a84133e4a974b5fae5fee1809df024fdfbb238fba030fdd8003e2826f0a33da9ce588a76e8e6bc91b4049cb9065bb5b9840402572bd86834c2d0c361fdb4259dd56633b9d286b14b14b74d50d4ca10de4c2e54f118835e2ea5a28de2ac78c4f57666f83faa6cf49198dbd3f86312e8ae6475e1ad5fab6439a79e2e3cad197c03dd08b87bec442910f76725c0e06a65602b36b614a3dbe3e1d519977487176b3d65656620cd72102c0def41ebc432387d76b636e45e96da4d0d2015c57f1f6282e715a4ed94b8949ee040b776bdb60c6b41c7bf7d2bec32f7db09f41636e0ba0f33e9f5aad83d4a53e423b83dcbdea2742f32be593356c62a2968451923b154f5e036a39cbdd6fcd80a613853754fe646a0de433776dd485754f1f17b2420393e69bb66cccbe0065816d55d0b4a0706af94be5d48af9149f258b8c164dc5c499e09ce6ae2395fe58fc4673842bc1c24ed5fbe0c2d84ef9001554821f5b7139fdb01c48479e5fc02d82f3fed2c97001b18231cb475838e503f66a191b1c148a74455c18e2587f787e99433a412eef7137f5eeb3bd025997438d6778fc97b822c2636b8f6fd3424e1d4bd83594ee93ca32cd43c98af006c98be3036fd781ee160d33ffd5aa4dde42245cdadc0d845a4fec279aa520ef858301c797bdb4a57082b418ba662c283a875b6780da01692c82a3d97a138ad23767acedb7b1c656f322b618466ee97a9c5b3a13e053767448b7b7c6846b7a28c1686a94ee40d9bd6e26304dfa5c87e9e21f55970d5f91f5f7b6209a24a58845e72c8077321540be017f2fd071e3c8358ca0169a52e69907ff1c3c22e8510664c9aaa4b6102dc7b23e1a71b4518af0f7d4f9af72e49b741e4147c985f15b37dc4b70766ead339f9034a42c9a89a214e5878f7832336c3bca0a1d1fa1cbdb786017fadda2b6255f8f8591978a1566e25f9b454fdd38c75035e3d6a8167ca2831cc29e127fe69e076ce192c1e2d39ce042acbdad850df5c4a72ab31af05c489e5b3aa50e1e4b458b5caebcbc899a4035de16965dd78a327538019e25a7f57da15c66f3a99d3d78da69c82b148df2e45fda975cc111350de4d44912b27e8cb329153c8abc5e683088c99c224a7943b5c21a9fa7964756b462df80b62ada84b9b4045eb032baf01a45068f899e077940f029e45ce08b8819f40e51c85e5b7015133f2a2b0675cfc3f1fd6453e112698de4e6637844ecb93f0114ed55c1eea08e3a303820fe1d2c9ce78167c8f11a22d08cdcf237b03dafbdea47a2fe0fb7ea193c2aca177cf6518a7b7e25b68bc16b56d0e8507a2f3e3f9ba9bc8fdccf705af740fee68e91c910a09af611861a6bf5b096c1659c64a3390225136d2f3307c181002e8101fe438a07b20e68c6cb82a1a0c7b25d2e159e2c6ecfe1f93069575b63873bd542f9088dcfc07dc6169b40d3134e178167c35fbb2da0e7844663088b8a44bb472b82448bbffa32286b8552c8614f24cbe06bf073343a7251a7f8290ea4dab37949b632305320408e7eafec04c43d13e6bad11217c88fe8f973136882b107e735beec48585d45206ecff596b9e2489cacbae57e0e71283313e8f59906f20ba470b171938908876d55754c81c792298ada51eefb12d1689c7c8b5581690bfe0a9d62bf2edbbf3f771846669d506c5dc4cfe7959b57aa1282e2cfc1987719f5b288fcbf100df87a363e90e4ba712da5bbecaf5ded66481c3ce4f67385f730dd3bda7931782ed5c693bd59a7fdcb057201c7057a863d63365ba935f15ea487576f51ceb5bc26e2aeb633439c9c31b34501ab7fdc6ab4e3ed1786f6ac8c390b10a4d5b8577c3ed5feceed757ebbdbb9944e905c0ea89ce91282c7b8ba974864f2f6b22a38f375f22be76b325796de4530f33c1ac3814482d019d2981fb9d79dd42aca5076dd4f31c784491d5b2fb6453984b5657d1b62278d7e6eeb2c164ad865e33ac6dcf82e5e503e07b0d30a37a2e5a5</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-xray">
-      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Hey, password is required here.</span>
-      </label>
-      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
-      </svg>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>批注记录</title>
     <url>/2021/04/07/%E6%89%B9%E6%B3%A8%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -1501,10 +1430,56 @@ a = \left[
       </tags>
   </entry>
   <entry>
-    <title>阵列信号</title>
-    <url>/2021/02/16/%E9%98%B5%E5%88%97%E4%BF%A1%E5%8F%B7/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>协方差：一般用来刻画两个随机变量的相似程度。</p>
-]]></content>
+    <title>如何修改blog</title>
+    <url>/2020/01/05/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9blog/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="04dafb7bfcd7f56adb55c246aaec540487cc4c458e17451790694a8e56bf0c92">22064b17c03cb0c0e58c99349b6889d0c7e9d327de57f2d214b057f3875d6b37b9b20ab3b449f9d3b0ba6ffe12bb71d82eff8171349bc71e3a2c9718b358eacc07c1e2d0dcdcc94bb927d4bdef70eb39fd8e7de731fdf8f27d06339a84133e4a974b5fae5fee1809df024fdfbb238fba030fdd8003e2826f0a33da9ce588a76e8e6bc91b4049cb9065bb5b9840402572bd86834c2d0c361fdb4259dd56633b9d286b14b14b74d50d4ca10de4c2e54f118835e2ea5a28de2ac78c4f57666f83faa6cf49198dbd3f86312e8ae6475e1ad5fab6439a79e2e3cad197c03dd08b87bec442910f76725c0e06a65602b36b614a3dbe3e1d519977487176b3d65656620cd72102c0def41ebc432387d76b636e45e96da4d0d2015c57f1f6282e715a4ed94b8949ee040b776bdb60c6b41c7bf7d2bec32f7db09f41636e0ba0f33e9f5aad83d4a53e423b83dcbdea2742f32be593356c62a2968451923b154f5e036a39cbdd6fcd80a613853754fe646a0de433776dd485754f1f17b2420393e69bb66cccbe0065816d55d0b4a0706af94be5d48af9149f258b8c164dc5c499e09ce6ae2395fe58fc4673842bc1c24ed5fbe0c2d84ef9001554821f5b7139fdb01c48479e5fc02d82f3fed2c97001b18231cb475838e503f66a191b1c148a74455c18e2587f787e99433a412eef7137f5eeb3bd025997438d6778fc97b822c2636b8f6fd3424e1d4bd83594ee93ca32cd43c98af006c98be3036fd781ee160d33ffd5aa4dde42245cdadc0d845a4fec279aa520ef858301c797bdb4a57082b418ba662c283a875b6780da01692c82a3d97a138ad23767acedb7b1c656f322b618466ee97a9c5b3a13e053767448b7b7c6846b7a28c1686a94ee40d9bd6e26304dfa5c87e9e21f55970d5f91f5f7b6209a24a58845e72c8077321540be017f2fd071e3c8358ca0169a52e69907ff1c3c22e8510664c9aaa4b6102dc7b23e1a71b4518af0f7d4f9af72e49b741e4147c985f15b37dc4b70766ead339f9034a42c9a89a214e5878f7832336c3bca0a1d1fa1cbdb786017fadda2b6255f8f8591978a1566e25f9b454fdd38c75035e3d6a8167ca2831cc29e127fe69e076ce192c1e2d39ce042acbdad850df5c4a72ab31af05c489e5b3aa50e1e4b458b5caebcbc899a4035de16965dd78a327538019e25a7f57da15c66f3a99d3d78da69c82b148df2e45fda975cc111350de4d44912b27e8cb329153c8abc5e683088c99c224a7943b5c21a9fa7964756b462df80b62ada84b9b4045eb032baf01a45068f899e077940f029e45ce08b8819f40e51c85e5b7015133f2a2b0675cfc3f1fd6453e112698de4e6637844ecb93f0114ed55c1eea08e3a303820fe1d2c9ce78167c8f11a22d08cdcf237b03dafbdea47a2fe0fb7ea193c2aca177cf6518a7b7e25b68bc16b56d0e8507a2f3e3f9ba9bc8fdccf705af740fee68e91c910a09af611861a6bf5b096c1659c64a3390225136d2f3307c181002e8101fe438a07b20e68c6cb82a1a0c7b25d2e159e2c6ecfe1f93069575b63873bd542f9088dcfc07dc6169b40d3134e178167c35fbb2da0e7844663088b8a44bb472b82448bbffa32286b8552c8614f24cbe06bf073343a7251a7f8290ea4dab37949b632305320408e7eafec04c43d13e6bad11217c88fe8f973136882b107e735beec48585d45206ecff596b9e2489cacbae57e0e71283313e8f59906f20ba470b171938908876d55754c81c792298ada51eefb12d1689c7c8b5581690bfe0a9d62bf2edbbf3f771846669d506c5dc4cfe7959b57aa1282e2cfc1987719f5b288fcbf100df87a363e90e4ba712da5bbecaf5ded66481c3ce4f67385f730dd3bda7931782ed5c693bd59a7fdcb057201c7057a863d63365ba935f15ea487576f51ceb5bc26e2aeb633439c9c31b34501ab7fdc6ab4e3ed1786f6ac8c390b10a4d5b8577c3ed5feceed757ebbdbb9944e905c0ea89ce91282c7b8ba974864f2f6b22a38f375f22be76b325796de4530f33c1ac3814482d019d2981fb9d79dd42aca5076dd4f31c784491d5b2fb6453984b5657d1b62278d7e6eeb2c164ad865e33ac6dcf82e5e503e07b0d30a37a2e5a5</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-xray">
+      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Hey, password is required here.</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分享&amp;记录</title>
+    <url>/2021/04/07/%E5%88%86%E4%BA%AB-%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="7066236b71bd093e2c9f53bf82622c0e9bd218274369bab2b32498af42cebc66">31242a41c922984c3c7e6ed39d2c978a39cd93922d549058b144463d7a1519272fa19dce3629f278aaed84c96a5c85cfb21d90190581ad32f40bbabf9b62b7250d325eea2bf076e2cdbf55e3c24285bf6e8b911be2da55e80e31eb116cedd161373c576f9c7eaa34b0c22d52333648cbf1b2b32bce14fc44950b046203047fc8965e48c16a0577d7647ad1aa56ad7a4484d547b335e841275628ebe6cebe760b9fd61250d56736073b6ecd28ad45846bba3f5259cc41984812e7d4a99811c18466a3d31dc1150a203670051b3b07265a6a81fde20fe261ddd6b07f9001256de791c796602283c7045ce9c585d9165b9bb33c144c782ecc9a705562505efbb8f1e77a8555cd0468f569fb23a2579cf7476dd2194d4d78b619b79d8c07b1f9c2175635095ac4bc51805ba7e820143398c9263cdef1a2746ecac1bc72bc7520025e</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-xray">
+      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Hey, password is required here.</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>记录&amp;烂笔头</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
   </entry>
   <entry>
     <title>雷达</title>
@@ -1543,6 +1518,31 @@ a = \left[
       <tags>
         <tag>雷达</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2020/01/04/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a class="header-anchor" href="#Quick-Start">¶</a>Quick Start</h2>
+<h3 id="Create-a-new-post"><a class="header-anchor" href="#Create-a-new-post">¶</a>Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a class="header-anchor" href="#Run-server">¶</a>Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a class="header-anchor" href="#Generate-static-files">¶</a>Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a class="header-anchor" href="#Deploy-to-remote-sites">¶</a>Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>阵列信号</title>
+    <url>/2021/02/16/%E9%98%B5%E5%88%97%E4%BF%A1%E5%8F%B7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>协方差：一般用来刻画两个随机变量的相似程度。</p>
+]]></content>
   </entry>
   <entry>
     <title>F4学习记录</title>
@@ -1806,6 +1806,12 @@ WK_UP-&gt;PA0  下拉输入</p>
 <p>将不同类型的数据存放在一起，作为一个整体进行处理</p>
 </blockquote>
 <p>可扩展性强</p>
+<ol start="7">
+<li>位操作</li>
+</ol>
+<p><code>&gt;&gt;</code>右移操作，<code>&lt;&lt;</code>左移操作</p>
+<p>二进制左移运算符。将一个运算对象的各二进制位全部左移若干位（左边的二进制位丢弃，右边补0）</p>
+<p>二进制右移运算符。将一个数的各二进制位全部右移若干位，正数左补0，负数左补1，右边丢弃</p>
 <h2 id="MDK使用"><a class="header-anchor" href="#MDK使用">¶</a>MDK使用</h2>
 <ol>
 <li>书签</li>
@@ -1846,7 +1852,7 @@ WK_UP-&gt;PA0  下拉输入</p>
 </blockquote>
 <blockquote>
 <p><strong>STM32F4 有三个 PLL:</strong></p>
-<p>1） 主 PLL(PLL)由 HSE 或者 HSI 提供时钟信号，并具有两个不同的输出时钟。第一个输出 PLLP 用于生成高速的系统时钟（最高 180MHz）第二个输出 PLLQ 为 48M 时钟， 用于 USB OTG FS 时钟，随机数发生器的时钟和 SDIO时钟。</p>
+<p>1） 主 PLL(PLL)由 HSE 或者 HSI 提供时钟信号，并具有两个不同的输出时钟。第一个输出 PLLP 用于生成<strong>高速</strong>的系统时钟（最高 180MHz）第二个输出 PLLQ 为 48M 时钟， 用于 USB OTG FS 时钟，随机数发生器的时钟和SDIO时钟（SD卡）。VCO是压控振荡器。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210709095542.png" alt="img"></p>
 <p>2） 第一个专用 PLL(PLLI2S)用于生成精确时钟， 在 I2S 和 SAI1 上实现高品质音频性能。 其中， N 是用于 PLLI2S vco 的倍频系数，其取值范围是： 192~432； R 是 I2S 时钟的分频系数，其取值范围是： 2~7； Q 是 SAI 时钟分频系数，其取值范围是： 2~15； <font color='red'>P 没用到</font>。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711174756.png" alt="img"></p>
@@ -1864,6 +1870,7 @@ WK_UP-&gt;PA0  下拉输入</p>
 <p>配置过程如下图所示：</p>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711174559.png" alt=""></p>
 <h2 id="时钟系统初始化"><a class="header-anchor" href="#时钟系统初始化">¶</a>时钟系统初始化</h2>
+<h3 id="库函数版本源码分析"><a class="header-anchor" href="#库函数版本源码分析">¶</a>库函数版本源码分析</h3>
 <p>在系统进入主函数之前，首先会执行SystemInit这个函数对系统进行初始化</p>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711174453.png" alt=""></p>
 <p>程序源码：</p>
@@ -1994,6 +2001,23 @@ FLASH-&gt;ACR|=5&lt;&lt;0;     //5个CPU等待周期.</p>
 <p>如果调用函数：**u8 Sys_Clock_Set(u32 plln,u32 pllm,u32 pllp,u32 pllq)，**<strong>产生180Mhz的主频</strong></p>
 <p>**设置参数：**外部晶振为25M的时候:plln=360,pllm=25,pllp=2,pllq=8.</p>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712112224.png" alt=""></p>
+<h3 id="HAL库函数版本源码分析"><a class="header-anchor" href="#HAL库函数版本源码分析">¶</a>HAL库函数版本源码分析</h3>
+<p>HAL库主要是把寄存器进行封装，然后把一些参数合并到一个结构体，通过调用结构体的方式对寄存器进行赋值，间接的完成对STM32寄存器的配置。</p>
+<p>主要是下面两个结构体：</p>
+<p>1.RCC_OscInitTypeDef结构体：</p>
+<blockquote>
+<p>从结构体的名称中可以看出，这个结构体主要是选择时钟源，然后是时钟的状态（开启还是关闭）</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210713165115.png" alt=""></p>
+<p>可以看到RCC_OscInitTypeDef 里面还嵌套了一个RCC_PLLInitTypeDef结构体，主要是用于主PLL配置用的。比如设置M分频，vco倍频等。</p>
+<ul>
+<li>RCC_PLLInitTypeDef 结构体如下:</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210713165242.png" alt=""></p>
+<p>所以，第一步是定义一个<font color='red'>RCC_OscInitTypeDef</font>结构体变量，并给这个结构体变量赋值，然后调用，HAL_RCC_OscConfig函数(时钟源配置函数)，把这个结构体变量传进去，使设置生效。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">RCC_OscInitTypeDef RCC_OscInitStructure; </span><br><span class="line">RCC_ClkInitTypeDef RCC_ClkInitStructure;</span><br><span class="line"></span><br><span class="line">__HAL_RCC_PWR_CLK_ENABLE(); <span class="comment">//使能PWR时钟</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//下面这个设置用来设置调压器输出电压级别，以便在器件未以最大频率工作</span></span><br><span class="line"><span class="comment">//时使性能与功耗实现平衡，此功能只有STM32F42xx和STM32F43xx器件有，</span></span><br><span class="line">__HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);<span class="comment">//设置调压器输出电压级别1</span></span><br><span class="line"></span><br><span class="line">RCC_OscInitStructure.OscillatorType=RCC_OSCILLATORTYPE_HSE;    <span class="comment">//时钟源为HSE</span></span><br><span class="line">RCC_OscInitStructure.HSEState=RCC_HSE_ON;                      <span class="comment">//打开HSE</span></span><br><span class="line">RCC_OscInitStructure.PLL.PLLState=RCC_PLL_ON;<span class="comment">//打开PLL</span></span><br><span class="line">RCC_OscInitStructure.PLL.PLLSource=RCC_PLLSOURCE_HSE;<span class="comment">//PLL时钟源选择HSE</span></span><br><span class="line">RCC_OscInitStructure.PLL.PLLM=pllm; <span class="comment">//主PLL和音频PLL分频系数(PLL之前的分频),取值范围:2~63.</span></span><br><span class="line">RCC_OscInitStructure.PLL.PLLN=plln; <span class="comment">//主PLL倍频系数(PLL倍频),取值范围:64~432.  </span></span><br><span class="line">RCC_OscInitStructure.PLL.PLLP=pllp; <span class="comment">//系统时钟的主PLL分频系数(PLL之后的分频),取值范围:2,4,6,8.(仅限这4个值!)</span></span><br><span class="line">RCC_OscInitStructure.PLL.PLLQ=pllq; <span class="comment">//USB/SDIO/随机数产生器等的主PLL分频系数(PLL之后的分频),取值范围:2~15.</span></span><br><span class="line">ret=HAL_RCC_OscConfig(&amp;RCC_OscInitStructure);<span class="comment">//初始化</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210713165858.png" alt=""></p>
+<p>下面看一下<font color='red'>HAL_RCC_OscConfig</font>函数</p>
 ]]></content>
       <categories>
         <category>记录&amp;烂笔头</category>
