@@ -109,30 +109,6 @@
       </tags>
   </entry>
   <entry>
-    <title>DSP杂烩</title>
-    <url>/2020/12/04/DSP%E6%9D%82%E7%83%A9/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>随手记</h1>
-<p>一些知识和疑问</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204095119.png" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204100437.png" alt=""></p>
-<blockquote>
-<p>有一个疑问：之间的衔接关系！</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201205171135.png" alt="image-20201205171133171"></p>
-<h1>傅里叶变换的理解</h1>
-<p>把一个信号的全部信息全部提取出来，在频率上说：w（频率）就表示的位置，振幅表示的强度，而相位则是表示的是信息的反转与否（波的位置）。</p>
-<p>用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo separator="true">⋅</mo><mi>c</mi><mi>o</mi><mi>s</mi><mo stretchy="false">(</mo><mi>w</mi><mo separator="true">⋅</mo><mi>t</mi><mo>+</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A·cos(w·t+\phi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">A</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault">s</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">t</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">ϕ</span><span class="mclose">)</span></span></span></span>在时域上，w与时间建立起了联系，相位的改变就是在时间轴上的平移。所以，在频域上的相位就是</p>
-<p>换个角度（域）看问题！！！！</p>
-<p>若一个信号可以分解成正弦函数或着指数形式的组合，那么叠加的函数的相位可能会不同，在同一频率w下的幅度和相位一一对应。那么可以用这三个基本的信息，获取到全部的信息。（有待加深…）</p>
-]]></content>
-      <categories>
-        <category>记录&amp;烂笔头</category>
-      </categories>
-      <tags>
-        <tag>dsp</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>DSP</title>
     <url>/2021/03/08/DSP/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>DSP入门</h1>
@@ -159,6 +135,30 @@
 ]]></content>
       <categories>
         <category>dsp</category>
+      </categories>
+      <tags>
+        <tag>dsp</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DSP杂烩</title>
+    <url>/2020/12/04/DSP%E6%9D%82%E7%83%A9/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>随手记</h1>
+<p>一些知识和疑问</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204095119.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201204100437.png" alt=""></p>
+<blockquote>
+<p>有一个疑问：之间的衔接关系！</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20201205171135.png" alt="image-20201205171133171"></p>
+<h1>傅里叶变换的理解</h1>
+<p>把一个信号的全部信息全部提取出来，在频率上说：w（频率）就表示的位置，振幅表示的强度，而相位则是表示的是信息的反转与否（波的位置）。</p>
+<p>用<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mo separator="true">⋅</mo><mi>c</mi><mi>o</mi><mi>s</mi><mo stretchy="false">(</mo><mi>w</mi><mo separator="true">⋅</mo><mi>t</mi><mo>+</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">A·cos(w·t+\phi)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">A</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span><span class="mord mathdefault">o</span><span class="mord mathdefault">s</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mpunct">⋅</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">t</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">ϕ</span><span class="mclose">)</span></span></span></span>在时域上，w与时间建立起了联系，相位的改变就是在时间轴上的平移。所以，在频域上的相位就是</p>
+<p>换个角度（域）看问题！！！！</p>
+<p>若一个信号可以分解成正弦函数或着指数形式的组合，那么叠加的函数的相位可能会不同，在同一频率w下的幅度和相位一一对应。那么可以用这三个基本的信息，获取到全部的信息。（有待加深…）</p>
+]]></content>
+      <categories>
+        <category>记录&amp;烂笔头</category>
       </categories>
       <tags>
         <tag>dsp</tag>
@@ -1148,6 +1148,22 @@ a = \left[
       </tags>
   </entry>
   <entry>
+    <title>first blog</title>
+    <url>/2020/01/04/first-blog/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>first blog</p>
+<p>内容：又重新来了一遍！</p>
+<hr>
+<p>second</p>
+<p>内容：太不容易了。</p>
+<hr>
+<p>参考：</p>
+<p>来自B站codecheeep</p>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>butterfly主题美化</title>
     <url>/2021/04/08/butterfly%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>butterfly主题美化记录</h1>
@@ -1253,20 +1269,23 @@ a = \left[
       </tags>
   </entry>
   <entry>
-    <title>first blog</title>
-    <url>/2020/01/04/first-blog/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>first blog</p>
-<p>内容：又重新来了一遍！</p>
-<hr>
-<p>second</p>
-<p>内容：太不容易了。</p>
-<hr>
-<p>参考：</p>
-<p>来自B站codecheeep</p>
+    <title>Hello World</title>
+    <url>/2020/01/04/hello-world/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a class="header-anchor" href="#Quick-Start">¶</a>Quick Start</h2>
+<h3 id="Create-a-new-post"><a class="header-anchor" href="#Create-a-new-post">¶</a>Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a class="header-anchor" href="#Run-server">¶</a>Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a class="header-anchor" href="#Generate-static-files">¶</a>Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a class="header-anchor" href="#Deploy-to-remote-sites">¶</a>Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
   </entry>
   <entry>
     <title>hexo出现的问题</title>
@@ -1368,6 +1387,58 @@ a = \left[
       </tags>
   </entry>
   <entry>
+    <title>分享&amp;记录</title>
+    <url>/2021/04/07/%E5%88%86%E4%BA%AB-%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="7066236b71bd093e2c9f53bf82622c0e9bd218274369bab2b32498af42cebc66">31242a41c922984c3c7e6ed39d2c978a39cd93922d549058b144463d7a1519272fa19dce3629f278aaed84c96a5c85cfb21d90190581ad32f40bbabf9b62b7250d325eea2bf076e2cdbf55e3c24285bf6e8b911be2da55e80e31eb116cedd161373c576f9c7eaa34b0c22d52333648cbf1b2b32bce14fc44950b046203047fc8965e48c16a0577d7647ad1aa56ad7a4484d547b335e841275628ebe6cebe760b9fd61250d56736073b6ecd28ad45846bba3f5259cc41984812e7d4a99811c18466a3d31dc1150a203670051b3b07265a6a81fde20fe261ddd6b07f9001256de791c796602283c7045ce9c585d9165b9bb33c144c782ecc9a705562505efbb8f1e77a8555cd0468f569fb23a2579cf7476dd2194d4d78b619b79d8c07b1f9c2175635095ac4bc51805ba7e820143398c9263cdef1a2746ecac1bc72bc7520025e</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-xray">
+      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Hey, password is required here.</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>记录&amp;烂笔头</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何修改blog</title>
+    <url>/2020/01/05/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9blog/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="04dafb7bfcd7f56adb55c246aaec540487cc4c458e17451790694a8e56bf0c92">22064b17c03cb0c0e58c99349b6889d0c7e9d327de57f2d214b057f3875d6b37b9b20ab3b449f9d3b0ba6ffe12bb71d82eff8171349bc71e3a2c9718b358eacc07c1e2d0dcdcc94bb927d4bdef70eb39fd8e7de731fdf8f27d06339a84133e4a974b5fae5fee1809df024fdfbb238fba030fdd8003e2826f0a33da9ce588a76e8e6bc91b4049cb9065bb5b9840402572bd86834c2d0c361fdb4259dd56633b9d286b14b14b74d50d4ca10de4c2e54f118835e2ea5a28de2ac78c4f57666f83faa6cf49198dbd3f86312e8ae6475e1ad5fab6439a79e2e3cad197c03dd08b87bec442910f76725c0e06a65602b36b614a3dbe3e1d519977487176b3d65656620cd72102c0def41ebc432387d76b636e45e96da4d0d2015c57f1f6282e715a4ed94b8949ee040b776bdb60c6b41c7bf7d2bec32f7db09f41636e0ba0f33e9f5aad83d4a53e423b83dcbdea2742f32be593356c62a2968451923b154f5e036a39cbdd6fcd80a613853754fe646a0de433776dd485754f1f17b2420393e69bb66cccbe0065816d55d0b4a0706af94be5d48af9149f258b8c164dc5c499e09ce6ae2395fe58fc4673842bc1c24ed5fbe0c2d84ef9001554821f5b7139fdb01c48479e5fc02d82f3fed2c97001b18231cb475838e503f66a191b1c148a74455c18e2587f787e99433a412eef7137f5eeb3bd025997438d6778fc97b822c2636b8f6fd3424e1d4bd83594ee93ca32cd43c98af006c98be3036fd781ee160d33ffd5aa4dde42245cdadc0d845a4fec279aa520ef858301c797bdb4a57082b418ba662c283a875b6780da01692c82a3d97a138ad23767acedb7b1c656f322b618466ee97a9c5b3a13e053767448b7b7c6846b7a28c1686a94ee40d9bd6e26304dfa5c87e9e21f55970d5f91f5f7b6209a24a58845e72c8077321540be017f2fd071e3c8358ca0169a52e69907ff1c3c22e8510664c9aaa4b6102dc7b23e1a71b4518af0f7d4f9af72e49b741e4147c985f15b37dc4b70766ead339f9034a42c9a89a214e5878f7832336c3bca0a1d1fa1cbdb786017fadda2b6255f8f8591978a1566e25f9b454fdd38c75035e3d6a8167ca2831cc29e127fe69e076ce192c1e2d39ce042acbdad850df5c4a72ab31af05c489e5b3aa50e1e4b458b5caebcbc899a4035de16965dd78a327538019e25a7f57da15c66f3a99d3d78da69c82b148df2e45fda975cc111350de4d44912b27e8cb329153c8abc5e683088c99c224a7943b5c21a9fa7964756b462df80b62ada84b9b4045eb032baf01a45068f899e077940f029e45ce08b8819f40e51c85e5b7015133f2a2b0675cfc3f1fd6453e112698de4e6637844ecb93f0114ed55c1eea08e3a303820fe1d2c9ce78167c8f11a22d08cdcf237b03dafbdea47a2fe0fb7ea193c2aca177cf6518a7b7e25b68bc16b56d0e8507a2f3e3f9ba9bc8fdccf705af740fee68e91c910a09af611861a6bf5b096c1659c64a3390225136d2f3307c181002e8101fe438a07b20e68c6cb82a1a0c7b25d2e159e2c6ecfe1f93069575b63873bd542f9088dcfc07dc6169b40d3134e178167c35fbb2da0e7844663088b8a44bb472b82448bbffa32286b8552c8614f24cbe06bf073343a7251a7f8290ea4dab37949b632305320408e7eafec04c43d13e6bad11217c88fe8f973136882b107e735beec48585d45206ecff596b9e2489cacbae57e0e71283313e8f59906f20ba470b171938908876d55754c81c792298ada51eefb12d1689c7c8b5581690bfe0a9d62bf2edbbf3f771846669d506c5dc4cfe7959b57aa1282e2cfc1987719f5b288fcbf100df87a363e90e4ba712da5bbecaf5ded66481c3ce4f67385f730dd3bda7931782ed5c693bd59a7fdcb057201c7057a863d63365ba935f15ea487576f51ceb5bc26e2aeb633439c9c31b34501ab7fdc6ab4e3ed1786f6ac8c390b10a4d5b8577c3ed5feceed757ebbdbb9944e905c0ea89ce91282c7b8ba974864f2f6b22a38f375f22be76b325796de4530f33c1ac3814482d019d2981fb9d79dd42aca5076dd4f31c784491d5b2fb6453984b5657d1b62278d7e6eeb2c164ad865e33ac6dcf82e5e503e07b0d30a37a2e5a5</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-xray">
+      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Hey, password is required here.</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>python 爬虫随笔记录</title>
     <url>/2020/10/14/python%E7%88%AC%E8%99%AB%E9%9A%8F%E7%AC%94%E8%AE%B0%E5%BD%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>前言</h1>
@@ -1404,82 +1475,10 @@ a = \left[
       </tags>
   </entry>
   <entry>
-    <title>批注记录</title>
-    <url>/2021/04/07/%E6%89%B9%E6%B3%A8%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="2fcf70f93106af4f44a6b4a9317f1bf81351f4e94bb6f1323459216d14f02c18">22064b17c03cb0c0e58c99349b6889d0c7e9d327de57f2d214b057f3875d6b37b9b20ab3b449f9d3b0ba6ffe12bb71d82eff8171349bc71e3a2c9718b358eacc07c1e2d0dcdcc94bb927d4bdef70eb39fd8e7de731fdf8f27d06339a84133e4a974b5fae5fee1809df024fdfbb238fba030fdd8003e2826f0a33da9ce588a76e8e6bc91b4049cb9065bb5b9840402572bd86834c2d0c361fdb4259dd56633b9d286b14b14b74d50d4ca10de4c2e54f118835e2ea5a28de2ac78c4f57666f83faa6cf49198dbd3f86312e8ae6475e1ad55bc0f991fa504124763e450733221c2a781fb4c5fbae0d7123703d7ac9a38542095b3da435e03cc3247b4eff26b05bc0b9e2a2c706e61562c7bb934180842f9b6dc301690938c4f21c78468483f3e95d8b5dcc7048e9b21da20cd49dde4a8cd683cfc91feffd222c011316f66497312669c395d166bbc4e9518b0008cf6b92975c76b75ea7645421c9d7e156f6d824d2c0892d2b3835cb34e29b6164ac5b171e91b073be40a5f07d833b0ba2047deb5c5681bf1fb48fb4af8bb0e2493e2b3b3e98279dbcdb3cb4aeb62164bf28ae94eb18e587b9ae3d7340b674b5f9e1f77e5e60c56c06cfa36d7460e8e19b4156cc0b35de9e2506da358011c8d20166305cbedbaa6a5a43e35dd4f1120bf05c3a51149693768289c76395859688f7c40ac480bee9427637213b8611f31b86f53e56d25b0247028467efd7a299c21016038df477e1219595d90fcfdc57fba758f96301f5146be17f7f14a48229757225def14d3c30eb76c32c626a63606bad9c98bda3e69c6268be1f5954e80690f082bf9027805bc03d4096deeb9ccb9cb48b2c6db5e42ae71d320fae1a5ed921463cd37936f0cd0225ca9124108d0abb447665cff099be802002607c1db5c7608155344f315d28759b32b514948d47a45574124d9b3e6574ad48e371cec8cec9a50fe7d2376d7bb18ed6604f5da90b43818367f002f26aef4d7bbdfc84f1dc0957a9f5ed72809c5642a90b5823f3f98e8842cd1c800e9b2147bba8ccf0cd51d8473a2d4d2d24f53dcf6cb5cfb6749f5d0683d3ad3db3d179878a4b60b02ef9184de71532847e6ed2747ed50c01f0ab899b938f64b98c09a0dad54d087533805dc3eb56b5fcf1bc41f1416e0d1ac664dd22764c7e222a590fd133459ad9566ba24a997e0fe2d1b9948fee107708e334353a08b1bb39c62357fa125768f0f8946f86b93a14feb91a334e0517a4c086c7171c03c3fd9287a4971411042a380d562a88163c0aab3d7496559144df81f103e0f1028598cdc7632dde89026b29d6e6763cf5386ea826f7ae0212d2f0c72720929b60b88d59e10bf3f58a7e0544a1f87786018230fa970b072e05f32c014b06a3886f2f8af1443d921285384ebd6b8eab3e0505a39f309afef9c7f2e2d2a7a0727483e195c4b3dbb3609c0793b497647c21b4015c71eecf2e802e2b13e40c0d008f547c79d327028eab87299957fa33075fd43ffe2461ddc83982c4c8000aa50f5e36649d147aaebc9cd91c0f8d18577a08fd8e8b65a2f5a017454efdec16f6cfea82e59ae3e08d2bb550606ba5e632aaa828ce85b3ec25a6bfcb87e484743d5d7faf354e676e8ef4f658766e13848b2b337d0b4ee60490302e0f45ba4364762313e27ddeac613a36865942f94e7eb1d0303be635165332bceb8c6227c7075b825d80cd8653e502d54213bd8f2a5b0fe6d0d718b2d25a299ea8ca868f26d5647af9080cb5eb8bc1f6d3b2363b452fdfa5cee1a31d03d6a2cfa36a0e7806da9043630257cb159a2a36b6cfc67c1af4baf7e2d802193e883890ac38e14209dad36a5cba95696e635d4d1d5b08d94343d8f54de79f67932f16914214594230b1ef79b6f6f0abf9853d97df149480f1f9b32087eeda3df0181431201c82e597ff5d7554874b7a87f1f171053046e7b5f438a23c4705a999bccffedf1643f35a351fcdea90fe1fb6c15a277cf7a8c852e028bbc94a201ac62ea61cbed40107fdf8a4e33010f4c56f44f8779a3a7743a585bf632bf53ac21d2f5a7b9c3380f08685157e1392d48c31f373057d6f02b8ca66924aeca4f1f1649bbccf0c1e65317c3e7889d00209ffd2052d75f400f7ea67d307c7382e5e0726dc1b1a69f35d1c430aefe96b09d9e387</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-xray">
-      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Hey, password is required here.</span>
-      </label>
-      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
-      </svg>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>如何修改blog</title>
-    <url>/2020/01/05/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9blog/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="04dafb7bfcd7f56adb55c246aaec540487cc4c458e17451790694a8e56bf0c92">22064b17c03cb0c0e58c99349b6889d0c7e9d327de57f2d214b057f3875d6b37b9b20ab3b449f9d3b0ba6ffe12bb71d82eff8171349bc71e3a2c9718b358eacc07c1e2d0dcdcc94bb927d4bdef70eb39fd8e7de731fdf8f27d06339a84133e4a974b5fae5fee1809df024fdfbb238fba030fdd8003e2826f0a33da9ce588a76e8e6bc91b4049cb9065bb5b9840402572bd86834c2d0c361fdb4259dd56633b9d286b14b14b74d50d4ca10de4c2e54f118835e2ea5a28de2ac78c4f57666f83faa6cf49198dbd3f86312e8ae6475e1ad5fab6439a79e2e3cad197c03dd08b87bec442910f76725c0e06a65602b36b614a3dbe3e1d519977487176b3d65656620cd72102c0def41ebc432387d76b636e45e96da4d0d2015c57f1f6282e715a4ed94b8949ee040b776bdb60c6b41c7bf7d2bec32f7db09f41636e0ba0f33e9f5aad83d4a53e423b83dcbdea2742f32be593356c62a2968451923b154f5e036a39cbdd6fcd80a613853754fe646a0de433776dd485754f1f17b2420393e69bb66cccbe0065816d55d0b4a0706af94be5d48af9149f258b8c164dc5c499e09ce6ae2395fe58fc4673842bc1c24ed5fbe0c2d84ef9001554821f5b7139fdb01c48479e5fc02d82f3fed2c97001b18231cb475838e503f66a191b1c148a74455c18e2587f787e99433a412eef7137f5eeb3bd025997438d6778fc97b822c2636b8f6fd3424e1d4bd83594ee93ca32cd43c98af006c98be3036fd781ee160d33ffd5aa4dde42245cdadc0d845a4fec279aa520ef858301c797bdb4a57082b418ba662c283a875b6780da01692c82a3d97a138ad23767acedb7b1c656f322b618466ee97a9c5b3a13e053767448b7b7c6846b7a28c1686a94ee40d9bd6e26304dfa5c87e9e21f55970d5f91f5f7b6209a24a58845e72c8077321540be017f2fd071e3c8358ca0169a52e69907ff1c3c22e8510664c9aaa4b6102dc7b23e1a71b4518af0f7d4f9af72e49b741e4147c985f15b37dc4b70766ead339f9034a42c9a89a214e5878f7832336c3bca0a1d1fa1cbdb786017fadda2b6255f8f8591978a1566e25f9b454fdd38c75035e3d6a8167ca2831cc29e127fe69e076ce192c1e2d39ce042acbdad850df5c4a72ab31af05c489e5b3aa50e1e4b458b5caebcbc899a4035de16965dd78a327538019e25a7f57da15c66f3a99d3d78da69c82b148df2e45fda975cc111350de4d44912b27e8cb329153c8abc5e683088c99c224a7943b5c21a9fa7964756b462df80b62ada84b9b4045eb032baf01a45068f899e077940f029e45ce08b8819f40e51c85e5b7015133f2a2b0675cfc3f1fd6453e112698de4e6637844ecb93f0114ed55c1eea08e3a303820fe1d2c9ce78167c8f11a22d08cdcf237b03dafbdea47a2fe0fb7ea193c2aca177cf6518a7b7e25b68bc16b56d0e8507a2f3e3f9ba9bc8fdccf705af740fee68e91c910a09af611861a6bf5b096c1659c64a3390225136d2f3307c181002e8101fe438a07b20e68c6cb82a1a0c7b25d2e159e2c6ecfe1f93069575b63873bd542f9088dcfc07dc6169b40d3134e178167c35fbb2da0e7844663088b8a44bb472b82448bbffa32286b8552c8614f24cbe06bf073343a7251a7f8290ea4dab37949b632305320408e7eafec04c43d13e6bad11217c88fe8f973136882b107e735beec48585d45206ecff596b9e2489cacbae57e0e71283313e8f59906f20ba470b171938908876d55754c81c792298ada51eefb12d1689c7c8b5581690bfe0a9d62bf2edbbf3f771846669d506c5dc4cfe7959b57aa1282e2cfc1987719f5b288fcbf100df87a363e90e4ba712da5bbecaf5ded66481c3ce4f67385f730dd3bda7931782ed5c693bd59a7fdcb057201c7057a863d63365ba935f15ea487576f51ceb5bc26e2aeb633439c9c31b34501ab7fdc6ab4e3ed1786f6ac8c390b10a4d5b8577c3ed5feceed757ebbdbb9944e905c0ea89ce91282c7b8ba974864f2f6b22a38f375f22be76b325796de4530f33c1ac3814482d019d2981fb9d79dd42aca5076dd4f31c784491d5b2fb6453984b5657d1b62278d7e6eeb2c164ad865e33ac6dcf82e5e503e07b0d30a37a2e5a5</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-xray">
-      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Hey, password is required here.</span>
-      </label>
-      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
-      </svg>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>分享&amp;记录</title>
-    <url>/2021/04/07/%E5%88%86%E4%BA%AB-%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="7066236b71bd093e2c9f53bf82622c0e9bd218274369bab2b32498af42cebc66">31242a41c922984c3c7e6ed39d2c978a39cd93922d549058b144463d7a1519272fa19dce3629f278aaed84c96a5c85cfb21d90190581ad32f40bbabf9b62b7250d325eea2bf076e2cdbf55e3c24285bf6e8b911be2da55e80e31eb116cedd161373c576f9c7eaa34b0c22d52333648cbf1b2b32bce14fc44950b046203047fc8965e48c16a0577d7647ad1aa56ad7a4484d547b335e841275628ebe6cebe760b9fd61250d56736073b6ecd28ad45846bba3f5259cc41984812e7d4a99811c18466a3d31dc1150a203670051b3b07265a6a81fde20fe261ddd6b07f9001256de791c796602283c7045ce9c585d9165b9bb33c144c782ecc9a705562505efbb8f1e77a8555cd0468f569fb23a2579cf7476dd2194d4d78b619b79d8c07b1f9c2175635095ac4bc51805ba7e820143398c9263cdef1a2746ecac1bc72bc7520025e</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-xray">
-      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Hey, password is required here.</span>
-      </label>
-      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
-      </svg>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>记录&amp;烂笔头</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
+    <title>阵列信号</title>
+    <url>/2021/02/16/%E9%98%B5%E5%88%97%E4%BF%A1%E5%8F%B7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>协方差：一般用来刻画两个随机变量的相似程度。</p>
+]]></content>
   </entry>
   <entry>
     <title>雷达</title>
@@ -1520,510 +1519,29 @@ a = \left[
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2020/01/04/hello-world/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a class="header-anchor" href="#Quick-Start">¶</a>Quick Start</h2>
-<h3 id="Create-a-new-post"><a class="header-anchor" href="#Create-a-new-post">¶</a>Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a class="header-anchor" href="#Run-server">¶</a>Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a class="header-anchor" href="#Generate-static-files">¶</a>Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a class="header-anchor" href="#Deploy-to-remote-sites">¶</a>Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>阵列信号</title>
-    <url>/2021/02/16/%E9%98%B5%E5%88%97%E4%BF%A1%E5%8F%B7/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>协方差：一般用来刻画两个随机变量的相似程度。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>F4学习记录</title>
-    <url>/2021/06/15/F4%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>阿波罗STM32</h1>
-<h2 id="开发板底板引脚"><a class="header-anchor" href="#开发板底板引脚">¶</a>开发板底板引脚</h2>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210615090214.png" alt=""></p>
-<blockquote>
-<p>JTAG调试，需要占用5个IO端口；SWD则只需要2个IO端口</p>
-<p>KEY_UP 是高电平有效，而 KEY0、KEY1 和 KEY2 是低电平有效</p>
-</blockquote>
-<h2 id="核心板资源图"><a class="header-anchor" href="#核心板资源图">¶</a>核心板资源图</h2>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210615090543.png" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616094711.png" alt=""></p>
-<h2 id="GPIO口（通用IO口）"><a class="header-anchor" href="#GPIO口（通用IO口）">¶</a>GPIO口（通用IO口）</h2>
-<p>STM32F429芯片有176个引脚，其中140个可以作为GPIO口。</p>
-<p>一共9组IO：PA~PI；其中PA-PH每组16个IO口，PI只有PI0-PI11（12）,一共有140个IO口（16*8+12=140）</p>
-<p>复用可以大大节省IO口的资源。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616102931.png" alt=""></p>
-<p>STM32引脚的功能：查找数据手册</p>
-<p>FT可以容忍5V输入</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616105528.png" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616105607.png" alt=""></p>
-<h3 id="GPIO口的8种工作模式"><a class="header-anchor" href="#GPIO口的8种工作模式">¶</a>GPIO口的8种工作模式</h3>
-<ul>
-<li>4种输入模式：</li>
-</ul>
-<p>输入浮空</p>
-<p>输入上拉</p>
-<p>输入下拉</p>
-<p>模拟输入</p>
-<ul>
-<li>4种输出模式（带上下拉）：</li>
-</ul>
-<p>开漏输出（带上拉或者下拉）</p>
-<p>开漏复用功能（带上拉或者下拉）</p>
-<p>推挽式输出（带上拉或者下拉）</p>
-<p>推挽式复用功能（带上拉或者下拉 ）</p>
-<ul>
-<li>4种最大输出速度</li>
-</ul>
-<p>-2MHz    低速</p>
-<p>-25MHz  中速</p>
-<p>-50MHz  快速</p>
-<p>-100MHz  高速</p>
-<h3 id="IO口的基本结构"><a class="header-anchor" href="#IO口的基本结构">¶</a>IO口的基本结构</h3>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616112000.png" alt=""></p>
-<p>GPIO口的输入工作模式1——输入浮空模式</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616113506.png" alt=""></p>
-<blockquote>
-<p>在浮空状态下，上拉下拉没有设置（不起作用），输出驱动器不起作用，模拟通道，复用功能输入也不起作用，直接到输入数据寄存器被CPU读取</p>
-</blockquote>
-<p>GPIO的输入工作方式2——输入上拉模式</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616113917.png" alt=""></p>
-<blockquote>
-<p>在此模式下，上拉起作用，下拉不起作用，其他和浮空模式一样，被保存在输入数据寄存器</p>
-</blockquote>
-<p>GPIO的输入工作模式3——输入下拉模式</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616114348.png" alt=""></p>
-<blockquote>
-<p>与上拉模式类似，下拉起作用，上拉不起作用</p>
-</blockquote>
-<p>GPIO的输入工作模式4——模拟模式</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616114959.png" alt=""></p>
-<blockquote>
-<p>在信号到达TTL施密特触发器之前，会直接到模拟通道（也就是TTL施密特触发器开关是关闭的）；上拉和下拉是不起作用的</p>
-</blockquote>
-<p>GPIO的输出工作模式1——开漏输出模式</p>
-<blockquote>
-<p>输出不了高电平</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616160210.png" alt=""></p>
-<blockquote>
-<p>输入为1时，N-mos处于截至状态，对IO口电平没有影响，若是输出1，则需要接一个上拉电阻与电源相接</p>
-<p>输入为0时，N-mos处于导通状态 ，IO口会是0，输出0，接下拉电阻</p>
-<p>CPU可以通过输入数据寄存器读取到IO口的输出状态（1/0）</p>
-</blockquote>
-<p>GPIO的输出工作模式2——开漏复用输出模式</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616160716.png" alt=""></p>
-<blockquote>
-<p>此时，工作在复用功能输出</p>
-</blockquote>
-<p>GPIO的输出工作模式3——推挽输出模式</p>
-<blockquote>
-<p>推：灌电流 可以达到25mA（mos管内阻小）</p>
-<p>挽：拉电流</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616161250.png" alt=""></p>
-<blockquote>
-<p>此时，P-mos和N-mos都是工作的</p>
-<p>若输入为1，则P-mos导通，N-mos截至，输出VDD高电平</p>
-<p>若输入为0，则P-mos截至，N-mos导通，输出0低电平</p>
-</blockquote>
-<p>GPIO的输出工作模式4——推挽复用输出模式</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616161504.png" alt=""></p>
-<p>推挽输出：可以输出高低电平，连接数字器件</p>
-<p>开漏输出：只可以输出强低电平，高电平得靠外部电阻拉高。输出端相当于三极管的集电极。要得到高电平状态需要上拉电阻才行，适合于做电流性的驱动，其吸收电流的能力相对强。</p>
-<ul>
-<li>上电复位后IO口的状态</li>
-</ul>
-<p>上电复位后，GPIO默认为输入浮空状态，部分特殊功能引脚为特定状态</p>
-<p>复位后，调试引脚处于复位功能的上拉/下拉状态：</p>
-<p>PA15：JTDI处于上拉状态<br>
-PA14:JTCK/SWCLK处于下拉状态<br>
-PA13:JTMS/SWDAT处于下拉状态<br>
-PB4:NJTRST处于上拉状态<br>
-PB3:JTDO处于浮空状态</p>
-<h3 id="GPIO寄存器"><a class="header-anchor" href="#GPIO寄存器">¶</a>GPIO寄存器</h3>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616171206.png" alt=""></p>
-<p>1.端口模式寄存器</p>
-<blockquote>
-<p>x=A…K是对应的208个引脚的CPU；对于STM32F429来说，只用到x=A…I</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616172058.png" alt=""></p>
-<blockquote>
-<p>两位控制1个IO端口</p>
-</blockquote>
-<p>2.端口输出类型寄存器(GPIOx_OTYPER)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616172532.png" alt=""></p>
-<blockquote>
-<p>每一位控制一个IO口，只用了低16位，16个IO口。</p>
-</blockquote>
-<p>3.端口输出速度寄存器(GPIOx_OSPEEDR)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616173713.png" alt=""></p>
-<blockquote>
-<p>同32位寄存器，每两位控制一个IO口。</p>
-</blockquote>
-<p>4.端口上拉/下拉寄存器(GPIOx_PUPDR)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616174212.png" alt=""></p>
-<div class='tip' ><p>至此，通过这4个寄存器的配置就可以达到GPIO的8种工作模式<p></div>
-<p>5.端口输入数据寄存器(GPIOx_IDR)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616174807.png" alt=""></p>
-<blockquote>
-<p>低16位有效，输入是低电平还是高电平写入在此寄存器中</p>
-</blockquote>
-<p>6.端口输出数据寄存器(GPIOx_ODR)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616175955.png" alt=""></p>
-<blockquote>
-<p>低16位，每一位控制一个输出电平；设置为1则输出高电平，设置为0则输出低电平</p>
-</blockquote>
-<p>7.端口置位/复位寄存器(GPIOx_BSRR)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616180029.png" alt=""></p>
-<blockquote>
-<p>控制IO口输出电平状态，低16位是端口置位位，高16位是端口复位位；</p>
-<p>低16位：设置为1则输出高电平，设置为0则不产生影响</p>
-<p>高16位：设置为1则输出低电平，设置为0则不产生影响</p>
-<p>优点：不用读写与ODR相比</p>
-</blockquote>
-<div class='tip warning' ><p>上图中的位设置/清除寄存器就是BSRR；输出数据寄存器就是ODR，这就是两者的关系<p></div>
-<p>8.端口配置锁定寄存器(GPIOx_LCKR)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616180101.png" alt=""></p>
-<blockquote>
-<p>低17位使用</p>
-</blockquote>
-<p>9.复用功能寄存器(GPIOx_AFRL、AFRH)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616180134.png" alt=""></p>
-<blockquote>
-<p>分高位AFRH和低位AFRL，分别控制8个IO口；两个32位寄存器，一共64位；IO口是16个，所以每个IO口需要4位控制</p>
-</blockquote>
-<h2 id="跑马灯"><a class="header-anchor" href="#跑马灯">¶</a>跑马灯</h2>
-<p>led灯的硬件连接</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617165905.png" alt=""></p>
-<blockquote>
-<p>以LED0为例，若输出为0，则有电位差，LED0亮；若输出为1，则DS0右边是3.3V，无电位差，LED0不亮</p>
-<p>从电平方式上看，，总结出输出方式为推挽输出（上拉）</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617193151.png" alt=""></p>
-<blockquote>
-<p>外设使用之前，要使用使能IO口时钟。配置IO口时钟使能寄存器：RCC-&gt;AHB1ENR(外设时钟使能寄存器)</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617193807.png" alt=""></p>
-<p><font color="red">初始化IO口模式。配置四个配置寄存器：GPIOx_MODER(模式)、GPIOx_OTYPER(输出类型)、GPIOx_OSPEEDR(输出速度)、GPIOx_PUPDR(上拉下拉)</font></p>
-<p><font color="red">最后，操作IO口，输出高低电平。配置寄存器GPIOx_ODR或着GPIOx_BSRR。</font></p>
-<div class='tip error'><p>出现了一些错误<p></div>
-<p>1.编写led.h文件时出现</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617162736.png" alt=""></p>
-<p>解决：由于<code>#ifndef__LED_H</code>应该有空格，即<code>ifndef __LED_H</code>；同理<code>#define__LED_H</code>也是要变成<code>#define __LED_H</code></p>
-<p>2.出现宏定义无效的情况</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617163357.png" alt=""></p>
-<p>这是因为led.h出错的结果，把led.h文件改好，就无错了；注意：led.h文件要添加到工程去</p>
-<p>3.编译报错</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617163717.png" alt=""></p>
-<p>这是由于工程中还有一个main函数的存在，把另一个移除就可以了</p>
-<div class='tip success'><p>成功<p></div>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;sys.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;led.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;delay.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化PB0和PB1为输出口，并使能这两个口的时钟</span></span><br><span class="line"><span class="comment">//LED IO初始化</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">LED_Init</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	RCC-&gt;AHB1ENR |=<span class="number">1</span>&lt;&lt;<span class="number">1</span>;		<span class="comment">//使能PORTB时钟</span></span><br><span class="line">    <span class="comment">//只用操作位1，其他位不用管</span></span><br><span class="line">	<span class="comment">// “|=”是位或  “&lt;&lt;”：右移一位；使位1保持1，开时钟</span></span><br><span class="line">	</span><br><span class="line">	<span class="comment">//GPIOB是要操作的GPIO组，PIN0和PIN1这两个引脚分别控制LED1和LED0</span></span><br><span class="line">	<span class="comment">//GPIO_MODE_OUT在sys.h文件中宏定义为普通输出（也就是GPIO口模式选择输出）</span></span><br><span class="line">	<span class="comment">//GPIO_OTYPE_PP在sys.h文件中宏定义为推挽输出</span></span><br><span class="line">	<span class="comment">//GPIO_SPEED_100M在syys.h中宏定义为GPIO速度100Mhz</span></span><br><span class="line">	<span class="comment">//GPIO_PUPD_PU在sys.h中宏定义为上拉</span></span><br><span class="line">	GPIO_Set(GPIOB,PIN0|PIN1,GPIO_MODE_OUT,GPIO_OTYPE_PP,<span class="comment">//GPIO口设置：GPIO_Set函数</span></span><br><span class="line">			 GPIO_SPEED_100M,GPIO_PUPD_PU);	<span class="comment">//PB0,PB1设置</span></span><br><span class="line">	</span><br><span class="line">	LED0 = <span class="number">1</span>;	<span class="comment">//LED0关闭</span></span><br><span class="line">	LED1 = <span class="number">1</span>;	<span class="comment">//LED1关闭</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Stm32_Clock_Init(<span class="number">360</span>,<span class="number">25</span>,<span class="number">2</span>,<span class="number">8</span>);	<span class="comment">//设置时钟，180Mhz；初始化系统时钟</span></span><br><span class="line">	delay_init(<span class="number">180</span>);	<span class="comment">//初始化延时函数</span></span><br><span class="line">	LED_Init();		<span class="comment">//初始化LED时钟</span></span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		LED0 = <span class="number">0</span>;		<span class="comment">//DS0亮</span></span><br><span class="line">		LED1 = <span class="number">1</span>;		<span class="comment">//DS1灭</span></span><br><span class="line">		delay_ms(<span class="number">500</span>);</span><br><span class="line">		LED0 = <span class="number">1</span>;		<span class="comment">//DS0灭</span></span><br><span class="line">		LED1 = <span class="number">0</span>;		<span class="comment">//DS1亮</span></span><br><span class="line">		delay_ms(<span class="number">1000</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>keil软件一般在最后打出一行空行。</p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> __LED_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> __LED_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&quot;sys.h&quot;</span></span></span><br><span class="line"><span class="comment">//LED端口定义</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LED0 PBout(1)	<span class="comment">//DS0，PBout输出为1</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LED1 PBout(0)	<span class="comment">//DS1，PBout输出为0</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">LED_Init</span><span class="params">(<span class="keyword">void</span>)</span></span>;	<span class="comment">//初始化</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="按键输入实验"><a class="header-anchor" href="#按键输入实验">¶</a>按键输入实验</h2>
-<p>硬件连接</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618101547.png" alt=""></p>
-<blockquote>
-<p>当KEY0/KEY1/KEY2按下时，检测到低电平；松开检测到高电平</p>
-<p>当KEY_UP按下时，检测到高电平；松开检测到低电平</p>
-<p>通过上图可以看出，KEY0、KEY1、KEY2是低电平有效，KEY_UP是高电平有效；外部都没有上下拉电阻，所以，需要在 STM32F429 内部设置上下拉。</p>
-<p>按键 KEY0 连接在 PH3 上、KEY1 连接在 PH2 上、KEY2 连接在 PC13 上、KEY_UP 连接在 PA0上。</p>
-</blockquote>
-<blockquote>
-<p>KEY0-&gt;PH3  上拉输入<br>
-KEY1-&gt;PH2  上拉输入<br>
-KEY2-&gt;PC13  上拉输入<br>
-WK_UP-&gt;PA0  下拉输入</p>
-</blockquote>
-<p>由于使用了PA组、PC组、PH组三组GPIO口，所以外设时钟也要设置三种。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618103813.png" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618103801.png" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618103742.png" alt=""></p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618104011.png" alt=""></p>
-<blockquote>
-<p>再通过上面的图，设置时钟使能</p>
-</blockquote>
-<div class='tip error'><p>出现错误<p></div>
-<p>多个main函数定义</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618163923.png" alt=""></p>
-<blockquote>
-<p>这是因为定义了多个main函数，实际上的main函数要定义在USER文件夹下面</p>
-</blockquote>
-<h2 id="复习"><a class="header-anchor" href="#复习">¶</a>复习</h2>
-<ol>
-<li>ifdef条件编译</li>
-</ol>
-<blockquote>
-<p>单片机程序开发过程中，经常会遇到一种情况，当满足某条件时对一组语句进行编译，而当条件不满足时则编译另一组语句。</p>
-</blockquote>
-<p>和C语言（if语句）不同的是，可以定义函数当作成语句块，调用函数</p>
-<p>ifndef条件编译与上一条ifdef语句相反，同样要用#endif结尾</p>
-<ol start="2">
-<li>typedef类型别名</li>
-</ol>
-<blockquote>
-<p>定义一种类型的别名，而不只是简单的宏替换，可以用作同时声名指针型的多个对象。</p>
-</blockquote>
-<p>相当于简化命名</p>
-<ol start="3">
-<li>extern变量申明</li>
-</ol>
-<blockquote>
-<p>C语言中的extern可以置于变量或着函数前，以表示变量（全局变量）或者函数的定义在别的文件中，提示编译器遇到此变量和函数是在其他的模块中寻找其定义。也要说明变量的类型</p>
-<p>注意：对于extern申明变量可以多次，但是定义只有一次。</p>
-</blockquote>
-<ol start="4">
-<li>static静态关键字</li>
-</ol>
-<ul>
-<li>static申明的局部变量，存储在静态存储区。只会被初始化一次，在被调用的话，会跳过。</li>
-<li>在函数调用结束之后，不会被释放，值会一直保留下来</li>
-<li>static申明的局部变量，具有记忆功能</li>
-<li>static申明的函数作用域仅限当前.c文件，其他.c文件无法调用。</li>
-</ul>
-<ol start="5">
-<li>__weak弱函数</li>
-</ol>
-<p>①weak函数和重写的函数不能放在同一个文件</p>
-<p>②避免重复定义</p>
-<p>③若用户没有重写，那么会执行弱函数，若重写了该函数，则会执行重写的函数</p>
-<ol start="6">
-<li>结构体：</li>
-</ol>
-<blockquote>
-<p>将不同类型的数据存放在一起，作为一个整体进行处理</p>
-</blockquote>
-<p>可扩展性强</p>
-<ol start="7">
-<li>位操作</li>
-</ol>
-<p><code>&gt;&gt;</code>右移操作，<code>&lt;&lt;</code>左移操作</p>
-<p>二进制左移运算符。将一个运算对象的各二进制位全部左移若干位（左边的二进制位丢弃，右边补0）</p>
-<p>二进制右移运算符。将一个数的各二进制位全部右移若干位，正数左补0，负数左补1，右边丢弃</p>
-<h2 id="MDK使用"><a class="header-anchor" href="#MDK使用">¶</a>MDK使用</h2>
-<ol>
-<li>书签</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210707153710.png" alt=""></p>
-<ol start="2">
-<li>生成hex文件</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210707154235.png" alt=""></p>
-<p>第一个框是生成hex文件</p>
-<p>第二个框是查看函数变量定义的地方</p>
-<ol start="3">
-<li>文本美化</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210707155018.png" alt=""></p>
-<h2 id="时钟系统"><a class="header-anchor" href="#时钟系统">¶</a>时钟系统</h2>
-<p>时钟系统和下一节的时钟系统初始化都是参考CSDN上一位博主的文章  <a class="btn-beautify button--animated " href="https://blog.csdn.net/qq_36243942/article/details/83655339" 
-  title="跳转链接"><i class="far fa-hand-point-right fa-fw"></i><span>跳转链接</span></a></p>
-<p>STM32有5个时钟源：HSI、HSE、LSI、LSE、PLL</p>
-<p>①、HSI是<font color='red'>高速内部时钟</font>，RC振荡器，频率为16MHz，精度不高。可以直接作为系统时钟或者用作PLL时钟输入。　接的外部晶振</p>
-<p>②、HSE是<font color='red'>高速外部时钟</font>，可接石英/陶瓷谐振器，或者接外部时钟源，频率范围为4MHz~26MHz。</p>
-<p>③、LSI是<font color='red'>低速内部时钟</font>，RC振荡器，频率为32kHz，提供低功耗时钟。主要供独立看门狗和自动唤醒单元使用。</p>
-<p>④、LSE是<font color='red'>低速外部时钟</font>，接频率为32.768kHz的石英晶体。RTC（实时时钟）</p>
-<p>⑤、PLL为<font color='red'>锁相环倍频</font>输出。 来源可以是HSI/2、HSE、HSE/2，倍频范围为 2-16 倍</p>
-<div class="note info flat"><p>任何一个外设在使用之前，必须首先使能其相应的时钟</p>
+    <title>批注记录</title>
+    <url>/2021/04/07/%E6%89%B9%E6%B3%A8%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="2fcf70f93106af4f44a6b4a9317f1bf81351f4e94bb6f1323459216d14f02c18">22064b17c03cb0c0e58c99349b6889d0c7e9d327de57f2d214b057f3875d6b37b9b20ab3b449f9d3b0ba6ffe12bb71d82eff8171349bc71e3a2c9718b358eacc07c1e2d0dcdcc94bb927d4bdef70eb39fd8e7de731fdf8f27d06339a84133e4a974b5fae5fee1809df024fdfbb238fba030fdd8003e2826f0a33da9ce588a76e8e6bc91b4049cb9065bb5b9840402572bd86834c2d0c361fdb4259dd56633b9d286b14b14b74d50d4ca10de4c2e54f118835e2ea5a28de2ac78c4f57666f83faa6cf49198dbd3f86312e8ae6475e1ad55bc0f991fa504124763e450733221c2a781fb4c5fbae0d7123703d7ac9a38542095b3da435e03cc3247b4eff26b05bc0b9e2a2c706e61562c7bb934180842f9b6dc301690938c4f21c78468483f3e95d8b5dcc7048e9b21da20cd49dde4a8cd683cfc91feffd222c011316f66497312669c395d166bbc4e9518b0008cf6b92975c76b75ea7645421c9d7e156f6d824d2c0892d2b3835cb34e29b6164ac5b171e91b073be40a5f07d833b0ba2047deb5c5681bf1fb48fb4af8bb0e2493e2b3b3e98279dbcdb3cb4aeb62164bf28ae94eb18e587b9ae3d7340b674b5f9e1f77e5e60c56c06cfa36d7460e8e19b4156cc0b35de9e2506da358011c8d20166305cbedbaa6a5a43e35dd4f1120bf05c3a51149693768289c76395859688f7c40ac480bee9427637213b8611f31b86f53e56d25b0247028467efd7a299c21016038df477e1219595d90fcfdc57fba758f96301f5146be17f7f14a48229757225def14d3c30eb76c32c626a63606bad9c98bda3e69c6268be1f5954e80690f082bf9027805bc03d4096deeb9ccb9cb48b2c6db5e42ae71d320fae1a5ed921463cd37936f0cd0225ca9124108d0abb447665cff099be802002607c1db5c7608155344f315d28759b32b514948d47a45574124d9b3e6574ad48e371cec8cec9a50fe7d2376d7bb18ed6604f5da90b43818367f002f26aef4d7bbdfc84f1dc0957a9f5ed72809c5642a90b5823f3f98e8842cd1c800e9b2147bba8ccf0cd51d8473a2d4d2d24f53dcf6cb5cfb6749f5d0683d3ad3db3d179878a4b60b02ef9184de71532847e6ed2747ed50c01f0ab899b938f64b98c09a0dad54d087533805dc3eb56b5fcf1bc41f1416e0d1ac664dd22764c7e222a590fd133459ad9566ba24a997e0fe2d1b9948fee107708e334353a08b1bb39c62357fa125768f0f8946f86b93a14feb91a334e0517a4c086c7171c03c3fd9287a4971411042a380d562a88163c0aab3d7496559144df81f103e0f1028598cdc7632dde89026b29d6e6763cf5386ea826f7ae0212d2f0c72720929b60b88d59e10bf3f58a7e0544a1f87786018230fa970b072e05f32c014b06a3886f2f8af1443d921285384ebd6b8eab3e0505a39f309afef9c7f2e2d2a7a0727483e195c4b3dbb3609c0793b497647c21b4015c71eecf2e802e2b13e40c0d008f547c79d327028eab87299957fa33075fd43ffe2461ddc83982c4c8000aa50f5e36649d147aaebc9cd91c0f8d18577a08fd8e8b65a2f5a017454efdec16f6cfea82e59ae3e08d2bb550606ba5e632aaa828ce85b3ec25a6bfcb87e484743d5d7faf354e676e8ef4f658766e13848b2b337d0b4ee60490302e0f45ba4364762313e27ddeac613a36865942f94e7eb1d0303be635165332bceb8c6227c7075b825d80cd8653e502d54213bd8f2a5b0fe6d0d718b2d25a299ea8ca868f26d5647af9080cb5eb8bc1f6d3b2363b452fdfa5cee1a31d03d6a2cfa36a0e7806da9043630257cb159a2a36b6cfc67c1af4baf7e2d802193e883890ac38e14209dad36a5cba95696e635d4d1d5b08d94343d8f54de79f67932f16914214594230b1ef79b6f6f0abf9853d97df149480f1f9b32087eeda3df0181431201c82e597ff5d7554874b7a87f1f171053046e7b5f438a23c4705a999bccffedf1643f35a351fcdea90fe1fb6c15a277cf7a8c852e028bbc94a201ac62ea61cbed40107fdf8a4e33010f4c56f44f8779a3a7743a585bf632bf53ac21d2f5a7b9c3380f08685157e1392d48c31f373057d6f02b8ca66924aeca4f1f1649bbccf0c1e65317c3e7889d00209ffd2052d75f400f7ea67d307c7382e5e0726dc1b1a69f35d1c430aefe96b09d9e387</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-xray">
+      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Hey, password is required here.</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
 </div>
-<blockquote>
-<p>LSE接入外部晶振32.768kHz</p>
-<p>HSE接入外部晶振2-26MHz，可通过分频器，做RTC的一个时钟源；可做系统时钟的一个时钟源；可做PLL锁相环时钟源</p>
-<p>HSI可做系统时钟的一个时钟源；也可做锁相环的输入；也可做MCO1（PA8）信号输出引脚</p>
-<p>PLL可做系统时钟的一个时钟源</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210708165624.png" alt="时钟树-F429"></p>
-<blockquote>
-<p>PLL是一种反馈控制电路。锁相环通常由鉴相器（PD,Phase Detector）、环路滤波器（LF,Loop Filter）和压控振荡器（VCO,Voltage Controlled Oscillator）三部分组成。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210708172720.png" alt="img"></p>
-<p>特点是：通过外部输入的参考信号和控制环路的压控振荡器的输入信号的相位差，来得到它们的电压差，以这个电压作为误差电压来控制振荡器的频率，使压控振荡器频率达到与输入参考信号频率按一定比例输出的频率，因锁相环可以实现输出信号频率对输入信号频率的自动跟踪，所以锁相环通常用于闭环跟踪电路。锁相环在工作过程中，当输出信号的频率成比例地反映输入信号的频率时，输出电压与输入电压保持固定的相位差值，这样输出电压与输入电压的相位就被锁住了。</p>
-</blockquote>
-<blockquote>
-<p><strong>STM32F4 有三个 PLL:</strong></p>
-<p>1） 主 PLL(PLL)由 HSE 或者 HSI 提供时钟信号，并具有两个不同的输出时钟。第一个输出 PLLP 用于生成<strong>高速</strong>的系统时钟（最高 180MHz）第二个输出 PLLQ 为 48M 时钟， 用于 USB OTG FS 时钟，随机数发生器的时钟和SDIO时钟（SD卡）。VCO是压控振荡器。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210709095542.png" alt="img"></p>
-<p>2） 第一个专用 PLL(PLLI2S)用于生成精确时钟， 在 I2S 和 SAI1 上实现高品质音频性能。 其中， N 是用于 PLLI2S vco 的倍频系数，其取值范围是： 192~432； R 是 I2S 时钟的分频系数，其取值范围是： 2~7； Q 是 SAI 时钟分频系数，其取值范围是： 2~15； <font color='red'>P 没用到</font>。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711174756.png" alt="img"></p>
-<p>3） 第二个专用 PLL(PLLSAI)同样用于生成精确时钟，用于 SAI1 输入时钟，同时还为 LCD_TFT接口提供精确时钟。 其中， N 是用于 PLLSAI vco 的倍频系数，其取值范围是： 192~432；Q 是 SAI 时钟分频系数，其取值范围是： 2~15； R 是 LTDC 时钟的分频系数，其取值范围是： 2~7；<font color='red'> P 没用到</font>。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711174742.png" alt="img"></p>
-</blockquote>
-<ul>
-<li>主PLL时钟计算</li>
-</ul>
-<p>例子：主 PLL 时钟第一个高速时钟输出 PLLP 的计算方法：配置180MHz为例：</p>
-<p>分析：主 PLL 时钟的时钟源要先经过一个分频系数为 M 的分频器，然后经过倍频系数为 N 的倍频器出来之后还需要经过一个分频系数为 P（第一个输出 PLLP）或者 Q（第二个输出 PLLQ）的分频器分频之后，最后才生成最终的主 PLL 时钟。例如我们的外部晶振选择 25MHz。同时我们设置相应的分频器 M=25，倍频器倍频系数 N=360，分频器分频系数 P=2，那么主 PLL 生成的第一个输出高速时钟 PLLP 为：</p>
-<blockquote>
-<p><strong>PLL=25MHz * N/ (M*P)=25MHz* 360 /(25*2) = 180MHz</strong></p>
-</blockquote>
-<p>配置过程如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711174559.png" alt=""></p>
-<h2 id="时钟系统初始化"><a class="header-anchor" href="#时钟系统初始化">¶</a>时钟系统初始化</h2>
-<h3 id="库函数版本源码分析"><a class="header-anchor" href="#库函数版本源码分析">¶</a>库函数版本源码分析</h3>
-<p>在系统进入主函数之前，首先会执行SystemInit这个函数对系统进行初始化</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711174453.png" alt=""></p>
-<p>程序源码：</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SystemInit</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">/* FPU 设置------------------------------------------------------------*/</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">if</span> (__FPU_PRESENT == 1) &amp;&amp; (__FPU_USED == 1)</span></span><br><span class="line">SCB-&gt;CPACR |= ((<span class="number">3U</span>L &lt;&lt; <span class="number">10</span>*<span class="number">2</span>)|(<span class="number">3U</span>L &lt;&lt; <span class="number">11</span>*<span class="number">2</span>)); <span class="comment">/* set CP10 and CP11 Full Access */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"><span class="comment">/* 复位 RCC 时钟配置为默认配置-----------*/</span></span><br><span class="line">RCC-&gt;CR |= (<span class="keyword">uint32_t</span>)<span class="number">0x00000001</span>;<span class="comment">//打开 HSION 位，默认给的是HSI的时钟</span></span><br><span class="line">RCC-&gt;CFGR = <span class="number">0x00000000</span>;<span class="comment">//复位 CFGR 寄存器</span></span><br><span class="line">RCC-&gt;CR &amp;= (<span class="keyword">uint32_t</span>)<span class="number">0xFEF6FFFF</span>;<span class="comment">//复位 HSEON, CSSON and PLLON 位</span></span><br><span class="line">RCC-&gt;PLLCFGR = <span class="number">0x24003010</span>; <span class="comment">//复位寄存器 PLLCFGR</span></span><br><span class="line">RCC-&gt;CR &amp;= (<span class="keyword">uint32_t</span>)<span class="number">0xFFFBFFFF</span>;<span class="comment">//复位 HSEBYP 位</span></span><br><span class="line">RCC-&gt;CIR = <span class="number">0x00000000</span>;<span class="comment">//关闭所有中断</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">if</span> defined (DATA_IN_ExtSRAM) || defined (DATA_IN_ExtSDRAM)</span></span><br><span class="line">SystemInit_ExtMemCtl();</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span> <span class="comment">/* DATA_IN_ExtSRAM || DATA_IN_ExtSDRAM */</span></span></span><br><span class="line"><span class="comment">/* 配置中断向量表地址=基地址+偏移地址 ------------------*/</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> VECT_TAB_SRAM</span></span><br><span class="line">SCB-&gt;VTOR = SRAM_BASE | VECT_TAB_OFFSET;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line">SCB-&gt;VTOR = FLASH_BASE | VECT_TAB_OFFSET;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>程序的作用：</p>
-<p>1） FPU 设置<br>
-2） 复位 RCC 时钟配置为默认复位值（默认开始了 HIS）<br>
-3） 外部存储器配置<br>
-4） 中断向量表地址配置</p>
-<blockquote>
-<p>在F4的HAL库汇总SystemInit函数，并没有设置系统的主频和外设时钟的频率，所以所以需要自己去写这个函数。</p>
-</blockquote>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//系统时钟初始化函数</span></span><br><span class="line"><span class="comment">//plln:主PLL倍频系数(PLL倍频),取值范围:64~432.</span></span><br><span class="line"><span class="comment">//pllm:主PLL和音频PLL分频系数(PLL之前的分频),取值范围:2~63.</span></span><br><span class="line"><span class="comment">//pllp:系统时钟的主PLL分频系数(PLL之后的分频),取值范围:2,4,6,8.(仅限这4个值!)</span></span><br><span class="line"><span class="comment">//pllq:USB/SDIO/随机数产生器等的主PLL分频系数(PLL之后的分频),取值范围:2~15.</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Stm32_Clock_Init</span><span class="params">(u32 plln,u32 pllm,u32 pllp,u32 pllq)</span></span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">	RCC-&gt;CR|=<span class="number">0x00000001</span>;		<span class="comment">//设置HISON,开启内部高速RC振荡</span></span><br><span class="line">	RCC-&gt;CFGR=<span class="number">0x00000000</span>;		<span class="comment">//CFGR清零 </span></span><br><span class="line">	RCC-&gt;CR&amp;=<span class="number">0xFEF6FFFF</span>;		<span class="comment">//HSEON,CSSON,PLLON清零 </span></span><br><span class="line">	RCC-&gt;PLLCFGR=<span class="number">0x24003010</span>;	<span class="comment">//PLLCFGR恢复复位值 </span></span><br><span class="line">	RCC-&gt;CR&amp;=~(<span class="number">1</span>&lt;&lt;<span class="number">18</span>);			<span class="comment">//HSEBYP清零,外部晶振不旁路</span></span><br><span class="line">	RCC-&gt;CIR=<span class="number">0x00000000</span>;		<span class="comment">//禁止RCC时钟中断 </span></span><br><span class="line">	Sys_Clock_Set(plln,pllm,pllp,pllq);<span class="comment">//设置时钟 </span></span><br><span class="line">	<span class="comment">//配置向量表				  </span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span>  VECT_TAB_RAM</span></span><br><span class="line">	MY_NVIC_SetVectorTable(<span class="number">1</span>&lt;&lt;<span class="number">29</span>,<span class="number">0x0</span>);</span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span>   </span></span><br><span class="line">	MY_NVIC_SetVectorTable(<span class="number">0</span>,<span class="number">0x0</span>);</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span> </span></span><br><span class="line">&#125;		</span><br></pre></td></tr></table></figure>
-<p>这个函数需要的参数是4个，分别与系统原理图对应的是，如下图所示：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711174358.png" alt=""></p>
-<p>然后，查看时钟控制CR寄存器（控制寄存器）的描述：</p>
-<ol>
-<li>开启HSION，开启内部高速RC震荡</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711164714.png" alt=""></p>
-<ol start="2">
-<li>时钟配置寄存器CFRG清零</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711165007.png" alt=""></p>
-<ol start="3">
-<li>配置时钟控制CR寄存器， 使位HSEON,CSSON,PLLON清零（第16、19、24位）</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711165527.png" alt=""></p>
-<ol start="4">
-<li>RCC PLL 配置寄存器 (RCC_PLLCFGR),恢复默认值：<code>RCC-&gt;PLLCFGR=0x24003010;   //PLLCFGR恢复复位值</code></li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711165728.png" alt=""></p>
-<ol start="5">
-<li>设置CR寄存器，外部晶振不旁路</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711170055.png" alt=""></p>
-<ol start="6">
-<li>RCC 时钟中断寄存器 (RCC_CIR)，RCC-&gt;CR=0X00000000; //禁止RCC时钟中断</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711170311.png" alt=""></p>
-<ol start="7">
-<li>设置时钟，使用函数Sys_Clock_Set(plln,pllm,pllp,pllq);//设置时钟，函数原型如下：</li>
-</ol>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function">u8 <span class="title">Sys_Clock_Set</span><span class="params">(u32 plln,u32 pllm,u32 pllp,u32 pllq)</span></span></span><br><span class="line"><span class="function"></span>&#123; </span><br><span class="line">	u16 retry=<span class="number">0</span>;</span><br><span class="line">	u8 status=<span class="number">0</span>;</span><br><span class="line">	RCC-&gt;CR|=<span class="number">1</span>&lt;&lt;<span class="number">16</span>;				<span class="comment">//HSE 开启 </span></span><br><span class="line">	<span class="keyword">while</span>(((RCC-&gt;CR&amp;(<span class="number">1</span>&lt;&lt;<span class="number">17</span>))==<span class="number">0</span>)&amp;&amp;(retry&lt;<span class="number">0X1FFF</span>))retry++;<span class="comment">//等待HSE RDY</span></span><br><span class="line">	<span class="keyword">if</span>(retry==<span class="number">0X1FFF</span>)status=<span class="number">1</span>;	<span class="comment">//HSE无法就绪</span></span><br><span class="line">	<span class="keyword">else</span>   </span><br><span class="line">	&#123;</span><br><span class="line">		RCC-&gt;APB1ENR|=<span class="number">1</span>&lt;&lt;<span class="number">28</span>;	<span class="comment">//电源接口时钟使能</span></span><br><span class="line">		PWR-&gt;CR|=<span class="number">3</span>&lt;&lt;<span class="number">14</span>; 		<span class="comment">//高性能模式,时钟可到180Mhz</span></span><br><span class="line">		RCC-&gt;CFGR|=(<span class="number">0</span>&lt;&lt;<span class="number">4</span>)|(<span class="number">5</span>&lt;&lt;<span class="number">10</span>)|(<span class="number">4</span>&lt;&lt;<span class="number">13</span>);<span class="comment">//HCLK 不分频;APB1 4分频;APB2 2分频. </span></span><br><span class="line">		RCC-&gt;CR&amp;=~(<span class="number">1</span>&lt;&lt;<span class="number">24</span>);	<span class="comment">//关闭主PLL</span></span><br><span class="line">		RCC-&gt;PLLCFGR=pllm|(plln&lt;&lt;<span class="number">6</span>)|(((pllp&gt;&gt;<span class="number">1</span>)<span class="number">-1</span>)&lt;&lt;<span class="number">16</span>)|(pllq&lt;&lt;<span class="number">24</span>)|(<span class="number">1</span>&lt;&lt;<span class="number">22</span>);<span class="comment">//配置主PLL,PLL时钟源来自HSE</span></span><br><span class="line">		RCC-&gt;CR|=<span class="number">1</span>&lt;&lt;<span class="number">24</span>;			<span class="comment">//打开主PLL</span></span><br><span class="line">		<span class="keyword">while</span>((RCC-&gt;CR&amp;(<span class="number">1</span>&lt;&lt;<span class="number">25</span>))==<span class="number">0</span>);<span class="comment">//等待PLL准备好 </span></span><br><span class="line">		FLASH-&gt;ACR|=<span class="number">1</span>&lt;&lt;<span class="number">8</span>;		<span class="comment">//指令预取使能.</span></span><br><span class="line">		FLASH-&gt;ACR|=<span class="number">1</span>&lt;&lt;<span class="number">9</span>;		<span class="comment">//指令cache使能.</span></span><br><span class="line">		FLASH-&gt;ACR|=<span class="number">1</span>&lt;&lt;<span class="number">10</span>;		<span class="comment">//数据cache使能.</span></span><br><span class="line">		FLASH-&gt;ACR|=<span class="number">5</span>&lt;&lt;<span class="number">0</span>;		<span class="comment">//5个CPU等待周期. </span></span><br><span class="line">		RCC-&gt;CFGR&amp;=~(<span class="number">3</span>&lt;&lt;<span class="number">0</span>);		<span class="comment">//清零</span></span><br><span class="line">		RCC-&gt;CFGR|=<span class="number">2</span>&lt;&lt;<span class="number">0</span>;		<span class="comment">//选择主PLL作为系统时钟	 </span></span><br><span class="line">		<span class="keyword">while</span>((RCC-&gt;CFGR&amp;(<span class="number">3</span>&lt;&lt;<span class="number">2</span>))!=(<span class="number">2</span>&lt;&lt;<span class="number">2</span>));<span class="comment">//等待主PLL作为系统时钟成功. </span></span><br><span class="line">	&#125; </span><br><span class="line">	<span class="keyword">return</span> status;</span><br><span class="line">&#125;  </span><br></pre></td></tr></table></figure>
-<ol start="8">
-<li>RCC-&gt;CR|=1&lt;&lt;16;         //设置CR寄存器的第16位为1，HSE 开启</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711171512.png" alt=""></p>
-<ol start="9">
-<li>等待HSE时钟就绪，判断CR寄存器的第17位是否为1，返回1准备就绪，如果超时，返回标志位status=1.</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711172053.png" alt=""></p>
-<ol start="10">
-<li>如果准备就绪，使能电源接口时钟，RCC-&gt;APB1ENR|=1&lt;&lt;28;   //设置APB1ENR寄存器28位为1电源接口时钟使能</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711172112.png" alt=""></p>
-<ol start="11">
-<li>开始电源的高性能模式，PWR-&gt;CR|=3&lt;&lt;14;      //高性能模式,时钟可到180Mhz</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711172331.png" alt=""></p>
-<ol start="12">
-<li>配置RCC的CFGR寄存器，//HCLK 不分频;APB1 4分频;APB2 2分频</li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711174144.png" alt=""></p>
-<ol start="13">
-<li><strong>RCC-&gt;CR&amp;=~(1&lt;&lt;24);   //关闭主PLL，配置主PLL的一些参数，配置完再重新打开</strong></li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711175250.png" alt=""></p>
-<ol start="14">
-<li>//配置主PLL,PLL时钟源来自HSE，<strong>RCC-&gt;PLLCFGR=pllm|(plln&lt;&lt;6)|(((pllp&gt;&gt;1)-1)&lt;&lt;16)|(pllq&lt;&lt;24)|(1&lt;&lt;22);</strong></li>
-</ol>
-<ul>
-<li><strong>pllm,设置PLLM</strong></li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712105826.png" alt=""></p>
-<ul>
-<li><strong>(plln&lt;&lt;6)，设置PLLN</strong></li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712105909.png" alt=""></p>
-<ul>
-<li><strong>(((pllp&gt;&gt;1)-1)&lt;&lt;16),设置系统时钟的主PLL分频系数(PLL之后的分频),取值范围:2,4,6,8.(仅限这4个值!)</strong></li>
-</ul>
-<blockquote>
-<p>为何是：(((pllp&gt;&gt;1)-1)&lt;&lt;16)呢？如下解释，当我们取值pllp为2时，可以得到(((pllp&gt;&gt;1)-1)&lt;&lt;16)=0</p>
-<p>当pllp取值为4时，(((pllp&gt;&gt;1)-1)&lt;&lt;16)=1，同理，pllp取值为6时，(((pllp&gt;&gt;1)-1)&lt;&lt;16)=3.其实就是在调用函数的时候方便设置。可以看都这个寄存器的位，当第17:16为0时，就是这只pllp为2分频。</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712110414.png" alt=""></p>
-<ul>
-<li><strong>(pllq&lt;&lt;24)，pllq:USB/SDIO/随机数产生器等的主PLL分频系数(PLL之后的分频),取值范围:2~15.</strong></li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712110458.png" alt=""></p>
-<ul>
-<li><strong>(1&lt;&lt;22)，选择主PLL的时钟源是HSE外部震荡时钟</strong></li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712110533.png" alt=""></p>
-<p>此步骤完成的工作就是如下所示的设置：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712110808.png" alt=""></p>
-<ol start="15">
-<li>设置完主PLL之后，重新打开主PLL: <strong>RCC-&gt;CR|=1&lt;&lt;24;       //打开主PLL</strong></li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712111026.png" alt=""></p>
-<ol start="16">
-<li>每次打开PLL之前，都要等待就绪：<strong>while((RCC-&gt;CR&amp;(1&lt;&lt;25))==0);//等待PLL准备好</strong></li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712111334.png" alt=""></p>
-<ol start="17">
-<li>设置FLASH寄存器参数：</li>
-</ol>
-<blockquote>
-<p>FLASH-&gt;ACR|=1&lt;&lt;8;     //指令预取使能.<br>
-FLASH-&gt;ACR|=1&lt;&lt;9;     //指令cache使能.<br>
-FLASH-&gt;ACR|=1&lt;&lt;10;     //数据cache使能.<br>
-FLASH-&gt;ACR|=5&lt;&lt;0;     //5个CPU等待周期.</p>
-</blockquote>
-<ol start="18">
-<li>设置CFRG(RCC时钟配置寄存器)选择PLL作为系统时钟，<strong>RCC-&gt;CFGR&amp;=~(3&lt;&lt;0);    //清零 RCC-&gt;CFGR|=2&lt;&lt;0;</strong></li>
-</ol>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712111614.png" alt=""></p>
-<ol start="19">
-<li>等待主PLL设置为系统主时钟成功：<strong>while((RCC-&gt;CFGR&amp;(3&lt;&lt;2))!=(2&lt;&lt;2));</strong></li>
-</ol>
-<p><strong>语句含义：</strong> <strong>当CFGR的3：2位不等于01时就说明主PLL还未就绪，就绪等待。</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712112050.png" alt=""></p>
-<ol start="20">
-<li><strong>最后一步，配置向量表。</strong></li>
-</ol>
-<p>通过这样的设置系统时钟的整体配置就OK了。</p>
-<p>如果调用函数：**u8 Sys_Clock_Set(u32 plln,u32 pllm,u32 pllp,u32 pllq)，**<strong>产生180Mhz的主频</strong></p>
-<p>**设置参数：**外部晶振为25M的时候:plln=360,pllm=25,pllp=2,pllq=8.</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712112224.png" alt=""></p>
-<h3 id="HAL库函数版本源码分析"><a class="header-anchor" href="#HAL库函数版本源码分析">¶</a>HAL库函数版本源码分析</h3>
-<p>HAL库主要是把寄存器进行封装，然后把一些参数合并到一个结构体，通过调用结构体的方式对寄存器进行赋值，间接的完成对STM32寄存器的配置。</p>
-<p>主要是下面两个结构体：</p>
-<p>1.RCC_OscInitTypeDef结构体：</p>
-<blockquote>
-<p>从结构体的名称中可以看出，这个结构体主要是选择时钟源，然后是时钟的状态（开启还是关闭）</p>
-</blockquote>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210713165115.png" alt=""></p>
-<p>可以看到RCC_OscInitTypeDef 里面还嵌套了一个RCC_PLLInitTypeDef结构体，主要是用于主PLL配置用的。比如设置M分频，vco倍频等。</p>
-<ul>
-<li>RCC_PLLInitTypeDef 结构体如下:</li>
-</ul>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210713165242.png" alt=""></p>
-<p>所以，第一步是定义一个<font color='red'>RCC_OscInitTypeDef</font>结构体变量，并给这个结构体变量赋值，然后调用，HAL_RCC_OscConfig函数(时钟源配置函数)，把这个结构体变量传进去，使设置生效。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">RCC_OscInitTypeDef RCC_OscInitStructure; </span><br><span class="line">RCC_ClkInitTypeDef RCC_ClkInitStructure;</span><br><span class="line"></span><br><span class="line">__HAL_RCC_PWR_CLK_ENABLE(); <span class="comment">//使能PWR时钟</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//下面这个设置用来设置调压器输出电压级别，以便在器件未以最大频率工作</span></span><br><span class="line"><span class="comment">//时使性能与功耗实现平衡，此功能只有STM32F42xx和STM32F43xx器件有，</span></span><br><span class="line">__HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);<span class="comment">//设置调压器输出电压级别1</span></span><br><span class="line"></span><br><span class="line">RCC_OscInitStructure.OscillatorType=RCC_OSCILLATORTYPE_HSE;    <span class="comment">//时钟源为HSE</span></span><br><span class="line">RCC_OscInitStructure.HSEState=RCC_HSE_ON;                      <span class="comment">//打开HSE</span></span><br><span class="line">RCC_OscInitStructure.PLL.PLLState=RCC_PLL_ON;<span class="comment">//打开PLL</span></span><br><span class="line">RCC_OscInitStructure.PLL.PLLSource=RCC_PLLSOURCE_HSE;<span class="comment">//PLL时钟源选择HSE</span></span><br><span class="line">RCC_OscInitStructure.PLL.PLLM=pllm; <span class="comment">//主PLL和音频PLL分频系数(PLL之前的分频),取值范围:2~63.</span></span><br><span class="line">RCC_OscInitStructure.PLL.PLLN=plln; <span class="comment">//主PLL倍频系数(PLL倍频),取值范围:64~432.  </span></span><br><span class="line">RCC_OscInitStructure.PLL.PLLP=pllp; <span class="comment">//系统时钟的主PLL分频系数(PLL之后的分频),取值范围:2,4,6,8.(仅限这4个值!)</span></span><br><span class="line">RCC_OscInitStructure.PLL.PLLQ=pllq; <span class="comment">//USB/SDIO/随机数产生器等的主PLL分频系数(PLL之后的分频),取值范围:2~15.</span></span><br><span class="line">ret=HAL_RCC_OscConfig(&amp;RCC_OscInitStructure);<span class="comment">//初始化</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210713165858.png" alt=""></p>
-<p>下面看一下<font color='red'>HAL_RCC_OscConfig</font>函数</p>
-]]></content>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
-        <category>记录&amp;烂笔头</category>
+        <category>随笔</category>
       </categories>
       <tags>
-        <tag>STM32</tag>
+        <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
@@ -2875,6 +2393,538 @@ This is my website, click the button <a class="btn-beautify button--animated lar
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>F4学习记录</title>
+    <url>/2021/06/15/F4%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>阿波罗STM32</h1>
+<h2 id="开发板底板引脚"><a class="header-anchor" href="#开发板底板引脚">¶</a>开发板底板引脚</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210615090214.png" alt=""></p>
+<blockquote>
+<p>JTAG调试，需要占用5个IO端口；SWD则只需要2个IO端口</p>
+<p>KEY_UP 是高电平有效，而 KEY0、KEY1 和 KEY2 是低电平有效</p>
+</blockquote>
+<h2 id="核心板资源图"><a class="header-anchor" href="#核心板资源图">¶</a>核心板资源图</h2>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210615090543.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616094711.png" alt=""></p>
+<h2 id="GPIO口（通用IO口）"><a class="header-anchor" href="#GPIO口（通用IO口）">¶</a>GPIO口（通用IO口）</h2>
+<p>STM32F429芯片有176个引脚，其中140个可以作为GPIO口。</p>
+<p>一共9组IO：PA~PI；其中PA-PH每组16个IO口，PI只有PI0-PI11（12）,一共有140个IO口（16*8+12=140）</p>
+<p>复用可以大大节省IO口的资源。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616102931.png" alt=""></p>
+<p>STM32引脚的功能：查找数据手册</p>
+<p>FT可以容忍5V输入</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616105528.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616105607.png" alt=""></p>
+<h3 id="GPIO口的8种工作模式"><a class="header-anchor" href="#GPIO口的8种工作模式">¶</a>GPIO口的8种工作模式</h3>
+<ul>
+<li>4种输入模式：</li>
+</ul>
+<p>输入浮空</p>
+<p>输入上拉</p>
+<p>输入下拉</p>
+<p>模拟输入</p>
+<ul>
+<li>4种输出模式（带上下拉）：</li>
+</ul>
+<p>开漏输出（带上拉或者下拉）</p>
+<p>开漏复用功能（带上拉或者下拉）</p>
+<p>推挽式输出（带上拉或者下拉）</p>
+<p>推挽式复用功能（带上拉或者下拉 ）</p>
+<ul>
+<li>4种最大输出速度</li>
+</ul>
+<p>-2MHz    低速</p>
+<p>-25MHz  中速</p>
+<p>-50MHz  快速</p>
+<p>-100MHz  高速</p>
+<h3 id="IO口的基本结构"><a class="header-anchor" href="#IO口的基本结构">¶</a>IO口的基本结构</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616112000.png" alt=""></p>
+<p>GPIO口的输入工作模式1——输入浮空模式</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616113506.png" alt=""></p>
+<blockquote>
+<p>在浮空状态下，上拉下拉没有设置（不起作用），输出驱动器不起作用，模拟通道，复用功能输入也不起作用，直接到输入数据寄存器被CPU读取</p>
+</blockquote>
+<p>GPIO的输入工作方式2——输入上拉模式</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616113917.png" alt=""></p>
+<blockquote>
+<p>在此模式下，上拉起作用，下拉不起作用，其他和浮空模式一样，被保存在输入数据寄存器</p>
+</blockquote>
+<p>GPIO的输入工作模式3——输入下拉模式</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616114348.png" alt=""></p>
+<blockquote>
+<p>与上拉模式类似，下拉起作用，上拉不起作用</p>
+</blockquote>
+<p>GPIO的输入工作模式4——模拟模式</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616114959.png" alt=""></p>
+<blockquote>
+<p>在信号到达TTL施密特触发器之前，会直接到模拟通道（也就是TTL施密特触发器开关是关闭的）；上拉和下拉是不起作用的</p>
+</blockquote>
+<p>GPIO的输出工作模式1——开漏输出模式</p>
+<blockquote>
+<p>输出不了高电平</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616160210.png" alt=""></p>
+<blockquote>
+<p>输入为1时，N-mos处于截至状态，对IO口电平没有影响，若是输出1，则需要接一个上拉电阻与电源相接</p>
+<p>输入为0时，N-mos处于导通状态 ，IO口会是0，输出0，接下拉电阻</p>
+<p>CPU可以通过输入数据寄存器读取到IO口的输出状态（1/0）</p>
+</blockquote>
+<p>GPIO的输出工作模式2——开漏复用输出模式</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616160716.png" alt=""></p>
+<blockquote>
+<p>此时，工作在复用功能输出</p>
+</blockquote>
+<p>GPIO的输出工作模式3——推挽输出模式</p>
+<blockquote>
+<p>推：灌电流 可以达到25mA（mos管内阻小）</p>
+<p>挽：拉电流</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616161250.png" alt=""></p>
+<blockquote>
+<p>此时，P-mos和N-mos都是工作的</p>
+<p>若输入为1，则P-mos导通，N-mos截至，输出VDD高电平</p>
+<p>若输入为0，则P-mos截至，N-mos导通，输出0低电平</p>
+</blockquote>
+<p>GPIO的输出工作模式4——推挽复用输出模式</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616161504.png" alt=""></p>
+<p>推挽输出：可以输出高低电平，连接数字器件</p>
+<p>开漏输出：只可以输出强低电平，高电平得靠外部电阻拉高。输出端相当于三极管的集电极。要得到高电平状态需要上拉电阻才行，适合于做电流性的驱动，其吸收电流的能力相对强。</p>
+<ul>
+<li>上电复位后IO口的状态</li>
+</ul>
+<p>上电复位后，GPIO默认为输入浮空状态，部分特殊功能引脚为特定状态</p>
+<p>复位后，调试引脚处于复位功能的上拉/下拉状态：</p>
+<p>PA15：JTDI处于上拉状态<br>
+PA14:JTCK/SWCLK处于下拉状态<br>
+PA13:JTMS/SWDAT处于下拉状态<br>
+PB4:NJTRST处于上拉状态<br>
+PB3:JTDO处于浮空状态</p>
+<h3 id="GPIO寄存器"><a class="header-anchor" href="#GPIO寄存器">¶</a>GPIO寄存器</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616171206.png" alt=""></p>
+<p>1.端口模式寄存器</p>
+<blockquote>
+<p>x=A…K是对应的208个引脚的CPU；对于STM32F429来说，只用到x=A…I</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616172058.png" alt=""></p>
+<blockquote>
+<p>两位控制1个IO端口</p>
+</blockquote>
+<p>2.端口输出类型寄存器(GPIOx_OTYPER)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616172532.png" alt=""></p>
+<blockquote>
+<p>每一位控制一个IO口，只用了低16位，16个IO口。</p>
+</blockquote>
+<p>3.端口输出速度寄存器(GPIOx_OSPEEDR)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616173713.png" alt=""></p>
+<blockquote>
+<p>同32位寄存器，每两位控制一个IO口。</p>
+</blockquote>
+<p>4.端口上拉/下拉寄存器(GPIOx_PUPDR)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616174212.png" alt=""></p>
+<div class='tip' ><p>至此，通过这4个寄存器的配置就可以达到GPIO的8种工作模式<p></div>
+<p>5.端口输入数据寄存器(GPIOx_IDR)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616174807.png" alt=""></p>
+<blockquote>
+<p>低16位有效，输入是低电平还是高电平写入在此寄存器中</p>
+</blockquote>
+<p>6.端口输出数据寄存器(GPIOx_ODR)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616175955.png" alt=""></p>
+<blockquote>
+<p>低16位，每一位控制一个输出电平；设置为1则输出高电平，设置为0则输出低电平</p>
+</blockquote>
+<p>7.端口置位/复位寄存器(GPIOx_BSRR)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616180029.png" alt=""></p>
+<blockquote>
+<p>控制IO口输出电平状态，低16位是端口置位位，高16位是端口复位位；</p>
+<p>低16位：设置为1则输出高电平，设置为0则不产生影响</p>
+<p>高16位：设置为1则输出低电平，设置为0则不产生影响</p>
+<p>优点：不用读写与ODR相比</p>
+</blockquote>
+<div class='tip warning' ><p>上图中的位设置/清除寄存器就是BSRR；输出数据寄存器就是ODR，这就是两者的关系<p></div>
+<p>8.端口配置锁定寄存器(GPIOx_LCKR)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616180101.png" alt=""></p>
+<blockquote>
+<p>低17位使用</p>
+</blockquote>
+<p>9.复用功能寄存器(GPIOx_AFRL、AFRH)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210616180134.png" alt=""></p>
+<blockquote>
+<p>分高位AFRH和低位AFRL，分别控制8个IO口；两个32位寄存器，一共64位；IO口是16个，所以每个IO口需要4位控制</p>
+</blockquote>
+<h2 id="跑马灯"><a class="header-anchor" href="#跑马灯">¶</a>跑马灯</h2>
+<p>led灯的硬件连接</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617165905.png" alt=""></p>
+<blockquote>
+<p>以LED0为例，若输出为0，则有电位差，LED0亮；若输出为1，则DS0右边是3.3V，无电位差，LED0不亮</p>
+<p>从电平方式上看，，总结出输出方式为推挽输出（上拉）</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617193151.png" alt=""></p>
+<blockquote>
+<p>外设使用之前，要使用使能IO口时钟。配置IO口时钟使能寄存器：RCC-&gt;AHB1ENR(外设时钟使能寄存器)</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617193807.png" alt=""></p>
+<p><font color="red">初始化IO口模式。配置四个配置寄存器：GPIOx_MODER(模式)、GPIOx_OTYPER(输出类型)、GPIOx_OSPEEDR(输出速度)、GPIOx_PUPDR(上拉下拉)</font></p>
+<p><font color="red">最后，操作IO口，输出高低电平。配置寄存器GPIOx_ODR或着GPIOx_BSRR。</font></p>
+<div class='tip error'><p>出现了一些错误<p></div>
+<p>1.编写led.h文件时出现</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617162736.png" alt=""></p>
+<p>解决：由于<code>#ifndef__LED_H</code>应该有空格，即<code>ifndef __LED_H</code>；同理<code>#define__LED_H</code>也是要变成<code>#define __LED_H</code></p>
+<p>2.出现宏定义无效的情况</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617163357.png" alt=""></p>
+<p>这是因为led.h出错的结果，把led.h文件改好，就无错了；注意：led.h文件要添加到工程去</p>
+<p>3.编译报错</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210617163717.png" alt=""></p>
+<p>这是由于工程中还有一个main函数的存在，把另一个移除就可以了</p>
+<div class='tip success'><p>成功<p></div>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;sys.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;led.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;delay.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化PB0和PB1为输出口，并使能这两个口的时钟</span></span><br><span class="line"><span class="comment">//LED IO初始化</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">LED_Init</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	RCC-&gt;AHB1ENR |=<span class="number">1</span>&lt;&lt;<span class="number">1</span>;		<span class="comment">//使能PORTB时钟</span></span><br><span class="line">    <span class="comment">//只用操作位1，其他位不用管</span></span><br><span class="line">	<span class="comment">// “|=”是位或  “&lt;&lt;”：右移一位；使位1保持1，开时钟</span></span><br><span class="line">	</span><br><span class="line">	<span class="comment">//GPIOB是要操作的GPIO组，PIN0和PIN1这两个引脚分别控制LED1和LED0</span></span><br><span class="line">	<span class="comment">//GPIO_MODE_OUT在sys.h文件中宏定义为普通输出（也就是GPIO口模式选择输出）</span></span><br><span class="line">	<span class="comment">//GPIO_OTYPE_PP在sys.h文件中宏定义为推挽输出</span></span><br><span class="line">	<span class="comment">//GPIO_SPEED_100M在syys.h中宏定义为GPIO速度100Mhz</span></span><br><span class="line">	<span class="comment">//GPIO_PUPD_PU在sys.h中宏定义为上拉</span></span><br><span class="line">	GPIO_Set(GPIOB,PIN0|PIN1,GPIO_MODE_OUT,GPIO_OTYPE_PP,<span class="comment">//GPIO口设置：GPIO_Set函数</span></span><br><span class="line">			 GPIO_SPEED_100M,GPIO_PUPD_PU);	<span class="comment">//PB0,PB1设置</span></span><br><span class="line">	</span><br><span class="line">	LED0 = <span class="number">1</span>;	<span class="comment">//LED0关闭</span></span><br><span class="line">	LED1 = <span class="number">1</span>;	<span class="comment">//LED1关闭</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Stm32_Clock_Init(<span class="number">360</span>,<span class="number">25</span>,<span class="number">2</span>,<span class="number">8</span>);	<span class="comment">//设置时钟，180Mhz；初始化系统时钟</span></span><br><span class="line">	delay_init(<span class="number">180</span>);	<span class="comment">//初始化延时函数</span></span><br><span class="line">	LED_Init();		<span class="comment">//初始化LED时钟</span></span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		LED0 = <span class="number">0</span>;		<span class="comment">//DS0亮</span></span><br><span class="line">		LED1 = <span class="number">1</span>;		<span class="comment">//DS1灭</span></span><br><span class="line">		delay_ms(<span class="number">500</span>);</span><br><span class="line">		LED0 = <span class="number">1</span>;		<span class="comment">//DS0灭</span></span><br><span class="line">		LED1 = <span class="number">0</span>;		<span class="comment">//DS1亮</span></span><br><span class="line">		delay_ms(<span class="number">1000</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>keil软件一般在最后打出一行空行。</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> __LED_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> __LED_H</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&quot;sys.h&quot;</span></span></span><br><span class="line"><span class="comment">//LED端口定义</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LED0 PBout(1)	<span class="comment">//DS0，PBout输出为1</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> LED1 PBout(0)	<span class="comment">//DS1，PBout输出为0</span></span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">LED_Init</span><span class="params">(<span class="keyword">void</span>)</span></span>;	<span class="comment">//初始化</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="按键输入实验"><a class="header-anchor" href="#按键输入实验">¶</a>按键输入实验</h2>
+<p>硬件连接</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618101547.png" alt=""></p>
+<blockquote>
+<p>当KEY0/KEY1/KEY2按下时，检测到低电平；松开检测到高电平</p>
+<p>当KEY_UP按下时，检测到高电平；松开检测到低电平</p>
+<p>通过上图可以看出，KEY0、KEY1、KEY2是低电平有效，KEY_UP是高电平有效；外部都没有上下拉电阻，所以，需要在 STM32F429 内部设置上下拉。</p>
+<p>按键 KEY0 连接在 PH3 上、KEY1 连接在 PH2 上、KEY2 连接在 PC13 上、KEY_UP 连接在 PA0上。</p>
+</blockquote>
+<blockquote>
+<p>KEY0-&gt;PH3  上拉输入<br>
+KEY1-&gt;PH2  上拉输入<br>
+KEY2-&gt;PC13  上拉输入<br>
+WK_UP-&gt;PA0  下拉输入</p>
+</blockquote>
+<p>由于使用了PA组、PC组、PH组三组GPIO口，所以外设时钟也要设置三种。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618103813.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618103801.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618103742.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618104011.png" alt=""></p>
+<blockquote>
+<p>再通过上面的图，设置时钟使能</p>
+</blockquote>
+<div class='tip error'><p>出现错误<p></div>
+<p>多个main函数定义</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210618163923.png" alt=""></p>
+<blockquote>
+<p>这是因为定义了多个main函数，实际上的main函数要定义在USER文件夹下面</p>
+</blockquote>
+<h2 id="复习"><a class="header-anchor" href="#复习">¶</a>复习</h2>
+<ol>
+<li>ifdef条件编译</li>
+</ol>
+<blockquote>
+<p>单片机程序开发过程中，经常会遇到一种情况，当满足某条件时对一组语句进行编译，而当条件不满足时则编译另一组语句。</p>
+</blockquote>
+<p>和C语言（if语句）不同的是，可以定义函数当作成语句块，调用函数</p>
+<p>ifndef条件编译与上一条ifdef语句相反，同样要用#endif结尾</p>
+<ol start="2">
+<li>typedef类型别名</li>
+</ol>
+<blockquote>
+<p>定义一种类型的别名，而不只是简单的宏替换，可以用作同时声名指针型的多个对象。</p>
+</blockquote>
+<p>相当于简化命名</p>
+<ol start="3">
+<li>extern变量申明</li>
+</ol>
+<blockquote>
+<p>C语言中的extern可以置于变量或着函数前，以表示变量（全局变量）或者函数的定义在别的文件中，提示编译器遇到此变量和函数是在其他的模块中寻找其定义。也要说明变量的类型</p>
+<p>注意：对于extern申明变量可以多次，但是定义只有一次。</p>
+</blockquote>
+<ol start="4">
+<li>static静态关键字</li>
+</ol>
+<ul>
+<li>static申明的局部变量，存储在静态存储区。只会被初始化一次，在被调用的话，会跳过。</li>
+<li>在函数调用结束之后，不会被释放，值会一直保留下来</li>
+<li>static申明的局部变量，具有记忆功能</li>
+<li>static申明的函数作用域仅限当前.c文件，其他.c文件无法调用。</li>
+</ul>
+<ol start="5">
+<li>__weak弱函数</li>
+</ol>
+<p>①weak函数和重写的函数不能放在同一个文件</p>
+<p>②避免重复定义</p>
+<p>③若用户没有重写，那么会执行弱函数，若重写了该函数，则会执行重写的函数</p>
+<ol start="6">
+<li>结构体：</li>
+</ol>
+<blockquote>
+<p>将不同类型的数据存放在一起，作为一个整体进行处理</p>
+</blockquote>
+<p>可扩展性强</p>
+<ol start="7">
+<li>位操作</li>
+</ol>
+<p><code>&gt;&gt;</code>右移操作，<code>&lt;&lt;</code>左移操作</p>
+<p>二进制左移运算符。将一个运算对象的各二进制位全部左移若干位（左边的二进制位丢弃，右边补0）</p>
+<p>二进制右移运算符。将一个数的各二进制位全部右移若干位，正数左补0，负数左补1，右边丢弃</p>
+<h2 id="MDK使用"><a class="header-anchor" href="#MDK使用">¶</a>MDK使用</h2>
+<ol>
+<li>书签</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210707153710.png" alt=""></p>
+<ol start="2">
+<li>生成hex文件</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210707154235.png" alt=""></p>
+<p>第一个框是生成hex文件</p>
+<p>第二个框是查看函数变量定义的地方</p>
+<ol start="3">
+<li>文本美化</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210707155018.png" alt=""></p>
+<h2 id="时钟系统"><a class="header-anchor" href="#时钟系统">¶</a>时钟系统</h2>
+<p>时钟系统和下一节的时钟系统初始化都是参考CSDN上一位博主的文章  <a class="btn-beautify button--animated " href="https://blog.csdn.net/qq_36243942/article/details/83655339" 
+  title="跳转链接"><i class="far fa-hand-point-right fa-fw"></i><span>跳转链接</span></a></p>
+<p>STM32有5个时钟源：HSI、HSE、LSI、LSE、PLL</p>
+<p>①、HSI是<font color='red'>高速内部时钟</font>，RC振荡器，频率为16MHz，精度不高。可以直接作为系统时钟或者用作PLL时钟输入。　接的外部晶振</p>
+<p>②、HSE是<font color='red'>高速外部时钟</font>，可接石英/陶瓷谐振器，或者接外部时钟源，频率范围为4MHz~26MHz。</p>
+<p>③、LSI是<font color='red'>低速内部时钟</font>，RC振荡器，频率为32kHz，提供低功耗时钟。主要供独立看门狗和自动唤醒单元使用。</p>
+<p>④、LSE是<font color='red'>低速外部时钟</font>，接频率为32.768kHz的石英晶体。RTC（实时时钟）</p>
+<p>⑤、PLL为<font color='red'>锁相环倍频</font>输出。 来源可以是HSI/2、HSE、HSE/2，倍频范围为 2-16 倍</p>
+<div class="note info flat"><p>任何一个外设在使用之前，必须首先使能其相应的时钟</p>
+</div>
+<blockquote>
+<p>LSE接入外部晶振32.768kHz</p>
+<p>HSE接入外部晶振2-26MHz，可通过分频器，做RTC的一个时钟源；可做系统时钟的一个时钟源；可做PLL锁相环时钟源</p>
+<p>HSI可做系统时钟的一个时钟源；也可做锁相环的输入；也可做MCO1（PA8）信号输出引脚</p>
+<p>PLL可做系统时钟的一个时钟源</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210708165624.png" alt="时钟树-F429"></p>
+<blockquote>
+<p>PLL是一种反馈控制电路。锁相环通常由鉴相器（PD,Phase Detector）、环路滤波器（LF,Loop Filter）和压控振荡器（VCO,Voltage Controlled Oscillator）三部分组成。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210708172720.png" alt="img"></p>
+<p>特点是：通过外部输入的参考信号和控制环路的压控振荡器的输入信号的相位差，来得到它们的电压差，以这个电压作为误差电压来控制振荡器的频率，使压控振荡器频率达到与输入参考信号频率按一定比例输出的频率，因锁相环可以实现输出信号频率对输入信号频率的自动跟踪，所以锁相环通常用于闭环跟踪电路。锁相环在工作过程中，当输出信号的频率成比例地反映输入信号的频率时，输出电压与输入电压保持固定的相位差值，这样输出电压与输入电压的相位就被锁住了。</p>
+</blockquote>
+<blockquote>
+<p><strong>STM32F4 有三个 PLL:</strong></p>
+<p>1） 主 PLL(PLL)由 HSE 或者 HSI 提供时钟信号，并具有两个不同的输出时钟。第一个输出 PLLP 用于生成<strong>高速</strong>的系统时钟（最高 180MHz）第二个输出 PLLQ 为 48M 时钟， 用于 USB OTG FS 时钟，随机数发生器的时钟和SDIO时钟（SD卡）。VCO是压控振荡器。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210709095542.png" alt="img"></p>
+<p>2） 第一个专用 PLL(PLLI2S)用于生成精确时钟， 在 I2S 和 SAI1 上实现高品质音频性能。 其中， N 是用于 PLLI2S vco 的倍频系数，其取值范围是： 192~432； R 是 I2S 时钟的分频系数，其取值范围是： 2~7； Q 是 SAI 时钟分频系数，其取值范围是： 2~15； <font color='red'>P 没用到</font>。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711174756.png" alt="img"></p>
+<p>3） 第二个专用 PLL(PLLSAI)同样用于生成精确时钟，用于 SAI1 输入时钟，同时还为 LCD_TFT接口提供精确时钟。 其中， N 是用于 PLLSAI vco 的倍频系数，其取值范围是： 192~432；Q 是 SAI 时钟分频系数，其取值范围是： 2~15； R 是 LTDC 时钟的分频系数，其取值范围是： 2~7；<font color='red'> P 没用到</font>。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711174742.png" alt="img"></p>
+</blockquote>
+<ul>
+<li>主PLL时钟计算</li>
+</ul>
+<p>例子：主 PLL 时钟第一个高速时钟输出 PLLP 的计算方法：配置180MHz为例：</p>
+<p>分析：主 PLL 时钟的时钟源要先经过一个分频系数为 M 的分频器，然后经过倍频系数为 N 的倍频器出来之后还需要经过一个分频系数为 P（第一个输出 PLLP）或者 Q（第二个输出 PLLQ）的分频器分频之后，最后才生成最终的主 PLL 时钟。例如我们的外部晶振选择 25MHz。同时我们设置相应的分频器 M=25，倍频器倍频系数 N=360，分频器分频系数 P=2，那么主 PLL 生成的第一个输出高速时钟 PLLP 为：</p>
+<blockquote>
+<p><strong>PLL=25MHz * N/ (M*P)=25MHz* 360 /(25*2) = 180MHz</strong></p>
+</blockquote>
+<p>配置过程如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711174559.png" alt=""></p>
+<h2 id="时钟系统初始化"><a class="header-anchor" href="#时钟系统初始化">¶</a>时钟系统初始化</h2>
+<h3 id="库函数版本源码分析"><a class="header-anchor" href="#库函数版本源码分析">¶</a>库函数版本源码分析</h3>
+<p>在系统进入主函数之前，首先会执行SystemInit这个函数对系统进行初始化</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711174453.png" alt=""></p>
+<p>程序源码：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SystemInit</span><span class="params">(<span class="keyword">void</span>)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">/* FPU 设置------------------------------------------------------------*/</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">if</span> (__FPU_PRESENT == 1) &amp;&amp; (__FPU_USED == 1)</span></span><br><span class="line">SCB-&gt;CPACR |= ((<span class="number">3U</span>L &lt;&lt; <span class="number">10</span>*<span class="number">2</span>)|(<span class="number">3U</span>L &lt;&lt; <span class="number">11</span>*<span class="number">2</span>)); <span class="comment">/* set CP10 and CP11 Full Access */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"><span class="comment">/* 复位 RCC 时钟配置为默认配置-----------*/</span></span><br><span class="line">RCC-&gt;CR |= (<span class="keyword">uint32_t</span>)<span class="number">0x00000001</span>;<span class="comment">//打开 HSION 位，默认给的是HSI的时钟</span></span><br><span class="line">RCC-&gt;CFGR = <span class="number">0x00000000</span>;<span class="comment">//复位 CFGR 寄存器</span></span><br><span class="line">RCC-&gt;CR &amp;= (<span class="keyword">uint32_t</span>)<span class="number">0xFEF6FFFF</span>;<span class="comment">//复位 HSEON, CSSON and PLLON 位</span></span><br><span class="line">RCC-&gt;PLLCFGR = <span class="number">0x24003010</span>; <span class="comment">//复位寄存器 PLLCFGR</span></span><br><span class="line">RCC-&gt;CR &amp;= (<span class="keyword">uint32_t</span>)<span class="number">0xFFFBFFFF</span>;<span class="comment">//复位 HSEBYP 位</span></span><br><span class="line">RCC-&gt;CIR = <span class="number">0x00000000</span>;<span class="comment">//关闭所有中断</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">if</span> defined (DATA_IN_ExtSRAM) || defined (DATA_IN_ExtSDRAM)</span></span><br><span class="line">SystemInit_ExtMemCtl();</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span> <span class="comment">/* DATA_IN_ExtSRAM || DATA_IN_ExtSDRAM */</span></span></span><br><span class="line"><span class="comment">/* 配置中断向量表地址=基地址+偏移地址 ------------------*/</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> VECT_TAB_SRAM</span></span><br><span class="line">SCB-&gt;VTOR = SRAM_BASE | VECT_TAB_OFFSET;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line">SCB-&gt;VTOR = FLASH_BASE | VECT_TAB_OFFSET;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>程序的作用：</p>
+<p>1） FPU 设置<br>
+2） 复位 RCC 时钟配置为默认复位值（默认开始了 HIS）<br>
+3） 外部存储器配置<br>
+4） 中断向量表地址配置</p>
+<blockquote>
+<p>在F4的HAL库汇总SystemInit函数，并没有设置系统的主频和外设时钟的频率，所以所以需要自己去写这个函数。</p>
+</blockquote>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//系统时钟初始化函数</span></span><br><span class="line"><span class="comment">//plln:主PLL倍频系数(PLL倍频),取值范围:64~432.</span></span><br><span class="line"><span class="comment">//pllm:主PLL和音频PLL分频系数(PLL之前的分频),取值范围:2~63.</span></span><br><span class="line"><span class="comment">//pllp:系统时钟的主PLL分频系数(PLL之后的分频),取值范围:2,4,6,8.(仅限这4个值!)</span></span><br><span class="line"><span class="comment">//pllq:USB/SDIO/随机数产生器等的主PLL分频系数(PLL之后的分频),取值范围:2~15.</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Stm32_Clock_Init</span><span class="params">(u32 plln,u32 pllm,u32 pllp,u32 pllq)</span></span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">	RCC-&gt;CR|=<span class="number">0x00000001</span>;		<span class="comment">//设置HISON,开启内部高速RC振荡</span></span><br><span class="line">	RCC-&gt;CFGR=<span class="number">0x00000000</span>;		<span class="comment">//CFGR清零 </span></span><br><span class="line">	RCC-&gt;CR&amp;=<span class="number">0xFEF6FFFF</span>;		<span class="comment">//HSEON,CSSON,PLLON清零 </span></span><br><span class="line">	RCC-&gt;PLLCFGR=<span class="number">0x24003010</span>;	<span class="comment">//PLLCFGR恢复复位值 </span></span><br><span class="line">	RCC-&gt;CR&amp;=~(<span class="number">1</span>&lt;&lt;<span class="number">18</span>);			<span class="comment">//HSEBYP清零,外部晶振不旁路</span></span><br><span class="line">	RCC-&gt;CIR=<span class="number">0x00000000</span>;		<span class="comment">//禁止RCC时钟中断 </span></span><br><span class="line">	Sys_Clock_Set(plln,pllm,pllp,pllq);<span class="comment">//设置时钟 </span></span><br><span class="line">	<span class="comment">//配置向量表				  </span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span>  VECT_TAB_RAM</span></span><br><span class="line">	MY_NVIC_SetVectorTable(<span class="number">1</span>&lt;&lt;<span class="number">29</span>,<span class="number">0x0</span>);</span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span>   </span></span><br><span class="line">	MY_NVIC_SetVectorTable(<span class="number">0</span>,<span class="number">0x0</span>);</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span> </span></span><br><span class="line">&#125;		</span><br></pre></td></tr></table></figure>
+<p>这个函数需要的参数是4个，分别与系统原理图对应的是，如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711174358.png" alt=""></p>
+<p>然后，查看时钟控制CR寄存器（控制寄存器）的描述：</p>
+<ol>
+<li>开启HSION，开启内部高速RC震荡</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711164714.png" alt=""></p>
+<ol start="2">
+<li>时钟配置寄存器CFRG清零</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711165007.png" alt=""></p>
+<ol start="3">
+<li>配置时钟控制CR寄存器， 使位HSEON,CSSON,PLLON清零（第16、19、24位）</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711165527.png" alt=""></p>
+<ol start="4">
+<li>RCC PLL 配置寄存器 (RCC_PLLCFGR),恢复默认值：<code>RCC-&gt;PLLCFGR=0x24003010;   //PLLCFGR恢复复位值</code></li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711165728.png" alt=""></p>
+<ol start="5">
+<li>设置CR寄存器，外部晶振不旁路</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711170055.png" alt=""></p>
+<ol start="6">
+<li>RCC 时钟中断寄存器 (RCC_CIR)，RCC-&gt;CR=0X00000000; //禁止RCC时钟中断</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711170311.png" alt=""></p>
+<ol start="7">
+<li>设置时钟，使用函数Sys_Clock_Set(plln,pllm,pllp,pllq);//设置时钟，函数原型如下：</li>
+</ol>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function">u8 <span class="title">Sys_Clock_Set</span><span class="params">(u32 plln,u32 pllm,u32 pllp,u32 pllq)</span></span></span><br><span class="line"><span class="function"></span>&#123; </span><br><span class="line">	u16 retry=<span class="number">0</span>;</span><br><span class="line">	u8 status=<span class="number">0</span>;</span><br><span class="line">	RCC-&gt;CR|=<span class="number">1</span>&lt;&lt;<span class="number">16</span>;				<span class="comment">//HSE 开启 </span></span><br><span class="line">	<span class="keyword">while</span>(((RCC-&gt;CR&amp;(<span class="number">1</span>&lt;&lt;<span class="number">17</span>))==<span class="number">0</span>)&amp;&amp;(retry&lt;<span class="number">0X1FFF</span>))retry++;<span class="comment">//等待HSE RDY</span></span><br><span class="line">	<span class="keyword">if</span>(retry==<span class="number">0X1FFF</span>)status=<span class="number">1</span>;	<span class="comment">//HSE无法就绪</span></span><br><span class="line">	<span class="keyword">else</span>   </span><br><span class="line">	&#123;</span><br><span class="line">		RCC-&gt;APB1ENR|=<span class="number">1</span>&lt;&lt;<span class="number">28</span>;	<span class="comment">//电源接口时钟使能</span></span><br><span class="line">		PWR-&gt;CR|=<span class="number">3</span>&lt;&lt;<span class="number">14</span>; 		<span class="comment">//高性能模式,时钟可到180Mhz</span></span><br><span class="line">		RCC-&gt;CFGR|=(<span class="number">0</span>&lt;&lt;<span class="number">4</span>)|(<span class="number">5</span>&lt;&lt;<span class="number">10</span>)|(<span class="number">4</span>&lt;&lt;<span class="number">13</span>);<span class="comment">//HCLK 不分频;APB1 4分频;APB2 2分频. </span></span><br><span class="line">		RCC-&gt;CR&amp;=~(<span class="number">1</span>&lt;&lt;<span class="number">24</span>);	<span class="comment">//关闭主PLL</span></span><br><span class="line">		RCC-&gt;PLLCFGR=pllm|(plln&lt;&lt;<span class="number">6</span>)|(((pllp&gt;&gt;<span class="number">1</span>)<span class="number">-1</span>)&lt;&lt;<span class="number">16</span>)|(pllq&lt;&lt;<span class="number">24</span>)|(<span class="number">1</span>&lt;&lt;<span class="number">22</span>);<span class="comment">//配置主PLL,PLL时钟源来自HSE</span></span><br><span class="line">		RCC-&gt;CR|=<span class="number">1</span>&lt;&lt;<span class="number">24</span>;			<span class="comment">//打开主PLL</span></span><br><span class="line">		<span class="keyword">while</span>((RCC-&gt;CR&amp;(<span class="number">1</span>&lt;&lt;<span class="number">25</span>))==<span class="number">0</span>);<span class="comment">//等待PLL准备好 </span></span><br><span class="line">		FLASH-&gt;ACR|=<span class="number">1</span>&lt;&lt;<span class="number">8</span>;		<span class="comment">//指令预取使能.</span></span><br><span class="line">		FLASH-&gt;ACR|=<span class="number">1</span>&lt;&lt;<span class="number">9</span>;		<span class="comment">//指令cache使能.</span></span><br><span class="line">		FLASH-&gt;ACR|=<span class="number">1</span>&lt;&lt;<span class="number">10</span>;		<span class="comment">//数据cache使能.</span></span><br><span class="line">		FLASH-&gt;ACR|=<span class="number">5</span>&lt;&lt;<span class="number">0</span>;		<span class="comment">//5个CPU等待周期. </span></span><br><span class="line">		RCC-&gt;CFGR&amp;=~(<span class="number">3</span>&lt;&lt;<span class="number">0</span>);		<span class="comment">//清零</span></span><br><span class="line">		RCC-&gt;CFGR|=<span class="number">2</span>&lt;&lt;<span class="number">0</span>;		<span class="comment">//选择主PLL作为系统时钟	 </span></span><br><span class="line">		<span class="keyword">while</span>((RCC-&gt;CFGR&amp;(<span class="number">3</span>&lt;&lt;<span class="number">2</span>))!=(<span class="number">2</span>&lt;&lt;<span class="number">2</span>));<span class="comment">//等待主PLL作为系统时钟成功. </span></span><br><span class="line">	&#125; </span><br><span class="line">	<span class="keyword">return</span> status;</span><br><span class="line">&#125;  </span><br></pre></td></tr></table></figure>
+<ol start="8">
+<li>RCC-&gt;CR|=1&lt;&lt;16;         //设置CR寄存器的第16位为1，HSE 开启</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711171512.png" alt=""></p>
+<ol start="9">
+<li>等待HSE时钟就绪，判断CR寄存器的第17位是否为1，返回1准备就绪，如果超时，返回标志位status=1.</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711172053.png" alt=""></p>
+<ol start="10">
+<li>如果准备就绪，使能电源接口时钟，RCC-&gt;APB1ENR|=1&lt;&lt;28;   //设置APB1ENR寄存器28位为1电源接口时钟使能</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711172112.png" alt=""></p>
+<ol start="11">
+<li>开始电源的高性能模式，PWR-&gt;CR|=3&lt;&lt;14;      //高性能模式,时钟可到180Mhz</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711172331.png" alt=""></p>
+<ol start="12">
+<li>配置RCC的CFGR寄存器，//HCLK 不分频;APB1 4分频;APB2 2分频</li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711174144.png" alt=""></p>
+<ol start="13">
+<li><strong>RCC-&gt;CR&amp;=~(1&lt;&lt;24);   //关闭主PLL，配置主PLL的一些参数，配置完再重新打开</strong></li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210711175250.png" alt=""></p>
+<ol start="14">
+<li>//配置主PLL,PLL时钟源来自HSE，<strong>RCC-&gt;PLLCFGR=pllm|(plln&lt;&lt;6)|(((pllp&gt;&gt;1)-1)&lt;&lt;16)|(pllq&lt;&lt;24)|(1&lt;&lt;22);</strong></li>
+</ol>
+<ul>
+<li><strong>pllm,设置PLLM</strong></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712105826.png" alt=""></p>
+<ul>
+<li><strong>(plln&lt;&lt;6)，设置PLLN</strong></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712105909.png" alt=""></p>
+<ul>
+<li><strong>(((pllp&gt;&gt;1)-1)&lt;&lt;16),设置系统时钟的主PLL分频系数(PLL之后的分频),取值范围:2,4,6,8.(仅限这4个值!)</strong></li>
+</ul>
+<blockquote>
+<p>为何是：(((pllp&gt;&gt;1)-1)&lt;&lt;16)呢？如下解释，当我们取值pllp为2时，可以得到(((pllp&gt;&gt;1)-1)&lt;&lt;16)=0</p>
+<p>当pllp取值为4时，(((pllp&gt;&gt;1)-1)&lt;&lt;16)=1，同理，pllp取值为6时，(((pllp&gt;&gt;1)-1)&lt;&lt;16)=3.其实就是在调用函数的时候方便设置。可以看都这个寄存器的位，当第17:16为0时，就是这只pllp为2分频。</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712110414.png" alt=""></p>
+<ul>
+<li><strong>(pllq&lt;&lt;24)，pllq:USB/SDIO/随机数产生器等的主PLL分频系数(PLL之后的分频),取值范围:2~15.</strong></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712110458.png" alt=""></p>
+<ul>
+<li><strong>(1&lt;&lt;22)，选择主PLL的时钟源是HSE外部震荡时钟</strong></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712110533.png" alt=""></p>
+<p>此步骤完成的工作就是如下所示的设置：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712110808.png" alt=""></p>
+<ol start="15">
+<li>设置完主PLL之后，重新打开主PLL: <strong>RCC-&gt;CR|=1&lt;&lt;24;       //打开主PLL</strong></li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712111026.png" alt=""></p>
+<ol start="16">
+<li>每次打开PLL之前，都要等待就绪：<strong>while((RCC-&gt;CR&amp;(1&lt;&lt;25))==0);//等待PLL准备好</strong></li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712111334.png" alt=""></p>
+<ol start="17">
+<li>设置FLASH寄存器参数：</li>
+</ol>
+<blockquote>
+<p>FLASH-&gt;ACR|=1&lt;&lt;8;     //指令预取使能.<br>
+FLASH-&gt;ACR|=1&lt;&lt;9;     //指令cache使能.<br>
+FLASH-&gt;ACR|=1&lt;&lt;10;     //数据cache使能.<br>
+FLASH-&gt;ACR|=5&lt;&lt;0;     //5个CPU等待周期.</p>
+</blockquote>
+<ol start="18">
+<li>设置CFRG(RCC时钟配置寄存器)选择PLL作为系统时钟，<strong>RCC-&gt;CFGR&amp;=~(3&lt;&lt;0);    //清零 RCC-&gt;CFGR|=2&lt;&lt;0;</strong></li>
+</ol>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712111614.png" alt=""></p>
+<ol start="19">
+<li>等待主PLL设置为系统主时钟成功：<strong>while((RCC-&gt;CFGR&amp;(3&lt;&lt;2))!=(2&lt;&lt;2));</strong></li>
+</ol>
+<p><strong>语句含义：</strong> <strong>当CFGR的3：2位不等于01时就说明主PLL还未就绪，就绪等待。</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712112050.png" alt=""></p>
+<ol start="20">
+<li><strong>最后一步，配置向量表。</strong></li>
+</ol>
+<p>通过这样的设置系统时钟的整体配置就OK了。</p>
+<p>如果调用函数：**u8 Sys_Clock_Set(u32 plln,u32 pllm,u32 pllp,u32 pllq)，**<strong>产生180Mhz的主频</strong></p>
+<p>**设置参数：**外部晶振为25M的时候:plln=360,pllm=25,pllp=2,pllq=8.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210712112224.png" alt=""></p>
+<h3 id="HAL库函数版本源码分析"><a class="header-anchor" href="#HAL库函数版本源码分析">¶</a>HAL库函数版本源码分析</h3>
+<p>HAL库主要是把寄存器进行封装，然后把一些参数合并到一个结构体，通过调用结构体的方式对寄存器进行赋值，间接的完成对STM32寄存器的配置。</p>
+<p>主要是下面两个结构体：</p>
+<p>1.RCC_OscInitTypeDef结构体：</p>
+<blockquote>
+<p>从结构体的名称中可以看出，这个结构体主要是选择时钟源，然后是时钟的状态（开启还是关闭）</p>
+</blockquote>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210713165115.png" alt=""></p>
+<p>可以看到RCC_OscInitTypeDef 里面还嵌套了一个RCC_PLLInitTypeDef结构体，主要是用于主PLL配置用的。比如设置M分频，vco倍频等。</p>
+<ul>
+<li>RCC_PLLInitTypeDef 结构体如下:</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210713165242.png" alt=""></p>
+<p>所以，第一步是定义一个<font color='red'>RCC_OscInitTypeDef</font>结构体变量，并给这个结构体变量赋值，然后调用，HAL_RCC_OscConfig函数(时钟源配置函数)，把这个结构体变量传进去，使设置生效。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">RCC_OscInitTypeDef RCC_OscInitStructure; </span><br><span class="line">RCC_ClkInitTypeDef RCC_ClkInitStructure;</span><br><span class="line"></span><br><span class="line">__HAL_RCC_PWR_CLK_ENABLE(); <span class="comment">//使能PWR时钟</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//下面这个设置用来设置调压器输出电压级别，以便在器件未以最大频率工作</span></span><br><span class="line"><span class="comment">//时使性能与功耗实现平衡，此功能只有STM32F42xx和STM32F43xx器件有，</span></span><br><span class="line">__HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);<span class="comment">//设置调压器输出电压级别1</span></span><br><span class="line"></span><br><span class="line">RCC_OscInitStructure.OscillatorType=RCC_OSCILLATORTYPE_HSE;    <span class="comment">//时钟源为HSE</span></span><br><span class="line">RCC_OscInitStructure.HSEState=RCC_HSE_ON;                      <span class="comment">//打开HSE</span></span><br><span class="line">RCC_OscInitStructure.PLL.PLLState=RCC_PLL_ON;<span class="comment">//打开PLL</span></span><br><span class="line">RCC_OscInitStructure.PLL.PLLSource=RCC_PLLSOURCE_HSE;<span class="comment">//PLL时钟源选择HSE</span></span><br><span class="line">RCC_OscInitStructure.PLL.PLLM=pllm; <span class="comment">//主PLL和音频PLL分频系数(PLL之前的分频),取值范围:2~63.</span></span><br><span class="line">RCC_OscInitStructure.PLL.PLLN=plln; <span class="comment">//主PLL倍频系数(PLL倍频),取值范围:64~432.  </span></span><br><span class="line">RCC_OscInitStructure.PLL.PLLP=pllp; <span class="comment">//系统时钟的主PLL分频系数(PLL之后的分频),取值范围:2,4,6,8.(仅限这4个值!)</span></span><br><span class="line">RCC_OscInitStructure.PLL.PLLQ=pllq; <span class="comment">//USB/SDIO/随机数产生器等的主PLL分频系数(PLL之后的分频),取值范围:2~15.</span></span><br><span class="line">ret=HAL_RCC_OscConfig(&amp;RCC_OscInitStructure);<span class="comment">//初始化</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210713165858.png" alt=""></p>
+<p>下面看一下<font color='red'>HAL_RCC_OscConfig</font>函数</p>
+<ul>
+<li>OscillatorType 这个成员变量是选择时钟时钟源的，可以看一下他的取值范围：取值范围小于15</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210715102618.png" alt=""></p>
+<p>在HAL库有对每一个时钟源进行宏定义的，如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210715102810.png" alt=""></p>
+<p>在上面的程序中，设置的成员变量的值为：<font color='red'>RCC_OSCILLATORTYPE_HSE </font>,就是值为：0x00000001</p>
+<ul>
+<li>HSEState 是选择时钟的工作方式，此处选择：<em>RCC_HSE_ON</em>,值为：0x01</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210715103415.png" alt=""></p>
+<p>在<strong>HAL_RCC_OscConfig</strong>，函数中对HSE的配置如下,贴出一部分代码：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* Check the parameters */</span></span><br><span class="line">  assert_param(IS_RCC_OSCILLATORTYPE(RCC_OscInitStruct-&gt;OscillatorType));</span><br><span class="line">  <span class="comment">/*------------------------------- HSE Configuration ------------------------*/</span> </span><br><span class="line">  <span class="keyword">if</span>(((RCC_OscInitStruct-&gt;OscillatorType) &amp; RCC_OSCILLATORTYPE_HSE) == RCC_OSCILLATORTYPE_HSE)</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="comment">/* Check the parameters */</span></span><br><span class="line">    assert_param(IS_RCC_HSE(RCC_OscInitStruct-&gt;HSEState));</span><br><span class="line">    <span class="comment">/* When the HSE is used as system clock or clock source for PLL in these cases HSE will not disabled */</span></span><br><span class="line">	  <span class="comment">//判断HSE是否作为系统时钟，或者作为PLL时钟的来源</span></span><br><span class="line">	  </span><br><span class="line">	  </span><br><span class="line">	 <span class="comment">// RCC_CFGR_SWS_HSE=0x00000004</span></span><br><span class="line">	 <span class="comment">//__HAL_RCC_GET_SYSCLK_SOURCE函数，获取CFGR位 3:2 SWS： 系统时钟切换状态 (System clock switch status)</span></span><br><span class="line">	  <span class="comment">//判断3:2位是否为01，含义：01： HSE 振荡器用作系统时钟，这两个位为只读</span></span><br><span class="line">	  <span class="comment">//也就是判断此时系统时钟或者主PLL时钟是否已经设置为HSE</span></span><br><span class="line">	  </span><br><span class="line">	  <span class="comment">//RCC_CFGR_SWS_PLL=0x00000008 ,判断CFGR的第3为是否为1</span></span><br><span class="line">    <span class="keyword">if</span>((__HAL_RCC_GET_SYSCLK_SOURCE() == RCC_CFGR_SWS_HSE)                                                                     ||\</span><br><span class="line">      ((__HAL_RCC_GET_SYSCLK_SOURCE() == RCC_CFGR_SWS_PLL) &amp;&amp; ((RCC-&gt;PLLCFGR &amp; RCC_PLLCFGR_PLLSRC) == RCC_PLLCFGR_PLLSRC_HSE)))</span><br><span class="line">    &#123;   <span class="comment">//PLL作为系统时钟，  RCC_PLLCFGR_PLLSRC=0x00400000，第22位，是否选择：1：选择 HSE 振荡器时钟作为 PLL 和 PLLI2S 时钟输入</span></span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//如果HSE作为系统时钟来源，或者作为PLL时钟来源的话</span></span><br><span class="line">      <span class="keyword">if</span>((__HAL_RCC_GET_FLAG(RCC_FLAG_HSERDY) != RESET) &amp;&amp; (RCC_OscInitStruct-&gt;HSEState == RCC_HSE_OFF))</span><br><span class="line">      &#123;</span><br><span class="line">		  <span class="comment">//此时HSE已经打开了，或HSE没有使能，这里的任何一种情况都会导致失败</span></span><br><span class="line">        <span class="keyword">return</span> HAL_ERROR;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>  <span class="comment">//否则的话，系统的时钟还没有进行初始化</span></span><br><span class="line">    &#123;</span><br><span class="line">      <span class="comment">/* Reset HSEON and HSEBYP bits before configuring the HSE --------------*/</span></span><br><span class="line">		</span><br><span class="line">		<span class="comment">//对RCC-&gt;CFGR 寄存器的23:16 清零，也就是复位HSEON(关闭振荡器) 和重置就绪位</span></span><br><span class="line">      __HAL_RCC_HSE_CONFIG(RCC_HSE_OFF);</span><br><span class="line">      </span><br><span class="line">		<span class="comment">//获取当前系统时间戳，用于判断关闭HSE是否超时</span></span><br><span class="line">      <span class="comment">/* Get Start Tick*/</span></span><br><span class="line">      tickstart = HAL_GetTick();</span><br><span class="line">      </span><br><span class="line">      <span class="comment">/* Wait till HSE is disabled */</span>  </span><br><span class="line">      <span class="keyword">while</span>(__HAL_RCC_GET_FLAG(RCC_FLAG_HSERDY) != RESET)  <span class="comment">//等待HSE关闭</span></span><br><span class="line">      &#123;</span><br><span class="line">        <span class="keyword">if</span>((HAL_GetTick() - tickstart ) &gt; HSE_TIMEOUT_VALUE)</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="keyword">return</span> HAL_TIMEOUT;  <span class="comment">//超过最大时间为关闭HSE则，出错</span></span><br><span class="line">        &#125;       </span><br><span class="line">      &#125;</span><br><span class="line">      </span><br><span class="line">      <span class="comment">/* Set the new HSE configuration ---------------------------------------*/</span></span><br><span class="line">	  <span class="comment">//重新设置HSE,这个值来自于结构体，我们使用就需要使能，通过设置就可以对RCC-&gt;CFGR 寄存器的23:16，写此值</span></span><br><span class="line">      __HAL_RCC_HSE_CONFIG(RCC_OscInitStruct-&gt;HSEState);</span><br><span class="line">      </span><br><span class="line">      <span class="comment">/* Check the HSE State */</span></span><br><span class="line">	  <span class="comment">//再一次进行确认，我们是否设置了打开HSE</span></span><br><span class="line">      <span class="keyword">if</span>((RCC_OscInitStruct-&gt;HSEState) != RCC_HSE_OFF)</span><br><span class="line">      &#123;</span><br><span class="line">		  <span class="comment">//进入说明，我们的确是打开了</span></span><br><span class="line">        <span class="comment">/* Get Start Tick*/</span></span><br><span class="line">		  <span class="comment">//获取当前系统时间戳</span></span><br><span class="line">        tickstart = HAL_GetTick();</span><br><span class="line">      </span><br><span class="line">        <span class="comment">/* Wait till HSE is ready */</span> </span><br><span class="line">			<span class="comment">//获取HSE就绪标志位，未就绪就等待</span></span><br><span class="line">        <span class="keyword">while</span>(__HAL_RCC_GET_FLAG(RCC_FLAG_HSERDY) == RESET)</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="keyword">if</span>((HAL_GetTick() - tickstart ) &gt; HSE_TIMEOUT_VALUE)</span><br><span class="line">          &#123;</span><br><span class="line">            <span class="keyword">return</span> HAL_TIMEOUT;</span><br><span class="line">          &#125; </span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">else</span> <span class="comment">//否则没有打开HSE的开关咯</span></span><br><span class="line">      &#123;</span><br><span class="line">        <span class="comment">/* Get Start Tick*/</span></span><br><span class="line">        tickstart = HAL_GetTick();</span><br><span class="line">         </span><br><span class="line">        <span class="comment">/* Wait till HSE is bypassed or disabled */</span></span><br><span class="line">        <span class="keyword">while</span>(__HAL_RCC_GET_FLAG(RCC_FLAG_HSERDY) != RESET)</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="keyword">if</span>((HAL_GetTick() - tickstart ) &gt; HSE_TIMEOUT_VALUE) <span class="comment">//HSE_TIMEOUT_VALUE=5000</span></span><br><span class="line">          &#123;</span><br><span class="line">            <span class="keyword">return</span> HAL_TIMEOUT;</span><br><span class="line">          &#125; </span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>在stm32f4xx_hal_rcc.c中239行</p>
+</blockquote>
+<p>分析：</p>
+<p><strong>1.第一句是判断我们选择的时钟来源，此处选择的是RCC_OSCILLATORTYPE_HSE ，所以这个条件成立</strong>：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>(((RCC_OscInitStruct-&gt;OscillatorType) &amp; RCC_OSCILLATORTYPE_HSE) == RCC_OSCILLATORTYPE_HSE)</span><br></pre></td></tr></table></figure>
+<p>2.继续判断</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span>((__HAL_RCC_GET_SYSCLK_SOURCE() == RCC_CFGR_SWS_HSE)                                                                     ||\</span><br><span class="line">      ((__HAL_RCC_GET_SYSCLK_SOURCE() == RCC_CFGR_SWS_PLL) &amp;&amp; ((RCC-&gt;PLLCFGR &amp; RCC_PLLCFGR_PLLSRC) == RCC_PLLCFGR_PLLSRC_HSE)))</span><br><span class="line">    &#123;   <span class="comment">//PLL作为系统时钟，  RCC_PLLCFGR_PLLSRC=0x00400000，第22位，是否选择：1：选择 HSE 振荡器时钟作为 PLL 和 PLLI2S 时钟输入</span></span><br><span class="line">		</span><br><span class="line">		</span><br><span class="line">		<span class="comment">//如果HSE作为系统时钟来源，或者作为PLL时钟来源的话</span></span><br><span class="line">      <span class="keyword">if</span>((__HAL_RCC_GET_FLAG(RCC_FLAG_HSERDY) != RESET) &amp;&amp; (RCC_OscInitStruct-&gt;HSEState == RCC_HSE_OFF))</span><br><span class="line">      &#123;</span><br><span class="line">		  <span class="comment">//此时HSE已经打开了，或HSE没有使能，这里的任何一种情况都会导致失败</span></span><br><span class="line">        <span class="keyword">return</span> HAL_ERROR;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>此处有三个条件的判断，成立才会执行if里面的语句，否则执行后面else的语句咯。</p>
+<p>重点看一下函数：__HAL_RCC_GET_SYSCLK_SOURCE()，是什么意思。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210715104613.png" alt="image-20210715104612082"></p>
+<p>这个函数的目的是获取CFGR寄存器中的SWS两个位的数值，其实就是获取当前系统时钟的来源</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210715105121.png" alt=""></p>
+<p>RCC_CFGR_SWS_HSE就是定义的是一个数组</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210715111411.png" alt=""></p>
+<p>可知if语句的第一个判断条件的意思就是，判断当前的系统时钟来源是否是HSE（外部高速时钟），如果是的话，因为后面接的是一个或的符号，那么这个条件就算是成立了。</p>
+<p>在分析后面一条语句：</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">((__HAL_RCC_GET_SYSCLK_SOURCE() == RCC_CFGR_SWS_PLL) &amp;&amp; ((RCC-&gt;PLLCFGR &amp; RCC_PLLCFGR_PLLSRC) == RCC_PLLCFGR_PLLSRC_HSE))</span><br></pre></td></tr></table></figure>
+<p>&amp;&amp;前面的一个语句，就是判断当前系统时钟来源是否为PLL,后面语句是获取RCC的PLL配置寄存器的内容</p>
+<p>从下面的宏定义可以看的出来，其实就是获取获取RCC的PLL配置寄存器的22位进行判断此位是0还是1</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210715112729.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210715113130.png" alt="3"></p>
+<p>通过查找手册可知，22位就是用来判断PLL的时钟来源，是HSE还是HSI</p>
+<p><strong>那么总结上面的整条语句的意思：</strong></p>
+<blockquote>
+<p><strong>就是说，如果系统检测到你当前的系统时钟来源是HSE，或者说检测到系统失踪来源是PLL，而且PLL的时钟来源是HSE的话，那我就执行if里面的语句，其实里面就是返回一个错误提示，很好理解，因为上面的条件成立，说明你已经配置过时钟了，就不需要重新配置了。</strong></p>
+<p><strong>其实在时钟系统图上也可以这样表示：</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210715113437.png" alt=""></p>
+<p>已上任何一种情况都代表系统时钟已经初始化了。所以就没必要再执行下面的语句了。</p>
+</blockquote>
+<p><strong>3.如果上面的条件不成立，那么就说明系统时钟还没有进行配置，接下来就是进行系统时钟的配置了</strong></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;对RCC-&gt;CFGR 寄存器的23:16 清零，也就是复位HSEON(关闭振荡器) 和重置就绪位</span><br><span class="line">      __HAL_RCC_HSE_CONFIG(RCC_HSE_OFF);</span><br></pre></td></tr></table></figure>
+<p>通过查看__HAL_RCC_HSE_CONFIG(),即可知，这个函数的含义就是网一个寄存器里面写一个值</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210715160101.png" alt=""></p>
+<p>根据英文的备注是CR寄存器的第三个字节的基地址</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210715160956.png" alt=""></p>
+<p>返回的其实是四字节的一个地址，现在强制把它转换为一个8位的地址，那其实就是RCC的CR寄存器的第三个字节，直接往这个地址写入我们想要的值。</p>
+]]></content>
+      <categories>
+        <category>记录&amp;烂笔头</category>
+      </categories>
+      <tags>
+        <tag>STM32</tag>
       </tags>
   </entry>
   <entry>
