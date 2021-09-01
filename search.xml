@@ -671,6 +671,111 @@ c-1 5-5 9-11 9h-2L532 67 19 159h-2c-5 0-9-4-11-9l-5-22c-1-6 2-12 8-13z'/></svg><
       </tags>
   </entry>
   <entry>
+    <title>butterfly主题美化</title>
+    <url>/2021/04/08/butterfly%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>butterfly主题美化记录</h1>
+<h2 id="社交图标"><a class="header-anchor" href="#社交图标">¶</a>社交图标</h2>
+<p>在<a href="https://www.iconfont.cn/">阿里巴巴矢量图标库</a>，找到自己想要的图标，看中那个就加入购物车</p>
+<p>加购完毕之后点击右上角的购物车，添加至项目，选择其中一种快捷方式登录，项目名称随便填</p>
+<p>然后在我的项目里选择 <code>Font class</code>，点击查看在线链接并在浏览器中打开此链接，最后另存为本地<strong>主题文件夹</strong>下的<code>source\css</code>中。</p>
+<p>然后在主题配置文件（_config.yml）里，inject引用图标css文件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210408090314.png" alt=""></p>
+<p>然后继续在配置文件中找到social配置项</p>
+<p>格式为：iconfont class名：链接||名称</p>
+<p>其中</p>
+<ul>
+<li>
+<p>iconfont：是固定的</p>
+</li>
+<li>
+<p>class 名：可在刚刚的阿里巴巴矢量图标库生成的 css 文件里找到</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210408090734.png" alt=""></p>
+</li>
+<li>
+<p>链接：点击图标之后跳转的链接</p>
+</li>
+<li>
+<p>名称：对应你图标的含义，例如：QQ、Github</p>
+</li>
+</ul>
+<p>自定义图标的颜色：</p>
+<p>打开下载到本地的css文件，换身衣裳</p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210408091858.png" alt=""></p>
+<p>其他图标同样的做法</p>
+<h2 id="电子时钟"><a class="header-anchor" href="#电子时钟">¶</a>电子时钟</h2>
+<blockquote>
+<p>有错误，未解决</p>
+</blockquote>
+<h3 id="插件安装"><a class="header-anchor" href="#插件安装">¶</a>插件安装</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">npm i hexo-electric-clock --save</span><br><span class="line"></span><br><span class="line"><span class="section"># 或者</span></span><br><span class="line"></span><br><span class="line">cnpm i hexo-electric-clock --save</span><br></pre></td></tr></table></figure>
+<h3 id="添加博客根目录-config配置项"><a class="header-anchor" href="#添加博客根目录-config配置项">¶</a>添加博客根目录_config配置项</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">electric<span class="emphasis">_clock:</span></span><br><span class="line"><span class="emphasis">  priority: 5</span></span><br><span class="line"><span class="emphasis">  enable: true</span></span><br><span class="line"><span class="emphasis">  enable_</span>page: all</span><br><span class="line">  layout:</span><br><span class="line"><span class="code">    type: class</span></span><br><span class="line"><span class="code">    name: sticky_layout</span></span><br><span class="line"><span class="code">    index: 0</span></span><br><span class="line"><span class="code">  temple_html: &#x27;&lt;div class=&quot;card-widget card-clock&quot;&gt;&lt;div class=&quot;card-glass&quot;&gt;&lt;div class=&quot;card-background&quot;&gt;&lt;div class=&quot;card-content&quot;&gt;&lt;div id=&quot;hexo_electric_clock&quot;&gt;&lt;img id=&quot;card-clock-loading&quot; src=&quot;https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif&quot; style=&quot;height: 120px; width: 100%;&quot; data-ll-status=&quot;loading&quot; class=&quot;entered loading&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
+<h3 id="enable"><a class="header-anchor" href="#enable">¶</a>enable</h3>
+<p>**参数：**true/false<br>
+**含义：**是否开启插件</p>
+<h3 id="enable-page"><a class="header-anchor" href="#enable-page">¶</a>enable_page</h3>
+<p>**参数：**all<br>
+**含义：**路由地址，all 代表全局开启。如 / 代表主页。</p>
+<h3 id="priority"><a class="header-anchor" href="#priority">¶</a>priority</h3>
+<p>**参数：**1<br>
+**含义：**插件的叠放顺序，数字越大，叠放约靠前。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">electric<span class="emphasis">_clock:</span></span><br><span class="line"><span class="emphasis">  enable: true</span></span><br><span class="line"><span class="emphasis">  priority: 5 # 这里是参数</span></span><br></pre></td></tr></table></figure>
+<h3 id="layout"><a class="header-anchor" href="#layout">¶</a>layout</h3>
+<p>**参数：**type; （class&amp;id）<br>
+**参数：**name;<br>
+**参数：**index；（数字）<br>
+**含义：**如果说 electric_clock 是一幅画，那么这个 layout 就是指定了哪面墙来挂画<br>
+而在 HTML 的是世界里有两种墙分别 type 为 id 和 class。<br>
+其中在定义 class 的时候会出现多个 class 的情况，这时就需要使用 index，确定是哪一个。<br>
+最后墙的名字即是 name;</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">desc</span>=<span class="string">&quot;我是墙&quot;</span> <span class="attr">id</span>=<span class="string">&quot;recent-posts&quot;</span>&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="comment">&lt;!-- id=&gt;</span></span>type  recent-posts=&gt;name    --&gt;</span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">desc</span>=<span class="string">&quot;我是画框&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;div desc=&quot;我是纸&quot;&gt;</span></span><br><span class="line"><span class="code">      &lt;!--这里通过js挂载electric_clock，也就是画画--&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;/div&gt;</span></span><br><span class="line"><span class="code">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="temple-html"><a class="header-anchor" href="#temple-html">¶</a>temple_html</h3>
+<p>**参数：**html 模板字段<br>
+**含义：**包含挂载容器</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">HTML</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-widget card-clock&quot;</span>&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="comment">&lt;!-- 挂载容器 --&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-glass&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;div class=&quot;card-background&quot;&gt;</span></span><br><span class="line"><span class="code">      &lt;div class=&quot;card-content&quot;&gt;</span></span><br><span class="line"><span class="code">        &lt;div id=&quot;hexo_electric_clock&quot;&gt;</span></span><br><span class="line"><span class="code">          &lt;img</span></span><br><span class="line"><span class="code">            id=&quot;card-clock-loading&quot;</span></span><br><span class="line"><span class="code">            src=&quot;https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif&quot;</span></span><br><span class="line"><span class="code">            style=&quot;height: 120px; width: 100%;&quot;</span></span><br><span class="line"><span class="code">            data-ll-status=&quot;loading&quot;</span></span><br><span class="line"><span class="code">            class=&quot;entered loading&quot;</span></span><br><span class="line"><span class="code">          /&gt;</span></span><br><span class="line"><span class="code">        &lt;/div&gt;</span></span><br><span class="line"><span class="code">      &lt;/div&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;/div&gt;</span></span><br><span class="line"><span class="code">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="历史今日"><a class="header-anchor" href="#历史今日">¶</a>历史今日</h2>
+<h3 id="安装插件"><a class="header-anchor" href="#安装插件">¶</a>安装插件</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">npm i hexo-history-calendar --save</span><br><span class="line"></span><br><span class="line"><span class="section"># 或者</span></span><br><span class="line"></span><br><span class="line">cnpm i hexo-history-calendar --save</span><br></pre></td></tr></table></figure>
+<h3 id="博客根目录-config-配置项-："><a class="header-anchor" href="#博客根目录-config-配置项-：">¶</a>博客根目录_config 配置项 ：</h3>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">YAML</span><br><span class="line">复制成功history<span class="emphasis">_calendar:</span></span><br><span class="line"><span class="emphasis">  priority: 4</span></span><br><span class="line"><span class="emphasis">  enable: true</span></span><br><span class="line"><span class="emphasis">  enable_</span>page: all</span><br><span class="line">  layout:</span><br><span class="line"><span class="code">    type: class</span></span><br><span class="line"><span class="code">    name: sticky_layout</span></span><br><span class="line"><span class="code">    index: 0</span></span><br><span class="line"><span class="code">  temple_html: &#x27;&lt;div class=&quot;card-widget card-history&quot;&gt;&lt;div class=&quot;card-content&quot;&gt;&lt;div class=&quot;item-headline&quot;&gt;&lt;i class=&quot;fas fa-clock fa-spin&quot;&gt;&lt;/i&gt;&lt;span&gt;那年今日&lt;/span&gt;&lt;/div&gt;&lt;div id=&quot;history-baidu&quot; style=&quot;height: 100px;overflow: hidden&quot;&gt;&lt;div class=&quot;history_swiper-container&quot; id=&quot;history-container&quot; style=&quot;width: 100%;height: 100%&quot;&gt;&lt;div class=&quot;swiper-wrapper&quot; id=&quot;history_container_wrapper&quot; style=&quot;height:20px&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
+<h3 id="enable-v2"><a class="header-anchor" href="#enable-v2">¶</a>enable</h3>
+<p>**参数：**true/false<br>
+**含义：**是否开启插件</p>
+<h3 id="enable-page-v2"><a class="header-anchor" href="#enable-page-v2">¶</a>enable_page</h3>
+<p>**参数：**all<br>
+**含义：**路由地址，all 代表全局开启。如 / 代表主页。</p>
+<h3 id="priority-v2"><a class="header-anchor" href="#priority-v2">¶</a>priority</h3>
+<p>**参数：**1<br>
+**含义：**插件的叠放顺序，数字越大，叠放约靠前。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">YAML</span><br><span class="line">history<span class="emphasis">_calendar:</span></span><br><span class="line"><span class="emphasis">  enable: true</span></span><br><span class="line"><span class="emphasis">  priority: 4 # 这里是参数</span></span><br></pre></td></tr></table></figure>
+<h3 id="layout-v2"><a class="header-anchor" href="#layout-v2">¶</a>layout</h3>
+<p>**参数：**type; （class&amp;id）<br>
+**参数：**name;<br>
+**参数：**index；（数字）<br>
+**含义：**如果说 history_calendar 是一幅画，那么这个 layout 就是指定了哪面墙来挂画<br>
+而在 HTML 的是世界里有两种墙分别 type 为 id 和 class。<br>
+其中在定义 class 的时候会出现多个 class 的情况，这时就需要使用 index，确定是哪一个。<br>
+最后墙的名字即是 name;</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">HTML</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">desc</span>=<span class="string">&quot;我是墙&quot;</span> <span class="attr">id</span>=<span class="string">&quot;recent-posts&quot;</span>&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="comment">&lt;!-- id=&gt;</span></span>type  recent-posts=&gt;name    --&gt;</span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">desc</span>=<span class="string">&quot;我是画框&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;div desc=&quot;我是纸&quot;&gt;</span></span><br><span class="line"><span class="code">      &lt;!--这里通过js挂载history_calendar，也就是画画--&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;/div&gt;</span></span><br><span class="line"><span class="code">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="temple-html-v2"><a class="header-anchor" href="#temple-html-v2">¶</a>temple_html</h3>
+<p>**参数：**html 模板字段<br>
+**含义：**包含挂载容器</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">XML</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-widget card-history&quot;</span>&gt;</span></span> <span class="xml"><span class="comment">&lt;!-- 挂载容器 --&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-content&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;div class=&quot;item-headline&quot;&gt;</span></span><br><span class="line"><span class="code">      &lt;i class=&quot;fas fa-clock fa-spin&quot;&gt;&lt;/i&gt;</span></span><br><span class="line"><span class="code">      &lt;span&gt;那年今日&lt;/span&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;div id=&quot;history-baidu&quot; style=&quot;height: 100px;overflow: hidden&quot;&gt; &lt;!-- 挂载器 --&gt;</span></span><br><span class="line"><span class="code">    &lt;div class=&quot;history_swiper-container&quot; id=&quot;history-container&quot; style=&quot;width: 100%;height: 100%&quot;&gt;</span></span><br><span class="line"><span class="code">          &lt;div class=&quot;swiper-wrapper&quot; id=&quot;history_container_wrapper&quot; style=&quot;height:20px&quot;&gt;&lt;/div&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;/div&gt;</span></span><br><span class="line"><span class="code">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
+<h1>参考来自</h1>
+<a class="btn-beautify button--animated block" href="https://blog.imzjw.cn/posts/b74f504f/" 
+  title="点此跳转"><i class="far fa-hand-point-right fa-fw"></i><span>点此跳转</span></a>
+<a class="btn-beautify button--animated block" href="https://zfe.space/post/hexo-electric-clock.html" 
+  title="点此跳转"><i class="far fa-hand-point-right fa-fw"></i><span>点此跳转</span></a>
+<a class="btn-beautify button--animated block" href="https://zfe.space/post/hexo-history-calendar.html" 
+  title="点此跳转"><i class="far fa-hand-point-right fa-fw"></i><span>点此跳转</span></a>]]></content>
+      <categories>
+        <category>记录&amp;烂笔头</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Typora使用</title>
     <url>/2020/10/09/Typora%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>公式的使用</h1>
@@ -1176,111 +1281,6 @@ a = \left[
       </tags>
   </entry>
   <entry>
-    <title>butterfly主题美化</title>
-    <url>/2021/04/08/butterfly%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1>butterfly主题美化记录</h1>
-<h2 id="社交图标"><a class="header-anchor" href="#社交图标">¶</a>社交图标</h2>
-<p>在<a href="https://www.iconfont.cn/">阿里巴巴矢量图标库</a>，找到自己想要的图标，看中那个就加入购物车</p>
-<p>加购完毕之后点击右上角的购物车，添加至项目，选择其中一种快捷方式登录，项目名称随便填</p>
-<p>然后在我的项目里选择 <code>Font class</code>，点击查看在线链接并在浏览器中打开此链接，最后另存为本地<strong>主题文件夹</strong>下的<code>source\css</code>中。</p>
-<p>然后在主题配置文件（_config.yml）里，inject引用图标css文件</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210408090314.png" alt=""></p>
-<p>然后继续在配置文件中找到social配置项</p>
-<p>格式为：iconfont class名：链接||名称</p>
-<p>其中</p>
-<ul>
-<li>
-<p>iconfont：是固定的</p>
-</li>
-<li>
-<p>class 名：可在刚刚的阿里巴巴矢量图标库生成的 css 文件里找到</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210408090734.png" alt=""></p>
-</li>
-<li>
-<p>链接：点击图标之后跳转的链接</p>
-</li>
-<li>
-<p>名称：对应你图标的含义，例如：QQ、Github</p>
-</li>
-</ul>
-<p>自定义图标的颜色：</p>
-<p>打开下载到本地的css文件，换身衣裳</p>
-<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210408091858.png" alt=""></p>
-<p>其他图标同样的做法</p>
-<h2 id="电子时钟"><a class="header-anchor" href="#电子时钟">¶</a>电子时钟</h2>
-<blockquote>
-<p>有错误，未解决</p>
-</blockquote>
-<h3 id="插件安装"><a class="header-anchor" href="#插件安装">¶</a>插件安装</h3>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">npm i hexo-electric-clock --save</span><br><span class="line"></span><br><span class="line"><span class="section"># 或者</span></span><br><span class="line"></span><br><span class="line">cnpm i hexo-electric-clock --save</span><br></pre></td></tr></table></figure>
-<h3 id="添加博客根目录-config配置项"><a class="header-anchor" href="#添加博客根目录-config配置项">¶</a>添加博客根目录_config配置项</h3>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">electric<span class="emphasis">_clock:</span></span><br><span class="line"><span class="emphasis">  priority: 5</span></span><br><span class="line"><span class="emphasis">  enable: true</span></span><br><span class="line"><span class="emphasis">  enable_</span>page: all</span><br><span class="line">  layout:</span><br><span class="line"><span class="code">    type: class</span></span><br><span class="line"><span class="code">    name: sticky_layout</span></span><br><span class="line"><span class="code">    index: 0</span></span><br><span class="line"><span class="code">  temple_html: &#x27;&lt;div class=&quot;card-widget card-clock&quot;&gt;&lt;div class=&quot;card-glass&quot;&gt;&lt;div class=&quot;card-background&quot;&gt;&lt;div class=&quot;card-content&quot;&gt;&lt;div id=&quot;hexo_electric_clock&quot;&gt;&lt;img id=&quot;card-clock-loading&quot; src=&quot;https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif&quot; style=&quot;height: 120px; width: 100%;&quot; data-ll-status=&quot;loading&quot; class=&quot;entered loading&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
-<h3 id="enable"><a class="header-anchor" href="#enable">¶</a>enable</h3>
-<p>**参数：**true/false<br>
-**含义：**是否开启插件</p>
-<h3 id="enable-page"><a class="header-anchor" href="#enable-page">¶</a>enable_page</h3>
-<p>**参数：**all<br>
-**含义：**路由地址，all 代表全局开启。如 / 代表主页。</p>
-<h3 id="priority"><a class="header-anchor" href="#priority">¶</a>priority</h3>
-<p>**参数：**1<br>
-**含义：**插件的叠放顺序，数字越大，叠放约靠前。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">electric<span class="emphasis">_clock:</span></span><br><span class="line"><span class="emphasis">  enable: true</span></span><br><span class="line"><span class="emphasis">  priority: 5 # 这里是参数</span></span><br></pre></td></tr></table></figure>
-<h3 id="layout"><a class="header-anchor" href="#layout">¶</a>layout</h3>
-<p>**参数：**type; （class&amp;id）<br>
-**参数：**name;<br>
-**参数：**index；（数字）<br>
-**含义：**如果说 electric_clock 是一幅画，那么这个 layout 就是指定了哪面墙来挂画<br>
-而在 HTML 的是世界里有两种墙分别 type 为 id 和 class。<br>
-其中在定义 class 的时候会出现多个 class 的情况，这时就需要使用 index，确定是哪一个。<br>
-最后墙的名字即是 name;</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">desc</span>=<span class="string">&quot;我是墙&quot;</span> <span class="attr">id</span>=<span class="string">&quot;recent-posts&quot;</span>&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="comment">&lt;!-- id=&gt;</span></span>type  recent-posts=&gt;name    --&gt;</span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">desc</span>=<span class="string">&quot;我是画框&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;div desc=&quot;我是纸&quot;&gt;</span></span><br><span class="line"><span class="code">      &lt;!--这里通过js挂载electric_clock，也就是画画--&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;/div&gt;</span></span><br><span class="line"><span class="code">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="temple-html"><a class="header-anchor" href="#temple-html">¶</a>temple_html</h3>
-<p>**参数：**html 模板字段<br>
-**含义：**包含挂载容器</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">HTML</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-widget card-clock&quot;</span>&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="comment">&lt;!-- 挂载容器 --&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-glass&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;div class=&quot;card-background&quot;&gt;</span></span><br><span class="line"><span class="code">      &lt;div class=&quot;card-content&quot;&gt;</span></span><br><span class="line"><span class="code">        &lt;div id=&quot;hexo_electric_clock&quot;&gt;</span></span><br><span class="line"><span class="code">          &lt;img</span></span><br><span class="line"><span class="code">            id=&quot;card-clock-loading&quot;</span></span><br><span class="line"><span class="code">            src=&quot;https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif&quot;</span></span><br><span class="line"><span class="code">            style=&quot;height: 120px; width: 100%;&quot;</span></span><br><span class="line"><span class="code">            data-ll-status=&quot;loading&quot;</span></span><br><span class="line"><span class="code">            class=&quot;entered loading&quot;</span></span><br><span class="line"><span class="code">          /&gt;</span></span><br><span class="line"><span class="code">        &lt;/div&gt;</span></span><br><span class="line"><span class="code">      &lt;/div&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;/div&gt;</span></span><br><span class="line"><span class="code">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="历史今日"><a class="header-anchor" href="#历史今日">¶</a>历史今日</h2>
-<h3 id="安装插件"><a class="header-anchor" href="#安装插件">¶</a>安装插件</h3>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">npm i hexo-history-calendar --save</span><br><span class="line"></span><br><span class="line"><span class="section"># 或者</span></span><br><span class="line"></span><br><span class="line">cnpm i hexo-history-calendar --save</span><br></pre></td></tr></table></figure>
-<h3 id="博客根目录-config-配置项-："><a class="header-anchor" href="#博客根目录-config-配置项-：">¶</a>博客根目录_config 配置项 ：</h3>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">YAML</span><br><span class="line">复制成功history<span class="emphasis">_calendar:</span></span><br><span class="line"><span class="emphasis">  priority: 4</span></span><br><span class="line"><span class="emphasis">  enable: true</span></span><br><span class="line"><span class="emphasis">  enable_</span>page: all</span><br><span class="line">  layout:</span><br><span class="line"><span class="code">    type: class</span></span><br><span class="line"><span class="code">    name: sticky_layout</span></span><br><span class="line"><span class="code">    index: 0</span></span><br><span class="line"><span class="code">  temple_html: &#x27;&lt;div class=&quot;card-widget card-history&quot;&gt;&lt;div class=&quot;card-content&quot;&gt;&lt;div class=&quot;item-headline&quot;&gt;&lt;i class=&quot;fas fa-clock fa-spin&quot;&gt;&lt;/i&gt;&lt;span&gt;那年今日&lt;/span&gt;&lt;/div&gt;&lt;div id=&quot;history-baidu&quot; style=&quot;height: 100px;overflow: hidden&quot;&gt;&lt;div class=&quot;history_swiper-container&quot; id=&quot;history-container&quot; style=&quot;width: 100%;height: 100%&quot;&gt;&lt;div class=&quot;swiper-wrapper&quot; id=&quot;history_container_wrapper&quot; style=&quot;height:20px&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&#x27;</span></span><br></pre></td></tr></table></figure>
-<h3 id="enable-v2"><a class="header-anchor" href="#enable-v2">¶</a>enable</h3>
-<p>**参数：**true/false<br>
-**含义：**是否开启插件</p>
-<h3 id="enable-page-v2"><a class="header-anchor" href="#enable-page-v2">¶</a>enable_page</h3>
-<p>**参数：**all<br>
-**含义：**路由地址，all 代表全局开启。如 / 代表主页。</p>
-<h3 id="priority-v2"><a class="header-anchor" href="#priority-v2">¶</a>priority</h3>
-<p>**参数：**1<br>
-**含义：**插件的叠放顺序，数字越大，叠放约靠前。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">YAML</span><br><span class="line">history<span class="emphasis">_calendar:</span></span><br><span class="line"><span class="emphasis">  enable: true</span></span><br><span class="line"><span class="emphasis">  priority: 4 # 这里是参数</span></span><br></pre></td></tr></table></figure>
-<h3 id="layout-v2"><a class="header-anchor" href="#layout-v2">¶</a>layout</h3>
-<p>**参数：**type; （class&amp;id）<br>
-**参数：**name;<br>
-**参数：**index；（数字）<br>
-**含义：**如果说 history_calendar 是一幅画，那么这个 layout 就是指定了哪面墙来挂画<br>
-而在 HTML 的是世界里有两种墙分别 type 为 id 和 class。<br>
-其中在定义 class 的时候会出现多个 class 的情况，这时就需要使用 index，确定是哪一个。<br>
-最后墙的名字即是 name;</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">HTML</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">desc</span>=<span class="string">&quot;我是墙&quot;</span> <span class="attr">id</span>=<span class="string">&quot;recent-posts&quot;</span>&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="comment">&lt;!-- id=&gt;</span></span>type  recent-posts=&gt;name    --&gt;</span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">desc</span>=<span class="string">&quot;我是画框&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;div desc=&quot;我是纸&quot;&gt;</span></span><br><span class="line"><span class="code">      &lt;!--这里通过js挂载history_calendar，也就是画画--&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;/div&gt;</span></span><br><span class="line"><span class="code">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="temple-html-v2"><a class="header-anchor" href="#temple-html-v2">¶</a>temple_html</h3>
-<p>**参数：**html 模板字段<br>
-**含义：**包含挂载容器</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">XML</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-widget card-history&quot;</span>&gt;</span></span> <span class="xml"><span class="comment">&lt;!-- 挂载容器 --&gt;</span></span></span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;card-content&quot;</span>&gt;</span></span></span><br><span class="line"><span class="code">    &lt;div class=&quot;item-headline&quot;&gt;</span></span><br><span class="line"><span class="code">      &lt;i class=&quot;fas fa-clock fa-spin&quot;&gt;&lt;/i&gt;</span></span><br><span class="line"><span class="code">      &lt;span&gt;那年今日&lt;/span&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;div id=&quot;history-baidu&quot; style=&quot;height: 100px;overflow: hidden&quot;&gt; &lt;!-- 挂载器 --&gt;</span></span><br><span class="line"><span class="code">    &lt;div class=&quot;history_swiper-container&quot; id=&quot;history-container&quot; style=&quot;width: 100%;height: 100%&quot;&gt;</span></span><br><span class="line"><span class="code">          &lt;div class=&quot;swiper-wrapper&quot; id=&quot;history_container_wrapper&quot; style=&quot;height:20px&quot;&gt;&lt;/div&gt;</span></span><br><span class="line"><span class="code">    &lt;/div&gt;</span></span><br><span class="line"><span class="code">  &lt;/div&gt;</span></span><br><span class="line"><span class="code">&lt;/div&gt;</span></span><br></pre></td></tr></table></figure>
-<h1>参考来自</h1>
-<a class="btn-beautify button--animated block" href="https://blog.imzjw.cn/posts/b74f504f/" 
-  title="点此跳转"><i class="far fa-hand-point-right fa-fw"></i><span>点此跳转</span></a>
-<a class="btn-beautify button--animated block" href="https://zfe.space/post/hexo-electric-clock.html" 
-  title="点此跳转"><i class="far fa-hand-point-right fa-fw"></i><span>点此跳转</span></a>
-<a class="btn-beautify button--animated block" href="https://zfe.space/post/hexo-history-calendar.html" 
-  title="点此跳转"><i class="far fa-hand-point-right fa-fw"></i><span>点此跳转</span></a>]]></content>
-      <categories>
-        <category>记录&amp;烂笔头</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>first blog</title>
     <url>/2020/01/04/first-blog/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>first blog</p>
@@ -1451,32 +1451,6 @@ a = \left[
       </tags>
   </entry>
   <entry>
-    <title>分享&amp;记录</title>
-    <url>/2021/04/07/%E5%88%86%E4%BA%AB-%E8%AE%B0%E5%BD%95/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="7066236b71bd093e2c9f53bf82622c0e9bd218274369bab2b32498af42cebc66">31242a41c922984c3c7e6ed39d2c978a39cd93922d549058b144463d7a1519272fa19dce3629f278aaed84c96a5c85cfb21d90190581ad32f40bbabf9b62b7250d325eea2bf076e2cdbf55e3c24285bf6e8b911be2da55e80e31eb116cedd161373c576f9c7eaa34b0c22d52333648cbf1b2b32bce14fc44950b046203047fc8965e48c16a0577d7647ad1aa56ad7a4484d547b335e841275628ebe6cebe760b9fd61250d56736073b6ecd28ad45846bba3f5259cc41984812e7d4a99811c18466a3d31dc1150a203670051b3b07265a6a81fde20fe261ddd6b07f9001256de791c796602283c7045ce9c585d9165b9bb33c144c782ecc9a705562505efbb8f1e77a8555cd0468f569fb23a2579cf7476dd2194d4d78b619b79d8c07b1f9c2175635095ac4bc51805ba7e820143398c9263cdef1a2746ecac1bc72bc7520025e</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-xray">
-      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Hey, password is required here.</span>
-      </label>
-      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
-        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
-        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
-      </svg>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>记录&amp;烂笔头</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>如何修改blog</title>
     <url>/2020/01/05/%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9blog/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -1500,6 +1474,32 @@ a = \left[
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分享&amp;记录</title>
+    <url>/2021/04/07/%E5%88%86%E4%BA%AB-%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="7066236b71bd093e2c9f53bf82622c0e9bd218274369bab2b32498af42cebc66">31242a41c922984c3c7e6ed39d2c978a39cd93922d549058b144463d7a1519272fa19dce3629f278aaed84c96a5c85cfb21d90190581ad32f40bbabf9b62b7250d325eea2bf076e2cdbf55e3c24285bf6e8b911be2da55e80e31eb116cedd161373c576f9c7eaa34b0c22d52333648cbf1b2b32bce14fc44950b046203047fc8965e48c16a0577d7647ad1aa56ad7a4484d547b335e841275628ebe6cebe760b9fd61250d56736073b6ecd28ad45846bba3f5259cc41984812e7d4a99811c18466a3d31dc1150a203670051b3b07265a6a81fde20fe261ddd6b07f9001256de791c796602283c7045ce9c585d9165b9bb33c144c782ecc9a705562505efbb8f1e77a8555cd0468f569fb23a2579cf7476dd2194d4d78b619b79d8c07b1f9c2175635095ac4bc51805ba7e820143398c9263cdef1a2746ecac1bc72bc7520025e</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-xray">
+      <input class="hbe hbe-input-field hbe-input-field-xray" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-xray" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-xray">Hey, password is required here.</span>
+      </label>
+      <svg class="hbe hbe-graphic hbe-graphic-xray" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+        <path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"></path>
+        <path d="M0,2.5c0,0,298.666,0,399.333,0C448.336,2.5,513.994,13,597,13c77.327,0,135-10.5,200.999-10.5c95.996,0,402.001,0,402.001,0"></path>
+      </svg>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>记录&amp;烂笔头</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
@@ -1527,12 +1527,6 @@ a = \left[
       <tags>
         <tag>随笔</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>阵列信号</title>
-    <url>/2021/02/16/%E9%98%B5%E5%88%97%E4%BF%A1%E5%8F%B7/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>协方差：一般用来刻画两个随机变量的相似程度。</p>
-]]></content>
   </entry>
   <entry>
     <title>雷达</title>
@@ -1571,6 +1565,12 @@ a = \left[
       <tags>
         <tag>雷达</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>阵列信号</title>
+    <url>/2021/02/16/%E9%98%B5%E5%88%97%E4%BF%A1%E5%8F%B7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>协方差：一般用来刻画两个随机变量的相似程度。</p>
+]]></content>
   </entry>
   <entry>
     <title>Quartus记录</title>
@@ -3021,6 +3021,11 @@ FLASH-&gt;ACR|=5&lt;&lt;0;     //5个CPU等待周期.</p>
 <figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">HAL_NVIC_EnableIRQ</span><span class="params">(IRQn_Type IRQn)</span></span>;</span><br></pre></td></tr></table></figure>
 <h2 id="IO引脚复用"><a class="header-anchor" href="#IO引脚复用">¶</a>IO引脚复用</h2>
 <p>一个GPIO如果可以复用为内置外设的功能引脚，那么当这个GPIO作为内置外设使用的时候，叫做复用。</p>
+<ul>
+<li>对于复用的输入功能，端口必须配置成输入模式（浮空、上拉或下拉）且输入引脚必须由外部驱动。</li>
+<li>对于服用的输出功能，端口必须配置成输出模式（推挽或开漏）。</li>
+<li>对于双向复用功能，端口位必须配置复用功能输出模式（推挽或开漏）。这时，输入驱动器被配置成浮空输入模式。</li>
+</ul>
 <blockquote>
 <p>在STM32F429IGT6.pdf文件中</p>
 </blockquote>
@@ -3061,6 +3066,10 @@ FLASH-&gt;ACR|=5&lt;&lt;0;     //5个CPU等待周期.</p>
 <p>④ 停止位（1,1.5,2位）</p>
 <p>⑤ 波特率设置</p>
 <p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210831164855.png" alt=""></p>
+<h3 id="串口框图和波特率计算"><a class="header-anchor" href="#串口框图和波特率计算">¶</a>串口框图和波特率计算</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210831201647.png" alt="USART框图"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/stardust14/picture/img/20210901094736.png" alt="STM32F429IGT6芯片的USART引脚"></p>
+<p>数据寄存器——USART_DR:9位有效，包含一个发送数据寄存器TDR和一个接收数据寄存器RDR。一个地址对应了两个物理内存。</p>
 <h1>直达底部</h1>
 ]]></content>
       <categories>
